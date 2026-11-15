@@ -1,4 +1,13 @@
 {
   "character_font_family": "\"Noto Sans JP\", sans-serif",
-  "character_text_color": "#FFFFFF"
+  "character_text_color": "#FFFFFF",
+  "song_background_overrides": {
+    "song_0e1bea339f20": "#FFD7A0",
+    "song_9589de9b07cd": "#FFD7A0",
+    "song_26b9e272603a": "#8C2346",
+    "song_ae14c7441a62": "#305DAA",
+    "song_b217dcd5e5bd": "#305DAA",
+    "song_289e4c6ade3b": "#64368F",
+    "song_f702663eed1f": "#64368F"
+  }
 }

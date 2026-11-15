@@ -17,6 +17,8 @@
 | 歌曲 → 处理后数字组合 | 不重复维护 | songs[].combinations：value、count、color |
 | 歌曲 → 颜色配置 | song_labels.csv 的有序组合配置，颜色取组合／Other | songs[].backgroundCss、colors |
 | 站位选项 | 不重复维护，从实际录入内容生成 | combinationOptions：value、positions、songCount |
+| 特殊歌曲底色 | display.json 的 song_background_overrides（歌曲 ID → HEX） | 已合并到 songs[].backgroundCss、colors |
+| 次数图例 | frequency_colors.csv | frequencyColors：minCount、maxCount、color |
 
 ## 两种“站位”分开处理
 
@@ -27,7 +29,7 @@
 ## 页面如何读取
 
 1. 按 `groups` 数组逐行显示公司／Other 图标，沿 `unitIds` 显示右侧组合。COSMIC 直接显示六组，不多展开一层。
-2. 选组合后读取该组合的 `characterIds`，在 `characters` 中查简称与颜色。同一人物 ID 跨组合复用，已选人物按 ID 去重。
+2. 点击组合图标只展开成员，读取该组合的 `characterIds`，在 `characters` 中查简称与颜色；「＋」单独添加组合筛选。展开状态独立于筛选状态。同一人物 ID 跨组合复用，已选人物按 ID 去重。
 3. 筛选器 2 直接显示 `combinationOptions`。当前为 26 个已知选项，按涉及位置数量、数字值排序；新增原文后自动增加选项。`songCount` 是未施加其他条件时的命中歌曲数。
 4. 使用 `filterSongs(site.songs, selection)` 得到结果。组合、人物和数字组合多选全部采用 AND；人物和数字组合各自匹配整首歌曲，不要求选中的人物正好位于所选数字组合中。
 5. 初始化或 RESET 时执行 `selection = createFilterState()`。菜单是否展开等临时 UI 状态也在页面重置，不需要数据库表。
@@ -67,4 +69,4 @@ const results = filterSongs(site.songs, selection);
 
 保留九张维护 CSV；站位源只有 1,233 个已知位置，网页仍输出 3,330 格。生成的 CSV／dataset 与 Excel 是核对视图，不是额外维护源，也无需随网页一起下载。
 
-仍缺四家公司代表色；26 首歌的站位、237 首歌的数字组合原文正在录入。这些不阻止搭建页面。页面实现时还需加载字体，并用 CSS 做桌面／手机适配；响应式列数不属于业务数据，不再单独存一份布局表。
+仍缺四家公司代表色；26 首歌的站位、237 首歌的数字组合原文正在录入。页面已加载 Noto Sans JP 并适配桌面／手机，表格在窄屏横向滚动；未录入数据保留空缺提示。公司按钮采用中性背景，不推测公司代表色。

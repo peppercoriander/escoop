@@ -76,6 +76,9 @@ def build(source=SOURCE):
     units = index(tables['units'], 'unit_id')
     chars = index(tables['characters'], 'character_id')
     songs = index(tables['songs'], 'song_id')
+    overrides = display.get('song_background_overrides', {})
+    require(all(sid in songs and re.fullmatch(r'#[0-9A-F]{6}', color)
+                for sid, color in overrides.items()), 'Invalid song background override')
     labels = index(tables['labels'], 'label_id')
     combinations = {sid:dict(song_id=sid, raw_text=song.pop('combination_raw')) for sid,song in songs.items()}
     schemas['songs']['columns'].remove('combination_raw')
@@ -234,7 +237,7 @@ def build(source=SOURCE):
         for i, lid in enumerate(color_labels):
             label = labels[lid]
             uid = label['unit_id']
-            color = units[uid]['background_color'] if uid else groups[label['group_id']]['background_color']
+            color = overrides.get(sid) or (units[uid]['background_color'] if uid else groups[label['group_id']]['background_color'])
             require(bool(color), f'Missing song color: {song["title"]}')
             bands.append(dict(song_id=sid, band_order=i+1, unit_id=uid, label_id=lid, color=color,
                               start_percent=100*i/len(color_labels), end_percent=100*(i+1)/len(color_labels)))
@@ -270,6 +273,7 @@ def build(source=SOURCE):
         units=[dict(id=u['unit_id'], name=u['name'], color=u['background_color'], iconPath=u['icon_path'],
                     characterIds=[r['character_id'] for r in sorted(tables['character_units'], key=lambda r:r['sort_order']) if r['unit_id']==u['unit_id']]) for u in units.values()],
         characters=[dict(id=c['character_id'], name=c['display_name'], color=c['background_color']) for c in chars.values()],
+        frequencyColors=[dict(minCount=r['min_count'], maxCount=r['max_count'], color=r['font_color']) for r in rules],
         combinationOptions=[dict(value=r['value'], positions=json.loads(r['positions']), songCount=r['song_count']) for r in tables['combination_options']],
         songs=site_songs)
     inputs = [f'{k}.csv' for k in INPUTS] + ['display.json']

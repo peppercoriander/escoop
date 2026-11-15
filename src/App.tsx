@@ -1,0 +1,121 @@
+import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
+import { encodeAssetPath, characterCellStyle, songCellStyle } from './lib/song-data.mjs';
+import { createSelection, selectSongs, primarySection, visibleMembers } from './lib/catalog.mjs';
+import type { Group, Selection, SiteData, Unit } from './types';
+import styles from './App.module.css';
+
+const cn = (...names: string[]) => names.map(name => styles[name] || '').join(' ');
+const asset = (path: string) => `${import.meta.env.BASE_URL}${encodeAssetPath(path)}`;
+
+function Catalog({ site }: { site: SiteData }) {
+  const [selection, setSelection] = useState(createSelection);
+  const [expandedUnitIds, setExpandedUnitIds] = useState<string[]>([]);
+  const [collapsed, setCollapsed] = useState(false);
+  const tableContainer = useRef<HTMLDivElement>(null);
+  const characters = useMemo(() => new Map(site.characters.map(c => [c.id, c])), [site]);
+  const units = useMemo(() => new Map(site.units.map(u => [u.id, u])), [site]);
+  const songs = useMemo(() => selectSongs(site, selection), [site, selection]);
+  const members = visibleMembers(site, selection, expandedUnitIds);
+  const labels = [
+    ...site.groups.filter(g => selection.groupIds.includes(g.id)).map(g => g.name),
+    ...site.units.filter(u => selection.unitIds.includes(u.id)).map(u => u.name),
+    ...selection.characterIds.map(id => characters.get(id)!.name),
+    ...selection.combinations.map(value => `站位 ${value}`),
+  ];
+
+  function toggle(field: keyof Selection, value: string) {
+    setSelection(previous => ({ ...previous, [field]: previous[field].includes(value)
+      ? previous[field].filter(id => id !== value) : [...previous[field], value] }));
+  }
+  function reset() {
+    setSelection(createSelection());
+    setExpandedUnitIds([]);
+    setCollapsed(false);
+    tableContainer.current?.scrollTo({ top: 0, left: 0 });
+  }
+  function logo(item: Group | Unit) {
+    return <img src={asset(item.iconPath)} alt={item.name} />;
+  }
+
+  let previousSection = '';
+  return <>
+    <section className={cn('filters')} aria-label="歌曲筛选">
+      <div className={cn('mobile-filter-toggle')}><span>筛选条件</span><button type="button" aria-expanded={!collapsed} aria-controls="filter-controls" onClick={() => setCollapsed(!collapsed)}>{collapsed ? '展开筛选 ＋' : '收起筛选 −'}</button></div>
+      <div id="filter-controls" className={collapsed ? cn('collapsed-controls') : undefined}>
+        <section className={cn('filter-section')} aria-labelledby="filter-one-title">
+          <div className={cn('section-heading')}><h2 id="filter-one-title"><span className={cn('step')}>01</span> 公司 / 组合 / 成员</h2><span className={cn('section-note')}>点击组合图标展开成员 · ＋ 筛选组合</span></div>
+          <div className={cn('unit-menu')}>
+            {site.groups.map(group => <div className={cn('company-row')} key={group.id}>
+              <button type="button" className={cn('logo-button', 'company-button')} aria-label={group.name} aria-pressed={selection.groupIds.includes(group.id)} title={`筛选 ${group.name}`} onClick={() => toggle('groupIds', group.id)}>{logo(group)}</button>
+              <div className={cn('unit-list')} role="group" aria-label={`${group.name} 组合`}>
+                {group.unitIds.map(id => {
+                  const unit = units.get(id)!;
+                  const expanded = expandedUnitIds.includes(id), selected = selection.unitIds.includes(id);
+                  return <div className={cn('unit-item')} key={id}>
+                    <button type="button" className={cn('logo-button')} aria-label={unit.name} aria-expanded={expanded} aria-controls="member-menu" title={`展开 ${unit.name} 成员`} onClick={() => setExpandedUnitIds(previous => expanded ? previous.filter(value => value !== id) : [...previous, id])}>{logo(unit)}</button>
+                    <button type="button" className={cn('unit-filter')} aria-label={`筛选组合 ${unit.name}`} aria-pressed={selected} title={`${selected ? '取消' : '添加'} ${unit.name} 组合筛选`} onClick={() => toggle('unitIds', id)}>{selected ? '✓' : '＋'}</button>
+                  </div>;
+                })}
+              </div>
+            </div>)}
+          </div>
+          <div className={cn('members-area')}><div className={cn('member-label')}>组合成员 <span>{members.length ? `${members.length} 位成员 · 点击筛选` : '点击组合图标以展开'}</span></div>
+            <div id="member-menu" className={cn('member-menu')}>{members.map(character => <button type="button" key={character.id} className={cn('member-chip')} style={{ backgroundColor: character.color }} aria-label={`成员 ${character.name}`} aria-pressed={selection.characterIds.includes(character.id)} onClick={() => toggle('characterIds', character.id)}>{character.name}</button>)}</div>
+          </div>
+        </section>
+        <section className={cn('filter-section', 'positions-section')} aria-labelledby="filter-two-title">
+          <div className={cn('section-heading')}><h2 id="filter-two-title"><span className={cn('step')}>02</span> 站位</h2><span className={cn('section-note')}>可多选 · 完整匹配站位数字</span></div>
+          <div className={cn('position-menu')}>{site.combinationOptions.map(option => <button type="button" key={option.value} className={cn('position-button')} aria-label={`站位 ${option.value}`} aria-pressed={selection.combinations.includes(option.value)} title={`${option.value} · ${option.songCount} 首歌曲`} onClick={() => toggle('combinations', option.value)}>{option.value}</button>)}</div>
+        </section>
+      </div>
+      <div className={cn('filter-footer')}><div id="selection-summary" className={cn('selection-summary')}>{labels.length ? `已选：${labels.join(' / ')}` : '未设置筛选 · 显示全部歌曲'}</div><button id="reset" className={cn('reset')} type="button" onClick={reset}><span aria-hidden="true">↺</span> RESET</button></div>
+    </section>
+    <section className={cn('results')} aria-labelledby="results-title">
+      <div className={cn('results-toolbar')}><h2 id="results-title">歌曲一览 <span id="result-count" role="status" aria-live="polite">{songs.length} / {site.songs.length}</span></h2><div className={cn('legend')} aria-label="站位出现次数与文字颜色"><span>出现次数</span>{site.frequencyColors.map(rule => <span className={cn('legend-item')} style={{ color: rule.color }} key={rule.minCount}><i className={cn('legend-dot')} />{rule.minCount}{rule.maxCount === null ? '+' : ''} 次</span>)}</div></div>
+      <p className={cn('table-help')}>按公司、组合顺序排列 <span>·</span> 成员栏依次为 1–10 号位 <span>·</span> 横向滑动可查看完整表格</p>
+      <div ref={tableContainer} className={cn('table-scroll')} tabIndex={0} role="region" aria-label="歌曲站位结果表格，可横向滚动" hidden={!songs.length}>
+        <table><caption className={cn('sr-only')}>处理后的站位信息、歌曲名及按位置排列的成员信息</caption><colgroup><col className={cn('combination-column')} /><col className={cn('song-column')} /><col span={10} className={cn('member-column')} /></colgroup><thead><tr><th rowSpan={2} scope="col">站位信息</th><th className={cn('sticky-song-heading')} rowSpan={2} scope="col">歌曲名</th><th colSpan={10} scope="colgroup">成员信息</th></tr><tr>{Array.from({ length: 10 }, (_, i) => <th key={i} scope="col">{i + 1}</th>)}</tr></thead>
+          <tbody>{songs.map(song => {
+            const section = primarySection(song, site);
+            const sectionId = section.unit?.id ?? section.group.id;
+            const isNew = previousSection !== sectionId;
+            previousSection = sectionId;
+            return <Fragment key={song.id}>
+              {isNew && <tr className={cn('group-heading')}><th colSpan={12}>{section.group.name}{section.unit && ` / ${section.unit.name}`}</th></tr>}
+              <tr className={cn('song-row')} data-song-id={song.id}>
+                <td className={cn('combination-cell')}>{song.combinations.map(combo => <span key={combo.value} className={cn('combination', selection.combinations.includes(combo.value) ? 'is-match' : '')} style={{ color: combo.color }} title={`${combo.value} · 出现 ${combo.count} 次`} aria-label={`${combo.value} · 出现 ${combo.count} 次`}>{combo.value}</span>)}{(!song.combinations.length || song.combinationStatus === 'partial') && <span className={cn('pending')}>{song.combinationStatus === 'none' ? '无' : song.combinationStatus === 'partial' ? '部分待确认' : '待录入'}</span>}</td>
+                <td className={cn('song-cell')} style={songCellStyle(song)} title={`${song.title} · ${song.unitConfig}`}>{song.title}</td>
+                {song.positions.map(position => {
+                  const label = `${position.position} 号位 · ${position.kind === 'empty' ? '未录入' : position.kind === 'free' ? '自由站位' : position.label}`;
+                  return <td key={position.position} className={cn('character-cell', position.kind)} style={characterCellStyle(position, characters, site.display)} title={label} aria-label={label}>{position.kind === 'empty' ? '' : position.label}</td>;
+                })}
+              </tr>
+            </Fragment>;
+          })}</tbody>
+        </table>
+      </div>
+      {!songs.length && <div id="empty-state" className={cn('empty-state')}><span aria-hidden="true">∅</span><h3>没有符合条件的歌曲</h3><p>试着减少一个筛选条件，或重置后重新选择。</p><button id="empty-reset" className={cn('reset')} type="button" onClick={reset}>↺ RESET</button></div>}
+      <p className={cn('data-note')}>「待录入」表示站位组合尚未提供；「无」表示明确没有。成员格中的数字表示自由站位，空白表示未录入。</p>
+    </section>
+  </>;
+}
+
+export default function App() {
+  const [site, setSite] = useState<SiteData | null>(null);
+  const [error, setError] = useState(false);
+  useEffect(() => {
+    const controller = new AbortController();
+    fetch(`${import.meta.env.BASE_URL}data/normalized/site_data.json`, { signal: controller.signal })
+      .then(response => { if (!response.ok) throw new Error(`HTTP ${response.status}`); return response.json(); })
+      .then(setSite).catch(reason => { if (reason.name !== 'AbortError') setError(true); });
+    return () => controller.abort();
+  }, []);
+  return <>
+    <header className={cn('site-header')}><a className={cn('brand')} href="./" aria-label="ESCOOP 首页"><span className={cn('brand-mark')} aria-hidden="true">es.</span> ESCOOP</a><span className={cn('header-caption')}>ENSEMBLE STARS!! · SONG DATABASE</span></header>
+    <main>
+      <div className={cn('page-heading')}><div><p className={cn('eyebrow')}>SONG &amp; FORMATION</p><h1>歌曲站位检索<span className={cn('heading-dot')}>.</span></h1><p className={cn('intro')}>从组合到成员，找到你想要的舞台。</p></div><div className={cn('catalog-count')}><strong>{site?.songs.length ?? '—'}</strong><span>首歌曲收录</span></div></div>
+      {site ? <Catalog site={site} /> : <div id="loading" role="status">{error ? '资料加载失败，请刷新页面重试。' : '正在加载歌曲资料…'}</div>}
+    </main>
+    <footer className={cn('site-footer')}><span>ESCOOP</span><span>每一场舞台，都有迹可循。</span><a href="#">回到顶部 ↑</a></footer>
+  </>;
+}

@@ -13,7 +13,7 @@
 | song_labels.csv | 每首歌曲唯一的组合／分类配置及 `tag_order` 顺序 |
 | labels.csv | 分类 ID 与组合的映射，以及 Other 标签的名称 |
 | frequency_colors.csv | 数字组合出现次数对应的文字色 |
-| display.json | 人物统一字体和文字色；当前 Noto Sans JP、白色 |
+| display.json | 人物统一字体和文字色；`song_background_overrides` 按歌曲 ID 配置特殊歌曲底色 |
 
 ## 补录方法
 

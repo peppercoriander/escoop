@@ -608,6 +608,28 @@
       "color": "#004D99"
     }
   ],
+  "frequencyColors": [
+    {
+      "minCount": 1,
+      "maxCount": 1,
+      "color": "#0068B7"
+    },
+    {
+      "minCount": 2,
+      "maxCount": 2,
+      "color": "#65AB31"
+    },
+    {
+      "minCount": 3,
+      "maxCount": 3,
+      "color": "#F3981D"
+    },
+    {
+      "minCount": 4,
+      "maxCount": null,
+      "color": "#E70032"
+    }
+  ],
   "combinationOptions": [
     {
       "value": "12",
@@ -31701,9 +31723,9 @@
         }
       ],
       "combinations": [],
-      "backgroundCss": "#004D99",
+      "backgroundCss": "#FFD7A0",
       "colors": [
-        "#004D99"
+        "#FFD7A0"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
@@ -31791,9 +31813,9 @@
         }
       ],
       "combinations": [],
-      "backgroundCss": "#004D99",
+      "backgroundCss": "#FFD7A0",
       "colors": [
-        "#004D99"
+        "#FFD7A0"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
@@ -31881,9 +31903,9 @@
         }
       ],
       "combinations": [],
-      "backgroundCss": "#004D99",
+      "backgroundCss": "#8C2346",
       "colors": [
-        "#004D99"
+        "#8C2346"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
@@ -31971,9 +31993,9 @@
         }
       ],
       "combinations": [],
-      "backgroundCss": "#004D99",
+      "backgroundCss": "#305DAA",
       "colors": [
-        "#004D99"
+        "#305DAA"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
@@ -32061,9 +32083,9 @@
         }
       ],
       "combinations": [],
-      "backgroundCss": "#004D99",
+      "backgroundCss": "#305DAA",
       "colors": [
-        "#004D99"
+        "#305DAA"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
@@ -32151,9 +32173,9 @@
         }
       ],
       "combinations": [],
-      "backgroundCss": "#004D99",
+      "backgroundCss": "#64368F",
       "colors": [
-        "#004D99"
+        "#64368F"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
@@ -32252,9 +32274,9 @@
           "color": "#0068B7"
         }
       ],
-      "backgroundCss": "#004D99",
+      "backgroundCss": "#64368F",
       "colors": [
-        "#004D99"
+        "#64368F"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
