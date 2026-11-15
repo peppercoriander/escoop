@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { createSelection, selectSongs, visibleMembers } from '../src/lib/catalog.mjs';
+import { createSelection, selectSongs, visibleMembers, toggleSelection } from '../src/lib/catalog.mjs';
 import { matchesSong, encodeAssetPath } from '../src/lib/song-data.mjs';
 
 const site = JSON.parse(readFileSync(new URL('../data/normalized/site_data.json', import.meta.url)));
@@ -34,11 +34,27 @@ test('members deduplicate across units and stay removable after unit deselection
   state.unitIds = [];
   assert.equal(visibleMembers(site, state)[0].id, state.characterIds[0]);
 });
-test('expanding a unit reveals members without adding a song filter', () => {
-  const state = createSelection();
+test('selecting a unit icon immediately shows its playlist and members', () => {
+  const state = toggleSelection(createSelection(), 'unitIds', unit('fine').id);
   assert.equal(visibleMembers(site, state, [unit('fine').id]).length, 4);
-  assert.equal(selectSongs(site, state).length, 333);
-  assert.deepEqual(state.unitIds, []);
+  assert.equal(selectSongs(site, state).length, 21);
+  assert.ok(selectSongs(site, state).every(song => song.unitIds.includes(unit('fine').id)));
+});
+test('selecting a member clears company and unit constraints but preserves station choices', () => {
+  const before = { ...createSelection(), groupIds: [site.groups[0].id], unitIds: [unit('fine').id], combinations: ['12'] };
+  const member = unit('fine').characterIds[0];
+  const state = toggleSelection(before, 'characterIds', member);
+  assert.deepEqual(state, { groupIds: [], unitIds: [], characterIds: [member], combinations: ['12'] });
+  const expectedIds = site.songs.filter(song => matchesSong(song, { characterIds: [member], combinations: ['12'] })).map(song => song.id).sort();
+  assert.deepEqual(selectSongs(site, state).map(song => song.id).sort(), expectedIds);
+  assert.deepEqual(before.unitIds, [unit('fine').id]);
+});
+test('switching back to a unit removes member filters, and clicking again deselects it', () => {
+  const memberState = { ...createSelection(), characterIds: [unit('Knights').characterIds[0]] };
+  const state = toggleSelection(memberState, 'unitIds', unit('fine').id);
+  assert.deepEqual(state.characterIds, []);
+  assert.equal(selectSongs(site, state).length, 21);
+  assert.equal(selectSongs(site, toggleSelection(state, 'unitIds', unit('fine').id)).length, 333);
 });
 test('combination filters match exact tokens and all requested values', () => {
   const song = { unitIds: [], positions: [], combinations: [{ value: '123' }] };

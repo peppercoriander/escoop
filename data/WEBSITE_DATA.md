@@ -29,10 +29,10 @@
 ## 页面如何读取
 
 1. 按 `groups` 数组逐行显示公司／Other 图标，沿 `unitIds` 显示右侧组合。COSMIC 直接显示六组，不多展开一层。
-2. 点击组合图标只展开成员，读取该组合的 `characterIds`，在 `characters` 中查简称与颜色；「＋」单独添加组合筛选。展开状态独立于筛选状态。同一人物 ID 跨组合复用，已选人物按 ID 去重。
+2. 点击组合图标直接筛选组合歌单并显示成员，读取该组合的 `characterIds`，在 `characters` 中查简称与颜色。选择成员时清空 `groupIds` 与 `unitIds`；切回公司或组合时清空成员条件。站位条件独立保留。同一人物 ID 跨组合复用，已选人物按 ID 去重。
 3. 筛选器 2 直接显示 `combinationOptions`。当前为 26 个已知选项，按涉及位置数量、数字值排序；新增原文后自动增加选项。`songCount` 是未施加其他条件时的命中歌曲数。
 4. 使用 `filterSongs(site.songs, selection)` 得到结果。组合、人物和数字组合多选全部采用 AND；人物和数字组合各自匹配整首歌曲，不要求选中的人物正好位于所选数字组合中。
-5. 初始化或 RESET 时执行 `selection = createFilterState()`。菜单是否展开等临时 UI 状态也在页面重置，不需要数据库表。
+5. 初始化或 RESET 时执行 `selection = createFilterState()`。菜单等临时 UI 状态也重置，页面回到左上角。RESET 为可拖拽悬浮按钮，刷新后恢复右下角初始位置，不需要数据库表。
 
 ```javascript
 import {

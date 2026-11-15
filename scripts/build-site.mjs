@@ -11,7 +11,7 @@ await rm(target, { recursive: true, force: true });
 await mkdir(target, { recursive: true });
 await cp(path.join(root, 'dist'), target, { recursive: true });
 const checkout = path.dirname(target);
-for (const directory of ['src', 'data', 'images', 'scripts']) {
+for (const directory of ['src', 'data', 'images', 'scripts', 'tests']) {
   await cp(path.join(root, directory), path.join(checkout, directory), { recursive: true, filter: source => !source.includes('__pycache__') });
 }
 for (const file of ['index.html', 'package.json', 'package-lock.json', 'tsconfig.json', 'vite.config.ts', 'README.md']) {

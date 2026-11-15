@@ -2,6 +2,17 @@ import { matchesSong, createFilterState } from './song-data.mjs';
 
 export const createSelection = () => ({ ...createFilterState(), groupIds: [] });
 
+/** Company, unit and member selections are alternative ways to choose performers. */
+export function toggleSelection(previous, field, value) {
+  const values = previous[field].includes(value)
+    ? previous[field].filter(id => id !== value) : [...previous[field], value];
+  const next = { ...previous, [field]: values };
+  if (field === 'characterIds') { next.groupIds = []; next.unitIds = []; }
+  if (field === 'unitIds') { next.groupIds = []; next.characterIds = []; }
+  if (field === 'groupIds') { next.unitIds = []; next.characterIds = []; }
+  return next;
+}
+
 export function primarySection(song, site) {
   for (const group of site.groups) {
     const unitId = group.unitIds.find(id => song.unitIds.includes(id));
