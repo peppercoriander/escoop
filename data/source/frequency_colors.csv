@@ -1,0 +1,5 @@
+﻿min_count,max_count,font_color,name
+1,1,#0068B7,蓝色
+2,2,#65AB31,绿色
+3,3,#F3981D,橙色
+4,,#E70032,红色（4次及以上）

@@ -1,0 +1,42 @@
+{
+  "table_counts": {
+    "groups": 5,
+    "units": 21,
+    "characters": 60,
+    "character_units": 69,
+    "songs": 333,
+    "labels": 36,
+    "song_labels": 415,
+    "positions": 3330,
+    "frequency_colors": 4,
+    "song_combination_sources": 333,
+    "song_units": 301,
+    "combination_counts": 278,
+    "song_color_bands": 357,
+    "combination_options": 26,
+    "issues": 267
+  },
+  "combination_status": {
+    "none": 11,
+    "recorded": 85,
+    "missing": 237
+  },
+  "issue_counts": {
+    "missing_group_color": 4,
+    "missing_combinations": 237,
+    "missing_positions": 26
+  },
+  "free_position_cells": 48,
+  "formation_kinds": {
+    "fixed": 297,
+    "unknown": 26,
+    "mixed": 1,
+    "free": 9
+  },
+  "split_color_songs": 24,
+  "distinct_combinations": 26,
+  "characters_with_color_and_unit": 60,
+  "multi_unit_characters": 9,
+  "verified_logo_files": 26,
+  "validation": "Canonical source keys, relationships, ordered positions, combination counts and logos verified."
+}

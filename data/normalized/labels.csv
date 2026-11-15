@@ -1,0 +1,37 @@
+﻿label_id,unit_id,name,kind,group_id
+label_48bf1806f959,unit_48bf1806f959,fine,unit,group_starpro
+label_470609b26a1d,unit_470609b26a1d,Trickstar,unit,group_starpro
+label_64d6a7f5a1e2,unit_64d6a7f5a1e2,MaM,unit,group_newdi
+label_f57620665756,unit_f57620665756,Knights,unit,group_newdi
+label_416c371272da,unit_416c371272da,Eden,unit,group_cospro
+label_5c279200ab8e,unit_5c279200ab8e,RYUSEITAI,unit,group_starpro
+label_40406eac6796,unit_40406eac6796,2wink,unit,group_cospro
+label_bea4a935a32a,unit_bea4a935a32a,Ra*bits,unit,group_rhythmlink
+label_93d309044f67,unit_93d309044f67,ALKALOID,unit,group_starpro
+label_e57b1ede4a78,unit_e57b1ede4a78,Valkyrie,unit,group_cospro
+label_913751fd3f85,unit_913751fd3f85,Crazy:B,unit,group_cospro
+label_92301942e6fe,unit_92301942e6fe,Switch,unit,group_newdi
+label_ce9c08a711d5,,Other,category,group_other
+label_6878d8629930,unit_6878d8629930,DoubleFace,unit,group_other
+label_f90d07ead983,unit_f90d07ead983,Adam,subunit,group_cospro
+label_39ab94afb7ce,unit_39ab94afb7ce,Eve,subunit,group_cospro
+label_c4d6d1a93e7b,unit_c4d6d1a93e7b,MELLOW DEAR US,unit,group_rhythmlink
+label_47bf340cb8a7,unit_47bf340cb8a7,AKATSUKI,unit,group_rhythmlink
+label_9f0fad45692b,unit_9f0fad45692b,四人月,subunit,group_rhythmlink
+label_7e3bd6882771,unit_7e3bd6882771,UNDEAD,unit,group_rhythmlink
+label_0ca970044e13,unit_0ca970044e13,Special for Princess!,unit,group_newdi
+label_bfe01fae108f,,周年曲,other_tag,group_other
+label_4f0f85ab2a17,unit_4f0f85ab2a17,J&A,unit,group_other
+label_5a82a360fe47,,愚人节,other_tag,group_other
+label_43443aaaef33,,一轮洗牌,other_tag,group_other
+label_65fabbf6a894,,二轮洗牌,other_tag,group_other
+label_0d3bea286a13,,投票洗牌,other_tag,group_other
+label_d518471c70de,,solo串烧,other_tag,group_other
+label_93d4bf7c1d9b,,NICE.DREAM.UNIT,other_tag,group_other
+label_340ea4640458,,PJSK,other_tag,group_other
+label_4d7a4da546df,,五奇人,other_tag,group_other
+label_4448ee2b86c0,,旧fine,other_tag,group_other
+label_256385bfd33f,,旧Valkyrie,other_tag,group_other
+label_a2fd5303e6c8,,Knights with 凛月・岚,other_tag,group_other
+label_e972cda85127,,Knight Killers,other_tag,group_other
+label_f559d7ed1a0a,,DEADMANS,other_tag,group_other

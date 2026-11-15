@@ -1,0 +1,6 @@
+﻿group_id,name,kind,icon_path,sort_order,background_color
+group_starpro,STARMAKER PRODUCTION,company,images/starpro/STARMAKER_PRODUCTION_Logo.webp,1,
+group_cospro,COSMIC PRODUCTION,company,images/cospro/COSMIC_PRODUCTION_Logo.webp,2,
+group_rhythmlink,Rhythm Link,company,images/rhythmlink/Rhythm_Link_Logo.webp,3,
+group_newdi,NEW DIMENSION,company,images/newdi/NEW_DIMENSION_Logo.webp,4,
+group_other,Other,category,images/other/OTHER_Logo.webp,5,#004D99

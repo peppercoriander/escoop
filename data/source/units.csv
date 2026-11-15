@@ -1,0 +1,22 @@
+﻿unit_id,name,background_color,icon_path,group_id,parent_unit_id,kind,sort_order
+unit_48bf1806f959,fine,#FFD7A0,images/starpro/Fine_ES_Logo.webp,group_starpro,,unit,1
+unit_470609b26a1d,Trickstar,#FF8B0B,images/starpro/Trickstar_ES_Logo.webp,group_starpro,,unit,2
+unit_5c279200ab8e,RYUSEITAI,#24004D,images/starpro/RYUSEITAI_ES_Logo.webp,group_starpro,,unit,3
+unit_93d309044f67,ALKALOID,#2AB7CA,images/starpro/ALKALOID_ES_Logo.webp,group_starpro,,unit,4
+unit_416c371272da,Eden,#5F5B5D,images/cospro/Eden_ES_Logo.webp,group_cospro,,unit,1
+unit_f90d07ead983,Adam,#5CAA7F,images/cospro/Adam_logo_cropped.webp,group_cospro,unit_416c371272da,subunit,2
+unit_39ab94afb7ce,Eve,#081F2C,images/cospro/Eve_logo_cropped.webp,group_cospro,unit_416c371272da,subunit,3
+unit_e57b1ede4a78,Valkyrie,#8C2346,images/cospro/Valkyrie_ES_Logo.webp,group_cospro,,unit,4
+unit_40406eac6796,2wink,#FF3B9A,images/cospro/2wink_ES_Logo.webp,group_cospro,,unit,5
+unit_913751fd3f85,Crazy:B,#FFD700,images/cospro/CrazyB_ES_Logo.webp,group_cospro,,unit,6
+unit_7e3bd6882771,UNDEAD,#64368F,images/rhythmlink/UNDEAD_ES_Logo.webp,group_rhythmlink,,unit,1
+unit_bea4a935a32a,Ra*bits,#68C0F4,images/rhythmlink/Ra_bits_ES_Logo.webp,group_rhythmlink,,unit,2
+unit_47bf340cb8a7,AKATSUKI,#962828,images/rhythmlink/AKATSUKI_ES_Logo.webp,group_rhythmlink,,unit,3
+unit_9f0fad45692b,四人月,#962828,images/rhythmlink/New_AKATSUKI_ES_Logo.webp,group_rhythmlink,unit_47bf340cb8a7,subunit,4
+unit_c4d6d1a93e7b,MELLOW DEAR US,#4D2118,images/rhythmlink/MELLOW_DEAR_US_ES_Logo.webp,group_rhythmlink,,unit,5
+unit_f57620665756,Knights,#305DAA,images/newdi/Knights_ES_Logo.webp,group_newdi,,unit,1
+unit_92301942e6fe,Switch,#A3EA34,images/newdi/Switch_ES_Logo.webp,group_newdi,,unit,2
+unit_64d6a7f5a1e2,MaM,#5A6964,images/newdi/MaM_ES_Logo.webp,group_newdi,,unit,3
+unit_0ca970044e13,Special for Princess!,#EFB6D3,images/newdi/Special_for_Princess%21_ES_Logo.webp,group_newdi,,unit,4
+unit_4f0f85ab2a17,J&A,#004D99,images/other/Jin_%26_Akiomi_logo_cropped.webp,group_other,,unit,1
+unit_6878d8629930,DoubleFace,#2B4F54,images/other/Double_Face_ES_Logo.webp,group_other,,unit,2
