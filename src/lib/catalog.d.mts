@@ -1,5 +1,9 @@
 import type { Song, SiteData, Selection, Character, Group, Unit } from '../types';
 export function createSelection(): Selection;
+export function positionOptions(site: SiteData): SiteData['combinationOptions'];
+export interface CatalogState { selection: Selection; expandedUnitIds: string[] }
+export function createCatalogState(): CatalogState;
+export function toggleCatalogState(site: SiteData, previous: CatalogState, field: keyof Selection, value: string): CatalogState;
 export function toggleSelection(previous: Selection, field: keyof Selection, value: string): Selection;
 export function primarySection(song: Song, site: SiteData): { group: Group; unit: Unit | null };
 export function selectSongs(site: SiteData, selection: Selection): Song[];

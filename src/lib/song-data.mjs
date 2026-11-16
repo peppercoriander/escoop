@@ -3,9 +3,9 @@ export function matchesSong(song, {unitIds = [], characterIds = [], combinations
   const units = new Set(song.unitIds);
   if (![...new Set(unitIds)].every(id => units.has(id))) return false;
   const fixed = new Set(song.positions.filter(p => p.kind === 'fixed').map(p => p.characterId));
-  const freeCapacity = song.positions.filter(p => p.kind === 'free').length;
-  const unassigned = [...new Set(characterIds)].filter(id => !fixed.has(id));
-  if (unassigned.length > freeCapacity) return false;
+  // Generic numbered formations are excluded only when filtering specific members.
+  if (characterIds.length && song.positions.some(p => p.kind === 'free')) return false;
+  if (![...new Set(characterIds)].every(id => fixed.has(id))) return false;
   const present = new Set(song.combinations.map(item => item.value));
   return [...new Set(combinations)].every(value => present.has(value));
 }
@@ -16,7 +16,7 @@ export function filterSongs(songs, filters = {}) {
 }
 
 export function songCellStyle(song) {
-  // Hard color stops give exact equal-width panels, not a blended gradient.
+  // Hard color stops retain ordered bands with 45-degree slash boundaries.
   return {background: song.backgroundCss};
 }
 

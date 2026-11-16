@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useMemo, useState } from 'react';
 import { encodeAssetPath, characterCellStyle, songCellStyle } from './lib/song-data.mjs';
-import { createSelection, selectSongs, primarySection, visibleMembers, toggleSelection } from './lib/catalog.mjs';
+import { createCatalogState, toggleCatalogState, selectSongs, primarySection, visibleMembers, positionOptions } from './lib/catalog.mjs';
 import FloatingReset from './FloatingReset';
 import type { Group, Selection, SiteData, Unit } from './types';
 import styles from './App.module.css';
@@ -9,8 +9,8 @@ const cn = (...names: string[]) => names.map(name => styles[name] || '').join(' 
 const asset = (path: string) => `${import.meta.env.BASE_URL}${encodeAssetPath(path)}`;
 
 function Catalog({ site }: { site: SiteData }) {
-  const [selection, setSelection] = useState(createSelection);
-  const [expandedUnitIds, setExpandedUnitIds] = useState<string[]>([]);
+  const [catalogState, setCatalogState] = useState(createCatalogState);
+  const { selection, expandedUnitIds } = catalogState;
   const [collapsed, setCollapsed] = useState(false);
   const characters = useMemo(() => new Map(site.characters.map(c => [c.id, c])), [site]);
   const units = useMemo(() => new Map(site.units.map(u => [u.id, u])), [site]);
@@ -24,15 +24,13 @@ function Catalog({ site }: { site: SiteData }) {
   ];
 
   function toggle(field: keyof Selection, value: string) {
-    setSelection(previous => toggleSelection(previous, field, value));
+    setCatalogState(previous => toggleCatalogState(site, previous, field, value));
   }
   function selectUnit(id: string) {
     toggle('unitIds', id);
-    setExpandedUnitIds(previous => previous.includes(id) ? previous : [...previous, id]);
   }
   function reset() {
-    setSelection(createSelection());
-    setExpandedUnitIds([]);
+    setCatalogState(createCatalogState());
     setCollapsed(false);
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   }
@@ -46,7 +44,7 @@ function Catalog({ site }: { site: SiteData }) {
       <div className={cn('mobile-filter-toggle')}><span>筛选条件</span><button type="button" aria-expanded={!collapsed} aria-controls="filter-controls" onClick={() => setCollapsed(!collapsed)}>{collapsed ? '展开筛选 ＋' : '收起筛选 −'}</button></div>
       <div id="filter-controls" className={collapsed ? cn('collapsed-controls') : undefined}>
         <section className={cn('filter-section')} aria-labelledby="filter-one-title">
-          <div className={cn('section-heading')}><h2 id="filter-one-title"><span className={cn('step')}>01</span> 公司 / 组合 / 成员</h2><span className={cn('section-note')}>点击组合查看歌单 · 选择成员后按成员筛选</span></div>
+          <div className={cn('section-heading')}><h2 id="filter-one-title"><span className={cn('step')}>01</span> 公司 / 组合 / 成员</h2></div>
           <div className={cn('unit-menu')}>
             {site.groups.map(group => <div className={cn('company-row')} key={group.id}>
               <button type="button" className={cn('logo-button', 'company-button')} aria-label={group.name} aria-pressed={selection.groupIds.includes(group.id)} title={`筛选 ${group.name}`} onClick={() => toggle('groupIds', group.id)}>{logo(group)}</button>
@@ -61,20 +59,19 @@ function Catalog({ site }: { site: SiteData }) {
               </div>
             </div>)}
           </div>
-          <div className={cn('members-area')}><div className={cn('member-label')}>组合成员 <span>{members.length ? `${members.length} 位成员 · 点击筛选` : '点击组合图标以展开'}</span></div>
+          <div className={cn('members-area')}><div className={cn('member-label')}>组合成员 {members.length > 0 && <span>{members.length} 位成员 · 点击筛选</span>}</div>
             <div id="member-menu" className={cn('member-menu')}>{members.map(character => <button type="button" key={character.id} className={cn('member-chip')} style={{ backgroundColor: character.color }} aria-label={`成员 ${character.name}`} aria-pressed={selection.characterIds.includes(character.id)} onClick={() => toggle('characterIds', character.id)}>{character.name}</button>)}</div>
           </div>
         </section>
         <section className={cn('filter-section', 'positions-section')} aria-labelledby="filter-two-title">
-          <div className={cn('section-heading')}><h2 id="filter-two-title"><span className={cn('step')}>02</span> 站位</h2><span className={cn('section-note')}>可多选 · 完整匹配站位数字</span></div>
-          <div className={cn('position-menu')}>{site.combinationOptions.map(option => <button type="button" key={option.value} className={cn('position-button')} aria-label={`站位 ${option.value}`} aria-pressed={selection.combinations.includes(option.value)} title={`${option.value} · ${option.songCount} 首歌曲`} onClick={() => toggle('combinations', option.value)}>{option.value}</button>)}</div>
+          <div className={cn('section-heading')}><h2 id="filter-two-title"><span className={cn('step')}>02</span> 站位</h2></div>
+          <div className={cn('position-menu')}>{positionOptions(site).map(option => <button type="button" key={option.value} className={cn('position-button')} aria-label={`站位 ${option.value}`} aria-pressed={selection.combinations.includes(option.value)} title={`${option.value} · ${option.songCount} 首歌曲`} onClick={() => toggle('combinations', option.value)}>{option.value}</button>)}</div>
         </section>
       </div>
       <div className={cn('filter-footer')}><div id="selection-summary" className={cn('selection-summary')}>{labels.length ? `已选：${labels.join(' / ')}` : '未设置筛选 · 显示全部歌曲'}</div></div>
     </section>
     <section className={cn('results')} aria-labelledby="results-title">
-      <div className={cn('results-toolbar')}><h2 id="results-title">歌曲一览 <span id="result-count" role="status" aria-live="polite">{songs.length} / {site.songs.length}</span></h2><div className={cn('legend')} aria-label="站位出现次数与文字颜色"><span>出现次数</span>{site.frequencyColors.map(rule => <span className={cn('legend-item')} style={{ color: rule.color }} key={rule.minCount}><i className={cn('legend-dot')} />{rule.minCount}{rule.maxCount === null ? '+' : ''} 次</span>)}</div></div>
-      <p className={cn('table-help')}>按公司、组合顺序排列 <span>·</span> 成员栏依次为 1–10 号位</p>
+      <div className={cn('results-toolbar')}><h2 id="results-title">歌曲一览 <span id="result-count" role="status" aria-live="polite">{songs.length} / {site.songs.length}</span></h2></div>
       <div className={cn('table-container')} role="region" aria-label="歌曲站位结果表格" hidden={!songs.length}>
         <table><caption className={cn('sr-only')}>处理后的站位信息、歌曲名及按位置排列的成员信息</caption><colgroup><col className={cn('combination-column')} /><col className={cn('song-column')} /><col span={10} className={cn('member-column')} /></colgroup><thead><tr><th rowSpan={2} scope="col">站位信息</th><th className={cn('sticky-song-heading')} rowSpan={2} scope="col">歌曲名</th><th colSpan={10} scope="colgroup">成员信息</th></tr><tr>{Array.from({ length: 10 }, (_, i) => <th key={i} scope="col">{i + 1}</th>)}</tr></thead>
           <tbody>{songs.map(song => {
@@ -97,7 +94,6 @@ function Catalog({ site }: { site: SiteData }) {
         </table>
       </div>
       {!songs.length && <div id="empty-state" className={cn('empty-state')}><span aria-hidden="true">∅</span><h3>没有符合条件的歌曲</h3><p>试着减少一个筛选条件，或重置后重新选择。</p><button id="empty-reset" className={cn('reset')} type="button" onClick={reset}>↺ RESET</button></div>}
-      <p className={cn('data-note')}>「待录入」表示站位组合尚未提供；「无」表示明确没有。成员格中的数字表示自由站位，空白表示未录入。</p>
     </section>
     <FloatingReset onReset={reset} />
   </>;
@@ -114,11 +110,9 @@ export default function App() {
     return () => controller.abort();
   }, []);
   return <>
-    <header className={cn('site-header')}><a className={cn('brand')} href="./" aria-label="ESCOOP 首页"><span className={cn('brand-mark')} aria-hidden="true">es.</span> ESCOOP</a><span className={cn('header-caption')}>ENSEMBLE STARS!! · SONG DATABASE</span></header>
     <main>
-      <div className={cn('page-heading')}><div><p className={cn('eyebrow')}>SONG &amp; FORMATION</p><h1>歌曲站位检索<span className={cn('heading-dot')}>.</span></h1><p className={cn('intro')}>从组合到成员，找到你想要的舞台。</p></div><div className={cn('catalog-count')}><strong>{site?.songs.length ?? '—'}</strong><span>首歌曲收录</span></div></div>
+      <div className={cn('page-heading')}><div><h1>歌曲站位检索<span className={cn('heading-dot')}>.</span></h1></div></div>
       {site ? <Catalog site={site} /> : <div id="loading" role="status">{error ? '资料加载失败，请刷新页面重试。' : '正在加载歌曲资料…'}</div>}
     </main>
-    <footer className={cn('site-footer')}><span>ESCOOP</span><span>每一场舞台，都有迹可循。</span><a href="#">回到顶部 ↑</a></footer>
   </>;
 }

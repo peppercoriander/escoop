@@ -1334,7 +1334,7 @@
         "position_count": 8,
         "layout_status": "complete",
         "combination_status": "recorded",
-        "background_css": "linear-gradient(90deg, #FF8B0B 0%, #FF8B0B 50%, #FFD7A0 50%, #FFD7A0 100%)"
+        "background_css": "linear-gradient(135deg, #FF8B0B 0%, #FF8B0B 50%, #FFD7A0 50%, #FFD7A0 100%)"
       },
       {
         "song_id": "song_6f9e52b60ba7",
@@ -1434,7 +1434,7 @@
         "position_count": 5,
         "layout_status": "complete",
         "combination_status": "missing",
-        "background_css": "linear-gradient(90deg, #5A6964 0%, #5A6964 50%, #FFD7A0 50%, #FFD7A0 100%)"
+        "background_css": "linear-gradient(135deg, #5A6964 0%, #5A6964 50%, #FFD7A0 50%, #FFD7A0 100%)"
       },
       {
         "song_id": "song_a53841e5d3c8",
@@ -1454,7 +1454,7 @@
         "position_count": 9,
         "layout_status": "complete",
         "combination_status": "missing",
-        "background_css": "linear-gradient(90deg, #FFD7A0 0%, #FFD7A0 50%, #305DAA 50%, #305DAA 100%)"
+        "background_css": "linear-gradient(135deg, #FFD7A0 0%, #FFD7A0 50%, #305DAA 50%, #305DAA 100%)"
       },
       {
         "song_id": "song_6de4a0a8ff5a",
@@ -1594,7 +1594,7 @@
         "position_count": 8,
         "layout_status": "complete",
         "combination_status": "missing",
-        "background_css": "linear-gradient(90deg, #FF8B0B 0%, #FF8B0B 50%, #5F5B5D 50%, #5F5B5D 100%)"
+        "background_css": "linear-gradient(135deg, #FF8B0B 0%, #FF8B0B 50%, #5F5B5D 50%, #5F5B5D 100%)"
       },
       {
         "song_id": "song_cbbcf5f47999",
@@ -1634,7 +1634,7 @@
         "position_count": 9,
         "layout_status": "complete",
         "combination_status": "missing",
-        "background_css": "linear-gradient(90deg, #305DAA 0%, #305DAA 50%, #FF8B0B 50%, #FF8B0B 100%)"
+        "background_css": "linear-gradient(135deg, #305DAA 0%, #305DAA 50%, #FF8B0B 50%, #FF8B0B 100%)"
       },
       {
         "song_id": "song_259edd7b0ba8",
@@ -1664,7 +1664,7 @@
         "position_count": 8,
         "layout_status": "complete",
         "combination_status": "missing",
-        "background_css": "linear-gradient(90deg, #5F5B5D 0%, #5F5B5D 50%, #FF8B0B 50%, #FF8B0B 100%)"
+        "background_css": "linear-gradient(135deg, #5F5B5D 0%, #5F5B5D 50%, #FF8B0B 50%, #FF8B0B 100%)"
       },
       {
         "song_id": "song_19b2d683e2e0",
@@ -1754,7 +1754,7 @@
         "position_count": 10,
         "layout_status": "complete",
         "combination_status": "missing",
-        "background_css": "linear-gradient(90deg, #24004D 0%, #24004D 50%, #305DAA 50%, #305DAA 100%)"
+        "background_css": "linear-gradient(135deg, #24004D 0%, #24004D 50%, #305DAA 50%, #305DAA 100%)"
       },
       {
         "song_id": "song_d8a01455ffbe",
@@ -1854,7 +1854,7 @@
         "position_count": 7,
         "layout_status": "complete",
         "combination_status": "missing",
-        "background_css": "linear-gradient(90deg, #FF3B9A 0%, #FF3B9A 50%, #24004D 50%, #24004D 100%)"
+        "background_css": "linear-gradient(135deg, #FF3B9A 0%, #FF3B9A 50%, #24004D 50%, #24004D 100%)"
       },
       {
         "song_id": "song_03b2065d864e",
@@ -1874,7 +1874,7 @@
         "position_count": 9,
         "layout_status": "complete",
         "combination_status": "missing",
-        "background_css": "linear-gradient(90deg, #68C0F4 0%, #68C0F4 50%, #24004D 50%, #24004D 100%)"
+        "background_css": "linear-gradient(135deg, #68C0F4 0%, #68C0F4 50%, #24004D 50%, #24004D 100%)"
       },
       {
         "song_id": "song_d4721d279d3c",
@@ -1934,7 +1934,7 @@
         "position_count": 6,
         "layout_status": "complete",
         "combination_status": "recorded",
-        "background_css": "linear-gradient(90deg, #2AB7CA 0%, #2AB7CA 50%, #8C2346 50%, #8C2346 100%)"
+        "background_css": "linear-gradient(135deg, #2AB7CA 0%, #2AB7CA 50%, #8C2346 50%, #8C2346 100%)"
       },
       {
         "song_id": "song_13139942a6c4",
@@ -1944,7 +1944,7 @@
         "position_count": 8,
         "layout_status": "complete",
         "combination_status": "missing",
-        "background_css": "linear-gradient(90deg, #2AB7CA 0%, #2AB7CA 50%, #FFD700 50%, #FFD700 100%)"
+        "background_css": "linear-gradient(135deg, #2AB7CA 0%, #2AB7CA 50%, #FFD700 50%, #FFD700 100%)"
       },
       {
         "song_id": "song_3ee863c4fc4d",
@@ -2034,7 +2034,7 @@
         "position_count": 7,
         "layout_status": "complete",
         "combination_status": "missing",
-        "background_css": "linear-gradient(90deg, #2AB7CA 0%, #2AB7CA 50%, #A3EA34 50%, #A3EA34 100%)"
+        "background_css": "linear-gradient(135deg, #2AB7CA 0%, #2AB7CA 50%, #A3EA34 50%, #A3EA34 100%)"
       },
       {
         "song_id": "song_e459bca503e4",
@@ -2054,7 +2054,7 @@
         "position_count": 6,
         "layout_status": "complete",
         "combination_status": "missing",
-        "background_css": "linear-gradient(90deg, #2AB7CA 0%, #2AB7CA 50%, #2B4F54 50%, #2B4F54 100%)"
+        "background_css": "linear-gradient(135deg, #2AB7CA 0%, #2AB7CA 50%, #2B4F54 50%, #2B4F54 100%)"
       },
       {
         "song_id": "song_7ca647631ee1",
@@ -2124,7 +2124,7 @@
         "position_count": 7,
         "layout_status": "complete",
         "combination_status": "recorded",
-        "background_css": "linear-gradient(90deg, #A3EA34 0%, #A3EA34 50%, #5F5B5D 50%, #5F5B5D 100%)"
+        "background_css": "linear-gradient(135deg, #A3EA34 0%, #A3EA34 50%, #5F5B5D 50%, #5F5B5D 100%)"
       },
       {
         "song_id": "song_abefd121ea42",
@@ -2404,7 +2404,7 @@
         "position_count": 6,
         "layout_status": "complete",
         "combination_status": "missing",
-        "background_css": "linear-gradient(90deg, #4D2118 0%, #4D2118 50%, #8C2346 50%, #8C2346 100%)"
+        "background_css": "linear-gradient(135deg, #4D2118 0%, #4D2118 50%, #8C2346 50%, #8C2346 100%)"
       },
       {
         "song_id": "song_613366d4a24d",
@@ -2424,7 +2424,7 @@
         "position_count": 5,
         "layout_status": "complete",
         "combination_status": "missing",
-        "background_css": "linear-gradient(90deg, #8C2346 0%, #8C2346 50%, #962828 50%, #962828 100%)"
+        "background_css": "linear-gradient(135deg, #8C2346 0%, #8C2346 50%, #962828 50%, #962828 100%)"
       },
       {
         "song_id": "song_1145709f1775",
@@ -2554,7 +2554,7 @@
         "position_count": 6,
         "layout_status": "complete",
         "combination_status": "missing",
-        "background_css": "linear-gradient(90deg, #FFD700 0%, #FFD700 50%, #FF3B9A 50%, #FF3B9A 100%)"
+        "background_css": "linear-gradient(135deg, #FFD700 0%, #FFD700 50%, #FF3B9A 50%, #FF3B9A 100%)"
       },
       {
         "song_id": "song_3096f32aaef0",
@@ -2624,7 +2624,7 @@
         "position_count": 5,
         "layout_status": "complete",
         "combination_status": "missing",
-        "background_css": "linear-gradient(90deg, #A3EA34 0%, #A3EA34 50%, #FF3B9A 50%, #FF3B9A 100%)"
+        "background_css": "linear-gradient(135deg, #A3EA34 0%, #A3EA34 50%, #FF3B9A 50%, #FF3B9A 100%)"
       },
       {
         "song_id": "song_3f3d04c758dc",
@@ -2734,7 +2734,7 @@
         "position_count": 8,
         "layout_status": "complete",
         "combination_status": "missing",
-        "background_css": "linear-gradient(90deg, #962828 0%, #962828 50%, #FFD700 50%, #FFD700 100%)"
+        "background_css": "linear-gradient(135deg, #962828 0%, #962828 50%, #FFD700 50%, #FFD700 100%)"
       },
       {
         "song_id": "song_2e9a64df8c91",
@@ -2784,7 +2784,7 @@
         "position_count": 8,
         "layout_status": "complete",
         "combination_status": "missing",
-        "background_css": "linear-gradient(90deg, #FFD700 0%, #FFD700 50%, #64368F 50%, #64368F 100%)"
+        "background_css": "linear-gradient(135deg, #FFD700 0%, #FFD700 50%, #64368F 50%, #64368F 100%)"
       },
       {
         "song_id": "song_f9e0c3576d97",
@@ -2884,7 +2884,7 @@
         "position_count": 7,
         "layout_status": "complete",
         "combination_status": "missing",
-        "background_css": "linear-gradient(90deg, #64368F 0%, #64368F 50%, #962828 50%, #962828 100%)"
+        "background_css": "linear-gradient(135deg, #64368F 0%, #64368F 50%, #962828 50%, #962828 100%)"
       },
       {
         "song_id": "song_e8e9bff8fdf6",
@@ -3084,7 +3084,7 @@
         "position_count": 6,
         "layout_status": "complete",
         "combination_status": "recorded",
-        "background_css": "linear-gradient(90deg, #68C0F4 0%, #68C0F4 50%, #2B4F54 50%, #2B4F54 100%)"
+        "background_css": "linear-gradient(135deg, #68C0F4 0%, #68C0F4 50%, #2B4F54 50%, #2B4F54 100%)"
       },
       {
         "song_id": "song_5c510326eb74",
@@ -3134,7 +3134,7 @@
         "position_count": 8,
         "layout_status": "complete",
         "combination_status": "missing",
-        "background_css": "linear-gradient(90deg, #EFB6D3 0%, #EFB6D3 50%, #68C0F4 50%, #68C0F4 100%)"
+        "background_css": "linear-gradient(135deg, #EFB6D3 0%, #EFB6D3 50%, #68C0F4 50%, #68C0F4 100%)"
       },
       {
         "song_id": "song_669a7d7e6b97",
@@ -3294,7 +3294,7 @@
         "position_count": 0,
         "layout_status": "missing_positions",
         "combination_status": "missing",
-        "background_css": "linear-gradient(90deg, #5A6964 0%, #5A6964 50%, #962828 50%, #962828 100%)"
+        "background_css": "linear-gradient(135deg, #5A6964 0%, #5A6964 50%, #962828 50%, #962828 100%)"
       },
       {
         "song_id": "song_8155b2ed55c5",

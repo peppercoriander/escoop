@@ -18,7 +18,7 @@
 | 歌曲 → 颜色配置 | song_labels.csv 的有序组合配置，颜色取组合／Other | songs[].backgroundCss、colors |
 | 站位选项 | 不重复维护，从实际录入内容生成 | combinationOptions：value、positions、songCount |
 | 特殊歌曲底色 | display.json 的 song_background_overrides（歌曲 ID → HEX） | 已合并到 songs[].backgroundCss、colors |
-| 次数图例 | frequency_colors.csv | frequencyColors：minCount、maxCount、color |
+| 次数颜色规则 | frequency_colors.csv | songs[].combinations[].color（保留 frequencyColors 接口，页面不显示图例） |
 
 ## 两种“站位”分开处理
 
@@ -30,7 +30,8 @@
 
 1. 按 `groups` 数组逐行显示公司／Other 图标，沿 `unitIds` 显示右侧组合。COSMIC 直接显示六组，不多展开一层。
 2. 点击组合图标直接筛选组合歌单并显示成员，读取该组合的 `characterIds`，在 `characters` 中查简称与颜色。选择成员时清空 `groupIds` 与 `unitIds`；切回公司或组合时清空成员条件。站位条件独立保留。同一人物 ID 跨组合复用，已选人物按 ID 去重。
-3. 筛选器 2 直接显示 `combinationOptions`。当前为 26 个已知选项，按涉及位置数量、数字值排序；新增原文后自动增加选项。`songCount` 是未施加其他条件时的命中歌曲数。
+   公司或组合取消时，成员菜单从仍选中的公司／组合重建；没有剩余项则清空。选择成员导致公司／组合自动取消时，保留当前成员菜单以便继续多选。
+3. 筛选器 2 从 `combinationOptions` 中只显示完全由 1–5 号位组成的选项，按涉及位置数量、数字值排序；包含 6–10 号位的选项不显示，歌曲原始数据保留。`songCount` 是未施加其他条件时的命中歌曲数。
 4. 使用 `filterSongs(site.songs, selection)` 得到结果。组合、人物和数字组合多选全部采用 AND；人物和数字组合各自匹配整首歌曲，不要求选中的人物正好位于所选数字组合中。
 5. 初始化或 RESET 时执行 `selection = createFilterState()`。菜单等临时 UI 状态也重置，页面回到左上角。RESET 为可拖拽悬浮按钮，刷新后恢复右下角初始位置，不需要数据库表。
 
@@ -56,12 +57,12 @@ const results = filterSongs(site.songs, selection);
 
 - 一首歌一个稳定 ID、一套有序组合配置；合作曲单独选择任一所属组合都能命中同一结果。
 - Adam 为凪／茨、Eve 为日和／纯；六首子组合歌曲不会自动带上 Eden 标签。
-- 固定人物、自由对象、未录入空格分开。自由对象可容纳额外不同人物，空格不可。
+- 固定人物、通用数字站位、未录入空格分开。具体成员筛选仅匹配固定人物；有任何 `free` 通用站位的歌曲（包括固定人物与通用站位混合的歌曲）在成员筛选时整体排除。未选成员时仍正常显示，空格也不会匹配人物。
 - 数字组合完整匹配，12 不匹配 123。当前编号语法只能表达位置 1–9；涉及第 10 位前需扩展。
 - 周年曲等 Other 标签保留，用于歌曲分类和颜色来源，不作为额外组合菜单。四人月是 AKATSUKI 子组合，归 Rhythm Link，菜单直接显示在 AKATSUKI 后；颜色为 #962828，使用 New_AKATSUKI_ES_Logo.webp。
 - AKATSUKI 的成员是敬、紅、颯馬；四人月的成员是敬、紅、颯馬、維吹。四人月歌曲不自动继承 AKATSUKI 标签，沿用 Adam／Eve 的独立筛选规则。
-- 四人月包括《百花繚乱、紅月夜（2025Ver.）》《天翔KAGETSU》《炎纏焔踊千変万火》《LOUDEST BUGS》《CIVIL WAR》及《明鏡流水》；最后一首站位尚未提供。CIVIL WAR 保留四人月与 Crazy:B 的八人合作站位及左右分色。
-- 合作曲按表演标签顺序等分颜色；两组合为左右各半。人物格仍用人物色，Noto Sans JP 白字。
+- 四人月包括《百花繚乱、紅月夜（2025Ver.）》《天翔KAGETSU》《炎纏焔踊千変万火》《LOUDEST BUGS》《CIVIL WAR》及《明鏡流水》；最后一首站位尚未提供。CIVIL WAR 保留四人月与 Crazy:B 的八人合作站位及斜切分色。
+- 合作曲按表演标签顺序等分颜色；两组合各占一半，分界线为 45° 的 `/` 方向斜切。人物格仍用人物色，Noto Sans JP 白字。
 
 ## 已剔除与待补
 

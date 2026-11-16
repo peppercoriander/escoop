@@ -1763,7 +1763,7 @@
           "color": "#F3981D"
         }
       ],
-      "backgroundCss": "linear-gradient(90deg, #FF8B0B 0%, #FF8B0B 50%, #FFD7A0 50%, #FFD7A0 100%)",
+      "backgroundCss": "linear-gradient(135deg, #FF8B0B 0%, #FF8B0B 50%, #FFD7A0 50%, #FFD7A0 100%)",
       "colors": [
         "#FF8B0B",
         "#FFD7A0"
@@ -2724,7 +2724,7 @@
         }
       ],
       "combinations": [],
-      "backgroundCss": "linear-gradient(90deg, #5A6964 0%, #5A6964 50%, #FFD7A0 50%, #FFD7A0 100%)",
+      "backgroundCss": "linear-gradient(135deg, #5A6964 0%, #5A6964 50%, #FFD7A0 50%, #FFD7A0 100%)",
       "colors": [
         "#5A6964",
         "#FFD7A0"
@@ -2909,7 +2909,7 @@
         }
       ],
       "combinations": [],
-      "backgroundCss": "linear-gradient(90deg, #FFD7A0 0%, #FFD7A0 50%, #305DAA 50%, #305DAA 100%)",
+      "backgroundCss": "linear-gradient(135deg, #FFD7A0 0%, #FFD7A0 50%, #305DAA 50%, #305DAA 100%)",
       "colors": [
         "#FFD7A0",
         "#305DAA"
@@ -4266,7 +4266,7 @@
         }
       ],
       "combinations": [],
-      "backgroundCss": "linear-gradient(90deg, #FF8B0B 0%, #FF8B0B 50%, #5F5B5D 50%, #5F5B5D 100%)",
+      "backgroundCss": "linear-gradient(135deg, #FF8B0B 0%, #FF8B0B 50%, #5F5B5D 50%, #5F5B5D 100%)",
       "colors": [
         "#FF8B0B",
         "#5F5B5D"
@@ -4654,7 +4654,7 @@
         }
       ],
       "combinations": [],
-      "backgroundCss": "linear-gradient(90deg, #305DAA 0%, #305DAA 50%, #FF8B0B 50%, #FF8B0B 100%)",
+      "backgroundCss": "linear-gradient(135deg, #305DAA 0%, #305DAA 50%, #FF8B0B 50%, #FF8B0B 100%)",
       "colors": [
         "#305DAA",
         "#FF8B0B"
@@ -4930,7 +4930,7 @@
         }
       ],
       "combinations": [],
-      "backgroundCss": "linear-gradient(90deg, #5F5B5D 0%, #5F5B5D 50%, #FF8B0B 50%, #FF8B0B 100%)",
+      "backgroundCss": "linear-gradient(135deg, #5F5B5D 0%, #5F5B5D 50%, #FF8B0B 50%, #FF8B0B 100%)",
       "colors": [
         "#5F5B5D",
         "#FF8B0B"
@@ -5774,7 +5774,7 @@
         }
       ],
       "combinations": [],
-      "backgroundCss": "linear-gradient(90deg, #24004D 0%, #24004D 50%, #305DAA 50%, #305DAA 100%)",
+      "backgroundCss": "linear-gradient(135deg, #24004D 0%, #24004D 50%, #305DAA 50%, #305DAA 100%)",
       "colors": [
         "#24004D",
         "#305DAA"
@@ -6780,7 +6780,7 @@
         }
       ],
       "combinations": [],
-      "backgroundCss": "linear-gradient(90deg, #FF3B9A 0%, #FF3B9A 50%, #24004D 50%, #24004D 100%)",
+      "backgroundCss": "linear-gradient(135deg, #FF3B9A 0%, #FF3B9A 50%, #24004D 50%, #24004D 100%)",
       "colors": [
         "#FF3B9A",
         "#24004D"
@@ -6965,7 +6965,7 @@
         }
       ],
       "combinations": [],
-      "backgroundCss": "linear-gradient(90deg, #68C0F4 0%, #68C0F4 50%, #24004D 50%, #24004D 100%)",
+      "backgroundCss": "linear-gradient(135deg, #68C0F4 0%, #68C0F4 50%, #24004D 50%, #24004D 100%)",
       "colors": [
         "#68C0F4",
         "#24004D"
@@ -7582,7 +7582,7 @@
           "color": "#0068B7"
         }
       ],
-      "backgroundCss": "linear-gradient(90deg, #2AB7CA 0%, #2AB7CA 50%, #8C2346 50%, #8C2346 100%)",
+      "backgroundCss": "linear-gradient(135deg, #2AB7CA 0%, #2AB7CA 50%, #8C2346 50%, #8C2346 100%)",
       "colors": [
         "#2AB7CA",
         "#8C2346"
@@ -7676,7 +7676,7 @@
         }
       ],
       "combinations": [],
-      "backgroundCss": "linear-gradient(90deg, #2AB7CA 0%, #2AB7CA 50%, #FFD700 50%, #FFD700 100%)",
+      "backgroundCss": "linear-gradient(135deg, #2AB7CA 0%, #2AB7CA 50%, #FFD700 50%, #FFD700 100%)",
       "colors": [
         "#2AB7CA",
         "#FFD700"
@@ -8584,7 +8584,7 @@
         }
       ],
       "combinations": [],
-      "backgroundCss": "linear-gradient(90deg, #2AB7CA 0%, #2AB7CA 50%, #A3EA34 50%, #A3EA34 100%)",
+      "backgroundCss": "linear-gradient(135deg, #2AB7CA 0%, #2AB7CA 50%, #A3EA34 50%, #A3EA34 100%)",
       "colors": [
         "#2AB7CA",
         "#A3EA34"
@@ -8770,7 +8770,7 @@
         }
       ],
       "combinations": [],
-      "backgroundCss": "linear-gradient(90deg, #2AB7CA 0%, #2AB7CA 50%, #2B4F54 50%, #2B4F54 100%)",
+      "backgroundCss": "linear-gradient(135deg, #2AB7CA 0%, #2AB7CA 50%, #2B4F54 50%, #2B4F54 100%)",
       "colors": [
         "#2AB7CA",
         "#2B4F54"
@@ -9511,7 +9511,7 @@
           "color": "#0068B7"
         }
       ],
-      "backgroundCss": "linear-gradient(90deg, #A3EA34 0%, #A3EA34 50%, #5F5B5D 50%, #5F5B5D 100%)",
+      "backgroundCss": "linear-gradient(135deg, #A3EA34 0%, #A3EA34 50%, #5F5B5D 50%, #5F5B5D 100%)",
       "colors": [
         "#A3EA34",
         "#5F5B5D"
@@ -12111,7 +12111,7 @@
         }
       ],
       "combinations": [],
-      "backgroundCss": "linear-gradient(90deg, #4D2118 0%, #4D2118 50%, #8C2346 50%, #8C2346 100%)",
+      "backgroundCss": "linear-gradient(135deg, #4D2118 0%, #4D2118 50%, #8C2346 50%, #8C2346 100%)",
       "colors": [
         "#4D2118",
         "#8C2346"
@@ -12296,7 +12296,7 @@
         }
       ],
       "combinations": [],
-      "backgroundCss": "linear-gradient(90deg, #8C2346 0%, #8C2346 50%, #962828 50%, #962828 100%)",
+      "backgroundCss": "linear-gradient(135deg, #8C2346 0%, #8C2346 50%, #962828 50%, #962828 100%)",
       "colors": [
         "#8C2346",
         "#962828"
@@ -13482,7 +13482,7 @@
         }
       ],
       "combinations": [],
-      "backgroundCss": "linear-gradient(90deg, #FFD700 0%, #FFD700 50%, #FF3B9A 50%, #FF3B9A 100%)",
+      "backgroundCss": "linear-gradient(135deg, #FFD700 0%, #FFD700 50%, #FF3B9A 50%, #FF3B9A 100%)",
       "colors": [
         "#FFD700",
         "#FF3B9A"
@@ -14123,7 +14123,7 @@
         }
       ],
       "combinations": [],
-      "backgroundCss": "linear-gradient(90deg, #A3EA34 0%, #A3EA34 50%, #FF3B9A 50%, #FF3B9A 100%)",
+      "backgroundCss": "linear-gradient(135deg, #A3EA34 0%, #A3EA34 50%, #FF3B9A 50%, #FF3B9A 100%)",
       "colors": [
         "#A3EA34",
         "#FF3B9A"
@@ -15185,7 +15185,7 @@
         }
       ],
       "combinations": [],
-      "backgroundCss": "linear-gradient(90deg, #962828 0%, #962828 50%, #FFD700 50%, #FFD700 100%)",
+      "backgroundCss": "linear-gradient(135deg, #962828 0%, #962828 50%, #FFD700 50%, #FFD700 100%)",
       "colors": [
         "#962828",
         "#FFD700"
@@ -15707,7 +15707,7 @@
         }
       ],
       "combinations": [],
-      "backgroundCss": "linear-gradient(90deg, #FFD700 0%, #FFD700 50%, #64368F 50%, #64368F 100%)",
+      "backgroundCss": "linear-gradient(135deg, #FFD700 0%, #FFD700 50%, #64368F 50%, #64368F 100%)",
       "colors": [
         "#FFD700",
         "#64368F"
@@ -16636,7 +16636,7 @@
         }
       ],
       "combinations": [],
-      "backgroundCss": "linear-gradient(90deg, #64368F 0%, #64368F 50%, #962828 50%, #962828 100%)",
+      "backgroundCss": "linear-gradient(135deg, #64368F 0%, #64368F 50%, #962828 50%, #962828 100%)",
       "colors": [
         "#64368F",
         "#962828"
@@ -18646,7 +18646,7 @@
           "color": "#0068B7"
         }
       ],
-      "backgroundCss": "linear-gradient(90deg, #68C0F4 0%, #68C0F4 50%, #2B4F54 50%, #2B4F54 100%)",
+      "backgroundCss": "linear-gradient(135deg, #68C0F4 0%, #68C0F4 50%, #2B4F54 50%, #2B4F54 100%)",
       "colors": [
         "#68C0F4",
         "#2B4F54"
@@ -19131,7 +19131,7 @@
         }
       ],
       "combinations": [],
-      "backgroundCss": "linear-gradient(90deg, #EFB6D3 0%, #EFB6D3 50%, #68C0F4 50%, #68C0F4 100%)",
+      "backgroundCss": "linear-gradient(135deg, #EFB6D3 0%, #EFB6D3 50%, #68C0F4 50%, #68C0F4 100%)",
       "colors": [
         "#EFB6D3",
         "#68C0F4"
@@ -20590,7 +20590,7 @@
         }
       ],
       "combinations": [],
-      "backgroundCss": "linear-gradient(90deg, #5A6964 0%, #5A6964 50%, #962828 50%, #962828 100%)",
+      "backgroundCss": "linear-gradient(135deg, #5A6964 0%, #5A6964 50%, #962828 50%, #962828 100%)",
       "colors": [
         "#5A6964",
         "#962828"

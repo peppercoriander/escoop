@@ -242,7 +242,7 @@ def build(source=SOURCE):
             bands.append(dict(song_id=sid, band_order=i+1, unit_id=uid, label_id=lid, color=color,
                               start_percent=100*i/len(color_labels), end_percent=100*(i+1)/len(color_labels)))
         tables['song_color_bands'].extend(bands)
-        css = bands[0]['color'] if len(bands) == 1 else 'linear-gradient(90deg, ' + ', '.join(f"{b['color']} {b['start_percent']:g}%, {b['color']} {b['end_percent']:g}%" for b in bands) + ')'
+        css = bands[0]['color'] if len(bands) == 1 else 'linear-gradient(135deg, ' + ', '.join(f"{b['color']} {b['start_percent']:g}%, {b['color']} {b['end_percent']:g}%" for b in bands) + ')'
         config = ', '.join(labels[lid]['name'] for lid in lids)
         song.update(unit_config=config, formation_kind=formation, position_count=len(filled), layout_status=layout_status, combination_status=status, background_css=css)
         site_songs.append(dict(id=sid, title=song['title'], unitIds=uids, labelIds=lids, unitConfig=config,
