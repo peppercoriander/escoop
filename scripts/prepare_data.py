@@ -314,13 +314,13 @@ def build(source=SOURCE):
         songs=site_songs)
     inputs = [f'{k}.csv' for k in INPUTS] + ['display.json']
     payload = dict(schema_version=8, maintenance_source='data/source',
-        source_sha256={f'data/source/{name}':hashlib.sha256((source / name).read_bytes()).hexdigest() for name in inputs},
+        source_sha256={f'data/source/{name}':hashlib.sha256((source / name).read_bytes().replace(b'\r\n', b'\n')).hexdigest() for name in inputs},
         display=display, summary=summary, schemas=schemas, tables=tables)
     outputs = {'dataset.json':json_bytes(payload), 'validation.json':json_bytes(summary),
                'site_data.json':json_bytes(site)}
     for key, rows in tables.items():
         stream = io.StringIO(newline='')
-        writer = csv.DictWriter(stream, fieldnames=schemas[key]['columns'])
+        writer = csv.DictWriter(stream, fieldnames=schemas[key]['columns'], lineterminator='\n')
         writer.writeheader()
         writer.writerows(rows)
         outputs[f'{key}.csv'] = stream.getvalue().encode('utf-8-sig')
