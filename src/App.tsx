@@ -67,7 +67,7 @@ function Catalog({ site }: { site: SiteData }) {
           </div>
         </section>
         <section className={cn('filter-section', 'positions-section')} aria-labelledby="filter-two-title">
-          <div className={cn('section-heading')}><h2 id="filter-two-title"><span className={cn('step')}>02</span> 站位</h2></div>
+          <div className={cn('section-heading')}><h2 id="filter-two-title"><span className={cn('step')}>02</span> 贴贴</h2></div>
           <div className={cn('position-menu')}>{positionOptions(site).map(option => <button type="button" key={option.value} className={cn('position-button')} aria-label={`站位 ${option.value}`} aria-pressed={selection.combinations.includes(option.value)} title={`${option.value} · ${option.songCount} 首歌曲`} onClick={() => toggle('combinations', option.value)}>{option.value}</button>)}</div>
         </section>
       </div>

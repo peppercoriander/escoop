@@ -76,6 +76,7 @@
 
 ## 验证与更新
 
+- 本地预览、构建及发布操作见 `docs/DEVELOPMENT.md`，目录职责见 `docs/PROJECT_STRUCTURE.md`；根目录 `README.md` 留给用户维护仓库介绍。
 - 数据更新流程：修改维护源 → 生成与校验 → 检查差异 → 构建网站 → 发布。
 - 数据生成：`python scripts/prepare_data.py`。
 - 数据校验：`python scripts/prepare_data.py --check`。
