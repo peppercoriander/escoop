@@ -1,6 +1,6 @@
 # 唯一维护源
 
-只修改本目录的 **11 张 CSV 和 display.json**。`data/normalized`、网页 JSON、Excel 均为生成结果，不能作为第二套维护源。
+只修改本目录的 **10 张 CSV 和 display.json**。`data/normalized`、网页 JSON、Excel 均为生成结果，不能作为第二套维护源。
 
 `song_placements.csv` 已接入数据生成器和网页，用于维护每首歌在各分区中的独立顺序。运行 `prepare_data.py` 只读取维护源，不会覆盖你编辑的 CSV。
 
@@ -23,9 +23,8 @@
 | units.csv | 组合：名称、代表色、logo、公司归属、公司内显示顺序；父组合只作资料保留 |
 | characters.csv | 唯一人物简称、代表色；不需要全名或图标 |
 | character_units.csv | 组合成员关系及组内显示顺序；同一人物可属于多个组合 |
-| songs.csv | 唯一歌曲名称、ID，以及 `combination_raw` 数字组合原始重复序列 |
+| songs.csv | 唯一歌曲名称、ID、`combination_raw` 数字组合原始重复序列，以及 `release_date` 实装日期 |
 | song_placements.csv | 歌曲展示分区与独立排序；title、section_name 仅供识别 |
-| song_releases.csv | 歌曲实装日期 release_date；song_id 关联歌曲，title 仅供识别 |
 | positions.csv | 已知站位：歌曲 ID、位置编号、人物 ID／自由对象、对应分类标签 |
 | song_labels.csv | 每首歌曲唯一的组合／分类配置及 `tag_order` 顺序 |
 | labels.csv | 分类 ID 与组合的映射，以及 Other 标签的名称 |
@@ -34,8 +33,9 @@
 
 ## 歌曲实装日期
 
-- 在 `song_releases.csv` 的 `release_date` 列填写 `YYYY-MM-DD`，例如 `2026-11-16`；不填写则留空，不需要写「无」。已按现有歌曲生成 333 行，未推测实装日期。
-- 每首歌最多一行，合作曲各分区共用同一日期；保留 `song_id`，`title` 仅为识别列。缺少日期记录的歌曲同样视为日期未知。
+- 在 `songs.csv` 的 `release_date` 列填写 `YYYY-MM-DD` 或 `YYYY/MM/DD`，例如 `2026-11-16` 或 `2026/11/16`；生成数据统一为 `YYYY-MM-DD`，不会改写源 CSV；不填写则留空，不需要写「无」。
+- 歌曲表每首歌一行，表头为 `song_id,title,combination_raw,release_date`。实装日期已按歌曲 ID 从原 `song_releases.csv` 合并，今后只维护 `songs.csv`，不再使用独立日期表。
+- 合作曲各分区共用同一日期；保留 `song_id`，`title` 是歌曲名称的唯一维护列，日期留空视为未知，不猜测缺失日期。
 - 网页按日本时间（`Asia/Tokyo`）的当天日期比较，实装日期早于或等于今天时，固定成员格显示成员色底、白字；空白或未来日期则显示白底、成员色文字。通用数字站位与未录入空格保持原样。
 - 日期不会影响筛选、歌曲数量、分区顺序、歌曲格底色或站位次数颜色。
 - CSV 修改后仍需运行 `python scripts/prepare_data.py`，再构建、发布；日期已发布后，跨天配色由浏览器自动判断，不必每天重建。已打开页面会在日本时间午夜或重新切回页面时更新。
@@ -43,7 +43,7 @@
 
 ## 补录方法
 
-1. 在 `songs.csv` 查歌曲 ID；填 `combination_raw` 原始序列。名称、原文在同一行，更名不改变 ID。
+1. 在 `songs.csv` 查歌曲 ID；填 `combination_raw` 原始序列和 `release_date` 实装日期。名称、原文、日期在同一行，更名不改变 ID。
 2. 在 `positions.csv` 添加／修改实际位置，只保存已知位置；没有录入的歌曲无需填十行空白。
 3. 从仓库根目录运行：
 

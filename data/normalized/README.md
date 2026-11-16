@@ -4,7 +4,7 @@
 
 - **site_data.json**：网页唯一需要加载的数据文件，含公司菜单、组合成员、人物颜色、26 个实际站位选项、333 个唯一歌曲实体及 357 条 `songPlacements` 展示关系。
 - **song_placements.csv**：从维护源生成的排序核对视图；只编辑 `data/source/song_placements.csv`，不要编辑本目录副本。
-- **song_releases.csv**：实装日期核对视图，网页日期字段为 `songs[].releaseDate`；只编辑 `data/source/song_releases.csv`。
+- **songs.csv**：歌曲核对视图，包含统一为 `YYYY-MM-DD` 的 `release_date`；网页日期字段仍为 `songs[].releaseDate`。只编辑 `data/source/songs.csv`，不再生成独立日期表。
 - **dataset.json + CSV**：便于核对和导出 Excel 的完整生成表。网页无需加载这些核对文件。
 - **validation.json / issues.csv**：生成校验汇总及仍待补充的数据。
 - **combination_options.csv**：自动汇总的站位选项、对应位置数组、可命中歌曲数和菜单顺序；不手工维护。

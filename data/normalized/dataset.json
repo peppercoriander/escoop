@@ -1,14 +1,13 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "maintenance_source": "data/source",
   "source_sha256": {
     "data/source/groups.csv": "a5a873604d2b669fe00d773c3bc86c8b2ab42ab6c0e2577c876f043402d352f3",
     "data/source/units.csv": "b31c57b0e8284d6684f32854ec89d8de5b5daa4f4ead539b94d8f83377fde081",
     "data/source/characters.csv": "09e2e592c79a67c20508108f2164ae714c97367961d1447f19bd383892672670",
     "data/source/character_units.csv": "d3b32a773e1149c1ca321a9a38cf0a09d3d2f07a3bee76d754322b8f47353762",
-    "data/source/songs.csv": "e09da44aaba07bba6b5a0f9e2d23a83efa565fd6c2d4b92fddffde2bf3e0ee48",
-    "data/source/song_releases.csv": "f5498a05a09bcb9b1e697ddf51164cc1bb884fe10059401ee2f999cb1eb34797",
-    "data/source/song_placements.csv": "3d3125544c9ef8fda0a713e6223caad9cbef2c8380dcff160c0fba4c2bf77554",
+    "data/source/songs.csv": "78b3ef7a9461ee9373d3b43263cd9349283e23324c3eba256d2753fdee372de2",
+    "data/source/song_placements.csv": "7599a8b40e18f855079b0b3edb2c5d16dd08bd01630ad550a7e7b2fb1065fff0",
     "data/source/labels.csv": "d7f4f0de6a2095cc6bbe58bf932fdd55cc8a64eba08906a0029c2f99c33991f4",
     "data/source/song_labels.csv": "811ee4c02a5372b2cb5e51fd2889e229202cebc0150ea785e5585c1690fdc977",
     "data/source/positions.csv": "8e3f4b1620ffaca5a71a578fa6f30c0649e2d8bdfb8db69f7c96b1c0ee06a7b3",
@@ -35,7 +34,6 @@
       "characters": 60,
       "character_units": 69,
       "songs": 333,
-      "song_releases": 333,
       "song_placements": 357,
       "labels": 36,
       "song_labels": 415,
@@ -46,16 +44,16 @@
       "combination_counts": 278,
       "song_color_bands": 357,
       "combination_options": 26,
-      "issues": 267
+      "issues": 227
     },
     "combination_status": {
-      "none": 11,
+      "none": 51,
       "recorded": 85,
-      "missing": 237
+      "missing": 197
     },
     "issue_counts": {
       "missing_group_color": 4,
-      "missing_combinations": 237,
+      "missing_combinations": 197,
       "missing_positions": 26
     },
     "free_position_cells": 48,
@@ -120,20 +118,13 @@
       "columns": [
         "song_id",
         "title",
+        "release_date",
         "unit_config",
         "formation_kind",
         "position_count",
         "layout_status",
         "combination_status",
         "background_css"
-      ]
-    },
-    "song_releases": {
-      "sheet_name": "歌曲实装日期",
-      "columns": [
-        "song_id",
-        "title",
-        "release_date"
       ]
     },
     "song_placements": {
@@ -1271,6 +1262,7 @@
       {
         "song_id": "song_1a118eac1b9b",
         "title": "终わらないシンフォニア",
+        "release_date": "2026-11-15",
         "unit_config": "fine",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1281,6 +1273,7 @@
       {
         "song_id": "song_e57e0742fb6a",
         "title": "RAINBOW CIRCUS",
+        "release_date": "2026-11-15",
         "unit_config": "fine",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1291,6 +1284,7 @@
       {
         "song_id": "song_90af8520a51b",
         "title": "羽ばたきのフォルティシモ",
+        "release_date": "2026-11-15",
         "unit_config": "fine",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1301,6 +1295,7 @@
       {
         "song_id": "song_e43726faddee",
         "title": "Neo Sanctuary",
+        "release_date": "2026-11-15",
         "unit_config": "fine",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1311,6 +1306,7 @@
       {
         "song_id": "song_a1c7157dd497",
         "title": "Miracle Dream Traveler",
+        "release_date": "2026-11-15",
         "unit_config": "fine",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1321,6 +1317,7 @@
       {
         "song_id": "song_7ee7f1a64f76",
         "title": "Never-ending Stage!!!!",
+        "release_date": "2026-11-15",
         "unit_config": "fine",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1331,6 +1328,7 @@
       {
         "song_id": "song_70ab7550fc9f",
         "title": "Angelic Grace",
+        "release_date": "2026-11-15",
         "unit_config": "fine",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1341,6 +1339,7 @@
       {
         "song_id": "song_368a5bc01f86",
         "title": "始まりのファンタジア",
+        "release_date": "2026-11-15",
         "unit_config": "fine",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1351,6 +1350,7 @@
       {
         "song_id": "song_b8cdfe1e1928",
         "title": "Crossing×Heart",
+        "release_date": "2026-11-15",
         "unit_config": "Trickstar, fine",
         "formation_kind": "fixed",
         "position_count": 8,
@@ -1361,6 +1361,7 @@
       {
         "song_id": "song_6f9e52b60ba7",
         "title": "Holy Angel's Carol",
+        "release_date": "2026-11-15",
         "unit_config": "fine",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1371,6 +1372,7 @@
       {
         "song_id": "song_02fde485d3bf",
         "title": "Feathers of Ark",
+        "release_date": "2026-11-15",
         "unit_config": "fine",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1381,6 +1383,7 @@
       {
         "song_id": "song_0ffefa0445c3",
         "title": "Fairy Tale Library",
+        "release_date": "2026-11-15",
         "unit_config": "fine",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1391,6 +1394,7 @@
       {
         "song_id": "song_fe520522758f",
         "title": "恋はプリマヴェーラ！",
+        "release_date": "2026-11-15",
         "unit_config": "fine",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1401,6 +1405,7 @@
       {
         "song_id": "song_9f6a29f2d74f",
         "title": "The Tempest Night",
+        "release_date": "2026-11-15",
         "unit_config": "fine",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1411,6 +1416,7 @@
       {
         "song_id": "song_d9c30fc56e55",
         "title": "RED GARDEN",
+        "release_date": "2026-11-15",
         "unit_config": "fine",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1421,6 +1427,7 @@
       {
         "song_id": "song_e169128ecb33",
         "title": "Dreaming Ocean",
+        "release_date": "2026-11-15",
         "unit_config": "fine",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1431,6 +1438,7 @@
       {
         "song_id": "song_71f611a674e2",
         "title": "Musica Vita! -ムジカ・ヴィータ-",
+        "release_date": "2026-11-15",
         "unit_config": "fine",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1441,6 +1449,7 @@
       {
         "song_id": "song_0d1dbd139bb6",
         "title": "Ghostic Treat House",
+        "release_date": "2026-11-15",
         "unit_config": "fine",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1451,6 +1460,7 @@
       {
         "song_id": "song_2a6ff189082e",
         "title": "狂怪ノ怨黙-キョウカイノエンモク-",
+        "release_date": "",
         "unit_config": "MaM, fine",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -1461,6 +1471,7 @@
       {
         "song_id": "song_a53841e5d3c8",
         "title": "Tryst of Stars",
+        "release_date": "",
         "unit_config": "fine",
         "formation_kind": "unknown",
         "position_count": 0,
@@ -1471,6 +1482,7 @@
       {
         "song_id": "song_9560289984a0",
         "title": "スターライトパレード",
+        "release_date": "",
         "unit_config": "fine, Knights",
         "formation_kind": "fixed",
         "position_count": 9,
@@ -1481,6 +1493,7 @@
       {
         "song_id": "song_6de4a0a8ff5a",
         "title": "Rebellion Star",
+        "release_date": "2026-11-15",
         "unit_config": "Trickstar",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1491,6 +1504,7 @@
       {
         "song_id": "song_2f96247e8408",
         "title": "CHERRY HAPPY STREAM",
+        "release_date": "2026-11-15",
         "unit_config": "Trickstar",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1501,6 +1515,7 @@
       {
         "song_id": "song_a3dabf50ba07",
         "title": "HEART→BEATER!!!!",
+        "release_date": "2026-11-15",
         "unit_config": "Trickstar",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1511,6 +1526,7 @@
       {
         "song_id": "song_76406d3759e9",
         "title": "Welcome to the Trickstar Night☆",
+        "release_date": "2026-11-15",
         "unit_config": "Trickstar",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1521,6 +1537,7 @@
       {
         "song_id": "song_7892b092a3ca",
         "title": "BREAKTHROUGH!",
+        "release_date": "2026-11-15",
         "unit_config": "Trickstar",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1531,6 +1548,7 @@
       {
         "song_id": "song_292552ade123",
         "title": "1st SING-ALONG☆",
+        "release_date": "2026-11-15",
         "unit_config": "Trickstar",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1541,6 +1559,7 @@
       {
         "song_id": "song_be5f50fc4003",
         "title": "Unstoppable Love!",
+        "release_date": "2026-11-15",
         "unit_config": "Trickstar",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1551,6 +1570,7 @@
       {
         "song_id": "song_f7c93b113cc1",
         "title": "Romantic Xday!",
+        "release_date": "2026-11-15",
         "unit_config": "Trickstar",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1561,6 +1581,7 @@
       {
         "song_id": "song_32ef34f10bab",
         "title": "幸せの歌",
+        "release_date": "2026-11-15",
         "unit_config": "Trickstar",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1571,6 +1592,7 @@
       {
         "song_id": "song_0d7d18b25a76",
         "title": "虹色のSeasons",
+        "release_date": "2026-11-15",
         "unit_config": "Trickstar",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1581,6 +1603,7 @@
       {
         "song_id": "song_7c441d2d44d9",
         "title": "CELEBRATE!!",
+        "release_date": "2026-11-15",
         "unit_config": "Trickstar",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1591,6 +1614,7 @@
       {
         "song_id": "song_6f2328deb812",
         "title": "Infinite Star",
+        "release_date": "2026-11-15",
         "unit_config": "Trickstar",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1601,6 +1625,7 @@
       {
         "song_id": "song_d70996d82446",
         "title": "ONLY YOUR STARS! (TS Ver.)",
+        "release_date": "2026-11-15",
         "unit_config": "Trickstar",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1611,6 +1636,7 @@
       {
         "song_id": "song_bfb9c4d54670",
         "title": "キセキ",
+        "release_date": "2026-11-15",
         "unit_config": "Trickstar, Eden",
         "formation_kind": "fixed",
         "position_count": 8,
@@ -1621,6 +1647,7 @@
       {
         "song_id": "song_cbbcf5f47999",
         "title": "BIGBANG REFLECTION!!",
+        "release_date": "2026-11-15",
         "unit_config": "Trickstar",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1631,6 +1658,7 @@
       {
         "song_id": "song_8c814ebdcf1f",
         "title": "Daydream×Reality",
+        "release_date": "2026-11-15",
         "unit_config": "Trickstar",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1641,6 +1669,7 @@
       {
         "song_id": "song_515def0f6b9b",
         "title": "ワチャガナドゥ？",
+        "release_date": "2026-11-15",
         "unit_config": "Trickstar",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1651,6 +1680,7 @@
       {
         "song_id": "song_d4930e520cb6",
         "title": "Unbalanced Triangle",
+        "release_date": "2026-11-15",
         "unit_config": "Knights, Trickstar",
         "formation_kind": "fixed",
         "position_count": 9,
@@ -1661,6 +1691,7 @@
       {
         "song_id": "song_259edd7b0ba8",
         "title": "Finder Girl",
+        "release_date": "2026-11-15",
         "unit_config": "Trickstar",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1671,6 +1702,7 @@
       {
         "song_id": "song_53c93cb31fde",
         "title": "DIAMOND SUMMER",
+        "release_date": "",
         "unit_config": "Trickstar",
         "formation_kind": "unknown",
         "position_count": 0,
@@ -1681,6 +1713,7 @@
       {
         "song_id": "song_3b8bdf68dd7c",
         "title": "（RE）PLAY",
+        "release_date": "",
         "unit_config": "Eden, Trickstar",
         "formation_kind": "fixed",
         "position_count": 8,
@@ -1691,6 +1724,7 @@
       {
         "song_id": "song_19b2d683e2e0",
         "title": "梦ノ咲流星隊歌",
+        "release_date": "2026-11-15",
         "unit_config": "RYUSEITAI",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -1701,6 +1735,7 @@
       {
         "song_id": "song_d3e8a27e33fb",
         "title": "天下无敵☆メテオレンジャー!",
+        "release_date": "2026-11-15",
         "unit_config": "RYUSEITAI",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -1711,6 +1746,7 @@
       {
         "song_id": "song_5750e49da659",
         "title": "SUPER NOVA REVOLU5TAR",
+        "release_date": "2026-11-15",
         "unit_config": "RYUSEITAI",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -1721,6 +1757,7 @@
       {
         "song_id": "song_ccc184fb8c75",
         "title": "流星花火",
+        "release_date": "2026-11-15",
         "unit_config": "RYUSEITAI",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -1731,6 +1768,7 @@
       {
         "song_id": "song_c73e1aa3ef22",
         "title": "アンリミテッド☆パワー!!!!!",
+        "release_date": "2026-11-15",
         "unit_config": "RYUSEITAI",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -1741,6 +1779,7 @@
       {
         "song_id": "song_c7f32dc0c3f4",
         "title": "GROWING STARRY DAYS",
+        "release_date": "2026-11-15",
         "unit_config": "RYUSEITAI",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -1751,6 +1790,7 @@
       {
         "song_id": "song_46a5658ea267",
         "title": "メテオ・スクランブル☆流星隊！",
+        "release_date": "2026-11-15",
         "unit_config": "RYUSEITAI",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -1761,6 +1801,7 @@
       {
         "song_id": "song_1ee6da2714bc",
         "title": "Heart Heat Beat",
+        "release_date": "2026-11-15",
         "unit_config": "RYUSEITAI",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -1771,6 +1812,7 @@
       {
         "song_id": "song_697a0f5aa0a4",
         "title": "青春Emergency",
+        "release_date": "2026-11-15",
         "unit_config": "RYUSEITAI, Knights",
         "formation_kind": "fixed",
         "position_count": 10,
@@ -1781,6 +1823,7 @@
       {
         "song_id": "song_d8a01455ffbe",
         "title": "OVERFLOW LIGHT UP!!!!!",
+        "release_date": "2026-11-15",
         "unit_config": "RYUSEITAI",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -1791,6 +1834,7 @@
       {
         "song_id": "song_8ecba6ff3bb7",
         "title": "彗星HALATION",
+        "release_date": "2026-11-15",
         "unit_config": "RYUSEITAI",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -1801,6 +1845,7 @@
       {
         "song_id": "song_af5cb76aedcf",
         "title": "Colors Arise",
+        "release_date": "2026-11-15",
         "unit_config": "RYUSEITAI",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -1811,6 +1856,7 @@
       {
         "song_id": "song_c9634d03dde0",
         "title": "WILDLAND SURVIVOR",
+        "release_date": "2026-11-15",
         "unit_config": "RYUSEITAI",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -1821,6 +1867,7 @@
       {
         "song_id": "song_8dc91c9a5498",
         "title": "NEW DAYBREAK",
+        "release_date": "2026-11-15",
         "unit_config": "RYUSEITAI",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -1831,6 +1878,7 @@
       {
         "song_id": "song_0e7472b277e5",
         "title": "熱血☆流星忍法帖",
+        "release_date": "2026-11-15",
         "unit_config": "RYUSEITAI",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -1841,6 +1889,7 @@
       {
         "song_id": "song_c098038e46e1",
         "title": "僕らのステラ",
+        "release_date": "2026-11-15",
         "unit_config": "RYUSEITAI",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -1851,6 +1900,7 @@
       {
         "song_id": "song_d6dd78d784e3",
         "title": "RELAX PARADISE",
+        "release_date": "2026-11-15",
         "unit_config": "RYUSEITAI",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -1861,6 +1911,7 @@
       {
         "song_id": "song_20eefad8da5a",
         "title": "BREAK THE NORM",
+        "release_date": "2026-11-15",
         "unit_config": "RYUSEITAI",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -1871,6 +1922,7 @@
       {
         "song_id": "song_862554f517e7",
         "title": "GET THE WIN",
+        "release_date": "",
         "unit_config": "2wink, RYUSEITAI",
         "formation_kind": "fixed",
         "position_count": 7,
@@ -1881,6 +1933,7 @@
       {
         "song_id": "song_03b2065d864e",
         "title": "五色のShooting☆Star!!!!!",
+        "release_date": "",
         "unit_config": "RYUSEITAI",
         "formation_kind": "unknown",
         "position_count": 0,
@@ -1891,6 +1944,7 @@
       {
         "song_id": "song_fc94ac9ca6c8",
         "title": "ハム太郎とっとこうた",
+        "release_date": "",
         "unit_config": "Ra*bits, RYUSEITAI",
         "formation_kind": "fixed",
         "position_count": 9,
@@ -1901,6 +1955,7 @@
       {
         "song_id": "song_d4721d279d3c",
         "title": "Kiss of Life",
+        "release_date": "2026-11-15",
         "unit_config": "ALKALOID",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1911,6 +1966,7 @@
       {
         "song_id": "song_de4361f880dc",
         "title": "翼モラトリアム",
+        "release_date": "2026-11-15",
         "unit_config": "ALKALOID",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1921,6 +1977,7 @@
       {
         "song_id": "song_1cd5d81835d1",
         "title": "You're Speculation",
+        "release_date": "2026-11-15",
         "unit_config": "ALKALOID",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1931,6 +1988,7 @@
       {
         "song_id": "song_3af219315db7",
         "title": "Distorted Heart",
+        "release_date": "2026-11-15",
         "unit_config": "ALKALOID",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1941,6 +1999,7 @@
       {
         "song_id": "song_874ff128db88",
         "title": "Hysteric Humanoid",
+        "release_date": "2026-11-15",
         "unit_config": "ALKALOID",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1951,6 +2010,7 @@
       {
         "song_id": "song_cbe54d5c11ff",
         "title": "Artistic Partisan",
+        "release_date": "2026-11-15",
         "unit_config": "ALKALOID, Valkyrie",
         "formation_kind": "fixed",
         "position_count": 6,
@@ -1961,6 +2021,7 @@
       {
         "song_id": "song_13139942a6c4",
         "title": "SAKE OF LOVE",
+        "release_date": "2026-11-15",
         "unit_config": "ALKALOID, Crazy:B",
         "formation_kind": "fixed",
         "position_count": 8,
@@ -1971,6 +2032,7 @@
       {
         "song_id": "song_3ee863c4fc4d",
         "title": "Black Out See Saw",
+        "release_date": "2026-11-15",
         "unit_config": "ALKALOID",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1981,6 +2043,7 @@
       {
         "song_id": "song_e06b225c4b6c",
         "title": "Across the universe",
+        "release_date": "2026-11-15",
         "unit_config": "ALKALOID",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -1991,6 +2054,7 @@
       {
         "song_id": "song_77382f0cc9da",
         "title": "VERMILION",
+        "release_date": "2026-11-15",
         "unit_config": "ALKALOID",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2001,6 +2065,7 @@
       {
         "song_id": "song_c86567845082",
         "title": "SunnyTrip Summer",
+        "release_date": "2026-11-15",
         "unit_config": "ALKALOID",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2011,6 +2076,7 @@
       {
         "song_id": "song_fcb1c599d6e8",
         "title": "Living on the edge",
+        "release_date": "2026-11-15",
         "unit_config": "ALKALOID",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2021,6 +2087,7 @@
       {
         "song_id": "song_537681e7ee02",
         "title": "UNDYING HOLY LOVE",
+        "release_date": "2026-11-15",
         "unit_config": "ALKALOID",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2031,6 +2098,7 @@
       {
         "song_id": "song_6bb8e47bb56c",
         "title": "Believe 4 leaves",
+        "release_date": "2026-11-15",
         "unit_config": "ALKALOID",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2041,6 +2109,7 @@
       {
         "song_id": "song_e948810eb839",
         "title": "コトノハカンタービレ",
+        "release_date": "2026-11-15",
         "unit_config": "ALKALOID",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2051,6 +2120,7 @@
       {
         "song_id": "song_e9d5ca4928d5",
         "title": "E.V.O.L.U.T.I.O.N.",
+        "release_date": "",
         "unit_config": "ALKALOID, Switch",
         "formation_kind": "fixed",
         "position_count": 7,
@@ -2061,6 +2131,7 @@
       {
         "song_id": "song_e459bca503e4",
         "title": "フラジール",
+        "release_date": "",
         "unit_config": "ALKALOID, Other",
         "formation_kind": "unknown",
         "position_count": 0,
@@ -2071,6 +2142,7 @@
       {
         "song_id": "song_90a81a004f52",
         "title": "夜に駆ける",
+        "release_date": "",
         "unit_config": "ALKALOID, DoubleFace",
         "formation_kind": "fixed",
         "position_count": 6,
@@ -2081,6 +2153,7 @@
       {
         "song_id": "song_7ca647631ee1",
         "title": "THE GENESIS",
+        "release_date": "2026-11-15",
         "unit_config": "Eden",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2091,6 +2164,7 @@
       {
         "song_id": "song_3f3a17eb992f",
         "title": "Dance in the Apocalyps",
+        "release_date": "2026-11-15",
         "unit_config": "Eden",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2101,6 +2175,7 @@
       {
         "song_id": "song_4b6d8cfa15d2",
         "title": "Awakening Myth",
+        "release_date": "2026-11-15",
         "unit_config": "Eden",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2111,6 +2186,7 @@
       {
         "song_id": "song_f1f7d5246727",
         "title": "Psyche's Butterfly",
+        "release_date": "2026-11-15",
         "unit_config": "Eden",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2121,6 +2197,7 @@
       {
         "song_id": "song_1bcd70c7557b",
         "title": "Deep Eclipse",
+        "release_date": "2026-11-15",
         "unit_config": "Eden",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2131,6 +2208,7 @@
       {
         "song_id": "song_a355097a5822",
         "title": "KEEP OUT",
+        "release_date": "2026-11-15",
         "unit_config": "Eden",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2141,6 +2219,7 @@
       {
         "song_id": "song_ce438ead8310",
         "title": "Majestic Magic",
+        "release_date": "2026-11-15",
         "unit_config": "Switch, Eden",
         "formation_kind": "fixed",
         "position_count": 7,
@@ -2151,6 +2230,7 @@
       {
         "song_id": "song_abefd121ea42",
         "title": "Absolute Perfection",
+        "release_date": "2026-11-15",
         "unit_config": "Eden",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2161,6 +2241,7 @@
       {
         "song_id": "song_f104c3f4ae56",
         "title": "楽園追放 -Faith Conquest-",
+        "release_date": "2026-11-15",
         "unit_config": "Eden",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2171,6 +2252,7 @@
       {
         "song_id": "song_81eaf3bed022",
         "title": "大いなる愛の前に全ては巡り来る",
+        "release_date": "2026-11-15",
         "unit_config": "Eden",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2181,6 +2263,7 @@
       {
         "song_id": "song_843746914715",
         "title": "円環のRefraction",
+        "release_date": "2026-11-15",
         "unit_config": "Eden",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2191,6 +2274,7 @@
       {
         "song_id": "song_7a617dcb29a9",
         "title": "EMBRACE",
+        "release_date": "2026-11-15",
         "unit_config": "Eden",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2201,6 +2285,7 @@
       {
         "song_id": "song_c7e8fae8a586",
         "title": "EXCEED",
+        "release_date": "2026-11-15",
         "unit_config": "Eden",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2211,66 +2296,73 @@
       {
         "song_id": "song_9fcb89a4ff89",
         "title": "Ruler's Truth",
+        "release_date": "2026-11-15",
         "unit_config": "Adam",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#5CAA7F"
       },
       {
         "song_id": "song_6c4a71538bf8",
         "title": "The Beast of the End",
+        "release_date": "2026-11-15",
         "unit_config": "Adam",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#5CAA7F"
       },
       {
         "song_id": "song_f42428413655",
         "title": "Melting Rouge Soul",
+        "release_date": "2026-11-15",
         "unit_config": "Adam",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#5CAA7F"
       },
       {
         "song_id": "song_3feaa60eedfd",
         "title": "Trap For You",
+        "release_date": "2026-11-15",
         "unit_config": "Eve",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#081F2C"
       },
       {
         "song_id": "song_ca1ea8f50812",
         "title": "Sunlit Smile!",
+        "release_date": "2026-11-15",
         "unit_config": "Eve",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#081F2C"
       },
       {
         "song_id": "song_e143c6d257f0",
         "title": "Ruby Love",
+        "release_date": "2026-11-15",
         "unit_config": "Eve",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#081F2C"
       },
       {
         "song_id": "song_3e7459480923",
         "title": "The Bible of The “Eden”",
+        "release_date": "",
         "unit_config": "Eden",
         "formation_kind": "unknown",
         "position_count": 0,
@@ -2281,146 +2373,161 @@
       {
         "song_id": "song_298710aa8ee4",
         "title": "魅惑劇",
+        "release_date": "2026-11-15",
         "unit_config": "Valkyrie",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#8C2346"
       },
       {
         "song_id": "song_f89b9f672e48",
         "title": "礼賛歌",
+        "release_date": "2026-11-15",
         "unit_config": "Valkyrie",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#8C2346"
       },
       {
         "song_id": "song_317e9d4af4e3",
         "title": "Mémoire Antique",
+        "release_date": "2026-11-15",
         "unit_config": "Valkyrie",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#8C2346"
       },
       {
         "song_id": "song_34ef71c58a48",
         "title": "今宵月の館にて",
+        "release_date": "2026-11-15",
         "unit_config": "Valkyrie",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#8C2346"
       },
       {
         "song_id": "song_c4c69007085f",
         "title": "Last Lament",
+        "release_date": "2026-11-15",
         "unit_config": "Valkyrie",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#8C2346"
       },
       {
         "song_id": "song_a7db9b6816f2",
         "title": "凱旋歌",
+        "release_date": "2026-11-15",
         "unit_config": "Valkyrie",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#8C2346"
       },
       {
         "song_id": "song_ce8a4ca262e1",
         "title": "Eternal Weaving",
+        "release_date": "2026-11-15",
         "unit_config": "Valkyrie",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#8C2346"
       },
       {
         "song_id": "song_cfdc974abd8d",
         "title": "麗しのナイチンゲール",
+        "release_date": "2026-11-15",
         "unit_config": "Valkyrie",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#8C2346"
       },
       {
         "song_id": "song_7395a111eca0",
         "title": "Le temps des fleurs",
+        "release_date": "2026-11-15",
         "unit_config": "Valkyrie",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#8C2346"
       },
       {
         "song_id": "song_d721d9ffcd6a",
         "title": "祝福のLibrary",
+        "release_date": "2026-11-15",
         "unit_config": "Valkyrie",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#8C2346"
       },
       {
         "song_id": "song_e31ac777b213",
         "title": "幸福論",
+        "release_date": "2026-11-15",
         "unit_config": "Valkyrie",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#8C2346"
       },
       {
         "song_id": "song_f6b6edd46a7d",
         "title": "Acanthe",
+        "release_date": "2026-11-15",
         "unit_config": "Valkyrie",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#8C2346"
       },
       {
         "song_id": "song_c76e05b1d11e",
         "title": "迷宮電子回廊",
+        "release_date": "2026-11-15",
         "unit_config": "Valkyrie",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#8C2346"
       },
       {
         "song_id": "song_a2e217101847",
         "title": "星の鳴動響きし時に",
+        "release_date": "2026-11-15",
         "unit_config": "Valkyrie",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#8C2346"
       },
       {
         "song_id": "song_99583a0d6ab1",
         "title": "Stranger's sun",
+        "release_date": "",
         "unit_config": "MELLOW DEAR US, Valkyrie",
         "formation_kind": "fixed",
         "position_count": 6,
@@ -2431,16 +2538,18 @@
       {
         "song_id": "song_613366d4a24d",
         "title": "砂上ノ楼閤",
+        "release_date": "",
         "unit_config": "Valkyrie",
         "formation_kind": "unknown",
         "position_count": 0,
         "layout_status": "missing_positions",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#8C2346"
       },
       {
         "song_id": "song_40ade43d7071",
         "title": "勇侠青春謳",
+        "release_date": "",
         "unit_config": "Valkyrie, AKATSUKI",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -2451,196 +2560,216 @@
       {
         "song_id": "song_1145709f1775",
         "title": "シュガー・スパイス方程式",
+        "release_date": "2026-11-15",
         "unit_config": "2wink",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#FF3B9A"
       },
       {
         "song_id": "song_138a5ace638d",
         "title": "歓迎☆トゥ・ウィンク雑伎団",
+        "release_date": "2026-11-15",
         "unit_config": "2wink",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#FF3B9A"
       },
       {
         "song_id": "song_f0ad8679ff72",
         "title": "TRICK with TREAT!!（with UNDEAD）",
+        "release_date": "2026-11-15",
         "unit_config": "2wink",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#FF3B9A"
       },
       {
         "song_id": "song_332ff63d988f",
         "title": "ハートプリズム・シンメトリー",
+        "release_date": "2026-11-15",
         "unit_config": "2wink",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#FF3B9A"
       },
       {
         "song_id": "song_b276c8b44a23",
         "title": "Play “Tag”",
+        "release_date": "2026-11-15",
         "unit_config": "2wink",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#FF3B9A"
       },
       {
         "song_id": "song_923850667d55",
         "title": "2winkle Star Beat☆",
+        "release_date": "2026-11-15",
         "unit_config": "2wink",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#FF3B9A"
       },
       {
         "song_id": "song_a990cfe11483",
         "title": "Mischievous Party Time!!",
+        "release_date": "2026-11-15",
         "unit_config": "2wink",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#FF3B9A"
       },
       {
         "song_id": "song_a9b35dd790ad",
         "title": "Fighting Dreamer",
+        "release_date": "2026-11-15",
         "unit_config": "2wink",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#FF3B9A"
       },
       {
         "song_id": "song_31c2b3f08b08",
         "title": "POLYPHONIC WORLD",
+        "release_date": "2026-11-15",
         "unit_config": "2wink",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#FF3B9A"
       },
       {
         "song_id": "song_4f32900e4ca1",
         "title": "Turbulent Storm",
+        "release_date": "2026-11-15",
         "unit_config": "2wink",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#FF3B9A"
       },
       {
         "song_id": "song_4325f341ffde",
         "title": "トゥウィンクル空中戦",
+        "release_date": "2026-11-15",
         "unit_config": "2wink",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#FF3B9A"
       },
       {
         "song_id": "song_e0adbd9f8de6",
         "title": "Twin Wedding Vows",
+        "release_date": "2026-11-15",
         "unit_config": "2wink",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#FF3B9A"
       },
       {
         "song_id": "song_477b9fdea637",
         "title": "LEMON SQUASH CHEERS!",
+        "release_date": "2026-11-15",
         "unit_config": "Crazy:B, 2wink",
         "formation_kind": "fixed",
         "position_count": 6,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "linear-gradient(135deg, #FFD700 0%, #FFD700 50%, #FF3B9A 50%, #FF3B9A 100%)"
       },
       {
         "song_id": "song_3096f32aaef0",
         "title": "Swee2wink Love Letter",
+        "release_date": "2026-11-15",
         "unit_config": "2wink",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#FF3B9A"
       },
       {
         "song_id": "song_716612b97823",
         "title": "Love×me⇄monsteR",
+        "release_date": "2026-11-15",
         "unit_config": "2wink",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#FF3B9A"
       },
       {
         "song_id": "song_505d28c5a231",
         "title": "来来☆2winkイリュージョン",
+        "release_date": "2026-11-15",
         "unit_config": "2wink",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#FF3B9A"
       },
       {
         "song_id": "song_a57855027d00",
         "title": "SPLASHING WHIRLPOOL!!",
+        "release_date": "2026-11-15",
         "unit_config": "2wink",
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#FF3B9A"
       },
       {
         "song_id": "song_f264f502e080",
         "title": "WONDER WONDER TOY LAND",
+        "release_date": "",
         "unit_config": "2wink",
         "formation_kind": "unknown",
         "position_count": 0,
         "layout_status": "missing_positions",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#FF3B9A"
       },
       {
         "song_id": "song_9ab8ad9872c0",
         "title": "2wink Introduction",
+        "release_date": "",
         "unit_config": "2wink",
         "formation_kind": "unknown",
         "position_count": 0,
         "layout_status": "missing_positions",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#FF3B9A"
       },
       {
         "song_id": "song_4461ea59d30e",
         "title": "Tell Your World",
+        "release_date": "",
         "unit_config": "Switch, 2wink, Other",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -2651,6 +2780,7 @@
       {
         "song_id": "song_3f3d04c758dc",
         "title": "Crazy Roulette",
+        "release_date": "2026-11-15",
         "unit_config": "Crazy:B",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2661,6 +2791,7 @@
       {
         "song_id": "song_19199e1649f3",
         "title": "Be The Party Bee!",
+        "release_date": "2026-11-15",
         "unit_config": "Crazy:B",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2671,6 +2802,7 @@
       {
         "song_id": "song_dac271d15129",
         "title": "RISKY VENUS",
+        "release_date": "2026-11-15",
         "unit_config": "Crazy:B",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2681,6 +2813,7 @@
       {
         "song_id": "song_fec954226aec",
         "title": "PARANOIA STREET",
+        "release_date": "2026-11-15",
         "unit_config": "Crazy:B",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2691,6 +2824,7 @@
       {
         "song_id": "song_1a324f5f2103",
         "title": "Noisy:Beep",
+        "release_date": "2026-11-15",
         "unit_config": "Crazy:B",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2701,6 +2835,7 @@
       {
         "song_id": "song_9175aa8dc3b3",
         "title": "Crazy Anthem",
+        "release_date": "2026-11-15",
         "unit_config": "Crazy:B",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2711,6 +2846,7 @@
       {
         "song_id": "song_2ab2fd55536e",
         "title": "NA NA NA SUMMER NIGHT BeeAT",
+        "release_date": "2026-11-15",
         "unit_config": "Crazy:B",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2721,6 +2857,7 @@
       {
         "song_id": "song_256b3b5a4f3a",
         "title": "Foolish Alien",
+        "release_date": "2026-11-15",
         "unit_config": "Crazy:B",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2731,6 +2868,7 @@
       {
         "song_id": "song_7abff74f1301",
         "title": "UTAKATA DANCE FLOOR",
+        "release_date": "2026-11-15",
         "unit_config": "Crazy:B",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2741,6 +2879,7 @@
       {
         "song_id": "song_15a228ff62e8",
         "title": "指先のアリアドネ",
+        "release_date": "2026-11-15",
         "unit_config": "Crazy:B",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2751,6 +2890,7 @@
       {
         "song_id": "song_9c6bab397a09",
         "title": "CIVIL WAR",
+        "release_date": "2026-11-15",
         "unit_config": "四人月, Crazy:B",
         "formation_kind": "fixed",
         "position_count": 8,
@@ -2761,6 +2901,7 @@
       {
         "song_id": "song_2e9a64df8c91",
         "title": "Helter-Spider",
+        "release_date": "2026-11-15",
         "unit_config": "Crazy:B",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2771,6 +2912,7 @@
       {
         "song_id": "song_afe826491b4d",
         "title": "Honeycomb Summer",
+        "release_date": "2026-11-15",
         "unit_config": "Crazy:B",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2781,6 +2923,7 @@
       {
         "song_id": "song_c504db2c978f",
         "title": "ハニートラップ・マリアージュ",
+        "release_date": "2026-11-15",
         "unit_config": "Crazy:B",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2791,6 +2934,7 @@
       {
         "song_id": "song_0add580d23b0",
         "title": "KING",
+        "release_date": "",
         "unit_config": "Crazy:B, Other",
         "formation_kind": "unknown",
         "position_count": 0,
@@ -2801,6 +2945,7 @@
       {
         "song_id": "song_2c145b3a7f9a",
         "title": "U.S.A",
+        "release_date": "",
         "unit_config": "Crazy:B, UNDEAD",
         "formation_kind": "fixed",
         "position_count": 8,
@@ -2811,6 +2956,7 @@
       {
         "song_id": "song_f9e0c3576d97",
         "title": "Melody in the Dark",
+        "release_date": "2026-11-15",
         "unit_config": "UNDEAD",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2821,6 +2967,7 @@
       {
         "song_id": "song_4400d70c1e72",
         "title": "ハニーミルクはお好みで",
+        "release_date": "2026-11-15",
         "unit_config": "UNDEAD",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2831,6 +2978,7 @@
       {
         "song_id": "song_abbedefea6a0",
         "title": "Gate of the Abyss",
+        "release_date": "2026-11-15",
         "unit_config": "UNDEAD",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2841,6 +2989,7 @@
       {
         "song_id": "song_b2f74ae52ec5",
         "title": "DESTRUCTION ROAD",
+        "release_date": "2026-11-15",
         "unit_config": "UNDEAD",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2851,6 +3000,7 @@
       {
         "song_id": "song_47ad3a26d7cc",
         "title": "Valentine Eve's Nightmare",
+        "release_date": "2026-11-15",
         "unit_config": "UNDEAD",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2861,6 +3011,7 @@
       {
         "song_id": "song_2166b711c17c",
         "title": "IMMORAL WORLD",
+        "release_date": "2026-11-15",
         "unit_config": "UNDEAD",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2871,6 +3022,7 @@
       {
         "song_id": "song_d01e8176e7a3",
         "title": "Savage Love Affair",
+        "release_date": "2026-11-15",
         "unit_config": "UNDEAD",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2881,6 +3033,7 @@
       {
         "song_id": "song_6bfcf4614f85",
         "title": "罪の底",
+        "release_date": "2026-11-15",
         "unit_config": "UNDEAD",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2891,6 +3044,7 @@
       {
         "song_id": "song_7fdcd95702f4",
         "title": "Darkness 4",
+        "release_date": "2026-11-15",
         "unit_config": "UNDEAD",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2901,6 +3055,7 @@
       {
         "song_id": "song_30d7c443cd85",
         "title": "PERFECTLY-IMPERFECT",
+        "release_date": "2026-11-15",
         "unit_config": "UNDEAD, AKATSUKI",
         "formation_kind": "fixed",
         "position_count": 7,
@@ -2911,6 +3066,7 @@
       {
         "song_id": "song_e8e9bff8fdf6",
         "title": "Resurrection of Soul",
+        "release_date": "2026-11-15",
         "unit_config": "UNDEAD",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2921,6 +3077,7 @@
       {
         "song_id": "song_838ca688107e",
         "title": "Wanderlust Sailing",
+        "release_date": "2026-11-15",
         "unit_config": "UNDEAD",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2931,6 +3088,7 @@
       {
         "song_id": "song_50bf6d34ed60",
         "title": "Sustain Memories",
+        "release_date": "2026-11-15",
         "unit_config": "UNDEAD",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2941,6 +3099,7 @@
       {
         "song_id": "song_b357980d55f0",
         "title": "Nightless World",
+        "release_date": "2026-11-15",
         "unit_config": "UNDEAD",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2951,6 +3110,7 @@
       {
         "song_id": "song_ea300e2285b6",
         "title": "SWINGIN' PARONIRIA",
+        "release_date": "2026-11-15",
         "unit_config": "UNDEAD",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2961,6 +3121,7 @@
       {
         "song_id": "song_0ec267fb6f6c",
         "title": "FORBIDDEN RAIN",
+        "release_date": "2026-11-15",
         "unit_config": "UNDEAD",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2971,6 +3132,7 @@
       {
         "song_id": "song_4ba0f95ed024",
         "title": "RAMBLING MOON",
+        "release_date": "2026-11-15",
         "unit_config": "UNDEAD",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -2981,6 +3143,7 @@
       {
         "song_id": "song_ecb21c17047a",
         "title": "Break the Prison",
+        "release_date": "",
         "unit_config": "UNDEAD",
         "formation_kind": "unknown",
         "position_count": 0,
@@ -2991,6 +3154,7 @@
       {
         "song_id": "song_2335d22e3444",
         "title": "Joyful×Box*",
+        "release_date": "2026-11-15",
         "unit_config": "Ra*bits",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3001,6 +3165,7 @@
       {
         "song_id": "song_49998ba34a48",
         "title": "野うさぎマーチ♪",
+        "release_date": "2026-11-15",
         "unit_config": "Ra*bits",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3011,6 +3176,7 @@
       {
         "song_id": "song_00f546d5fe68",
         "title": "Love Ra*bits Party!!",
+        "release_date": "2026-11-15",
         "unit_config": "Ra*bits",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3021,6 +3187,7 @@
       {
         "song_id": "song_2afd788654d5",
         "title": "Milky Starry Charm",
+        "release_date": "2026-11-15",
         "unit_config": "Ra*bits",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3031,6 +3198,7 @@
       {
         "song_id": "song_7976107fa598",
         "title": "メルティ♡キッチン",
+        "release_date": "2026-11-15",
         "unit_config": "Ra*bits",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3041,6 +3209,7 @@
       {
         "song_id": "song_aedcc7d11c58",
         "title": "Dream Collection",
+        "release_date": "2026-11-15",
         "unit_config": "Ra*bits",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3051,6 +3220,7 @@
       {
         "song_id": "song_de056efeac67",
         "title": "メイド・イン・トキメキ♪",
+        "release_date": "2026-11-15",
         "unit_config": "Ra*bits",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3061,6 +3231,7 @@
       {
         "song_id": "song_2977f270a6ea",
         "title": "Love it Love it",
+        "release_date": "2026-11-15",
         "unit_config": "Ra*bits",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3071,6 +3242,7 @@
       {
         "song_id": "song_daaf9eaa6b13",
         "title": "JUMPIN' LUCK BEAT",
+        "release_date": "2026-11-15",
         "unit_config": "Ra*bits",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3081,6 +3253,7 @@
       {
         "song_id": "song_07c598bdfbb9",
         "title": "うさぎの森の音楽会",
+        "release_date": "2026-11-15",
         "unit_config": "Ra*bits",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3091,6 +3264,7 @@
       {
         "song_id": "song_fb2742a22074",
         "title": "ヒカリスペクトル",
+        "release_date": "2026-11-15",
         "unit_config": "Ra*bits",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3101,6 +3275,7 @@
       {
         "song_id": "song_892acb24fa11",
         "title": "ポケットに宇宙",
+        "release_date": "2026-11-15",
         "unit_config": "Ra*bits, DoubleFace",
         "formation_kind": "fixed",
         "position_count": 6,
@@ -3111,6 +3286,7 @@
       {
         "song_id": "song_5c510326eb74",
         "title": "RaRaRa*Station!",
+        "release_date": "2026-11-15",
         "unit_config": "Ra*bits",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3121,6 +3297,7 @@
       {
         "song_id": "song_f929ffce1eb8",
         "title": "パラレルメイズ",
+        "release_date": "2026-11-15",
         "unit_config": "Ra*bits",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3131,6 +3308,7 @@
       {
         "song_id": "song_25d88633ff52",
         "title": "ハレノヒSugar Wave",
+        "release_date": "2026-11-15",
         "unit_config": "Ra*bits",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3141,6 +3319,7 @@
       {
         "song_id": "song_3d5ab217088e",
         "title": "FALLIN' LOVE=IT'S WONDERLAND",
+        "release_date": "2026-11-15",
         "unit_config": "Ra*bits",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3151,6 +3330,7 @@
       {
         "song_id": "song_6f2c70a4b060",
         "title": "The・プリティカルパレード♪",
+        "release_date": "2026-11-22",
         "unit_config": "Special for Princess!, Ra*bits",
         "formation_kind": "fixed",
         "position_count": 8,
@@ -3161,6 +3341,7 @@
       {
         "song_id": "song_669a7d7e6b97",
         "title": "Hoppin' Season♪",
+        "release_date": "",
         "unit_config": "Ra*bits",
         "formation_kind": "unknown",
         "position_count": 0,
@@ -3171,6 +3352,7 @@
       {
         "song_id": "song_66b431f79ed4",
         "title": "百花繚乱、紅月夜",
+        "release_date": "2026-11-15",
         "unit_config": "AKATSUKI",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -3181,6 +3363,7 @@
       {
         "song_id": "song_95930d4f4eb8",
         "title": "斬 －決意ノ刃－",
+        "release_date": "2026-11-15",
         "unit_config": "AKATSUKI",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -3191,6 +3374,7 @@
       {
         "song_id": "song_67635d566517",
         "title": "祭夜絵巻",
+        "release_date": "2026-11-15",
         "unit_config": "AKATSUKI",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -3201,6 +3385,7 @@
       {
         "song_id": "song_92f5cf11112d",
         "title": "剣戟の舞",
+        "release_date": "2026-11-15",
         "unit_config": "AKATSUKI",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -3211,6 +3396,7 @@
       {
         "song_id": "song_e34465cc20f7",
         "title": "月下無双、紅の舞",
+        "release_date": "2026-11-15",
         "unit_config": "AKATSUKI",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -3221,6 +3407,7 @@
       {
         "song_id": "song_1fbe35f02a39",
         "title": "薄紅色の約束",
+        "release_date": "2026-11-15",
         "unit_config": "AKATSUKI",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -3231,6 +3418,7 @@
       {
         "song_id": "song_b01369ae1ec2",
         "title": "夜空、然りとて鵲は",
+        "release_date": "2026-11-15",
         "unit_config": "AKATSUKI",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -3241,6 +3429,7 @@
       {
         "song_id": "song_69a0fea9af42",
         "title": "金色千夜夢舞台",
+        "release_date": "2026-11-15",
         "unit_config": "AKATSUKI",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -3251,6 +3440,7 @@
       {
         "song_id": "song_1fa4d3dcf03c",
         "title": "絲",
+        "release_date": "2026-11-15",
         "unit_config": "AKATSUKI",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -3261,6 +3451,7 @@
       {
         "song_id": "song_6987b206e206",
         "title": "月光奇譚",
+        "release_date": "2026-11-15",
         "unit_config": "AKATSUKI",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -3271,6 +3462,7 @@
       {
         "song_id": "song_fabacc8f40d1",
         "title": "紅月いろは唄",
+        "release_date": "2026-11-15",
         "unit_config": "AKATSUKI",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -3281,6 +3473,7 @@
       {
         "song_id": "song_fb44ea0a66fb",
         "title": "夏鳥の詩 -サマーバード-",
+        "release_date": "2026-11-15",
         "unit_config": "AKATSUKI",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -3291,6 +3484,7 @@
       {
         "song_id": "song_035a08cffb41",
         "title": "花灯の恋文",
+        "release_date": "",
         "unit_config": "AKATSUKI",
         "formation_kind": "unknown",
         "position_count": 0,
@@ -3301,6 +3495,7 @@
       {
         "song_id": "song_4c2f5b498481",
         "title": "想ひ出缀り",
+        "release_date": "",
         "unit_config": "AKATSUKI",
         "formation_kind": "unknown",
         "position_count": 0,
@@ -3311,6 +3506,7 @@
       {
         "song_id": "song_4626e5181fba",
         "title": "RevolTrad~維新伝心~",
+        "release_date": "",
         "unit_config": "MaM, AKATSUKI",
         "formation_kind": "unknown",
         "position_count": 0,
@@ -3321,6 +3517,7 @@
       {
         "song_id": "song_8155b2ed55c5",
         "title": "百花繚乱、紅月夜（2025Ver.）",
+        "release_date": "2026-11-15",
         "unit_config": "四人月",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3331,6 +3528,7 @@
       {
         "song_id": "song_00349c50aeca",
         "title": "天翔KAGETSU",
+        "release_date": "2026-11-15",
         "unit_config": "四人月",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3341,6 +3539,7 @@
       {
         "song_id": "song_5f23b6b056b0",
         "title": "炎纏焔踊千変万火",
+        "release_date": "2026-11-15",
         "unit_config": "四人月",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3351,6 +3550,7 @@
       {
         "song_id": "song_ad544be200b0",
         "title": "LOUDEST BUGS",
+        "release_date": "2026-11-15",
         "unit_config": "四人月",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3361,6 +3561,7 @@
       {
         "song_id": "song_8d0dedad18e1",
         "title": "明鏡流水",
+        "release_date": "",
         "unit_config": "四人月",
         "formation_kind": "unknown",
         "position_count": 0,
@@ -3371,6 +3572,7 @@
       {
         "song_id": "song_6cd5290543a2",
         "title": "Dear World",
+        "release_date": "2026-11-15",
         "unit_config": "MELLOW DEAR US",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3381,6 +3583,7 @@
       {
         "song_id": "song_c61f0c51d264",
         "title": "BUBBLE GUM DANCE",
+        "release_date": "2026-11-15",
         "unit_config": "MELLOW DEAR US",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3391,6 +3594,7 @@
       {
         "song_id": "song_b2ac6daf5392",
         "title": "Mellow Addiction",
+        "release_date": "2026-11-15",
         "unit_config": "MELLOW DEAR US",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3401,6 +3605,7 @@
       {
         "song_id": "song_4d6708273bd9",
         "title": "Femme fatale",
+        "release_date": "",
         "unit_config": "MELLOW DEAR US",
         "formation_kind": "unknown",
         "position_count": 0,
@@ -3411,6 +3616,7 @@
       {
         "song_id": "song_9e01aa371797",
         "title": "I wanna show the gritty glitter",
+        "release_date": "",
         "unit_config": "MELLOW DEAR US",
         "formation_kind": "unknown",
         "position_count": 0,
@@ -3421,6 +3627,7 @@
       {
         "song_id": "song_6e6371440637",
         "title": "Aquarium",
+        "release_date": "",
         "unit_config": "MELLOW DEAR US",
         "formation_kind": "unknown",
         "position_count": 0,
@@ -3431,6 +3638,7 @@
       {
         "song_id": "song_14285ae10cb9",
         "title": "Fight for Judge",
+        "release_date": "2026-11-15",
         "unit_config": "Knights",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -3441,6 +3649,7 @@
       {
         "song_id": "song_c9388f895e6e",
         "title": "Article of Faith",
+        "release_date": "2026-11-15",
         "unit_config": "Knights",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -3451,6 +3660,7 @@
       {
         "song_id": "song_beaefe51e02d",
         "title": "Knights the Phantom Thief",
+        "release_date": "2026-11-15",
         "unit_config": "Knights",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -3461,6 +3671,7 @@
       {
         "song_id": "song_06bcc921a73c",
         "title": "Promise Swords",
+        "release_date": "2026-11-15",
         "unit_config": "Knights",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -3471,6 +3682,7 @@
       {
         "song_id": "song_80457668d34f",
         "title": "Voice of Sword",
+        "release_date": "2026-11-15",
         "unit_config": "Knights",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -3481,6 +3693,7 @@
       {
         "song_id": "song_9852698eae61",
         "title": "Coruscate Breeze",
+        "release_date": "2026-11-15",
         "unit_config": "Knights",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -3491,6 +3704,7 @@
       {
         "song_id": "song_98d12bd86380",
         "title": "Grateful allegiance",
+        "release_date": "2026-11-15",
         "unit_config": "Knights",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -3501,6 +3715,7 @@
       {
         "song_id": "song_d8b431c16440",
         "title": "Silent Oath",
+        "release_date": "2026-11-15",
         "unit_config": "Knights",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -3511,6 +3726,7 @@
       {
         "song_id": "song_72c6ff63ef31",
         "title": "Castle of my Heart",
+        "release_date": "2026-11-15",
         "unit_config": "Knights",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -3521,6 +3737,7 @@
       {
         "song_id": "song_3f518169e115",
         "title": "Wonderful Happiness",
+        "release_date": "2026-11-15",
         "unit_config": "Knights",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -3531,6 +3748,7 @@
       {
         "song_id": "song_1be0af88f8d0",
         "title": "Luminous Crown",
+        "release_date": "2026-11-15",
         "unit_config": "Knights",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -3541,6 +3759,7 @@
       {
         "song_id": "song_9afd2308dcbd",
         "title": "Secret Masquerade",
+        "release_date": "2026-11-15",
         "unit_config": "Knights",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -3551,6 +3770,7 @@
       {
         "song_id": "song_b464f12abd93",
         "title": "Heart Collector",
+        "release_date": "2026-11-15",
         "unit_config": "Knights",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -3561,6 +3781,7 @@
       {
         "song_id": "song_79ea8303895e",
         "title": "Mystic Fragrance",
+        "release_date": "2026-11-15",
         "unit_config": "Knights",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -3571,6 +3792,7 @@
       {
         "song_id": "song_6840675fe65e",
         "title": "Little Romance",
+        "release_date": "2026-11-15",
         "unit_config": "Knights",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -3581,6 +3803,7 @@
       {
         "song_id": "song_df29ef582916",
         "title": "Or the Beautiful Golden Drop",
+        "release_date": "2026-11-15",
         "unit_config": "Knights",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -3591,6 +3814,7 @@
       {
         "song_id": "song_48b0a9e87b70",
         "title": "Checkmate Knights",
+        "release_date": "2026-11-15",
         "unit_config": "Knights",
         "formation_kind": "unknown",
         "position_count": 0,
@@ -3601,6 +3825,7 @@
       {
         "song_id": "song_0bff69dfafba",
         "title": "Temptation Magic",
+        "release_date": "2026-11-15",
         "unit_config": "Switch",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -3611,6 +3836,7 @@
       {
         "song_id": "song_237641868232",
         "title": "Knockin' Fantasy",
+        "release_date": "2026-11-15",
         "unit_config": "Switch",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -3621,6 +3847,7 @@
       {
         "song_id": "song_272137fbf668",
         "title": "イースター・カーニバル",
+        "release_date": "2026-11-15",
         "unit_config": "Switch",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -3631,6 +3858,7 @@
       {
         "song_id": "song_e9dcbfd5a374",
         "title": "Galaxy Destiny",
+        "release_date": "2026-11-15",
         "unit_config": "Switch",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -3641,6 +3869,7 @@
       {
         "song_id": "song_3b700f06c44f",
         "title": "I \"Witch” You A Happy Halloween!",
+        "release_date": "2026-11-15",
         "unit_config": "Switch",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -3651,6 +3880,7 @@
       {
         "song_id": "song_f30f965865e5",
         "title": "エメラルドプラネット",
+        "release_date": "2026-11-15",
         "unit_config": "Switch",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -3661,6 +3891,7 @@
       {
         "song_id": "song_7de429001b8d",
         "title": "Magic for your \"Switch\"",
+        "release_date": "2026-11-15",
         "unit_config": "Switch",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -3671,6 +3902,7 @@
       {
         "song_id": "song_8e9e44121746",
         "title": "A little bit UP!!",
+        "release_date": "2026-11-15",
         "unit_config": "Switch",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -3681,6 +3913,7 @@
       {
         "song_id": "song_39aafe4d2805",
         "title": "Romancing Cruise",
+        "release_date": "2026-11-15",
         "unit_config": "Switch",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -3691,6 +3924,7 @@
       {
         "song_id": "song_3666293ef4f3",
         "title": "Seven Days \"Prismagic\"",
+        "release_date": "2026-11-15",
         "unit_config": "Switch",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -3701,6 +3935,7 @@
       {
         "song_id": "song_e945e6bc76de",
         "title": "Switching Journey",
+        "release_date": "2026-11-15",
         "unit_config": "Switch",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -3711,6 +3946,7 @@
       {
         "song_id": "song_24e4f8bd9249",
         "title": "Wish upon a MUSIC!!",
+        "release_date": "2026-11-15",
         "unit_config": "Switch",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -3721,6 +3957,7 @@
       {
         "song_id": "song_a7f95a1c5ba0",
         "title": "Brilliant Smile",
+        "release_date": "2026-11-15",
         "unit_config": "Switch",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -3731,6 +3968,7 @@
       {
         "song_id": "song_3584bfe10899",
         "title": "オモイノカケラ",
+        "release_date": "2026-11-15",
         "unit_config": "Switch",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -3741,6 +3979,7 @@
       {
         "song_id": "song_1f5c5b08bf1f",
         "title": "Chocola-Tic After School",
+        "release_date": "2026-11-15",
         "unit_config": "Switch",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -3751,6 +3990,7 @@
       {
         "song_id": "song_d9eaea646f46",
         "title": "Blooming World",
+        "release_date": "2026-11-15",
         "unit_config": "MaM",
         "formation_kind": "fixed",
         "position_count": 1,
@@ -3761,6 +4001,7 @@
       {
         "song_id": "song_a884a74dba91",
         "title": "Festive!",
+        "release_date": "2026-11-15",
         "unit_config": "MaM",
         "formation_kind": "fixed",
         "position_count": 1,
@@ -3771,6 +4012,7 @@
       {
         "song_id": "song_b6667a05496c",
         "title": "君印 Be Ambitious!!",
+        "release_date": "2026-11-15",
         "unit_config": "MaM",
         "formation_kind": "fixed",
         "position_count": 1,
@@ -3781,6 +4023,7 @@
       {
         "song_id": "song_008fa383d270",
         "title": "愉快痛快 That's alright!",
+        "release_date": "2026-11-15",
         "unit_config": "MaM",
         "formation_kind": "fixed",
         "position_count": 1,
@@ -3791,6 +4034,7 @@
       {
         "song_id": "song_f78d291f729e",
         "title": "ハンズクラフト",
+        "release_date": "2026-11-15",
         "unit_config": "MaM",
         "formation_kind": "fixed",
         "position_count": 1,
@@ -3801,6 +4045,7 @@
       {
         "song_id": "song_faacc1bec397",
         "title": "HELLO, NEW YEAR!",
+        "release_date": "2026-11-15",
         "unit_config": "MaM",
         "formation_kind": "mixed",
         "position_count": 4,
@@ -3811,6 +4056,7 @@
       {
         "song_id": "song_02c5bfe73320",
         "title": "ハロウィン・ランデブー",
+        "release_date": "2026-11-15",
         "unit_config": "MaM",
         "formation_kind": "fixed",
         "position_count": 1,
@@ -3821,6 +4067,7 @@
       {
         "song_id": "song_a859c627edfb",
         "title": "Light on the Orbit",
+        "release_date": "2026-11-15",
         "unit_config": "MaM",
         "formation_kind": "fixed",
         "position_count": 1,
@@ -3831,6 +4078,7 @@
       {
         "song_id": "song_478b71c2a636",
         "title": "辻風に吹かれて",
+        "release_date": "2026-11-15",
         "unit_config": "MaM",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3841,6 +4089,7 @@
       {
         "song_id": "song_4567790e5789",
         "title": "ラスト・ページ",
+        "release_date": "2026-11-15",
         "unit_config": "MaM",
         "formation_kind": "fixed",
         "position_count": 1,
@@ -3851,6 +4100,7 @@
       {
         "song_id": "song_eea257b81e72",
         "title": "‘=EYE=",
+        "release_date": "2026-11-15",
         "unit_config": "DoubleFace",
         "formation_kind": "fixed",
         "position_count": 2,
@@ -3861,6 +4111,7 @@
       {
         "song_id": "song_5b658ea8fab0",
         "title": "Stippling",
+        "release_date": "2026-11-15",
         "unit_config": "DoubleFace",
         "formation_kind": "fixed",
         "position_count": 2,
@@ -3871,6 +4122,7 @@
       {
         "song_id": "song_84a47c43faf1",
         "title": "ネビュラ",
+        "release_date": "2026-11-15",
         "unit_config": "DoubleFace",
         "formation_kind": "fixed",
         "position_count": 2,
@@ -3881,6 +4133,7 @@
       {
         "song_id": "song_b7012d43986a",
         "title": "Bye-Bye Buddy",
+        "release_date": "2026-11-15",
         "unit_config": "DoubleFace",
         "formation_kind": "fixed",
         "position_count": 2,
@@ -3891,6 +4144,7 @@
       {
         "song_id": "song_f4989e275f0f",
         "title": "No name yet",
+        "release_date": "2026-11-15",
         "unit_config": "DoubleFace",
         "formation_kind": "fixed",
         "position_count": 2,
@@ -3901,6 +4155,7 @@
       {
         "song_id": "song_7a7c99453e0e",
         "title": "Secret of Metropolis",
+        "release_date": "2026-11-15",
         "unit_config": "DoubleFace",
         "formation_kind": "fixed",
         "position_count": 2,
@@ -3911,6 +4166,7 @@
       {
         "song_id": "song_70c51343651b",
         "title": "Sleeper Mystery Train",
+        "release_date": "2026-11-15",
         "unit_config": "DoubleFace",
         "formation_kind": "unknown",
         "position_count": 0,
@@ -3921,6 +4177,7 @@
       {
         "song_id": "song_baeda816cf9d",
         "title": "しょーがいゼッタイそーあい宣言♥",
+        "release_date": "2026-11-15",
         "unit_config": "Special for Princess!",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3931,6 +4188,7 @@
       {
         "song_id": "song_ce486340cc45",
         "title": "スキスキハンター♡",
+        "release_date": "2026-11-15",
         "unit_config": "Special for Princess!",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3941,6 +4199,7 @@
       {
         "song_id": "song_038d194de57e",
         "title": "Be My Princess♡",
+        "release_date": "2026-11-15",
         "unit_config": "Special for Princess!",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3951,6 +4210,7 @@
       {
         "song_id": "song_a70ba6dbc4ed",
         "title": "メランコリーを駆け拔けろ♥",
+        "release_date": "2026-11-15",
         "unit_config": "Special for Princess!",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3961,6 +4221,7 @@
       {
         "song_id": "song_82849a254d2c",
         "title": "ベリイ・ベリイ・スイート・ホワイト♡",
+        "release_date": "2026-11-15",
         "unit_config": "Special for Princess!",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3971,6 +4232,7 @@
       {
         "song_id": "song_3b0bd0409abb",
         "title": "Nightmare Syndrome♡",
+        "release_date": "2026-11-15",
         "unit_config": "Special for Princess!",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3981,6 +4243,7 @@
       {
         "song_id": "song_932380193757",
         "title": "パンダちっくコミュニケイション♥",
+        "release_date": "2026-11-15",
         "unit_config": "Special for Princess!",
         "formation_kind": "unknown",
         "position_count": 0,
@@ -3991,6 +4254,7 @@
       {
         "song_id": "song_b492a7bc5c47",
         "title": "Stars' Ensemble!",
+        "release_date": "2026-11-15",
         "unit_config": "Other",
         "formation_kind": "free",
         "position_count": 5,
@@ -4001,6 +4265,7 @@
       {
         "song_id": "song_c74b29f43716",
         "title": "BRAND NEW STARS!!",
+        "release_date": "2026-11-15",
         "unit_config": "Other",
         "formation_kind": "free",
         "position_count": 5,
@@ -4011,6 +4276,7 @@
       {
         "song_id": "song_bf1c16241fdc",
         "title": "ONLY YOUR STARS!",
+        "release_date": "2026-11-15",
         "unit_config": "Other",
         "formation_kind": "free",
         "position_count": 5,
@@ -4021,6 +4287,7 @@
       {
         "song_id": "song_6012840f055d",
         "title": "Walk with your smile",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 周年曲",
         "formation_kind": "free",
         "position_count": 5,
@@ -4031,6 +4298,7 @@
       {
         "song_id": "song_f7c5b14f0149",
         "title": "FUSIONIC STARS!!",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 周年曲",
         "formation_kind": "free",
         "position_count": 5,
@@ -4041,6 +4309,7 @@
       {
         "song_id": "song_16bc2e1c8645",
         "title": "Surprising Thanks!!",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 周年曲",
         "formation_kind": "free",
         "position_count": 5,
@@ -4051,6 +4320,7 @@
       {
         "song_id": "song_744670562920",
         "title": "One with One",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 周年曲",
         "formation_kind": "free",
         "position_count": 5,
@@ -4061,6 +4331,7 @@
       {
         "song_id": "song_00c6699f6c60",
         "title": "LIMIT BREAK DREAMERS",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 周年曲",
         "formation_kind": "free",
         "position_count": 5,
@@ -4071,6 +4342,7 @@
       {
         "song_id": "song_f0efc6e72f19",
         "title": "BRIGHTEST STARS!!",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 周年曲",
         "formation_kind": "free",
         "position_count": 5,
@@ -4081,6 +4353,7 @@
       {
         "song_id": "song_58940e304f6d",
         "title": "CALL YOUR NAME!!",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 周年曲",
         "formation_kind": "unknown",
         "position_count": 0,
@@ -4091,6 +4364,7 @@
       {
         "song_id": "song_242aeac927fd",
         "title": "あんさんぶる体操！！",
+        "release_date": "2026-11-15",
         "unit_config": "Other, J&A, 愚人节",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -4101,6 +4375,7 @@
       {
         "song_id": "song_b1073c35a569",
         "title": "エンドレスヴィーデ",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 愚人节",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -4111,6 +4386,7 @@
       {
         "song_id": "song_3ceb238de5c4",
         "title": "BUKUBU NEW STARS!!",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 愚人节",
         "formation_kind": "unknown",
         "position_count": 0,
@@ -4121,6 +4397,7 @@
       {
         "song_id": "song_60796b9be51c",
         "title": "あんさんぶるトレーニング！！",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 愚人节",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -4131,6 +4408,7 @@
       {
         "song_id": "song_9fb2706f9689",
         "title": "両片思いの交差点で、君にまた逢いたくて",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 愚人节",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -4141,6 +4419,7 @@
       {
         "song_id": "song_28afa7f58845",
         "title": "ペルソナアビス",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 愚人节",
         "formation_kind": "unknown",
         "position_count": 0,
@@ -4151,6 +4430,7 @@
       {
         "song_id": "song_6db9b21bce48",
         "title": "デートプランA to Z",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 一轮洗牌",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -4161,6 +4441,7 @@
       {
         "song_id": "song_6b4ce321b45f",
         "title": "Midnight Butlers",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 一轮洗牌",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -4171,6 +4452,7 @@
       {
         "song_id": "song_63c4e268edc1",
         "title": "Sweet Sweet White Song",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 一轮洗牌",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -4181,6 +4463,7 @@
       {
         "song_id": "song_7716a9140b13",
         "title": "Aisle, be with you",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 一轮洗牌",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -4191,6 +4474,7 @@
       {
         "song_id": "song_f9bc625be3fb",
         "title": "ムーンライトディスコ",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 一轮洗牌",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -4201,6 +4485,7 @@
       {
         "song_id": "song_f5be9d8384d9",
         "title": "Noir Neige",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 一轮洗牌",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -4211,6 +4496,7 @@
       {
         "song_id": "song_a57dd1bebd1d",
         "title": "パラダイム·リバーシ！",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 一轮洗牌",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -4221,6 +4507,7 @@
       {
         "song_id": "song_86da53da2a86",
         "title": "FIST OF SOUL",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 一轮洗牌",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -4231,6 +4518,7 @@
       {
         "song_id": "song_dc65852115f8",
         "title": "Heart aid Cafeteria",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 一轮洗牌",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -4241,6 +4529,7 @@
       {
         "song_id": "song_a5a5acafd0fb",
         "title": "Have you been naughty or nice?",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 一轮洗牌",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -4251,6 +4540,7 @@
       {
         "song_id": "song_112f785f985a",
         "title": "Ringing evil phone",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 二轮洗牌",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -4261,6 +4551,7 @@
       {
         "song_id": "song_a558bf5fa7a2",
         "title": "喪失寓意 -LOST BALLADE-",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 二轮洗牌",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -4271,6 +4562,7 @@
       {
         "song_id": "song_37a7f708d6e8",
         "title": "堕天使たちの晩餐会",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 二轮洗牌",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -4281,6 +4573,7 @@
       {
         "song_id": "song_27000f86009f",
         "title": "君恋志願",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 二轮洗牌",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -4291,6 +4584,7 @@
       {
         "song_id": "song_3febbb3286fb",
         "title": "クマクマレスQ",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 二轮洗牌",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -4301,6 +4595,7 @@
       {
         "song_id": "song_2853a084f738",
         "title": "僕のウィーク・ポイント",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 投票洗牌",
         "formation_kind": "fixed",
         "position_count": 7,
@@ -4311,6 +4606,7 @@
       {
         "song_id": "song_a70295e11017",
         "title": "Graceful Punishment",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 投票洗牌",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -4321,6 +4617,7 @@
       {
         "song_id": "song_276941ac297c",
         "title": "Deep into you",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 投票洗牌",
         "formation_kind": "fixed",
         "position_count": 7,
@@ -4331,6 +4628,7 @@
       {
         "song_id": "song_548c9c97de5e",
         "title": "らびゅ&ピース伝説",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 投票洗牌",
         "formation_kind": "fixed",
         "position_count": 6,
@@ -4341,6 +4639,7 @@
       {
         "song_id": "song_bd88c9f0111e",
         "title": "Ai☆$!!",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 投票洗牌",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -4351,6 +4650,7 @@
       {
         "song_id": "song_b5249ce4be85",
         "title": "It's (k)not lov?",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 投票洗牌",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -4361,6 +4661,7 @@
       {
         "song_id": "song_454e06dd3302",
         "title": "それは残像の消失点",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 投票洗牌",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -4371,6 +4672,7 @@
       {
         "song_id": "song_2682c1b0d3af",
         "title": "催花雨の片道切符",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 投票洗牌",
         "formation_kind": "fixed",
         "position_count": 2,
@@ -4381,6 +4683,7 @@
       {
         "song_id": "song_3bf25c5e7f7c",
         "title": "Fight Is Only Fate",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 投票洗牌",
         "formation_kind": "fixed",
         "position_count": 7,
@@ -4391,6 +4694,7 @@
       {
         "song_id": "song_81be29c7965f",
         "title": "プロローグのそのあとへ",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 投票洗牌",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -4401,6 +4705,7 @@
       {
         "song_id": "song_90d69cfc95c0",
         "title": "こはく・晃牙・忍・弓弦",
+        "release_date": "2026-11-15",
         "unit_config": "Other, solo串烧",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -4411,6 +4716,7 @@
       {
         "song_id": "song_c1e7082b9e94",
         "title": "真緒・ゆうた・宙・アドニス",
+        "release_date": "",
         "unit_config": "Other, solo串烧",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -4421,6 +4727,7 @@
       {
         "song_id": "song_3f631fdbd94b",
         "title": "巽・日和・奏汰・零",
+        "release_date": "",
         "unit_config": "Other, solo串烧",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -4431,6 +4738,7 @@
       {
         "song_id": "song_b7a06fdb3ce8",
         "title": "瞬きSign☆",
+        "release_date": "2026-11-15",
         "unit_config": "Other, NICE.DREAM.UNIT",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -4441,6 +4749,7 @@
       {
         "song_id": "song_f78396e4718b",
         "title": "セツナDrops",
+        "release_date": "2026-11-15",
         "unit_config": "Other, NICE.DREAM.UNIT",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -4451,6 +4760,7 @@
       {
         "song_id": "song_5a041eca7d01",
         "title": "LOCK YOUR GAZE",
+        "release_date": "2026-11-15",
         "unit_config": "Other, NICE.DREAM.UNIT",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -4461,6 +4771,7 @@
       {
         "song_id": "song_50a77b9f426f",
         "title": "フュージョン",
+        "release_date": "2026-11-15",
         "unit_config": "Other, PJSK",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -4471,6 +4782,7 @@
       {
         "song_id": "song_4599b61f8a4f",
         "title": "Eccentric Party Night!!",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 五奇人",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -4481,6 +4793,7 @@
       {
         "song_id": "song_81d26f33a716",
         "title": "Twilight Pentagram",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 五奇人",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -4491,6 +4804,7 @@
       {
         "song_id": "song_0e1bea339f20",
         "title": "Genuine Revelation",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 旧fine",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -4501,6 +4815,7 @@
       {
         "song_id": "song_9589de9b07cd",
         "title": "Dawning Angels",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 旧fine",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -4511,6 +4826,7 @@
       {
         "song_id": "song_26b9e272603a",
         "title": "圣少年游戯",
+        "release_date": "2026-11-15",
         "unit_config": "Other, 旧Valkyrie",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -4521,6 +4837,7 @@
       {
         "song_id": "song_ae14c7441a62",
         "title": "We'll be\"Knights\"",
+        "release_date": "2026-11-15",
         "unit_config": "Other, Knights with 凛月・岚",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -4531,6 +4848,7 @@
       {
         "song_id": "song_b217dcd5e5bd",
         "title": "Crush of Judgment",
+        "release_date": "2026-11-15",
         "unit_config": "Other, Knight Killers",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -4541,6 +4859,7 @@
       {
         "song_id": "song_289e4c6ade3b",
         "title": "Death Game Holic",
+        "release_date": "2026-11-15",
         "unit_config": "Other, DEADMANS",
         "formation_kind": "fixed",
         "position_count": 3,
@@ -4551,6 +4870,7 @@
       {
         "song_id": "song_f702663eed1f",
         "title": "ROCK ROAR",
+        "release_date": "2026-11-15",
         "unit_config": "Other, DEADMANS",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -4561,6 +4881,7 @@
       {
         "song_id": "song_06c28dae9ea0",
         "title": "Rainbow Stairway",
+        "release_date": "2026-11-15",
         "unit_config": "J&A",
         "formation_kind": "fixed",
         "position_count": 2,
@@ -4571,6 +4892,7 @@
       {
         "song_id": "song_fec201cc4669",
         "title": "ハナニナレ!",
+        "release_date": "2026-11-15",
         "unit_config": "J&A",
         "formation_kind": "fixed",
         "position_count": 2,
@@ -4581,6 +4903,7 @@
       {
         "song_id": "song_5aa05a1f5d9b",
         "title": "輝きの中で",
+        "release_date": "2026-11-15",
         "unit_config": "J&A",
         "formation_kind": "unknown",
         "position_count": 0,
@@ -4591,1679 +4914,13 @@
       {
         "song_id": "song_d1bc073453a1",
         "title": "UNFADING",
+        "release_date": "2026-11-15",
         "unit_config": "J&A",
         "formation_kind": "unknown",
         "position_count": 0,
         "layout_status": "missing_positions",
         "combination_status": "missing",
         "background_css": "#004D99"
-      }
-    ],
-    "song_releases": [
-      {
-        "song_id": "song_1a118eac1b9b",
-        "title": "终わらないシンフォニア",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_e57e0742fb6a",
-        "title": "RAINBOW CIRCUS",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_90af8520a51b",
-        "title": "羽ばたきのフォルティシモ",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_e43726faddee",
-        "title": "Neo Sanctuary",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_a1c7157dd497",
-        "title": "Miracle Dream Traveler",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_7ee7f1a64f76",
-        "title": "Never-ending Stage!!!!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_70ab7550fc9f",
-        "title": "Angelic Grace",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_368a5bc01f86",
-        "title": "始まりのファンタジア",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_b8cdfe1e1928",
-        "title": "Crossing×Heart",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_6f9e52b60ba7",
-        "title": "Holy Angel's Carol",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_02fde485d3bf",
-        "title": "Feathers of Ark",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_0ffefa0445c3",
-        "title": "Fairy Tale Library",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_fe520522758f",
-        "title": "恋はプリマヴェーラ！",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_9f6a29f2d74f",
-        "title": "The Tempest Night",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_d9c30fc56e55",
-        "title": "RED GARDEN",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_e169128ecb33",
-        "title": "Dreaming Ocean",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_71f611a674e2",
-        "title": "Musica Vita! -ムジカ・ヴィータ-",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_0d1dbd139bb6",
-        "title": "Ghostic Treat House",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_2a6ff189082e",
-        "title": "狂怪ノ怨黙-キョウカイノエンモク-",
-        "release_date": ""
-      },
-      {
-        "song_id": "song_a53841e5d3c8",
-        "title": "Tryst of Stars",
-        "release_date": ""
-      },
-      {
-        "song_id": "song_9560289984a0",
-        "title": "スターライトパレード",
-        "release_date": ""
-      },
-      {
-        "song_id": "song_6de4a0a8ff5a",
-        "title": "Rebellion Star",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_2f96247e8408",
-        "title": "CHERRY HAPPY STREAM",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_a3dabf50ba07",
-        "title": "HEART→BEATER!!!!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_76406d3759e9",
-        "title": "Welcome to the Trickstar Night☆",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_7892b092a3ca",
-        "title": "BREAKTHROUGH!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_292552ade123",
-        "title": "1st SING-ALONG☆",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_be5f50fc4003",
-        "title": "Unstoppable Love!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_f7c93b113cc1",
-        "title": "Romantic Xday!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_32ef34f10bab",
-        "title": "幸せの歌",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_0d7d18b25a76",
-        "title": "虹色のSeasons",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_7c441d2d44d9",
-        "title": "CELEBRATE!!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_6f2328deb812",
-        "title": "Infinite Star",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_d70996d82446",
-        "title": "ONLY YOUR STARS! (TS Ver.)",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_bfb9c4d54670",
-        "title": "キセキ",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_cbbcf5f47999",
-        "title": "BIGBANG REFLECTION!!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_8c814ebdcf1f",
-        "title": "Daydream×Reality",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_515def0f6b9b",
-        "title": "ワチャガナドゥ？",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_d4930e520cb6",
-        "title": "Unbalanced Triangle",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_259edd7b0ba8",
-        "title": "Finder Girl",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_53c93cb31fde",
-        "title": "DIAMOND SUMMER",
-        "release_date": ""
-      },
-      {
-        "song_id": "song_3b8bdf68dd7c",
-        "title": "（RE）PLAY",
-        "release_date": ""
-      },
-      {
-        "song_id": "song_19b2d683e2e0",
-        "title": "梦ノ咲流星隊歌",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_d3e8a27e33fb",
-        "title": "天下无敵☆メテオレンジャー!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_5750e49da659",
-        "title": "SUPER NOVA REVOLU5TAR",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_ccc184fb8c75",
-        "title": "流星花火",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_c73e1aa3ef22",
-        "title": "アンリミテッド☆パワー!!!!!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_c7f32dc0c3f4",
-        "title": "GROWING STARRY DAYS",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_46a5658ea267",
-        "title": "メテオ・スクランブル☆流星隊！",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_1ee6da2714bc",
-        "title": "Heart Heat Beat",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_697a0f5aa0a4",
-        "title": "青春Emergency",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_d8a01455ffbe",
-        "title": "OVERFLOW LIGHT UP!!!!!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_8ecba6ff3bb7",
-        "title": "彗星HALATION",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_af5cb76aedcf",
-        "title": "Colors Arise",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_c9634d03dde0",
-        "title": "WILDLAND SURVIVOR",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_8dc91c9a5498",
-        "title": "NEW DAYBREAK",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_0e7472b277e5",
-        "title": "熱血☆流星忍法帖",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_c098038e46e1",
-        "title": "僕らのステラ",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_d6dd78d784e3",
-        "title": "RELAX PARADISE",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_20eefad8da5a",
-        "title": "BREAK THE NORM",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_862554f517e7",
-        "title": "GET THE WIN",
-        "release_date": ""
-      },
-      {
-        "song_id": "song_03b2065d864e",
-        "title": "五色のShooting☆Star!!!!!",
-        "release_date": ""
-      },
-      {
-        "song_id": "song_fc94ac9ca6c8",
-        "title": "ハム太郎とっとこうた",
-        "release_date": ""
-      },
-      {
-        "song_id": "song_d4721d279d3c",
-        "title": "Kiss of Life",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_de4361f880dc",
-        "title": "翼モラトリアム",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_1cd5d81835d1",
-        "title": "You're Speculation",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_3af219315db7",
-        "title": "Distorted Heart",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_874ff128db88",
-        "title": "Hysteric Humanoid",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_cbe54d5c11ff",
-        "title": "Artistic Partisan",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_13139942a6c4",
-        "title": "SAKE OF LOVE",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_3ee863c4fc4d",
-        "title": "Black Out See Saw",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_e06b225c4b6c",
-        "title": "Across the universe",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_77382f0cc9da",
-        "title": "VERMILION",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_c86567845082",
-        "title": "SunnyTrip Summer",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_fcb1c599d6e8",
-        "title": "Living on the edge",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_537681e7ee02",
-        "title": "UNDYING HOLY LOVE",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_6bb8e47bb56c",
-        "title": "Believe 4 leaves",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_e948810eb839",
-        "title": "コトノハカンタービレ",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_e9d5ca4928d5",
-        "title": "E.V.O.L.U.T.I.O.N.",
-        "release_date": ""
-      },
-      {
-        "song_id": "song_e459bca503e4",
-        "title": "フラジール",
-        "release_date": ""
-      },
-      {
-        "song_id": "song_90a81a004f52",
-        "title": "夜に駆ける",
-        "release_date": ""
-      },
-      {
-        "song_id": "song_7ca647631ee1",
-        "title": "THE GENESIS",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_3f3a17eb992f",
-        "title": "Dance in the Apocalyps",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_4b6d8cfa15d2",
-        "title": "Awakening Myth",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_f1f7d5246727",
-        "title": "Psyche's Butterfly",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_1bcd70c7557b",
-        "title": "Deep Eclipse",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_a355097a5822",
-        "title": "KEEP OUT",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_ce438ead8310",
-        "title": "Majestic Magic",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_abefd121ea42",
-        "title": "Absolute Perfection",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_f104c3f4ae56",
-        "title": "楽園追放 -Faith Conquest-",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_81eaf3bed022",
-        "title": "大いなる愛の前に全ては巡り来る",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_843746914715",
-        "title": "円環のRefraction",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_7a617dcb29a9",
-        "title": "EMBRACE",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_c7e8fae8a586",
-        "title": "EXCEED",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_9fcb89a4ff89",
-        "title": "Ruler's Truth",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_6c4a71538bf8",
-        "title": "The Beast of the End",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_f42428413655",
-        "title": "Melting Rouge Soul",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_3feaa60eedfd",
-        "title": "Trap For You",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_ca1ea8f50812",
-        "title": "Sunlit Smile!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_e143c6d257f0",
-        "title": "Ruby Love",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_3e7459480923",
-        "title": "The Bible of The “Eden”",
-        "release_date": ""
-      },
-      {
-        "song_id": "song_298710aa8ee4",
-        "title": "魅惑劇",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_f89b9f672e48",
-        "title": "礼賛歌",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_317e9d4af4e3",
-        "title": "Mémoire Antique",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_34ef71c58a48",
-        "title": "今宵月の館にて",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_c4c69007085f",
-        "title": "Last Lament",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_a7db9b6816f2",
-        "title": "凱旋歌",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_ce8a4ca262e1",
-        "title": "Eternal Weaving",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_cfdc974abd8d",
-        "title": "麗しのナイチンゲール",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_7395a111eca0",
-        "title": "Le temps des fleurs",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_d721d9ffcd6a",
-        "title": "祝福のLibrary",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_e31ac777b213",
-        "title": "幸福論",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_f6b6edd46a7d",
-        "title": "Acanthe",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_c76e05b1d11e",
-        "title": "迷宮電子回廊",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_a2e217101847",
-        "title": "星の鳴動響きし時に",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_99583a0d6ab1",
-        "title": "Stranger's sun",
-        "release_date": ""
-      },
-      {
-        "song_id": "song_613366d4a24d",
-        "title": "砂上ノ楼閤",
-        "release_date": ""
-      },
-      {
-        "song_id": "song_40ade43d7071",
-        "title": "勇侠青春謳",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_1145709f1775",
-        "title": "シュガー・スパイス方程式",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_138a5ace638d",
-        "title": "歓迎☆トゥ・ウィンク雑伎団",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_f0ad8679ff72",
-        "title": "TRICK with TREAT!!（with UNDEAD）",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_332ff63d988f",
-        "title": "ハートプリズム・シンメトリー",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_b276c8b44a23",
-        "title": "Play “Tag”",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_923850667d55",
-        "title": "2winkle Star Beat☆",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_a990cfe11483",
-        "title": "Mischievous Party Time!!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_a9b35dd790ad",
-        "title": "Fighting Dreamer",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_31c2b3f08b08",
-        "title": "POLYPHONIC WORLD",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_4f32900e4ca1",
-        "title": "Turbulent Storm",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_4325f341ffde",
-        "title": "トゥウィンクル空中戦",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_e0adbd9f8de6",
-        "title": "Twin Wedding Vows",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_477b9fdea637",
-        "title": "LEMON SQUASH CHEERS!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_3096f32aaef0",
-        "title": "Swee2wink Love Letter",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_716612b97823",
-        "title": "Love×me⇄monsteR",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_505d28c5a231",
-        "title": "来来☆2winkイリュージョン",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_a57855027d00",
-        "title": "SPLASHING WHIRLPOOL!!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_f264f502e080",
-        "title": "WONDER WONDER TOY LAND",
-        "release_date": ""
-      },
-      {
-        "song_id": "song_9ab8ad9872c0",
-        "title": "2wink Introduction",
-        "release_date": ""
-      },
-      {
-        "song_id": "song_4461ea59d30e",
-        "title": "Tell Your World",
-        "release_date": ""
-      },
-      {
-        "song_id": "song_3f3d04c758dc",
-        "title": "Crazy Roulette",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_19199e1649f3",
-        "title": "Be The Party Bee!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_dac271d15129",
-        "title": "RISKY VENUS",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_fec954226aec",
-        "title": "PARANOIA STREET",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_1a324f5f2103",
-        "title": "Noisy:Beep",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_9175aa8dc3b3",
-        "title": "Crazy Anthem",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_2ab2fd55536e",
-        "title": "NA NA NA SUMMER NIGHT BeeAT",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_256b3b5a4f3a",
-        "title": "Foolish Alien",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_7abff74f1301",
-        "title": "UTAKATA DANCE FLOOR",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_15a228ff62e8",
-        "title": "指先のアリアドネ",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_9c6bab397a09",
-        "title": "CIVIL WAR",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_2e9a64df8c91",
-        "title": "Helter-Spider",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_afe826491b4d",
-        "title": "Honeycomb Summer",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_c504db2c978f",
-        "title": "ハニートラップ・マリアージュ",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_0add580d23b0",
-        "title": "KING",
-        "release_date": ""
-      },
-      {
-        "song_id": "song_2c145b3a7f9a",
-        "title": "U.S.A",
-        "release_date": ""
-      },
-      {
-        "song_id": "song_f9e0c3576d97",
-        "title": "Melody in the Dark",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_4400d70c1e72",
-        "title": "ハニーミルクはお好みで",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_abbedefea6a0",
-        "title": "Gate of the Abyss",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_b2f74ae52ec5",
-        "title": "DESTRUCTION ROAD",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_47ad3a26d7cc",
-        "title": "Valentine Eve's Nightmare",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_2166b711c17c",
-        "title": "IMMORAL WORLD",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_d01e8176e7a3",
-        "title": "Savage Love Affair",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_6bfcf4614f85",
-        "title": "罪の底",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_7fdcd95702f4",
-        "title": "Darkness 4",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_30d7c443cd85",
-        "title": "PERFECTLY-IMPERFECT",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_e8e9bff8fdf6",
-        "title": "Resurrection of Soul",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_838ca688107e",
-        "title": "Wanderlust Sailing",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_50bf6d34ed60",
-        "title": "Sustain Memories",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_b357980d55f0",
-        "title": "Nightless World",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_ea300e2285b6",
-        "title": "SWINGIN' PARONIRIA",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_0ec267fb6f6c",
-        "title": "FORBIDDEN RAIN",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_4ba0f95ed024",
-        "title": "RAMBLING MOON",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_ecb21c17047a",
-        "title": "Break the Prison",
-        "release_date": ""
-      },
-      {
-        "song_id": "song_2335d22e3444",
-        "title": "Joyful×Box*",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_49998ba34a48",
-        "title": "野うさぎマーチ♪",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_00f546d5fe68",
-        "title": "Love Ra*bits Party!!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_2afd788654d5",
-        "title": "Milky Starry Charm",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_7976107fa598",
-        "title": "メルティ♡キッチン",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_aedcc7d11c58",
-        "title": "Dream Collection",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_de056efeac67",
-        "title": "メイド・イン・トキメキ♪",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_2977f270a6ea",
-        "title": "Love it Love it",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_daaf9eaa6b13",
-        "title": "JUMPIN' LUCK BEAT",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_07c598bdfbb9",
-        "title": "うさぎの森の音楽会",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_fb2742a22074",
-        "title": "ヒカリスペクトル",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_892acb24fa11",
-        "title": "ポケットに宇宙",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_5c510326eb74",
-        "title": "RaRaRa*Station!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_f929ffce1eb8",
-        "title": "パラレルメイズ",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_25d88633ff52",
-        "title": "ハレノヒSugar Wave",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_3d5ab217088e",
-        "title": "FALLIN' LOVE=IT'S WONDERLAND",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_6f2c70a4b060",
-        "title": "The・プリティカルパレード♪",
-        "release_date": "2026-11-22"
-      },
-      {
-        "song_id": "song_669a7d7e6b97",
-        "title": "Hoppin' Season♪",
-        "release_date": ""
-      },
-      {
-        "song_id": "song_66b431f79ed4",
-        "title": "百花繚乱、紅月夜",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_95930d4f4eb8",
-        "title": "斬 －決意ノ刃－",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_67635d566517",
-        "title": "祭夜絵巻",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_92f5cf11112d",
-        "title": "剣戟の舞",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_e34465cc20f7",
-        "title": "月下無双、紅の舞",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_1fbe35f02a39",
-        "title": "薄紅色の約束",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_b01369ae1ec2",
-        "title": "夜空、然りとて鵲は",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_69a0fea9af42",
-        "title": "金色千夜夢舞台",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_1fa4d3dcf03c",
-        "title": "絲",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_6987b206e206",
-        "title": "月光奇譚",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_fabacc8f40d1",
-        "title": "紅月いろは唄",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_fb44ea0a66fb",
-        "title": "夏鳥の詩 -サマーバード-",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_035a08cffb41",
-        "title": "花灯の恋文",
-        "release_date": ""
-      },
-      {
-        "song_id": "song_4c2f5b498481",
-        "title": "想ひ出缀り",
-        "release_date": ""
-      },
-      {
-        "song_id": "song_4626e5181fba",
-        "title": "RevolTrad~維新伝心~",
-        "release_date": ""
-      },
-      {
-        "song_id": "song_8155b2ed55c5",
-        "title": "百花繚乱、紅月夜（2025Ver.）",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_00349c50aeca",
-        "title": "天翔KAGETSU",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_5f23b6b056b0",
-        "title": "炎纏焔踊千変万火",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_ad544be200b0",
-        "title": "LOUDEST BUGS",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_8d0dedad18e1",
-        "title": "明鏡流水",
-        "release_date": ""
-      },
-      {
-        "song_id": "song_6cd5290543a2",
-        "title": "Dear World",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_c61f0c51d264",
-        "title": "BUBBLE GUM DANCE",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_b2ac6daf5392",
-        "title": "Mellow Addiction",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_4d6708273bd9",
-        "title": "Femme fatale",
-        "release_date": ""
-      },
-      {
-        "song_id": "song_9e01aa371797",
-        "title": "I wanna show the gritty glitter",
-        "release_date": ""
-      },
-      {
-        "song_id": "song_6e6371440637",
-        "title": "Aquarium",
-        "release_date": ""
-      },
-      {
-        "song_id": "song_14285ae10cb9",
-        "title": "Fight for Judge",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_c9388f895e6e",
-        "title": "Article of Faith",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_beaefe51e02d",
-        "title": "Knights the Phantom Thief",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_06bcc921a73c",
-        "title": "Promise Swords",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_80457668d34f",
-        "title": "Voice of Sword",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_9852698eae61",
-        "title": "Coruscate Breeze",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_98d12bd86380",
-        "title": "Grateful allegiance",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_d8b431c16440",
-        "title": "Silent Oath",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_72c6ff63ef31",
-        "title": "Castle of my Heart",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_3f518169e115",
-        "title": "Wonderful Happiness",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_1be0af88f8d0",
-        "title": "Luminous Crown",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_9afd2308dcbd",
-        "title": "Secret Masquerade",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_b464f12abd93",
-        "title": "Heart Collector",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_79ea8303895e",
-        "title": "Mystic Fragrance",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_6840675fe65e",
-        "title": "Little Romance",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_df29ef582916",
-        "title": "Or the Beautiful Golden Drop",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_48b0a9e87b70",
-        "title": "Checkmate Knights",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_0bff69dfafba",
-        "title": "Temptation Magic",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_237641868232",
-        "title": "Knockin' Fantasy",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_272137fbf668",
-        "title": "イースター・カーニバル",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_e9dcbfd5a374",
-        "title": "Galaxy Destiny",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_3b700f06c44f",
-        "title": "I \"Witch” You A Happy Halloween!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_f30f965865e5",
-        "title": "エメラルドプラネット",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_7de429001b8d",
-        "title": "Magic for your \"Switch\"",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_8e9e44121746",
-        "title": "A little bit UP!!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_39aafe4d2805",
-        "title": "Romancing Cruise",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_3666293ef4f3",
-        "title": "Seven Days \"Prismagic\"",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_e945e6bc76de",
-        "title": "Switching Journey",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_24e4f8bd9249",
-        "title": "Wish upon a MUSIC!!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_a7f95a1c5ba0",
-        "title": "Brilliant Smile",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_3584bfe10899",
-        "title": "オモイノカケラ",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_1f5c5b08bf1f",
-        "title": "Chocola-Tic After School",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_d9eaea646f46",
-        "title": "Blooming World",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_a884a74dba91",
-        "title": "Festive!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_b6667a05496c",
-        "title": "君印 Be Ambitious!!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_008fa383d270",
-        "title": "愉快痛快 That's alright!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_f78d291f729e",
-        "title": "ハンズクラフト",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_faacc1bec397",
-        "title": "HELLO, NEW YEAR!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_02c5bfe73320",
-        "title": "ハロウィン・ランデブー",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_a859c627edfb",
-        "title": "Light on the Orbit",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_478b71c2a636",
-        "title": "辻風に吹かれて",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_4567790e5789",
-        "title": "ラスト・ページ",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_eea257b81e72",
-        "title": "‘=EYE=",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_5b658ea8fab0",
-        "title": "Stippling",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_84a47c43faf1",
-        "title": "ネビュラ",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_b7012d43986a",
-        "title": "Bye-Bye Buddy",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_f4989e275f0f",
-        "title": "No name yet",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_7a7c99453e0e",
-        "title": "Secret of Metropolis",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_70c51343651b",
-        "title": "Sleeper Mystery Train",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_baeda816cf9d",
-        "title": "しょーがいゼッタイそーあい宣言♥",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_ce486340cc45",
-        "title": "スキスキハンター♡",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_038d194de57e",
-        "title": "Be My Princess♡",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_a70ba6dbc4ed",
-        "title": "メランコリーを駆け拔けろ♥",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_82849a254d2c",
-        "title": "ベリイ・ベリイ・スイート・ホワイト♡",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_3b0bd0409abb",
-        "title": "Nightmare Syndrome♡",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_932380193757",
-        "title": "パンダちっくコミュニケイション♥",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_b492a7bc5c47",
-        "title": "Stars' Ensemble!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_c74b29f43716",
-        "title": "BRAND NEW STARS!!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_bf1c16241fdc",
-        "title": "ONLY YOUR STARS!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_6012840f055d",
-        "title": "Walk with your smile",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_f7c5b14f0149",
-        "title": "FUSIONIC STARS!!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_16bc2e1c8645",
-        "title": "Surprising Thanks!!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_744670562920",
-        "title": "One with One",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_00c6699f6c60",
-        "title": "LIMIT BREAK DREAMERS",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_f0efc6e72f19",
-        "title": "BRIGHTEST STARS!!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_58940e304f6d",
-        "title": "CALL YOUR NAME!!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_242aeac927fd",
-        "title": "あんさんぶる体操！！",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_b1073c35a569",
-        "title": "エンドレスヴィーデ",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_3ceb238de5c4",
-        "title": "BUKUBU NEW STARS!!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_60796b9be51c",
-        "title": "あんさんぶるトレーニング！！",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_9fb2706f9689",
-        "title": "両片思いの交差点で、君にまた逢いたくて",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_28afa7f58845",
-        "title": "ペルソナアビス",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_6db9b21bce48",
-        "title": "デートプランA to Z",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_6b4ce321b45f",
-        "title": "Midnight Butlers",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_63c4e268edc1",
-        "title": "Sweet Sweet White Song",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_7716a9140b13",
-        "title": "Aisle, be with you",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_f9bc625be3fb",
-        "title": "ムーンライトディスコ",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_f5be9d8384d9",
-        "title": "Noir Neige",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_a57dd1bebd1d",
-        "title": "パラダイム·リバーシ！",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_86da53da2a86",
-        "title": "FIST OF SOUL",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_dc65852115f8",
-        "title": "Heart aid Cafeteria",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_a5a5acafd0fb",
-        "title": "Have you been naughty or nice?",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_112f785f985a",
-        "title": "Ringing evil phone",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_a558bf5fa7a2",
-        "title": "喪失寓意 -LOST BALLADE-",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_37a7f708d6e8",
-        "title": "堕天使たちの晩餐会",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_27000f86009f",
-        "title": "君恋志願",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_3febbb3286fb",
-        "title": "クマクマレスQ",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_2853a084f738",
-        "title": "僕のウィーク・ポイント",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_a70295e11017",
-        "title": "Graceful Punishment",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_276941ac297c",
-        "title": "Deep into you",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_548c9c97de5e",
-        "title": "らびゅ&ピース伝説",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_bd88c9f0111e",
-        "title": "Ai☆$!!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_b5249ce4be85",
-        "title": "It's (k)not lov?",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_454e06dd3302",
-        "title": "それは残像の消失点",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_2682c1b0d3af",
-        "title": "催花雨の片道切符",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_3bf25c5e7f7c",
-        "title": "Fight Is Only Fate",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_81be29c7965f",
-        "title": "プロローグのそのあとへ",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_90d69cfc95c0",
-        "title": "こはく・晃牙・忍・弓弦",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_c1e7082b9e94",
-        "title": "真緒・ゆうた・宙・アドニス",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_3f631fdbd94b",
-        "title": "巽・日和・奏汰・零",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_b7a06fdb3ce8",
-        "title": "瞬きSign☆",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_f78396e4718b",
-        "title": "セツナDrops",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_5a041eca7d01",
-        "title": "LOCK YOUR GAZE",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_50a77b9f426f",
-        "title": "フュージョン",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_4599b61f8a4f",
-        "title": "Eccentric Party Night!!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_81d26f33a716",
-        "title": "Twilight Pentagram",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_0e1bea339f20",
-        "title": "Genuine Revelation",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_9589de9b07cd",
-        "title": "Dawning Angels",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_26b9e272603a",
-        "title": "圣少年游戯",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_ae14c7441a62",
-        "title": "We'll be\"Knights\"",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_b217dcd5e5bd",
-        "title": "Crush of Judgment",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_289e4c6ade3b",
-        "title": "Death Game Holic",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_f702663eed1f",
-        "title": "ROCK ROAR",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_06c28dae9ea0",
-        "title": "Rainbow Stairway",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_fec201cc4669",
-        "title": "ハナニナレ!",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_5aa05a1f5d9b",
-        "title": "輝きの中で",
-        "release_date": "2026-11-15"
-      },
-      {
-        "song_id": "song_d1bc073453a1",
-        "title": "UNFADING",
-        "release_date": "2026-11-15"
       }
     ],
     "song_placements": [
@@ -41569,33 +40226,33 @@
       },
       {
         "song_id": "song_9fcb89a4ff89",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_6c4a71538bf8",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_f42428413655",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_3feaa60eedfd",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_ca1ea8f50812",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_e143c6d257f0",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_3e7459480923",
@@ -41604,73 +40261,73 @@
       },
       {
         "song_id": "song_298710aa8ee4",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_f89b9f672e48",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_317e9d4af4e3",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_34ef71c58a48",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_c4c69007085f",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_a7db9b6816f2",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_ce8a4ca262e1",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_cfdc974abd8d",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_7395a111eca0",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_d721d9ffcd6a",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_e31ac777b213",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_f6b6edd46a7d",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_c76e05b1d11e",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_a2e217101847",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_99583a0d6ab1",
@@ -41679,8 +40336,8 @@
       },
       {
         "song_id": "song_613366d4a24d",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_40ade43d7071",
@@ -41689,98 +40346,98 @@
       },
       {
         "song_id": "song_1145709f1775",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_138a5ace638d",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_f0ad8679ff72",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_332ff63d988f",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_b276c8b44a23",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_923850667d55",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_a990cfe11483",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_a9b35dd790ad",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_31c2b3f08b08",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_4f32900e4ca1",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_4325f341ffde",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_e0adbd9f8de6",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_477b9fdea637",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_3096f32aaef0",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_716612b97823",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_505d28c5a231",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_a57855027d00",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_f264f502e080",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_9ab8ad9872c0",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_4461ea59d30e",
@@ -50254,42 +48911,6 @@
         "detail": "《EMBRACE》数字组合原始序列正在录入。"
       },
       {
-        "kind": "missing_combinations",
-        "entity_id": "song_9fcb89a4ff89",
-        "source_file": "data/source/songs.csv",
-        "detail": "《Ruler's Truth》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_6c4a71538bf8",
-        "source_file": "data/source/songs.csv",
-        "detail": "《The Beast of the End》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_f42428413655",
-        "source_file": "data/source/songs.csv",
-        "detail": "《Melting Rouge Soul》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_3feaa60eedfd",
-        "source_file": "data/source/songs.csv",
-        "detail": "《Trap For You》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_ca1ea8f50812",
-        "source_file": "data/source/songs.csv",
-        "detail": "《Sunlit Smile!》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_e143c6d257f0",
-        "source_file": "data/source/songs.csv",
-        "detail": "《Ruby Love》数字组合原始序列正在录入。"
-      },
-      {
         "kind": "missing_positions",
         "entity_id": "song_3e7459480923",
         "source_file": "data/source/positions.csv",
@@ -50300,90 +48921,6 @@
         "entity_id": "song_3e7459480923",
         "source_file": "data/source/songs.csv",
         "detail": "《The Bible of The “Eden”》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_298710aa8ee4",
-        "source_file": "data/source/songs.csv",
-        "detail": "《魅惑劇》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_f89b9f672e48",
-        "source_file": "data/source/songs.csv",
-        "detail": "《礼賛歌》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_317e9d4af4e3",
-        "source_file": "data/source/songs.csv",
-        "detail": "《Mémoire Antique》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_34ef71c58a48",
-        "source_file": "data/source/songs.csv",
-        "detail": "《今宵月の館にて》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_c4c69007085f",
-        "source_file": "data/source/songs.csv",
-        "detail": "《Last Lament》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_a7db9b6816f2",
-        "source_file": "data/source/songs.csv",
-        "detail": "《凱旋歌》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_ce8a4ca262e1",
-        "source_file": "data/source/songs.csv",
-        "detail": "《Eternal Weaving》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_cfdc974abd8d",
-        "source_file": "data/source/songs.csv",
-        "detail": "《麗しのナイチンゲール》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_7395a111eca0",
-        "source_file": "data/source/songs.csv",
-        "detail": "《Le temps des fleurs》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_d721d9ffcd6a",
-        "source_file": "data/source/songs.csv",
-        "detail": "《祝福のLibrary》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_e31ac777b213",
-        "source_file": "data/source/songs.csv",
-        "detail": "《幸福論》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_f6b6edd46a7d",
-        "source_file": "data/source/songs.csv",
-        "detail": "《Acanthe》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_c76e05b1d11e",
-        "source_file": "data/source/songs.csv",
-        "detail": "《迷宮電子回廊》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_a2e217101847",
-        "source_file": "data/source/songs.csv",
-        "detail": "《星の鳴動響きし時に》数字组合原始序列正在录入。"
       },
       {
         "kind": "missing_combinations",
@@ -50399,117 +48936,9 @@
       },
       {
         "kind": "missing_combinations",
-        "entity_id": "song_613366d4a24d",
-        "source_file": "data/source/songs.csv",
-        "detail": "《砂上ノ楼閤》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
         "entity_id": "song_40ade43d7071",
         "source_file": "data/source/songs.csv",
         "detail": "《勇侠青春謳》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_1145709f1775",
-        "source_file": "data/source/songs.csv",
-        "detail": "《シュガー・スパイス方程式》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_138a5ace638d",
-        "source_file": "data/source/songs.csv",
-        "detail": "《歓迎☆トゥ・ウィンク雑伎団》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_f0ad8679ff72",
-        "source_file": "data/source/songs.csv",
-        "detail": "《TRICK with TREAT!!（with UNDEAD）》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_332ff63d988f",
-        "source_file": "data/source/songs.csv",
-        "detail": "《ハートプリズム・シンメトリー》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_b276c8b44a23",
-        "source_file": "data/source/songs.csv",
-        "detail": "《Play “Tag”》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_923850667d55",
-        "source_file": "data/source/songs.csv",
-        "detail": "《2winkle Star Beat☆》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_a990cfe11483",
-        "source_file": "data/source/songs.csv",
-        "detail": "《Mischievous Party Time!!》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_a9b35dd790ad",
-        "source_file": "data/source/songs.csv",
-        "detail": "《Fighting Dreamer》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_31c2b3f08b08",
-        "source_file": "data/source/songs.csv",
-        "detail": "《POLYPHONIC WORLD》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_4f32900e4ca1",
-        "source_file": "data/source/songs.csv",
-        "detail": "《Turbulent Storm》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_4325f341ffde",
-        "source_file": "data/source/songs.csv",
-        "detail": "《トゥウィンクル空中戦》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_e0adbd9f8de6",
-        "source_file": "data/source/songs.csv",
-        "detail": "《Twin Wedding Vows》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_477b9fdea637",
-        "source_file": "data/source/songs.csv",
-        "detail": "《LEMON SQUASH CHEERS!》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_3096f32aaef0",
-        "source_file": "data/source/songs.csv",
-        "detail": "《Swee2wink Love Letter》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_716612b97823",
-        "source_file": "data/source/songs.csv",
-        "detail": "《Love×me⇄monsteR》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_505d28c5a231",
-        "source_file": "data/source/songs.csv",
-        "detail": "《来来☆2winkイリュージョン》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_a57855027d00",
-        "source_file": "data/source/songs.csv",
-        "detail": "《SPLASHING WHIRLPOOL!!》数字组合原始序列正在录入。"
       },
       {
         "kind": "missing_positions",
@@ -50518,22 +48947,10 @@
         "detail": "《WONDER WONDER TOY LAND》站位正在录入。"
       },
       {
-        "kind": "missing_combinations",
-        "entity_id": "song_f264f502e080",
-        "source_file": "data/source/songs.csv",
-        "detail": "《WONDER WONDER TOY LAND》数字组合原始序列正在录入。"
-      },
-      {
         "kind": "missing_positions",
         "entity_id": "song_9ab8ad9872c0",
         "source_file": "data/source/positions.csv",
         "detail": "《2wink Introduction》站位正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_9ab8ad9872c0",
-        "source_file": "data/source/songs.csv",
-        "detail": "《2wink Introduction》数字组合原始序列正在录入。"
       },
       {
         "kind": "missing_combinations",

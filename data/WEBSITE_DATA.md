@@ -17,7 +17,7 @@
 | 歌曲 → 处理后数字组合 | 不重复维护 | songs[].combinations：value、count、color |
 | 歌曲 → 颜色配置 | song_labels.csv 的有序组合配置，颜色取组合／Other | songs[].backgroundCss、colors |
 | 歌曲 → 展示分区与顺序 | song_placements.csv 的 song_id、section_id、sort_order | songPlacements[].songId、sectionId、sortOrder |
-| 歌曲 → 实装日期 | song_releases.csv 的 release_date，格式 YYYY-MM-DD | songs[].releaseDate：日期字符串或 null |
+| 歌曲 → 实装日期 | songs.csv 的 release_date，支持 YYYY-MM-DD 或 YYYY/MM/DD | songs[].releaseDate：统一为 YYYY-MM-DD 字符串或 null |
 | 站位选项 | 不重复维护，从实际录入内容生成 | combinationOptions：value、positions、songCount |
 | 特殊歌曲底色 | display.json 的 song_background_overrides（歌曲 ID → HEX） | 已合并到 songs[].backgroundCss、colors |
 | 次数颜色规则 | frequency_colors.csv | songs[].combinations[].color（保留 frequencyColors 接口，页面不显示图例） |
@@ -74,6 +74,6 @@ const results = filterSongs(site.songs, selection);
 
 已移除旧别名表、重复的菜单布局表／JSON、空的单位／人物独立文字色字段、重复的标签名称与公司字段、独立的歌曲原文维护表，以及 2,097 行空白占位。待补清单也去除了无实际用途的旧来源行号、回复栏和重复提示。
 
-当前有十一张维护 CSV；站位源有 1,233 个已知位置，333 个歌曲实体仍保存 3,330 个站位格，357 条分区展示记录引用这些歌曲。生成的 CSV／dataset 与 Excel 是核对视图，不是额外维护源，也无需随网页一起下载。
+当前有十张维护 CSV；站位源有 1,233 个已知位置，333 个歌曲实体仍保存 3,330 个站位格，357 条分区展示记录引用这些歌曲。生成的 CSV／dataset 与 Excel 是核对视图，不是额外维护源，也无需随网页一起下载。
 
-仍缺四家公司代表色；26 首歌的站位、237 首歌的数字组合原文正在录入。页面已加载 Noto Sans JP 并适配桌面／手机，表格在窄屏横向滚动；未录入数据保留空缺提示。公司按钮采用中性背景，不推测公司代表色。
+仍缺四家公司代表色；26 首歌的站位、237 首歌的数字组合原文正在录入。页面已加载 Noto Sans JP 并适配桌面／手机，表格在窄屏按可用宽度整体等比缩小，完整展示所有列；未录入数据保留空缺提示。公司按钮采用中性背景，不推测公司代表色。

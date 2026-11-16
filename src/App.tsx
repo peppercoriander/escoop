@@ -2,6 +2,7 @@ import { Fragment, useEffect, useMemo, useState } from 'react';
 import { encodeAssetPath, characterCellStyle, songCellStyle, isSongReleased } from './lib/song-data.mjs';
 import { createCatalogState, toggleCatalogState, selectSongRows, visibleMembers, positionOptions } from './lib/catalog.mjs';
 import FloatingReset from './FloatingReset';
+import ResponsiveSongTable from './ResponsiveSongTable';
 import useTokyoDate from './useTokyoDate';
 import type { Group, Selection, SiteData, Unit } from './types';
 import styles from './App.module.css';
@@ -75,7 +76,7 @@ function Catalog({ site }: { site: SiteData }) {
     </section>
     <section className={cn('results')} aria-labelledby="results-title">
       <div className={cn('results-toolbar')}><h2 id="results-title">歌曲一览 <span id="result-count" role="status" aria-live="polite">{songCount} / {site.songs.length}</span></h2></div>
-      <div className={cn('table-container')} role="region" aria-label="歌曲站位结果表格" hidden={!rows.length}>
+      <ResponsiveSongTable hidden={!rows.length}>
         <table><caption className={cn('sr-only')}>处理后的站位信息、歌曲名及按位置排列的成员信息</caption><colgroup><col className={cn('combination-column')} /><col className={cn('song-column')} /><col span={10} className={cn('member-column')} /></colgroup><thead><tr><th rowSpan={2} scope="col">站位信息</th><th className={cn('sticky-song-heading')} rowSpan={2} scope="col">歌曲名</th><th colSpan={10} scope="colgroup">成员信息</th></tr><tr>{Array.from({ length: 10 }, (_, i) => <th key={i} scope="col">{i + 1}</th>)}</tr></thead>
           <tbody>{rows.map(({ song, section, sectionId }) => {
             const released = isSongReleased(song.releaseDate, today);
@@ -94,7 +95,7 @@ function Catalog({ site }: { site: SiteData }) {
             </Fragment>;
           })}</tbody>
         </table>
-      </div>
+      </ResponsiveSongTable>
       {!rows.length && <div id="empty-state" className={cn('empty-state')}><span aria-hidden="true">∅</span><h3>没有符合条件的歌曲</h3><p>试着减少一个筛选条件，或重置后重新选择。</p><button id="empty-reset" className={cn('reset')} type="button" onClick={reset}>↺ RESET</button></div>}
     </section>
     <FloatingReset onReset={reset} />

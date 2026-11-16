@@ -12086,7 +12086,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_6c4a71538bf8",
@@ -12178,7 +12178,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_f42428413655",
@@ -12270,7 +12270,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_3feaa60eedfd",
@@ -12362,7 +12362,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_ca1ea8f50812",
@@ -12454,7 +12454,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_e143c6d257f0",
@@ -12546,7 +12546,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_3e7459480923",
@@ -12730,7 +12730,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_f89b9f672e48",
@@ -12822,7 +12822,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_317e9d4af4e3",
@@ -12914,7 +12914,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_34ef71c58a48",
@@ -13006,7 +13006,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_c4c69007085f",
@@ -13098,7 +13098,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_a7db9b6816f2",
@@ -13190,7 +13190,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_ce8a4ca262e1",
@@ -13282,7 +13282,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_cfdc974abd8d",
@@ -13374,7 +13374,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_7395a111eca0",
@@ -13466,7 +13466,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_d721d9ffcd6a",
@@ -13558,7 +13558,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_e31ac777b213",
@@ -13650,7 +13650,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_f6b6edd46a7d",
@@ -13742,7 +13742,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_c76e05b1d11e",
@@ -13834,7 +13834,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_a2e217101847",
@@ -13926,7 +13926,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_99583a0d6ab1",
@@ -14113,7 +14113,7 @@
       ],
       "formationKind": "unknown",
       "layoutStatus": "missing_positions",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_40ade43d7071",
@@ -14127,7 +14127,7 @@
         "label_47bf340cb8a7"
       ],
       "unitConfig": "Valkyrie, AKATSUKI",
-      "releaseDate": "2026-11-15",
+      "releaseDate": null,
       "positions": [
         {
           "position": 1,
@@ -14300,7 +14300,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_138a5ace638d",
@@ -14392,7 +14392,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_f0ad8679ff72",
@@ -14484,7 +14484,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_332ff63d988f",
@@ -14576,7 +14576,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_b276c8b44a23",
@@ -14668,7 +14668,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_923850667d55",
@@ -14760,7 +14760,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_a990cfe11483",
@@ -14852,7 +14852,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_a9b35dd790ad",
@@ -14944,7 +14944,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_31c2b3f08b08",
@@ -15036,7 +15036,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_4f32900e4ca1",
@@ -15128,7 +15128,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_4325f341ffde",
@@ -15220,7 +15220,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_e0adbd9f8de6",
@@ -15312,7 +15312,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_477b9fdea637",
@@ -15407,7 +15407,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_3096f32aaef0",
@@ -15499,7 +15499,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_716612b97823",
@@ -15591,7 +15591,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_505d28c5a231",
@@ -15683,7 +15683,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_a57855027d00",
@@ -15775,7 +15775,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_f264f502e080",
@@ -15867,7 +15867,7 @@
       ],
       "formationKind": "unknown",
       "layoutStatus": "missing_positions",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_9ab8ad9872c0",
@@ -15959,7 +15959,7 @@
       ],
       "formationKind": "unknown",
       "layoutStatus": "missing_positions",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_4461ea59d30e",
@@ -33005,7 +33005,7 @@
         "label_d518471c70de"
       ],
       "unitConfig": "Other, solo串烧",
-      "releaseDate": "2026-11-15",
+      "releaseDate": null,
       "positions": [
         {
           "position": 1,
@@ -33096,7 +33096,7 @@
         "label_d518471c70de"
       ],
       "unitConfig": "Other, solo串烧",
-      "releaseDate": "2026-11-15",
+      "releaseDate": null,
       "positions": [
         {
           "position": 1,

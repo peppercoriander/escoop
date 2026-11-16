@@ -5,7 +5,6 @@
     "characters": 60,
     "character_units": 69,
     "songs": 333,
-    "song_releases": 333,
     "song_placements": 357,
     "labels": 36,
     "song_labels": 415,
@@ -16,16 +15,16 @@
     "combination_counts": 278,
     "song_color_bands": 357,
     "combination_options": 26,
-    "issues": 267
+    "issues": 227
   },
   "combination_status": {
-    "none": 11,
+    "none": 51,
     "recorded": 85,
-    "missing": 237
+    "missing": 197
   },
   "issue_counts": {
     "missing_group_color": 4,
-    "missing_combinations": 237,
+    "missing_combinations": 197,
     "missing_positions": 26
   },
   "free_position_cells": 48,
