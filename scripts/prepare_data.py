@@ -23,6 +23,7 @@ INPUTS = {
     'characters': ('人物', 'character_id display_name background_color'),
     'character_units': ('人物Unit关系', 'character_id unit_id sort_order'),
     'songs': ('歌曲', 'song_id title combination_raw'),
+    'song_placements': ('歌曲展示位置', 'song_id title section_id section_name sort_order'),
     'labels': ('分类', 'label_id unit_id name'),
     'song_labels': ('歌曲分类顺序', 'song_id label_id tag_order'),
     'positions': ('歌曲站位', 'song_id position character_id slot_type label_id'),
@@ -62,6 +63,7 @@ def build(source=SOURCE):
         for row in rows:
             require(None not in row and all(v is not None for v in row.values()), f'{key}: invalid CSV row')
             required = {'character_units': ['character_id', 'unit_id'], 'song_labels': ['song_id', 'label_id'],
+                        'song_placements': ['song_id', 'section_id'],
                         'positions': ['song_id']}.get(key, [])
             require(all(row[field] for field in required), f'{key}: missing relationship key')
             for field in NUMBERS.intersection(columns):
@@ -91,6 +93,8 @@ def build(source=SOURCE):
     unique(tables['character_units'], 'unit_id', 'sort_order')
     unique(tables['song_labels'], 'song_id', 'label_id')
     unique(tables['song_labels'], 'song_id', 'tag_order')
+    unique(tables['song_placements'], 'song_id', 'section_id')
+    unique(tables['song_placements'], 'section_id', 'sort_order')
     unique(tables['positions'], 'song_id', 'position')
     for table in tables.values():
         for row in table:
@@ -151,6 +155,22 @@ def build(source=SOURCE):
         positions[row['song_id']].append(row)
     for row in tables['song_labels']:
         tags[row['song_id']].append(row)
+    placements = tables['song_placements']
+    for row in placements:
+        sid, section_id = row['song_id'], row['section_id']
+        require(section_id in units or section_id == 'group_other', f'Unknown placement section: {section_id}')
+        require(row['sort_order'] > 0, f'Placement order must be positive: {sid} / {section_id}')
+        song_units = {labels[tag['label_id']]['unit_id'] for tag in tags[sid] if labels[tag['label_id']]['unit_id']}
+        require(section_id in song_units or (section_id == 'group_other' and not song_units),
+                f'Placement outside song membership: {sid} / {section_id}')
+        # Names are reference columns; authoritative names still live in songs/units/groups.
+        row['title'] = songs[sid]['title']
+        row['section_name'] = units[section_id]['name'] if section_id in units else groups[section_id]['name']
+    missing_placements = set(songs) - {row['song_id'] for row in placements}
+    require(not missing_placements, 'Songs missing placements: ' + ', '.join(sorted(missing_placements)))
+    section_order = {section_id: i for i, section_id in enumerate(
+        section_id for menu in menu_rows for section_id in [*menu['unit_ids'], menu['group_id']])}
+    placements.sort(key=lambda row: (section_order[row['section_id']], row['sort_order']))
     original_positions = tables['positions']
     tables['positions'] = []
     tables['song_combination_sources'] = list(combinations.values())
@@ -266,7 +286,7 @@ def build(source=SOURCE):
         'verified_logo_files': len(assets),
         'validation': 'Canonical source keys, relationships, ordered positions, combination counts and logos verified.',
     }
-    site = dict(schemaVersion=3,
+    site = dict(schemaVersion=4,
         display=dict(characterFontFamily=display['character_font_family'], characterTextColor=display['character_text_color']),
         groups=[dict(id=r['group_id'], name=groups[r['group_id']]['name'], color=groups[r['group_id']]['background_color'] or None,
                      iconPath=groups[r['group_id']]['icon_path'], unitIds=r['unit_ids']) for r in menu_rows],
@@ -275,9 +295,10 @@ def build(source=SOURCE):
         characters=[dict(id=c['character_id'], name=c['display_name'], color=c['background_color']) for c in chars.values()],
         frequencyColors=[dict(minCount=r['min_count'], maxCount=r['max_count'], color=r['font_color']) for r in rules],
         combinationOptions=[dict(value=r['value'], positions=json.loads(r['positions']), songCount=r['song_count']) for r in tables['combination_options']],
+        songPlacements=[dict(songId=row['song_id'], sectionId=row['section_id'], sortOrder=row['sort_order']) for row in placements],
         songs=site_songs)
     inputs = [f'{k}.csv' for k in INPUTS] + ['display.json']
-    payload = dict(schema_version=6, maintenance_source='data/source',
+    payload = dict(schema_version=7, maintenance_source='data/source',
         source_sha256={f'data/source/{name}':hashlib.sha256((source / name).read_bytes()).hexdigest() for name in inputs},
         display=display, summary=summary, schemas=schemas, tables=tables)
     outputs = {'dataset.json':json_bytes(payload), 'validation.json':json_bytes(summary),

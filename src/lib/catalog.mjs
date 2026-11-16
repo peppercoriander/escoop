@@ -28,24 +28,32 @@ export function toggleCatalogState(site, previous, field, value) {
   return { selection, expandedUnitIds };
 }
 
-export function primarySection(song, site) {
-  for (const group of site.groups) {
-    const unitId = group.unitIds.find(id => song.unitIds.includes(id));
-    if (unitId) return { group, unit: site.units.find(unit => unit.id === unitId) };
-  }
-  return { group: site.groups.find(group => group.id === 'group_other'), unit: null };
-}
-
 export function selectSongs(site, selection) {
   const groupByUnit = new Map(site.groups.flatMap(group => group.unitIds.map(id => [id, group.id])));
-  const order = new Map(site.groups.flatMap(group => [...group.unitIds, group.id]).map((id, i) => [id, i]));
   return site.songs.filter(song => {
     const groups = new Set(song.unitIds.length ? song.unitIds.map(id => groupByUnit.get(id)) : ['group_other']);
     return selection.groupIds.every(id => groups.has(id)) && matchesSong(song, selection);
-  }).sort((a, b) => {
-    const left = primarySection(a, site), right = primarySection(b, site);
-    return order.get(left.unit?.id ?? left.group.id) - order.get(right.unit?.id ?? right.group.id);
   });
+}
+
+/** Filter unique songs first, then expand only their visible, independently ordered placements. */
+export function selectSongRows(site, selection) {
+  const songs = new Map(selectSongs(site, selection).map(song => [song.id, song]));
+  const units = new Map(site.units.map(unit => [unit.id, unit]));
+  const sections = new Map(site.groups.flatMap(group => [
+    ...group.unitIds.map(id => [id, { group, unit: units.get(id) }]),
+    [group.id, { group, unit: null }],
+  ]));
+  const order = new Map([...sections.keys()].map((id, index) => [id, index]));
+  return site.songPlacements.filter(placement => {
+    if (!songs.has(placement.songId)) return false;
+    if (selection.unitIds.length && !selection.unitIds.includes(placement.sectionId)) return false;
+    const section = sections.get(placement.sectionId);
+    return !selection.groupIds.length || selection.groupIds.includes(section.group.id);
+  }).map(placement => ({
+    song: songs.get(placement.songId), section: sections.get(placement.sectionId),
+    sectionId: placement.sectionId, sortOrder: placement.sortOrder,
+  })).sort((a, b) => order.get(a.sectionId) - order.get(b.sectionId) || a.sortOrder - b.sortOrder);
 }
 
 export function visibleMembers(site, selection, expandedUnitIds = []) {

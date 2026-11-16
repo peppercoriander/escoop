@@ -2,6 +2,19 @@
 
 只修改本目录的 **9 张 CSV 和 display.json**。`data/normalized`、网页 JSON、Excel 均为生成结果，不能作为第二套维护源。
 
+另已准备 `song_placements.csv` 供人工整理展示顺序。当前它尚未接入数据生成器或网页；完成编辑后再接入，不会因运行 `prepare_data.py` 而被覆盖。
+
+## 歌曲展示位置（待接入）
+
+- 每行代表一首歌在一个分区中的展示位置；合作曲在每个实际所属组合下各有一行。没有 Unit 的歌曲放入 `group_other`。
+- `song_id` 和 `section_id` 为关联键，请保留。`title`、`section_name` 仅为阅读辅助列，歌名和分区名称仍由原歌曲表／组合表维护。
+- 修改 `sort_order` 调整该分区内的顺序，正整数、越小越靠前；同一分区请勿使用重复序号。初始按现有歌曲表顺序，以 10 递增，每个分区单独从 10 开始。
+- 仅移动文件中的行不会改变计划中的显示顺序；请修改 `sort_order`。同一首歌在不同分区的序号互不影响。
+- 例如，Trickstar 下《虹色のSeasons》为 110；要将《Crossing×Heart》放到其下方，可把它在 Trickstar 那行的序号从 10 改为 115。fine 那行仍保留 90。
+- Excel 工作簿是这张 CSV 的编辑便利副本。二者只选一份编辑；若编辑工作簿，完成后将该工作表另存为 CSV UTF-8，替换 `data/source/song_placements.csv`，或交由后续步骤同步。不要同时维护两份不同的顺序。
+
+## 当前已接入的维护文件
+
 | 文件 | 维护内容 |
 |---|---|
 | groups.csv | 公司／Other：名称、代表色、logo、菜单行顺序 |

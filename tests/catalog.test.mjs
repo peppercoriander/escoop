@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { createSelection, selectSongs, visibleMembers, toggleSelection, createCatalogState, toggleCatalogState, positionOptions } from '../src/lib/catalog.mjs';
+import { createSelection, selectSongs, selectSongRows, visibleMembers, toggleSelection, createCatalogState, toggleCatalogState, positionOptions } from '../src/lib/catalog.mjs';
 import { matchesSong, encodeAssetPath } from '../src/lib/song-data.mjs';
 
 const site = JSON.parse(readFileSync(new URL('../data/normalized/site_data.json', import.meta.url)));
@@ -19,6 +19,74 @@ test('unit AND filters find collaborations without duplicate rows', () => {
   const result = selectSongs(site, { ...createSelection(), unitIds: units });
   assert.ok(result.some(s => s.title === 'Crossing×Heart'));
   assert.ok(result.every(s => units.every(id => s.unitIds.includes(id))));
+});
+
+test('all placements render while song counts remain unique', () => {
+  const rows = selectSongRows(site, createSelection());
+  assert.equal(rows.length, site.songPlacements.length);
+  assert.equal(new Set(rows.map(row => row.song.id)).size, site.songs.length);
+  assert.equal(new Set(rows.map(row => `${row.sectionId}:${row.song.id}`)).size, rows.length);
+  const crossing = rows.filter(row => row.song.title === 'Crossing×Heart');
+  assert.deepEqual(crossing.map(row => row.section.unit.name), ['fine', 'Trickstar']);
+  assert.equal(crossing[0].song, crossing[1].song);
+  for (const row of rows) assert.equal(row.section.unit?.id ?? row.section.group.id, row.sectionId);
+});
+
+test('every section follows the user order, regardless of CSV row order', () => {
+  const reversed = { ...site, songPlacements: [...site.songPlacements].reverse() };
+  const rows = selectSongRows(reversed, createSelection());
+  const sections = [...new Set(rows.map(row => row.sectionId))];
+  const expectedSections = site.groups.flatMap(group => [...group.unitIds, group.id]).filter(id => sections.includes(id));
+  assert.deepEqual(sections, expectedSections);
+  for (const id of sections) {
+    const expected = site.songPlacements.filter(p => p.sectionId === id).sort((a,b) => a.sortOrder - b.sortOrder);
+    assert.deepEqual(rows.filter(row => row.sectionId === id).map(row => row.song.id), expected.map(p => p.songId));
+  }
+  const trickstar = rows.filter(row => row.sectionId === unit('Trickstar').id).map(row => row.song.title);
+  assert.equal(trickstar.indexOf('Crossing×Heart'), trickstar.indexOf('虹色のSeasons') + 1);
+});
+
+test('a placement edit moves a collaboration within one section only', () => {
+  const fine = unit('fine').id;
+  const crossing = site.songs.find(s => s.title === 'Crossing×Heart').id;
+  const changed = { ...site, songPlacements: site.songPlacements.map(p => p.songId === crossing && p.sectionId === fine ? { ...p, sortOrder: 99999 } : p) };
+  const originalRows = selectSongRows(site, createSelection());
+  const changedRows = selectSongRows(changed, createSelection());
+  assert.equal(changedRows.filter(row => row.sectionId === fine).at(-1).song.id, crossing);
+  const otherRows = rows => rows.filter(row => row.sectionId !== fine).map(row => `${row.sectionId}:${row.song.id}`);
+  assert.deepEqual(otherRows(changedRows), otherRows(originalRows));
+});
+
+test('unit and company filters show only selected sections and preserve AND matching', () => {
+  for (const u of site.units) {
+    const selection = { ...createSelection(), unitIds: [u.id] };
+    const rows = selectSongRows(site, selection);
+    assert.ok(rows.every(row => row.sectionId === u.id));
+    assert.deepEqual(new Set(rows.map(row => row.song.id)), new Set(selectSongs(site, selection).map(song => song.id)));
+  }
+  const selection = { ...createSelection(), unitIds: [unit('fine').id, unit('Trickstar').id] };
+  const rows = selectSongRows(site, selection);
+  assert.equal(rows.length, 2);
+  assert.equal(new Set(rows.map(row => row.song.id)).size, 1);
+  assert.ok(rows.every(row => row.song.title === 'Crossing×Heart'));
+  for (const group of site.groups) {
+    const state = { ...createSelection(), groupIds: [group.id] };
+    const groupRows = selectSongRows(site, state);
+    assert.ok(groupRows.length);
+    assert.ok(groupRows.every(row => row.section.group.id === group.id));
+    assert.deepEqual(new Set(groupRows.map(row => row.song.id)), new Set(selectSongs(site, state).map(song => song.id)));
+  }
+});
+
+test('member and position filters apply to every displayed placement', () => {
+  const selection = { ...createSelection(), characterIds: [unit('fine').characterIds[0]], combinations: ['25'] };
+  const rows = selectSongRows(site, selection);
+  assert.ok(rows.length);
+  assert.ok(rows.every(row => matchesSong(row.song, selection)));
+  assert.ok(rows.every(row => row.song.positions.every(p => p.kind !== 'free')));
+  const crossing = rows.filter(row => row.song.title === 'Crossing×Heart');
+  assert.equal(crossing.length, 2);
+  assert.deepEqual(selectSongRows(site, { ...createSelection(), combinations: ['not-a-position'] }), []);
 });
 test('company and Other filters include their correct songs', () => {
   for (const group of site.groups) {

@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useMemo, useState } from 'react';
 import { encodeAssetPath, characterCellStyle, songCellStyle } from './lib/song-data.mjs';
-import { createCatalogState, toggleCatalogState, selectSongs, primarySection, visibleMembers, positionOptions } from './lib/catalog.mjs';
+import { createCatalogState, toggleCatalogState, selectSongRows, visibleMembers, positionOptions } from './lib/catalog.mjs';
 import FloatingReset from './FloatingReset';
 import type { Group, Selection, SiteData, Unit } from './types';
 import styles from './App.module.css';
@@ -14,7 +14,8 @@ function Catalog({ site }: { site: SiteData }) {
   const [collapsed, setCollapsed] = useState(false);
   const characters = useMemo(() => new Map(site.characters.map(c => [c.id, c])), [site]);
   const units = useMemo(() => new Map(site.units.map(u => [u.id, u])), [site]);
-  const songs = useMemo(() => selectSongs(site, selection), [site, selection]);
+  const rows = useMemo(() => selectSongRows(site, selection), [site, selection]);
+  const songCount = new Set(rows.map(row => row.song.id)).size;
   const members = visibleMembers(site, selection, expandedUnitIds);
   const labels = [
     ...site.groups.filter(g => selection.groupIds.includes(g.id)).map(g => g.name),
@@ -71,17 +72,15 @@ function Catalog({ site }: { site: SiteData }) {
       <div className={cn('filter-footer')}><div id="selection-summary" className={cn('selection-summary')}>{labels.length ? `已选：${labels.join(' / ')}` : '未设置筛选 · 显示全部歌曲'}</div></div>
     </section>
     <section className={cn('results')} aria-labelledby="results-title">
-      <div className={cn('results-toolbar')}><h2 id="results-title">歌曲一览 <span id="result-count" role="status" aria-live="polite">{songs.length} / {site.songs.length}</span></h2></div>
-      <div className={cn('table-container')} role="region" aria-label="歌曲站位结果表格" hidden={!songs.length}>
+      <div className={cn('results-toolbar')}><h2 id="results-title">歌曲一览 <span id="result-count" role="status" aria-live="polite">{songCount} / {site.songs.length}</span></h2></div>
+      <div className={cn('table-container')} role="region" aria-label="歌曲站位结果表格" hidden={!rows.length}>
         <table><caption className={cn('sr-only')}>处理后的站位信息、歌曲名及按位置排列的成员信息</caption><colgroup><col className={cn('combination-column')} /><col className={cn('song-column')} /><col span={10} className={cn('member-column')} /></colgroup><thead><tr><th rowSpan={2} scope="col">站位信息</th><th className={cn('sticky-song-heading')} rowSpan={2} scope="col">歌曲名</th><th colSpan={10} scope="colgroup">成员信息</th></tr><tr>{Array.from({ length: 10 }, (_, i) => <th key={i} scope="col">{i + 1}</th>)}</tr></thead>
-          <tbody>{songs.map(song => {
-            const section = primarySection(song, site);
-            const sectionId = section.unit?.id ?? section.group.id;
+          <tbody>{rows.map(({ song, section, sectionId }) => {
             const isNew = previousSection !== sectionId;
             previousSection = sectionId;
-            return <Fragment key={song.id}>
+            return <Fragment key={`${sectionId}:${song.id}`}>
               {isNew && <tr className={cn('group-heading')}><th colSpan={12}>{section.group.name}{section.unit && ` / ${section.unit.name}`}</th></tr>}
-              <tr className={cn('song-row')} data-song-id={song.id}>
+              <tr className={cn('song-row')} data-song-id={song.id} data-section-id={sectionId}>
                 <td className={cn('combination-cell')}>{song.combinations.map(combo => <span key={combo.value} className={cn('combination', selection.combinations.includes(combo.value) ? 'is-match' : '')} style={{ color: combo.color }} title={`${combo.value} · 出现 ${combo.count} 次`} aria-label={`${combo.value} · 出现 ${combo.count} 次`}>{combo.value}</span>)}{(!song.combinations.length || song.combinationStatus === 'partial') && <span className={cn('pending')}>{song.combinationStatus === 'none' ? '无' : song.combinationStatus === 'partial' ? '部分待确认' : '待录入'}</span>}</td>
                 <td className={cn('song-cell')} style={songCellStyle(song)} title={`${song.title} · ${song.unitConfig}`}>{song.title}</td>
                 {song.positions.map(position => {
@@ -93,7 +92,7 @@ function Catalog({ site }: { site: SiteData }) {
           })}</tbody>
         </table>
       </div>
-      {!songs.length && <div id="empty-state" className={cn('empty-state')}><span aria-hidden="true">∅</span><h3>没有符合条件的歌曲</h3><p>试着减少一个筛选条件，或重置后重新选择。</p><button id="empty-reset" className={cn('reset')} type="button" onClick={reset}>↺ RESET</button></div>}
+      {!rows.length && <div id="empty-state" className={cn('empty-state')}><span aria-hidden="true">∅</span><h3>没有符合条件的歌曲</h3><p>试着减少一个筛选条件，或重置后重新选择。</p><button id="empty-reset" className={cn('reset')} type="button" onClick={reset}>↺ RESET</button></div>}
     </section>
     <FloatingReset onReset={reset} />
   </>;
