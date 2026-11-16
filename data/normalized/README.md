@@ -2,7 +2,9 @@
 
 唯一维护入口为 [data/source](../source/README.md)。运行 `python scripts/prepare_data.py` 生成；`--check` 校验源数据及输出是否最新。
 
-- **site_data.json**：网页唯一需要加载的数据文件，含公司菜单、组合成员、人物颜色、26 个实际站位选项及 333 首歌曲结果。
+- **site_data.json**：网页唯一需要加载的数据文件，含公司菜单、组合成员、人物颜色、26 个实际站位选项、333 个唯一歌曲实体及 357 条 `songPlacements` 展示关系。
+- **song_placements.csv**：从维护源生成的排序核对视图；只编辑 `data/source/song_placements.csv`，不要编辑本目录副本。
+- **song_releases.csv**：实装日期核对视图，网页日期字段为 `songs[].releaseDate`；只编辑 `data/source/song_releases.csv`。
 - **dataset.json + CSV**：便于核对和导出 Excel 的完整生成表。网页无需加载这些核对文件。
 - **validation.json / issues.csv**：生成校验汇总及仍待补充的数据。
 - **combination_options.csv**：自动汇总的站位选项、对应位置数组、可命中歌曲数和菜单顺序；不手工维护。

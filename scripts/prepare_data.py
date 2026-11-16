@@ -12,6 +12,7 @@ import io
 import json
 import re
 from collections import Counter, defaultdict
+from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -23,6 +24,7 @@ INPUTS = {
     'characters': ('人物', 'character_id display_name background_color'),
     'character_units': ('人物Unit关系', 'character_id unit_id sort_order'),
     'songs': ('歌曲', 'song_id title combination_raw'),
+    'song_releases': ('歌曲实装日期', 'song_id title release_date'),
     'song_placements': ('歌曲展示位置', 'song_id title section_id section_name sort_order'),
     'labels': ('分类', 'label_id unit_id name'),
     'song_labels': ('歌曲分类顺序', 'song_id label_id tag_order'),
@@ -64,6 +66,7 @@ def build(source=SOURCE):
             require(None not in row and all(v is not None for v in row.values()), f'{key}: invalid CSV row')
             required = {'character_units': ['character_id', 'unit_id'], 'song_labels': ['song_id', 'label_id'],
                         'song_placements': ['song_id', 'section_id'],
+                        'song_releases': ['song_id'],
                         'positions': ['song_id']}.get(key, [])
             require(all(row[field] for field in required), f'{key}: missing relationship key')
             for field in NUMBERS.intersection(columns):
@@ -78,6 +81,7 @@ def build(source=SOURCE):
     units = index(tables['units'], 'unit_id')
     chars = index(tables['characters'], 'character_id')
     songs = index(tables['songs'], 'song_id')
+    releases = index(tables['song_releases'], 'song_id')
     overrides = display.get('song_background_overrides', {})
     require(all(sid in songs and re.fullmatch(r'#[0-9A-F]{6}', color)
                 for sid, color in overrides.items()), 'Invalid song background override')
@@ -102,6 +106,16 @@ def build(source=SOURCE):
                 require(not row.get(key) or row[key] in lookup, f'Unknown {key}: {row.get(key)}')
     for row in tables['songs']:
         require(bool(row['title'].strip()), 'Empty song title')
+    for sid, release in releases.items():
+        value = release['release_date'].strip()
+        if value:
+            require(re.fullmatch(r'\d{4}-\d{2}-\d{2}', value), f'Invalid release date (YYYY-MM-DD): {sid}: {value}')
+            try:
+                date.fromisoformat(value)
+            except ValueError:
+                raise ValueError(f'Invalid release date: {sid}: {value}') from None
+        release['release_date'] = value
+        release['title'] = songs[sid]['title']
     for row in tables['groups'] + tables['units'] + tables['characters']:
         for field in ['background_color', 'text_color']:
             value = row.get(field)
@@ -266,6 +280,7 @@ def build(source=SOURCE):
         config = ', '.join(labels[lid]['name'] for lid in lids)
         song.update(unit_config=config, formation_kind=formation, position_count=len(filled), layout_status=layout_status, combination_status=status, background_css=css)
         site_songs.append(dict(id=sid, title=song['title'], unitIds=uids, labelIds=lids, unitConfig=config,
+            releaseDate=releases.get(sid, {}).get('release_date') or None,
             positions=[dict(position=p['position'], characterId=p['character_id'] or None, label=p['display_name'], kind=p['slot_type'], unitId=p['unit_id'] or None) for p in slots],
             combinations=[dict(value=c['combination'], count=c['count'], color=c['font_color']) for c in counted],
             backgroundCss=css, colors=[b['color'] for b in bands], formationKind=formation, layoutStatus=layout_status, combinationStatus=status))
@@ -286,7 +301,7 @@ def build(source=SOURCE):
         'verified_logo_files': len(assets),
         'validation': 'Canonical source keys, relationships, ordered positions, combination counts and logos verified.',
     }
-    site = dict(schemaVersion=4,
+    site = dict(schemaVersion=5,
         display=dict(characterFontFamily=display['character_font_family'], characterTextColor=display['character_text_color']),
         groups=[dict(id=r['group_id'], name=groups[r['group_id']]['name'], color=groups[r['group_id']]['background_color'] or None,
                      iconPath=groups[r['group_id']]['icon_path'], unitIds=r['unit_ids']) for r in menu_rows],
@@ -298,7 +313,7 @@ def build(source=SOURCE):
         songPlacements=[dict(songId=row['song_id'], sectionId=row['section_id'], sortOrder=row['sort_order']) for row in placements],
         songs=site_songs)
     inputs = [f'{k}.csv' for k in INPUTS] + ['display.json']
-    payload = dict(schema_version=7, maintenance_source='data/source',
+    payload = dict(schema_version=8, maintenance_source='data/source',
         source_sha256={f'data/source/{name}':hashlib.sha256((source / name).read_bytes()).hexdigest() for name in inputs},
         display=display, summary=summary, schemas=schemas, tables=tables)
     outputs = {'dataset.json':json_bytes(payload), 'validation.json':json_bytes(summary),

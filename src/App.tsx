@@ -1,7 +1,8 @@
 import { Fragment, useEffect, useMemo, useState } from 'react';
-import { encodeAssetPath, characterCellStyle, songCellStyle } from './lib/song-data.mjs';
+import { encodeAssetPath, characterCellStyle, songCellStyle, isSongReleased } from './lib/song-data.mjs';
 import { createCatalogState, toggleCatalogState, selectSongRows, visibleMembers, positionOptions } from './lib/catalog.mjs';
 import FloatingReset from './FloatingReset';
+import useTokyoDate from './useTokyoDate';
 import type { Group, Selection, SiteData, Unit } from './types';
 import styles from './App.module.css';
 
@@ -9,6 +10,7 @@ const cn = (...names: string[]) => names.map(name => styles[name] || '').join(' 
 const asset = (path: string) => `${import.meta.env.BASE_URL}${encodeAssetPath(path)}`;
 
 function Catalog({ site }: { site: SiteData }) {
+  const today = useTokyoDate();
   const [catalogState, setCatalogState] = useState(createCatalogState);
   const { selection, expandedUnitIds } = catalogState;
   const [collapsed, setCollapsed] = useState(false);
@@ -76,6 +78,7 @@ function Catalog({ site }: { site: SiteData }) {
       <div className={cn('table-container')} role="region" aria-label="歌曲站位结果表格" hidden={!rows.length}>
         <table><caption className={cn('sr-only')}>处理后的站位信息、歌曲名及按位置排列的成员信息</caption><colgroup><col className={cn('combination-column')} /><col className={cn('song-column')} /><col span={10} className={cn('member-column')} /></colgroup><thead><tr><th rowSpan={2} scope="col">站位信息</th><th className={cn('sticky-song-heading')} rowSpan={2} scope="col">歌曲名</th><th colSpan={10} scope="colgroup">成员信息</th></tr><tr>{Array.from({ length: 10 }, (_, i) => <th key={i} scope="col">{i + 1}</th>)}</tr></thead>
           <tbody>{rows.map(({ song, section, sectionId }) => {
+            const released = isSongReleased(song.releaseDate, today);
             const isNew = previousSection !== sectionId;
             previousSection = sectionId;
             return <Fragment key={`${sectionId}:${song.id}`}>
@@ -85,7 +88,7 @@ function Catalog({ site }: { site: SiteData }) {
                 <td className={cn('song-cell')} style={songCellStyle(song)} title={`${song.title} · ${song.unitConfig}`}>{song.title}</td>
                 {song.positions.map(position => {
                   const label = `${position.position} 号位 · ${position.kind === 'empty' ? '未录入' : position.kind === 'free' ? '自由站位' : position.label}`;
-                  return <td key={position.position} className={cn('character-cell', position.kind)} style={characterCellStyle(position, characters, site.display)} title={label} aria-label={label}>{position.kind === 'empty' ? '' : position.label}</td>;
+                  return <td key={position.position} className={cn('character-cell', position.kind)} style={characterCellStyle(position, characters, site.display, released)} title={label} aria-label={label}>{position.kind === 'empty' ? '' : position.label}</td>;
                 })}
               </tr>
             </Fragment>;
@@ -110,7 +113,7 @@ export default function App() {
   }, []);
   return <>
     <main>
-      <div className={cn('page-heading')}><div><h1>歌曲站位检索<span className={cn('heading-dot')}>.</span></h1></div></div>
+      <div className={cn('page-heading')}><div><h1>协力站位表<span className={cn('heading-dot')}>.</span></h1></div></div>
       {site ? <Catalog site={site} /> : <div id="loading" role="status">{error ? '资料加载失败，请刷新页面重试。' : '正在加载歌曲资料…'}</div>}
     </main>
   </>;

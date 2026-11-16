@@ -1,6 +1,6 @@
 export interface Position { position: number; characterId: string | null; label: string; kind: 'fixed' | 'free' | 'empty'; unitId: string | null }
 export interface Combination { value: string; count: number; color: string }
-export interface Song { id: string; title: string; unitIds: string[]; labelIds: string[]; unitConfig: string; positions: Position[]; combinations: Combination[]; backgroundCss: string; colors: string[]; combinationStatus: string }
+export interface Song { id: string; title: string; unitIds: string[]; labelIds: string[]; unitConfig: string; positions: Position[]; combinations: Combination[]; backgroundCss: string; colors: string[]; combinationStatus: string; releaseDate: string | null }
 export interface Character { id: string; name: string; color: string }
 export interface Unit { id: string; name: string; color: string; iconPath: string; characterIds: string[] }
 export interface Group { id: string; name: string; color: string | null; iconPath: string; unitIds: string[] }

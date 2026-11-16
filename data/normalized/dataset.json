@@ -1,5 +1,5 @@
 {
-  "schema_version": 7,
+  "schema_version": 8,
   "maintenance_source": "data/source",
   "source_sha256": {
     "data/source/groups.csv": "b5cc012b40f98eb7816d68aa951c2efc3376f44731588b536b4332fa91f529fb",
@@ -7,7 +7,8 @@
     "data/source/characters.csv": "3f42d4f3e0a2474dea4da384178489d5e6bb368cbb0ef415c73cdcadfffd578c",
     "data/source/character_units.csv": "ffb168816c0d1058eba868e5848263d8b89cb4f7a921cab0f25eaa2c942c695d",
     "data/source/songs.csv": "1966e60fddefb0a6a60d8baf6dfc2308beeb51d3c6d591096dbae2f75d924c6e",
-    "data/source/song_placements.csv": "0e9bbf2f91716941fc6f3c22d67a5821c2969ccf9e979efe9d41c6cc6907a0ec",
+    "data/source/song_releases.csv": "7f138b03a7e247cae26ac17d3d34a03ce85f420c1a5a59122a0cc974b05a1a12",
+    "data/source/song_placements.csv": "a1bf390236c5805c7b5554f4191824a84c47cf720d36a6f812229d86d00ed157",
     "data/source/labels.csv": "c0368e00091e5f724d87e40f1f0fa3b251164235cffc493461c2c880c0b0dd2d",
     "data/source/song_labels.csv": "5cc6e65ece7990fd8c3986fd1eb41dc2505a9abf43f98deb364bc1321c68b732",
     "data/source/positions.csv": "728a5da7e0e0dace13fb56c905685abc9fc1606004bf7c43afec3e7936a40140",
@@ -34,6 +35,7 @@
       "characters": 60,
       "character_units": 69,
       "songs": 333,
+      "song_releases": 333,
       "song_placements": 357,
       "labels": 36,
       "song_labels": 415,
@@ -124,6 +126,14 @@
         "layout_status",
         "combination_status",
         "background_css"
+      ]
+    },
+    "song_releases": {
+      "sheet_name": "歌曲实装日期",
+      "columns": [
+        "song_id",
+        "title",
+        "release_date"
       ]
     },
     "song_placements": {
@@ -4589,6 +4599,1673 @@
         "background_css": "#004D99"
       }
     ],
+    "song_releases": [
+      {
+        "song_id": "song_1a118eac1b9b",
+        "title": "终わらないシンフォニア",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_e57e0742fb6a",
+        "title": "RAINBOW CIRCUS",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_90af8520a51b",
+        "title": "羽ばたきのフォルティシモ",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_e43726faddee",
+        "title": "Neo Sanctuary",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_a1c7157dd497",
+        "title": "Miracle Dream Traveler",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_7ee7f1a64f76",
+        "title": "Never-ending Stage!!!!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_70ab7550fc9f",
+        "title": "Angelic Grace",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_368a5bc01f86",
+        "title": "始まりのファンタジア",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_b8cdfe1e1928",
+        "title": "Crossing×Heart",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_6f9e52b60ba7",
+        "title": "Holy Angel's Carol",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_02fde485d3bf",
+        "title": "Feathers of Ark",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_0ffefa0445c3",
+        "title": "Fairy Tale Library",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_fe520522758f",
+        "title": "恋はプリマヴェーラ！",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_9f6a29f2d74f",
+        "title": "The Tempest Night",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_d9c30fc56e55",
+        "title": "RED GARDEN",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_e169128ecb33",
+        "title": "Dreaming Ocean",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_71f611a674e2",
+        "title": "Musica Vita! -ムジカ・ヴィータ-",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_0d1dbd139bb6",
+        "title": "Ghostic Treat House",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_2a6ff189082e",
+        "title": "狂怪ノ怨黙-キョウカイノエンモク-",
+        "release_date": ""
+      },
+      {
+        "song_id": "song_a53841e5d3c8",
+        "title": "Tryst of Stars",
+        "release_date": ""
+      },
+      {
+        "song_id": "song_9560289984a0",
+        "title": "スターライトパレード",
+        "release_date": ""
+      },
+      {
+        "song_id": "song_6de4a0a8ff5a",
+        "title": "Rebellion Star",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_2f96247e8408",
+        "title": "CHERRY HAPPY STREAM",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_a3dabf50ba07",
+        "title": "HEART→BEATER!!!!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_76406d3759e9",
+        "title": "Welcome to the Trickstar Night☆",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_7892b092a3ca",
+        "title": "BREAKTHROUGH!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_292552ade123",
+        "title": "1st SING-ALONG☆",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_be5f50fc4003",
+        "title": "Unstoppable Love!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_f7c93b113cc1",
+        "title": "Romantic Xday!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_32ef34f10bab",
+        "title": "幸せの歌",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_0d7d18b25a76",
+        "title": "虹色のSeasons",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_7c441d2d44d9",
+        "title": "CELEBRATE!!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_6f2328deb812",
+        "title": "Infinite Star",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_d70996d82446",
+        "title": "ONLY YOUR STARS! (TS Ver.)",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_bfb9c4d54670",
+        "title": "キセキ",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_cbbcf5f47999",
+        "title": "BIGBANG REFLECTION!!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_8c814ebdcf1f",
+        "title": "Daydream×Reality",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_515def0f6b9b",
+        "title": "ワチャガナドゥ？",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_d4930e520cb6",
+        "title": "Unbalanced Triangle",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_259edd7b0ba8",
+        "title": "Finder Girl",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_53c93cb31fde",
+        "title": "DIAMOND SUMMER",
+        "release_date": ""
+      },
+      {
+        "song_id": "song_3b8bdf68dd7c",
+        "title": "（RE）PLAY",
+        "release_date": ""
+      },
+      {
+        "song_id": "song_19b2d683e2e0",
+        "title": "梦ノ咲流星隊歌",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_d3e8a27e33fb",
+        "title": "天下无敵☆メテオレンジャー!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_5750e49da659",
+        "title": "SUPER NOVA REVOLU5TAR",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_ccc184fb8c75",
+        "title": "流星花火",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_c73e1aa3ef22",
+        "title": "アンリミテッド☆パワー!!!!!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_c7f32dc0c3f4",
+        "title": "GROWING STARRY DAYS",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_46a5658ea267",
+        "title": "メテオ・スクランブル☆流星隊！",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_1ee6da2714bc",
+        "title": "Heart Heat Beat",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_697a0f5aa0a4",
+        "title": "青春Emergency",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_d8a01455ffbe",
+        "title": "OVERFLOW LIGHT UP!!!!!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_8ecba6ff3bb7",
+        "title": "彗星HALATION",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_af5cb76aedcf",
+        "title": "Colors Arise",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_c9634d03dde0",
+        "title": "WILDLAND SURVIVOR",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_8dc91c9a5498",
+        "title": "NEW DAYBREAK",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_0e7472b277e5",
+        "title": "熱血☆流星忍法帖",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_c098038e46e1",
+        "title": "僕らのステラ",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_d6dd78d784e3",
+        "title": "RELAX PARADISE",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_20eefad8da5a",
+        "title": "BREAK THE NORM",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_862554f517e7",
+        "title": "GET THE WIN",
+        "release_date": ""
+      },
+      {
+        "song_id": "song_03b2065d864e",
+        "title": "五色のShooting☆Star!!!!!",
+        "release_date": ""
+      },
+      {
+        "song_id": "song_fc94ac9ca6c8",
+        "title": "ハム太郎とっとこうた",
+        "release_date": ""
+      },
+      {
+        "song_id": "song_d4721d279d3c",
+        "title": "Kiss of Life",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_de4361f880dc",
+        "title": "翼モラトリアム",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_1cd5d81835d1",
+        "title": "You're Speculation",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_3af219315db7",
+        "title": "Distorted Heart",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_874ff128db88",
+        "title": "Hysteric Humanoid",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_cbe54d5c11ff",
+        "title": "Artistic Partisan",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_13139942a6c4",
+        "title": "SAKE OF LOVE",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_3ee863c4fc4d",
+        "title": "Black Out See Saw",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_e06b225c4b6c",
+        "title": "Across the universe",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_77382f0cc9da",
+        "title": "VERMILION",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_c86567845082",
+        "title": "SunnyTrip Summer",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_fcb1c599d6e8",
+        "title": "Living on the edge",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_537681e7ee02",
+        "title": "UNDYING HOLY LOVE",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_6bb8e47bb56c",
+        "title": "Believe 4 leaves",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_e948810eb839",
+        "title": "コトノハカンタービレ",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_e9d5ca4928d5",
+        "title": "E.V.O.L.U.T.I.O.N.",
+        "release_date": ""
+      },
+      {
+        "song_id": "song_e459bca503e4",
+        "title": "フラジール",
+        "release_date": ""
+      },
+      {
+        "song_id": "song_90a81a004f52",
+        "title": "夜に駆ける",
+        "release_date": ""
+      },
+      {
+        "song_id": "song_7ca647631ee1",
+        "title": "THE GENESIS",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_3f3a17eb992f",
+        "title": "Dance in the Apocalyps",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_4b6d8cfa15d2",
+        "title": "Awakening Myth",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_f1f7d5246727",
+        "title": "Psyche's Butterfly",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_1bcd70c7557b",
+        "title": "Deep Eclipse",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_a355097a5822",
+        "title": "KEEP OUT",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_ce438ead8310",
+        "title": "Majestic Magic",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_abefd121ea42",
+        "title": "Absolute Perfection",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_f104c3f4ae56",
+        "title": "楽園追放 -Faith Conquest-",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_81eaf3bed022",
+        "title": "大いなる愛の前に全ては巡り来る",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_843746914715",
+        "title": "円環のRefraction",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_7a617dcb29a9",
+        "title": "EMBRACE",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_c7e8fae8a586",
+        "title": "EXCEED",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_9fcb89a4ff89",
+        "title": "Ruler's Truth",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_6c4a71538bf8",
+        "title": "The Beast of the End",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_f42428413655",
+        "title": "Melting Rouge Soul",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_3feaa60eedfd",
+        "title": "Trap For You",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_ca1ea8f50812",
+        "title": "Sunlit Smile!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_e143c6d257f0",
+        "title": "Ruby Love",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_3e7459480923",
+        "title": "The Bible of The “Eden”",
+        "release_date": ""
+      },
+      {
+        "song_id": "song_298710aa8ee4",
+        "title": "魅惑劇",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_f89b9f672e48",
+        "title": "礼賛歌",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_317e9d4af4e3",
+        "title": "Mémoire Antique",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_34ef71c58a48",
+        "title": "今宵月の館にて",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_c4c69007085f",
+        "title": "Last Lament",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_a7db9b6816f2",
+        "title": "凱旋歌",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_ce8a4ca262e1",
+        "title": "Eternal Weaving",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_cfdc974abd8d",
+        "title": "麗しのナイチンゲール",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_7395a111eca0",
+        "title": "Le temps des fleurs",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_d721d9ffcd6a",
+        "title": "祝福のLibrary",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_e31ac777b213",
+        "title": "幸福論",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_f6b6edd46a7d",
+        "title": "Acanthe",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_c76e05b1d11e",
+        "title": "迷宮電子回廊",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_a2e217101847",
+        "title": "星の鳴動響きし時に",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_99583a0d6ab1",
+        "title": "Stranger's sun",
+        "release_date": ""
+      },
+      {
+        "song_id": "song_613366d4a24d",
+        "title": "砂上ノ楼閤",
+        "release_date": ""
+      },
+      {
+        "song_id": "song_40ade43d7071",
+        "title": "勇侠青春謳",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_1145709f1775",
+        "title": "シュガー・スパイス方程式",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_138a5ace638d",
+        "title": "歓迎☆トゥ・ウィンク雑伎団",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_f0ad8679ff72",
+        "title": "TRICK with TREAT!!（with UNDEAD）",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_332ff63d988f",
+        "title": "ハートプリズム・シンメトリー",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_b276c8b44a23",
+        "title": "Play “Tag”",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_923850667d55",
+        "title": "2winkle Star Beat☆",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_a990cfe11483",
+        "title": "Mischievous Party Time!!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_a9b35dd790ad",
+        "title": "Fighting Dreamer",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_31c2b3f08b08",
+        "title": "POLYPHONIC WORLD",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_4f32900e4ca1",
+        "title": "Turbulent Storm",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_4325f341ffde",
+        "title": "トゥウィンクル空中戦",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_e0adbd9f8de6",
+        "title": "Twin Wedding Vows",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_477b9fdea637",
+        "title": "LEMON SQUASH CHEERS!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_3096f32aaef0",
+        "title": "Swee2wink Love Letter",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_716612b97823",
+        "title": "Love×me⇄monsteR",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_505d28c5a231",
+        "title": "来来☆2winkイリュージョン",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_a57855027d00",
+        "title": "SPLASHING WHIRLPOOL!!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_f264f502e080",
+        "title": "WONDER WONDER TOY LAND",
+        "release_date": ""
+      },
+      {
+        "song_id": "song_9ab8ad9872c0",
+        "title": "2wink Introduction",
+        "release_date": ""
+      },
+      {
+        "song_id": "song_4461ea59d30e",
+        "title": "Tell Your World",
+        "release_date": ""
+      },
+      {
+        "song_id": "song_3f3d04c758dc",
+        "title": "Crazy Roulette",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_19199e1649f3",
+        "title": "Be The Party Bee!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_dac271d15129",
+        "title": "RISKY VENUS",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_fec954226aec",
+        "title": "PARANOIA STREET",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_1a324f5f2103",
+        "title": "Noisy:Beep",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_9175aa8dc3b3",
+        "title": "Crazy Anthem",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_2ab2fd55536e",
+        "title": "NA NA NA SUMMER NIGHT BeeAT",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_256b3b5a4f3a",
+        "title": "Foolish Alien",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_7abff74f1301",
+        "title": "UTAKATA DANCE FLOOR",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_15a228ff62e8",
+        "title": "指先のアリアドネ",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_9c6bab397a09",
+        "title": "CIVIL WAR",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_2e9a64df8c91",
+        "title": "Helter-Spider",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_afe826491b4d",
+        "title": "Honeycomb Summer",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_c504db2c978f",
+        "title": "ハニートラップ・マリアージュ",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_0add580d23b0",
+        "title": "KING",
+        "release_date": ""
+      },
+      {
+        "song_id": "song_2c145b3a7f9a",
+        "title": "U.S.A",
+        "release_date": ""
+      },
+      {
+        "song_id": "song_f9e0c3576d97",
+        "title": "Melody in the Dark",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_4400d70c1e72",
+        "title": "ハニーミルクはお好みで",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_abbedefea6a0",
+        "title": "Gate of the Abyss",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_b2f74ae52ec5",
+        "title": "DESTRUCTION ROAD",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_47ad3a26d7cc",
+        "title": "Valentine Eve's Nightmare",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_2166b711c17c",
+        "title": "IMMORAL WORLD",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_d01e8176e7a3",
+        "title": "Savage Love Affair",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_6bfcf4614f85",
+        "title": "罪の底",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_7fdcd95702f4",
+        "title": "Darkness 4",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_30d7c443cd85",
+        "title": "PERFECTLY-IMPERFECT",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_e8e9bff8fdf6",
+        "title": "Resurrection of Soul",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_838ca688107e",
+        "title": "Wanderlust Sailing",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_50bf6d34ed60",
+        "title": "Sustain Memories",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_b357980d55f0",
+        "title": "Nightless World",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_ea300e2285b6",
+        "title": "SWINGIN' PARONIRIA",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_0ec267fb6f6c",
+        "title": "FORBIDDEN RAIN",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_4ba0f95ed024",
+        "title": "RAMBLING MOON",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_ecb21c17047a",
+        "title": "Break the Prison",
+        "release_date": ""
+      },
+      {
+        "song_id": "song_2335d22e3444",
+        "title": "Joyful×Box*",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_49998ba34a48",
+        "title": "野うさぎマーチ♪",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_00f546d5fe68",
+        "title": "Love Ra*bits Party!!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_2afd788654d5",
+        "title": "Milky Starry Charm",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_7976107fa598",
+        "title": "メルティ♡キッチン",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_aedcc7d11c58",
+        "title": "Dream Collection",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_de056efeac67",
+        "title": "メイド・イン・トキメキ♪",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_2977f270a6ea",
+        "title": "Love it Love it",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_daaf9eaa6b13",
+        "title": "JUMPIN' LUCK BEAT",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_07c598bdfbb9",
+        "title": "うさぎの森の音楽会",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_fb2742a22074",
+        "title": "ヒカリスペクトル",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_892acb24fa11",
+        "title": "ポケットに宇宙",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_5c510326eb74",
+        "title": "RaRaRa*Station!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_f929ffce1eb8",
+        "title": "パラレルメイズ",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_25d88633ff52",
+        "title": "ハレノヒSugar Wave",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_3d5ab217088e",
+        "title": "FALLIN' LOVE=IT'S WONDERLAND",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_6f2c70a4b060",
+        "title": "The・プリティカルパレード♪",
+        "release_date": "2026-11-22"
+      },
+      {
+        "song_id": "song_669a7d7e6b97",
+        "title": "Hoppin' Season♪",
+        "release_date": ""
+      },
+      {
+        "song_id": "song_66b431f79ed4",
+        "title": "百花繚乱、紅月夜",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_95930d4f4eb8",
+        "title": "斬 －決意ノ刃－",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_67635d566517",
+        "title": "祭夜絵巻",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_92f5cf11112d",
+        "title": "剣戟の舞",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_e34465cc20f7",
+        "title": "月下無双、紅の舞",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_1fbe35f02a39",
+        "title": "薄紅色の約束",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_b01369ae1ec2",
+        "title": "夜空、然りとて鵲は",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_69a0fea9af42",
+        "title": "金色千夜夢舞台",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_1fa4d3dcf03c",
+        "title": "絲",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_6987b206e206",
+        "title": "月光奇譚",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_fabacc8f40d1",
+        "title": "紅月いろは唄",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_fb44ea0a66fb",
+        "title": "夏鳥の詩 -サマーバード-",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_035a08cffb41",
+        "title": "花灯の恋文",
+        "release_date": ""
+      },
+      {
+        "song_id": "song_4c2f5b498481",
+        "title": "想ひ出缀り",
+        "release_date": ""
+      },
+      {
+        "song_id": "song_4626e5181fba",
+        "title": "RevolTrad~維新伝心~",
+        "release_date": ""
+      },
+      {
+        "song_id": "song_8155b2ed55c5",
+        "title": "百花繚乱、紅月夜（2025Ver.）",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_00349c50aeca",
+        "title": "天翔KAGETSU",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_5f23b6b056b0",
+        "title": "炎纏焔踊千変万火",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_ad544be200b0",
+        "title": "LOUDEST BUGS",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_8d0dedad18e1",
+        "title": "明鏡流水",
+        "release_date": ""
+      },
+      {
+        "song_id": "song_6cd5290543a2",
+        "title": "Dear World",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_c61f0c51d264",
+        "title": "BUBBLE GUM DANCE",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_b2ac6daf5392",
+        "title": "Mellow Addiction",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_4d6708273bd9",
+        "title": "Femme fatale",
+        "release_date": ""
+      },
+      {
+        "song_id": "song_9e01aa371797",
+        "title": "I wanna show the gritty glitter",
+        "release_date": ""
+      },
+      {
+        "song_id": "song_6e6371440637",
+        "title": "Aquarium",
+        "release_date": ""
+      },
+      {
+        "song_id": "song_14285ae10cb9",
+        "title": "Fight for Judge",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_c9388f895e6e",
+        "title": "Article of Faith",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_beaefe51e02d",
+        "title": "Knights the Phantom Thief",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_06bcc921a73c",
+        "title": "Promise Swords",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_80457668d34f",
+        "title": "Voice of Sword",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_9852698eae61",
+        "title": "Coruscate Breeze",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_98d12bd86380",
+        "title": "Grateful allegiance",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_d8b431c16440",
+        "title": "Silent Oath",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_72c6ff63ef31",
+        "title": "Castle of my Heart",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_3f518169e115",
+        "title": "Wonderful Happiness",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_1be0af88f8d0",
+        "title": "Luminous Crown",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_9afd2308dcbd",
+        "title": "Secret Masquerade",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_b464f12abd93",
+        "title": "Heart Collector",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_79ea8303895e",
+        "title": "Mystic Fragrance",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_6840675fe65e",
+        "title": "Little Romance",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_df29ef582916",
+        "title": "Or the Beautiful Golden Drop",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_48b0a9e87b70",
+        "title": "Checkmate Knights",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_0bff69dfafba",
+        "title": "Temptation Magic",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_237641868232",
+        "title": "Knockin' Fantasy",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_272137fbf668",
+        "title": "イースター・カーニバル",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_e9dcbfd5a374",
+        "title": "Galaxy Destiny",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_3b700f06c44f",
+        "title": "I \"Witch” You A Happy Halloween!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_f30f965865e5",
+        "title": "エメラルドプラネット",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_7de429001b8d",
+        "title": "Magic for your \"Switch\"",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_8e9e44121746",
+        "title": "A little bit UP!!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_39aafe4d2805",
+        "title": "Romancing Cruise",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_3666293ef4f3",
+        "title": "Seven Days \"Prismagic\"",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_e945e6bc76de",
+        "title": "Switching Journey",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_24e4f8bd9249",
+        "title": "Wish upon a MUSIC!!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_a7f95a1c5ba0",
+        "title": "Brilliant Smile",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_3584bfe10899",
+        "title": "オモイノカケラ",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_1f5c5b08bf1f",
+        "title": "Chocola-Tic After School",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_d9eaea646f46",
+        "title": "Blooming World",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_a884a74dba91",
+        "title": "Festive!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_b6667a05496c",
+        "title": "君印 Be Ambitious!!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_008fa383d270",
+        "title": "愉快痛快 That's alright!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_f78d291f729e",
+        "title": "ハンズクラフト",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_faacc1bec397",
+        "title": "HELLO, NEW YEAR!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_02c5bfe73320",
+        "title": "ハロウィン・ランデブー",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_a859c627edfb",
+        "title": "Light on the Orbit",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_478b71c2a636",
+        "title": "辻風に吹かれて",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_4567790e5789",
+        "title": "ラスト・ページ",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_eea257b81e72",
+        "title": "‘=EYE=",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_5b658ea8fab0",
+        "title": "Stippling",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_84a47c43faf1",
+        "title": "ネビュラ",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_b7012d43986a",
+        "title": "Bye-Bye Buddy",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_f4989e275f0f",
+        "title": "No name yet",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_7a7c99453e0e",
+        "title": "Secret of Metropolis",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_70c51343651b",
+        "title": "Sleeper Mystery Train",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_baeda816cf9d",
+        "title": "しょーがいゼッタイそーあい宣言♥",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_ce486340cc45",
+        "title": "スキスキハンター♡",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_038d194de57e",
+        "title": "Be My Princess♡",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_a70ba6dbc4ed",
+        "title": "メランコリーを駆け拔けろ♥",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_82849a254d2c",
+        "title": "ベリイ・ベリイ・スイート・ホワイト♡",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_3b0bd0409abb",
+        "title": "Nightmare Syndrome♡",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_932380193757",
+        "title": "パンダちっくコミュニケイション♥",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_b492a7bc5c47",
+        "title": "Stars' Ensemble!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_c74b29f43716",
+        "title": "BRAND NEW STARS!!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_bf1c16241fdc",
+        "title": "ONLY YOUR STARS!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_6012840f055d",
+        "title": "Walk with your smile",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_f7c5b14f0149",
+        "title": "FUSIONIC STARS!!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_16bc2e1c8645",
+        "title": "Surprising Thanks!!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_744670562920",
+        "title": "One with One",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_00c6699f6c60",
+        "title": "LIMIT BREAK DREAMERS",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_f0efc6e72f19",
+        "title": "BRIGHTEST STARS!!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_58940e304f6d",
+        "title": "CALL YOUR NAME!!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_242aeac927fd",
+        "title": "あんさんぶる体操！！",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_b1073c35a569",
+        "title": "エンドレスヴィーデ",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_3ceb238de5c4",
+        "title": "BUKUBU NEW STARS!!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_60796b9be51c",
+        "title": "あんさんぶるトレーニング！！",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_9fb2706f9689",
+        "title": "両片思いの交差点で、君にまた逢いたくて",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_28afa7f58845",
+        "title": "ペルソナアビス",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_6db9b21bce48",
+        "title": "デートプランA to Z",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_6b4ce321b45f",
+        "title": "Midnight Butlers",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_63c4e268edc1",
+        "title": "Sweet Sweet White Song",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_7716a9140b13",
+        "title": "Aisle, be with you",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_f9bc625be3fb",
+        "title": "ムーンライトディスコ",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_f5be9d8384d9",
+        "title": "Noir Neige",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_a57dd1bebd1d",
+        "title": "パラダイム·リバーシ！",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_86da53da2a86",
+        "title": "FIST OF SOUL",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_dc65852115f8",
+        "title": "Heart aid Cafeteria",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_a5a5acafd0fb",
+        "title": "Have you been naughty or nice?",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_112f785f985a",
+        "title": "Ringing evil phone",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_a558bf5fa7a2",
+        "title": "喪失寓意 -LOST BALLADE-",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_37a7f708d6e8",
+        "title": "堕天使たちの晩餐会",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_27000f86009f",
+        "title": "君恋志願",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_3febbb3286fb",
+        "title": "クマクマレスQ",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_2853a084f738",
+        "title": "僕のウィーク・ポイント",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_a70295e11017",
+        "title": "Graceful Punishment",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_276941ac297c",
+        "title": "Deep into you",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_548c9c97de5e",
+        "title": "らびゅ&ピース伝説",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_bd88c9f0111e",
+        "title": "Ai☆$!!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_b5249ce4be85",
+        "title": "It's (k)not lov?",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_454e06dd3302",
+        "title": "それは残像の消失点",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_2682c1b0d3af",
+        "title": "催花雨の片道切符",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_3bf25c5e7f7c",
+        "title": "Fight Is Only Fate",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_81be29c7965f",
+        "title": "プロローグのそのあとへ",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_90d69cfc95c0",
+        "title": "こはく・晃牙・忍・弓弦",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_c1e7082b9e94",
+        "title": "真緒・ゆうた・宙・アドニス",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_3f631fdbd94b",
+        "title": "巽・日和・奏汰・零",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_b7a06fdb3ce8",
+        "title": "瞬きSign☆",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_f78396e4718b",
+        "title": "セツナDrops",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_5a041eca7d01",
+        "title": "LOCK YOUR GAZE",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_50a77b9f426f",
+        "title": "フュージョン",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_4599b61f8a4f",
+        "title": "Eccentric Party Night!!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_81d26f33a716",
+        "title": "Twilight Pentagram",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_0e1bea339f20",
+        "title": "Genuine Revelation",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_9589de9b07cd",
+        "title": "Dawning Angels",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_26b9e272603a",
+        "title": "圣少年游戯",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_ae14c7441a62",
+        "title": "We'll be\"Knights\"",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_b217dcd5e5bd",
+        "title": "Crush of Judgment",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_289e4c6ade3b",
+        "title": "Death Game Holic",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_f702663eed1f",
+        "title": "ROCK ROAR",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_06c28dae9ea0",
+        "title": "Rainbow Stairway",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_fec201cc4669",
+        "title": "ハナニナレ!",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_5aa05a1f5d9b",
+        "title": "輝きの中で",
+        "release_date": "2026-11-15"
+      },
+      {
+        "song_id": "song_d1bc073453a1",
+        "title": "UNFADING",
+        "release_date": "2026-11-15"
+      }
+    ],
     "song_placements": [
       {
         "song_id": "song_1a118eac1b9b",
@@ -4602,2492 +6279,2492 @@
         "title": "RAINBOW CIRCUS",
         "section_id": "unit_48bf1806f959",
         "section_name": "fine",
-        "sort_order": 11
+        "sort_order": 20
       },
       {
         "song_id": "song_90af8520a51b",
         "title": "羽ばたきのフォルティシモ",
         "section_id": "unit_48bf1806f959",
         "section_name": "fine",
-        "sort_order": 12
+        "sort_order": 30
       },
       {
         "song_id": "song_e43726faddee",
         "title": "Neo Sanctuary",
         "section_id": "unit_48bf1806f959",
         "section_name": "fine",
-        "sort_order": 13
+        "sort_order": 40
       },
       {
         "song_id": "song_a1c7157dd497",
         "title": "Miracle Dream Traveler",
         "section_id": "unit_48bf1806f959",
         "section_name": "fine",
-        "sort_order": 14
+        "sort_order": 50
       },
       {
         "song_id": "song_7ee7f1a64f76",
         "title": "Never-ending Stage!!!!",
         "section_id": "unit_48bf1806f959",
         "section_name": "fine",
-        "sort_order": 15
+        "sort_order": 60
       },
       {
         "song_id": "song_70ab7550fc9f",
         "title": "Angelic Grace",
         "section_id": "unit_48bf1806f959",
         "section_name": "fine",
-        "sort_order": 16
+        "sort_order": 70
       },
       {
         "song_id": "song_368a5bc01f86",
         "title": "始まりのファンタジア",
         "section_id": "unit_48bf1806f959",
         "section_name": "fine",
-        "sort_order": 17
+        "sort_order": 80
       },
       {
         "song_id": "song_6f9e52b60ba7",
         "title": "Holy Angel's Carol",
         "section_id": "unit_48bf1806f959",
         "section_name": "fine",
-        "sort_order": 18
+        "sort_order": 90
       },
       {
         "song_id": "song_02fde485d3bf",
         "title": "Feathers of Ark",
         "section_id": "unit_48bf1806f959",
         "section_name": "fine",
-        "sort_order": 19
+        "sort_order": 100
       },
       {
         "song_id": "song_0ffefa0445c3",
         "title": "Fairy Tale Library",
         "section_id": "unit_48bf1806f959",
         "section_name": "fine",
-        "sort_order": 20
+        "sort_order": 110
       },
       {
         "song_id": "song_fe520522758f",
         "title": "恋はプリマヴェーラ！",
         "section_id": "unit_48bf1806f959",
         "section_name": "fine",
-        "sort_order": 21
+        "sort_order": 120
       },
       {
         "song_id": "song_9f6a29f2d74f",
         "title": "The Tempest Night",
         "section_id": "unit_48bf1806f959",
         "section_name": "fine",
-        "sort_order": 22
+        "sort_order": 130
       },
       {
         "song_id": "song_d9c30fc56e55",
         "title": "RED GARDEN",
         "section_id": "unit_48bf1806f959",
         "section_name": "fine",
-        "sort_order": 23
+        "sort_order": 140
       },
       {
         "song_id": "song_e169128ecb33",
         "title": "Dreaming Ocean",
         "section_id": "unit_48bf1806f959",
         "section_name": "fine",
-        "sort_order": 24
+        "sort_order": 150
       },
       {
         "song_id": "song_71f611a674e2",
         "title": "Musica Vita! -ムジカ・ヴィータ-",
         "section_id": "unit_48bf1806f959",
         "section_name": "fine",
-        "sort_order": 25
+        "sort_order": 160
       },
       {
         "song_id": "song_0d1dbd139bb6",
         "title": "Ghostic Treat House",
         "section_id": "unit_48bf1806f959",
         "section_name": "fine",
-        "sort_order": 26
+        "sort_order": 170
       },
       {
         "song_id": "song_2a6ff189082e",
         "title": "狂怪ノ怨黙-キョウカイノエンモク-",
         "section_id": "unit_48bf1806f959",
         "section_name": "fine",
-        "sort_order": 27
+        "sort_order": 180
       },
       {
         "song_id": "song_b8cdfe1e1928",
         "title": "Crossing×Heart",
         "section_id": "unit_48bf1806f959",
         "section_name": "fine",
-        "sort_order": 28
+        "sort_order": 190
       },
       {
         "song_id": "song_a53841e5d3c8",
         "title": "Tryst of Stars",
         "section_id": "unit_48bf1806f959",
         "section_name": "fine",
-        "sort_order": 29
+        "sort_order": 200
       },
       {
         "song_id": "song_9560289984a0",
         "title": "スターライトパレード",
         "section_id": "unit_48bf1806f959",
         "section_name": "fine",
-        "sort_order": 30
+        "sort_order": 210
       },
       {
         "song_id": "song_6de4a0a8ff5a",
         "title": "Rebellion Star",
         "section_id": "unit_470609b26a1d",
         "section_name": "Trickstar",
-        "sort_order": 31
+        "sort_order": 220
       },
       {
         "song_id": "song_2f96247e8408",
         "title": "CHERRY HAPPY STREAM",
         "section_id": "unit_470609b26a1d",
         "section_name": "Trickstar",
-        "sort_order": 32
+        "sort_order": 230
       },
       {
         "song_id": "song_a3dabf50ba07",
         "title": "HEART→BEATER!!!!",
         "section_id": "unit_470609b26a1d",
         "section_name": "Trickstar",
-        "sort_order": 33
+        "sort_order": 240
       },
       {
         "song_id": "song_76406d3759e9",
         "title": "Welcome to the Trickstar Night☆",
         "section_id": "unit_470609b26a1d",
         "section_name": "Trickstar",
-        "sort_order": 34
+        "sort_order": 250
       },
       {
         "song_id": "song_7892b092a3ca",
         "title": "BREAKTHROUGH!",
         "section_id": "unit_470609b26a1d",
         "section_name": "Trickstar",
-        "sort_order": 35
+        "sort_order": 260
       },
       {
         "song_id": "song_292552ade123",
         "title": "1st SING-ALONG☆",
         "section_id": "unit_470609b26a1d",
         "section_name": "Trickstar",
-        "sort_order": 36
+        "sort_order": 270
       },
       {
         "song_id": "song_be5f50fc4003",
         "title": "Unstoppable Love!",
         "section_id": "unit_470609b26a1d",
         "section_name": "Trickstar",
-        "sort_order": 37
+        "sort_order": 280
       },
       {
         "song_id": "song_f7c93b113cc1",
         "title": "Romantic Xday!",
         "section_id": "unit_470609b26a1d",
         "section_name": "Trickstar",
-        "sort_order": 38
+        "sort_order": 290
       },
       {
         "song_id": "song_32ef34f10bab",
         "title": "幸せの歌",
         "section_id": "unit_470609b26a1d",
         "section_name": "Trickstar",
-        "sort_order": 39
+        "sort_order": 300
       },
       {
         "song_id": "song_0d7d18b25a76",
         "title": "虹色のSeasons",
         "section_id": "unit_470609b26a1d",
         "section_name": "Trickstar",
-        "sort_order": 40
+        "sort_order": 310
       },
       {
         "song_id": "song_b8cdfe1e1928",
         "title": "Crossing×Heart",
         "section_id": "unit_470609b26a1d",
         "section_name": "Trickstar",
-        "sort_order": 41
+        "sort_order": 320
       },
       {
         "song_id": "song_7c441d2d44d9",
         "title": "CELEBRATE!!",
         "section_id": "unit_470609b26a1d",
         "section_name": "Trickstar",
-        "sort_order": 42
+        "sort_order": 330
       },
       {
         "song_id": "song_6f2328deb812",
         "title": "Infinite Star",
         "section_id": "unit_470609b26a1d",
         "section_name": "Trickstar",
-        "sort_order": 43
+        "sort_order": 340
       },
       {
         "song_id": "song_d70996d82446",
         "title": "ONLY YOUR STARS! (TS Ver.)",
         "section_id": "unit_470609b26a1d",
         "section_name": "Trickstar",
-        "sort_order": 44
+        "sort_order": 350
       },
       {
         "song_id": "song_bfb9c4d54670",
         "title": "キセキ",
         "section_id": "unit_470609b26a1d",
         "section_name": "Trickstar",
-        "sort_order": 45
+        "sort_order": 360
       },
       {
         "song_id": "song_cbbcf5f47999",
         "title": "BIGBANG REFLECTION!!",
         "section_id": "unit_470609b26a1d",
         "section_name": "Trickstar",
-        "sort_order": 46
+        "sort_order": 370
       },
       {
         "song_id": "song_8c814ebdcf1f",
         "title": "Daydream×Reality",
         "section_id": "unit_470609b26a1d",
         "section_name": "Trickstar",
-        "sort_order": 47
+        "sort_order": 380
       },
       {
         "song_id": "song_515def0f6b9b",
         "title": "ワチャガナドゥ？",
         "section_id": "unit_470609b26a1d",
         "section_name": "Trickstar",
-        "sort_order": 48
+        "sort_order": 390
       },
       {
         "song_id": "song_259edd7b0ba8",
         "title": "Finder Girl",
         "section_id": "unit_470609b26a1d",
         "section_name": "Trickstar",
-        "sort_order": 49
+        "sort_order": 400
       },
       {
         "song_id": "song_d4930e520cb6",
         "title": "Unbalanced Triangle",
         "section_id": "unit_470609b26a1d",
         "section_name": "Trickstar",
-        "sort_order": 50
+        "sort_order": 410
       },
       {
         "song_id": "song_53c93cb31fde",
         "title": "DIAMOND SUMMER",
         "section_id": "unit_470609b26a1d",
         "section_name": "Trickstar",
-        "sort_order": 51
+        "sort_order": 420
       },
       {
         "song_id": "song_3b8bdf68dd7c",
         "title": "（RE）PLAY",
         "section_id": "unit_470609b26a1d",
         "section_name": "Trickstar",
-        "sort_order": 52
+        "sort_order": 430
       },
       {
         "song_id": "song_19b2d683e2e0",
         "title": "梦ノ咲流星隊歌",
         "section_id": "unit_5c279200ab8e",
         "section_name": "RYUSEITAI",
-        "sort_order": 53
+        "sort_order": 440
       },
       {
         "song_id": "song_d3e8a27e33fb",
         "title": "天下无敵☆メテオレンジャー!",
         "section_id": "unit_5c279200ab8e",
         "section_name": "RYUSEITAI",
-        "sort_order": 54
+        "sort_order": 450
       },
       {
         "song_id": "song_5750e49da659",
         "title": "SUPER NOVA REVOLU5TAR",
         "section_id": "unit_5c279200ab8e",
         "section_name": "RYUSEITAI",
-        "sort_order": 55
+        "sort_order": 460
       },
       {
         "song_id": "song_ccc184fb8c75",
         "title": "流星花火",
         "section_id": "unit_5c279200ab8e",
         "section_name": "RYUSEITAI",
-        "sort_order": 56
+        "sort_order": 470
       },
       {
         "song_id": "song_c73e1aa3ef22",
         "title": "アンリミテッド☆パワー!!!!!",
         "section_id": "unit_5c279200ab8e",
         "section_name": "RYUSEITAI",
-        "sort_order": 57
+        "sort_order": 480
       },
       {
         "song_id": "song_c7f32dc0c3f4",
         "title": "GROWING STARRY DAYS",
         "section_id": "unit_5c279200ab8e",
         "section_name": "RYUSEITAI",
-        "sort_order": 58
+        "sort_order": 490
       },
       {
         "song_id": "song_46a5658ea267",
         "title": "メテオ・スクランブル☆流星隊！",
         "section_id": "unit_5c279200ab8e",
         "section_name": "RYUSEITAI",
-        "sort_order": 59
+        "sort_order": 500
       },
       {
         "song_id": "song_1ee6da2714bc",
         "title": "Heart Heat Beat",
         "section_id": "unit_5c279200ab8e",
         "section_name": "RYUSEITAI",
-        "sort_order": 60
+        "sort_order": 510
       },
       {
         "song_id": "song_697a0f5aa0a4",
         "title": "青春Emergency",
         "section_id": "unit_5c279200ab8e",
         "section_name": "RYUSEITAI",
-        "sort_order": 61
+        "sort_order": 520
       },
       {
         "song_id": "song_d8a01455ffbe",
         "title": "OVERFLOW LIGHT UP!!!!!",
         "section_id": "unit_5c279200ab8e",
         "section_name": "RYUSEITAI",
-        "sort_order": 62
+        "sort_order": 530
       },
       {
         "song_id": "song_8ecba6ff3bb7",
         "title": "彗星HALATION",
         "section_id": "unit_5c279200ab8e",
         "section_name": "RYUSEITAI",
-        "sort_order": 63
+        "sort_order": 540
       },
       {
         "song_id": "song_af5cb76aedcf",
         "title": "Colors Arise",
         "section_id": "unit_5c279200ab8e",
         "section_name": "RYUSEITAI",
-        "sort_order": 64
+        "sort_order": 550
       },
       {
         "song_id": "song_c9634d03dde0",
         "title": "WILDLAND SURVIVOR",
         "section_id": "unit_5c279200ab8e",
         "section_name": "RYUSEITAI",
-        "sort_order": 65
+        "sort_order": 560
       },
       {
         "song_id": "song_8dc91c9a5498",
         "title": "NEW DAYBREAK",
         "section_id": "unit_5c279200ab8e",
         "section_name": "RYUSEITAI",
-        "sort_order": 66
+        "sort_order": 570
       },
       {
         "song_id": "song_0e7472b277e5",
         "title": "熱血☆流星忍法帖",
         "section_id": "unit_5c279200ab8e",
         "section_name": "RYUSEITAI",
-        "sort_order": 67
+        "sort_order": 580
       },
       {
         "song_id": "song_c098038e46e1",
         "title": "僕らのステラ",
         "section_id": "unit_5c279200ab8e",
         "section_name": "RYUSEITAI",
-        "sort_order": 68
+        "sort_order": 590
       },
       {
         "song_id": "song_d6dd78d784e3",
         "title": "RELAX PARADISE",
         "section_id": "unit_5c279200ab8e",
         "section_name": "RYUSEITAI",
-        "sort_order": 69
+        "sort_order": 600
       },
       {
         "song_id": "song_20eefad8da5a",
         "title": "BREAK THE NORM",
         "section_id": "unit_5c279200ab8e",
         "section_name": "RYUSEITAI",
-        "sort_order": 70
+        "sort_order": 610
       },
       {
         "song_id": "song_862554f517e7",
         "title": "GET THE WIN",
         "section_id": "unit_5c279200ab8e",
         "section_name": "RYUSEITAI",
-        "sort_order": 71
+        "sort_order": 620
       },
       {
         "song_id": "song_03b2065d864e",
         "title": "五色のShooting☆Star!!!!!",
         "section_id": "unit_5c279200ab8e",
         "section_name": "RYUSEITAI",
-        "sort_order": 72
+        "sort_order": 630
       },
       {
         "song_id": "song_fc94ac9ca6c8",
         "title": "ハム太郎とっとこうた",
         "section_id": "unit_5c279200ab8e",
         "section_name": "RYUSEITAI",
-        "sort_order": 73
+        "sort_order": 640
       },
       {
         "song_id": "song_d4721d279d3c",
         "title": "Kiss of Life",
         "section_id": "unit_93d309044f67",
         "section_name": "ALKALOID",
-        "sort_order": 74
+        "sort_order": 650
       },
       {
         "song_id": "song_de4361f880dc",
         "title": "翼モラトリアム",
         "section_id": "unit_93d309044f67",
         "section_name": "ALKALOID",
-        "sort_order": 75
+        "sort_order": 660
       },
       {
         "song_id": "song_1cd5d81835d1",
         "title": "You're Speculation",
         "section_id": "unit_93d309044f67",
         "section_name": "ALKALOID",
-        "sort_order": 76
+        "sort_order": 670
       },
       {
         "song_id": "song_3af219315db7",
         "title": "Distorted Heart",
         "section_id": "unit_93d309044f67",
         "section_name": "ALKALOID",
-        "sort_order": 77
+        "sort_order": 680
       },
       {
         "song_id": "song_874ff128db88",
         "title": "Hysteric Humanoid",
         "section_id": "unit_93d309044f67",
         "section_name": "ALKALOID",
-        "sort_order": 78
+        "sort_order": 690
       },
       {
         "song_id": "song_cbe54d5c11ff",
         "title": "Artistic Partisan",
         "section_id": "unit_93d309044f67",
         "section_name": "ALKALOID",
-        "sort_order": 79
+        "sort_order": 700
       },
       {
         "song_id": "song_13139942a6c4",
         "title": "SAKE OF LOVE",
         "section_id": "unit_93d309044f67",
         "section_name": "ALKALOID",
-        "sort_order": 80
+        "sort_order": 710
       },
       {
         "song_id": "song_3ee863c4fc4d",
         "title": "Black Out See Saw",
         "section_id": "unit_93d309044f67",
         "section_name": "ALKALOID",
-        "sort_order": 81
+        "sort_order": 720
       },
       {
         "song_id": "song_e06b225c4b6c",
         "title": "Across the universe",
         "section_id": "unit_93d309044f67",
         "section_name": "ALKALOID",
-        "sort_order": 82
+        "sort_order": 730
       },
       {
         "song_id": "song_77382f0cc9da",
         "title": "VERMILION",
         "section_id": "unit_93d309044f67",
         "section_name": "ALKALOID",
-        "sort_order": 83
+        "sort_order": 740
       },
       {
         "song_id": "song_c86567845082",
         "title": "SunnyTrip Summer",
         "section_id": "unit_93d309044f67",
         "section_name": "ALKALOID",
-        "sort_order": 84
+        "sort_order": 750
       },
       {
         "song_id": "song_fcb1c599d6e8",
         "title": "Living on the edge",
         "section_id": "unit_93d309044f67",
         "section_name": "ALKALOID",
-        "sort_order": 85
+        "sort_order": 760
       },
       {
         "song_id": "song_537681e7ee02",
         "title": "UNDYING HOLY LOVE",
         "section_id": "unit_93d309044f67",
         "section_name": "ALKALOID",
-        "sort_order": 86
+        "sort_order": 770
       },
       {
         "song_id": "song_6bb8e47bb56c",
         "title": "Believe 4 leaves",
         "section_id": "unit_93d309044f67",
         "section_name": "ALKALOID",
-        "sort_order": 87
+        "sort_order": 780
       },
       {
         "song_id": "song_e948810eb839",
         "title": "コトノハカンタービレ",
         "section_id": "unit_93d309044f67",
         "section_name": "ALKALOID",
-        "sort_order": 88
+        "sort_order": 790
       },
       {
         "song_id": "song_e9d5ca4928d5",
         "title": "E.V.O.L.U.T.I.O.N.",
         "section_id": "unit_93d309044f67",
         "section_name": "ALKALOID",
-        "sort_order": 89
+        "sort_order": 800
       },
       {
         "song_id": "song_e459bca503e4",
         "title": "フラジール",
         "section_id": "unit_93d309044f67",
         "section_name": "ALKALOID",
-        "sort_order": 90
+        "sort_order": 810
       },
       {
         "song_id": "song_90a81a004f52",
         "title": "夜に駆ける",
         "section_id": "unit_93d309044f67",
         "section_name": "ALKALOID",
-        "sort_order": 91
-      },
-      {
-        "song_id": "song_3b8bdf68dd7c",
-        "title": "（RE）PLAY",
-        "section_id": "unit_416c371272da",
-        "section_name": "Eden",
-        "sort_order": 92
+        "sort_order": 820
       },
       {
         "song_id": "song_7ca647631ee1",
         "title": "THE GENESIS",
         "section_id": "unit_416c371272da",
         "section_name": "Eden",
-        "sort_order": 93
+        "sort_order": 830
       },
       {
         "song_id": "song_3f3a17eb992f",
         "title": "Dance in the Apocalyps",
         "section_id": "unit_416c371272da",
         "section_name": "Eden",
-        "sort_order": 94
+        "sort_order": 840
       },
       {
         "song_id": "song_4b6d8cfa15d2",
         "title": "Awakening Myth",
         "section_id": "unit_416c371272da",
         "section_name": "Eden",
-        "sort_order": 95
+        "sort_order": 850
       },
       {
         "song_id": "song_f1f7d5246727",
         "title": "Psyche's Butterfly",
         "section_id": "unit_416c371272da",
         "section_name": "Eden",
-        "sort_order": 96
+        "sort_order": 860
       },
       {
         "song_id": "song_1bcd70c7557b",
         "title": "Deep Eclipse",
         "section_id": "unit_416c371272da",
         "section_name": "Eden",
-        "sort_order": 97
+        "sort_order": 870
       },
       {
         "song_id": "song_a355097a5822",
         "title": "KEEP OUT",
         "section_id": "unit_416c371272da",
         "section_name": "Eden",
-        "sort_order": 98
+        "sort_order": 880
       },
       {
         "song_id": "song_abefd121ea42",
         "title": "Absolute Perfection",
         "section_id": "unit_416c371272da",
         "section_name": "Eden",
-        "sort_order": 99
+        "sort_order": 890
       },
       {
         "song_id": "song_f104c3f4ae56",
         "title": "楽園追放 -Faith Conquest-",
         "section_id": "unit_416c371272da",
         "section_name": "Eden",
-        "sort_order": 100
+        "sort_order": 900
       },
       {
         "song_id": "song_81eaf3bed022",
         "title": "大いなる愛の前に全ては巡り来る",
         "section_id": "unit_416c371272da",
         "section_name": "Eden",
-        "sort_order": 101
+        "sort_order": 910
       },
       {
         "song_id": "song_843746914715",
         "title": "円環のRefraction",
         "section_id": "unit_416c371272da",
         "section_name": "Eden",
-        "sort_order": 102
+        "sort_order": 920
       },
       {
         "song_id": "song_7a617dcb29a9",
         "title": "EMBRACE",
         "section_id": "unit_416c371272da",
         "section_name": "Eden",
-        "sort_order": 103
+        "sort_order": 930
       },
       {
         "song_id": "song_c7e8fae8a586",
         "title": "EXCEED",
         "section_id": "unit_416c371272da",
         "section_name": "Eden",
-        "sort_order": 104
+        "sort_order": 940
       },
       {
         "song_id": "song_ce438ead8310",
         "title": "Majestic Magic",
         "section_id": "unit_416c371272da",
         "section_name": "Eden",
-        "sort_order": 105
+        "sort_order": 950
       },
       {
         "song_id": "song_bfb9c4d54670",
         "title": "キセキ",
         "section_id": "unit_416c371272da",
         "section_name": "Eden",
-        "sort_order": 106
+        "sort_order": 960
       },
       {
         "song_id": "song_3e7459480923",
         "title": "The Bible of The “Eden”",
         "section_id": "unit_416c371272da",
         "section_name": "Eden",
-        "sort_order": 107
+        "sort_order": 970
+      },
+      {
+        "song_id": "song_3b8bdf68dd7c",
+        "title": "（RE）PLAY",
+        "section_id": "unit_416c371272da",
+        "section_name": "Eden",
+        "sort_order": 980
       },
       {
         "song_id": "song_9fcb89a4ff89",
         "title": "Ruler's Truth",
         "section_id": "unit_f90d07ead983",
         "section_name": "Adam",
-        "sort_order": 108
+        "sort_order": 990
       },
       {
         "song_id": "song_6c4a71538bf8",
         "title": "The Beast of the End",
         "section_id": "unit_f90d07ead983",
         "section_name": "Adam",
-        "sort_order": 109
+        "sort_order": 1000
       },
       {
         "song_id": "song_f42428413655",
         "title": "Melting Rouge Soul",
         "section_id": "unit_f90d07ead983",
         "section_name": "Adam",
-        "sort_order": 110
+        "sort_order": 1010
       },
       {
         "song_id": "song_3feaa60eedfd",
         "title": "Trap For You",
         "section_id": "unit_39ab94afb7ce",
         "section_name": "Eve",
-        "sort_order": 111
+        "sort_order": 1020
       },
       {
         "song_id": "song_ca1ea8f50812",
         "title": "Sunlit Smile!",
         "section_id": "unit_39ab94afb7ce",
         "section_name": "Eve",
-        "sort_order": 112
+        "sort_order": 1030
       },
       {
         "song_id": "song_e143c6d257f0",
         "title": "Ruby Love",
         "section_id": "unit_39ab94afb7ce",
         "section_name": "Eve",
-        "sort_order": 113
+        "sort_order": 1040
       },
       {
         "song_id": "song_298710aa8ee4",
         "title": "魅惑劇",
         "section_id": "unit_e57b1ede4a78",
         "section_name": "Valkyrie",
-        "sort_order": 114
+        "sort_order": 1050
       },
       {
         "song_id": "song_f89b9f672e48",
         "title": "礼賛歌",
         "section_id": "unit_e57b1ede4a78",
         "section_name": "Valkyrie",
-        "sort_order": 115
+        "sort_order": 1060
       },
       {
         "song_id": "song_317e9d4af4e3",
         "title": "Mémoire Antique",
         "section_id": "unit_e57b1ede4a78",
         "section_name": "Valkyrie",
-        "sort_order": 116
+        "sort_order": 1070
       },
       {
         "song_id": "song_34ef71c58a48",
         "title": "今宵月の館にて",
         "section_id": "unit_e57b1ede4a78",
         "section_name": "Valkyrie",
-        "sort_order": 117
+        "sort_order": 1080
       },
       {
         "song_id": "song_c4c69007085f",
         "title": "Last Lament",
         "section_id": "unit_e57b1ede4a78",
         "section_name": "Valkyrie",
-        "sort_order": 118
+        "sort_order": 1090
       },
       {
         "song_id": "song_a7db9b6816f2",
         "title": "凱旋歌",
         "section_id": "unit_e57b1ede4a78",
         "section_name": "Valkyrie",
-        "sort_order": 119
+        "sort_order": 1100
       },
       {
         "song_id": "song_ce8a4ca262e1",
         "title": "Eternal Weaving",
         "section_id": "unit_e57b1ede4a78",
         "section_name": "Valkyrie",
-        "sort_order": 120
+        "sort_order": 1110
       },
       {
         "song_id": "song_cfdc974abd8d",
         "title": "麗しのナイチンゲール",
         "section_id": "unit_e57b1ede4a78",
         "section_name": "Valkyrie",
-        "sort_order": 121
+        "sort_order": 1120
       },
       {
         "song_id": "song_7395a111eca0",
         "title": "Le temps des fleurs",
         "section_id": "unit_e57b1ede4a78",
         "section_name": "Valkyrie",
-        "sort_order": 122
+        "sort_order": 1130
       },
       {
         "song_id": "song_d721d9ffcd6a",
         "title": "祝福のLibrary",
         "section_id": "unit_e57b1ede4a78",
         "section_name": "Valkyrie",
-        "sort_order": 123
+        "sort_order": 1140
       },
       {
         "song_id": "song_e31ac777b213",
         "title": "幸福論",
         "section_id": "unit_e57b1ede4a78",
         "section_name": "Valkyrie",
-        "sort_order": 124
+        "sort_order": 1150
       },
       {
         "song_id": "song_f6b6edd46a7d",
         "title": "Acanthe",
         "section_id": "unit_e57b1ede4a78",
         "section_name": "Valkyrie",
-        "sort_order": 125
+        "sort_order": 1160
       },
       {
         "song_id": "song_c76e05b1d11e",
         "title": "迷宮電子回廊",
         "section_id": "unit_e57b1ede4a78",
         "section_name": "Valkyrie",
-        "sort_order": 126
+        "sort_order": 1170
       },
       {
         "song_id": "song_a2e217101847",
         "title": "星の鳴動響きし時に",
         "section_id": "unit_e57b1ede4a78",
         "section_name": "Valkyrie",
-        "sort_order": 127
+        "sort_order": 1180
       },
       {
         "song_id": "song_cbe54d5c11ff",
         "title": "Artistic Partisan",
         "section_id": "unit_e57b1ede4a78",
         "section_name": "Valkyrie",
-        "sort_order": 128
+        "sort_order": 1190
       },
       {
         "song_id": "song_99583a0d6ab1",
         "title": "Stranger's sun",
         "section_id": "unit_e57b1ede4a78",
         "section_name": "Valkyrie",
-        "sort_order": 129
+        "sort_order": 1200
       },
       {
         "song_id": "song_613366d4a24d",
         "title": "砂上ノ楼閤",
         "section_id": "unit_e57b1ede4a78",
         "section_name": "Valkyrie",
-        "sort_order": 130
+        "sort_order": 1210
       },
       {
         "song_id": "song_40ade43d7071",
         "title": "勇侠青春謳",
         "section_id": "unit_e57b1ede4a78",
         "section_name": "Valkyrie",
-        "sort_order": 131
+        "sort_order": 1220
       },
       {
         "song_id": "song_1145709f1775",
         "title": "シュガー・スパイス方程式",
         "section_id": "unit_40406eac6796",
         "section_name": "2wink",
-        "sort_order": 132
+        "sort_order": 1230
       },
       {
         "song_id": "song_138a5ace638d",
         "title": "歓迎☆トゥ・ウィンク雑伎団",
         "section_id": "unit_40406eac6796",
         "section_name": "2wink",
-        "sort_order": 133
+        "sort_order": 1240
       },
       {
         "song_id": "song_f0ad8679ff72",
         "title": "TRICK with TREAT!!（with UNDEAD）",
         "section_id": "unit_40406eac6796",
         "section_name": "2wink",
-        "sort_order": 134
+        "sort_order": 1250
       },
       {
         "song_id": "song_332ff63d988f",
         "title": "ハートプリズム・シンメトリー",
         "section_id": "unit_40406eac6796",
         "section_name": "2wink",
-        "sort_order": 135
+        "sort_order": 1260
       },
       {
         "song_id": "song_b276c8b44a23",
         "title": "Play “Tag”",
         "section_id": "unit_40406eac6796",
         "section_name": "2wink",
-        "sort_order": 136
+        "sort_order": 1270
       },
       {
         "song_id": "song_923850667d55",
         "title": "2winkle Star Beat☆",
         "section_id": "unit_40406eac6796",
         "section_name": "2wink",
-        "sort_order": 137
+        "sort_order": 1280
       },
       {
         "song_id": "song_a990cfe11483",
         "title": "Mischievous Party Time!!",
         "section_id": "unit_40406eac6796",
         "section_name": "2wink",
-        "sort_order": 138
+        "sort_order": 1290
       },
       {
         "song_id": "song_a9b35dd790ad",
         "title": "Fighting Dreamer",
         "section_id": "unit_40406eac6796",
         "section_name": "2wink",
-        "sort_order": 139
+        "sort_order": 1300
       },
       {
         "song_id": "song_31c2b3f08b08",
         "title": "POLYPHONIC WORLD",
         "section_id": "unit_40406eac6796",
         "section_name": "2wink",
-        "sort_order": 140
+        "sort_order": 1310
       },
       {
         "song_id": "song_4f32900e4ca1",
         "title": "Turbulent Storm",
         "section_id": "unit_40406eac6796",
         "section_name": "2wink",
-        "sort_order": 141
+        "sort_order": 1320
       },
       {
         "song_id": "song_4325f341ffde",
         "title": "トゥウィンクル空中戦",
         "section_id": "unit_40406eac6796",
         "section_name": "2wink",
-        "sort_order": 142
+        "sort_order": 1330
       },
       {
         "song_id": "song_e0adbd9f8de6",
         "title": "Twin Wedding Vows",
         "section_id": "unit_40406eac6796",
         "section_name": "2wink",
-        "sort_order": 143
+        "sort_order": 1340
       },
       {
         "song_id": "song_3096f32aaef0",
         "title": "Swee2wink Love Letter",
         "section_id": "unit_40406eac6796",
         "section_name": "2wink",
-        "sort_order": 144
+        "sort_order": 1350
       },
       {
         "song_id": "song_716612b97823",
         "title": "Love×me⇄monsteR",
         "section_id": "unit_40406eac6796",
         "section_name": "2wink",
-        "sort_order": 145
+        "sort_order": 1360
       },
       {
         "song_id": "song_505d28c5a231",
         "title": "来来☆2winkイリュージョン",
         "section_id": "unit_40406eac6796",
         "section_name": "2wink",
-        "sort_order": 146
+        "sort_order": 1370
       },
       {
         "song_id": "song_862554f517e7",
         "title": "GET THE WIN",
         "section_id": "unit_40406eac6796",
         "section_name": "2wink",
-        "sort_order": 147
+        "sort_order": 1380
       },
       {
         "song_id": "song_477b9fdea637",
         "title": "LEMON SQUASH CHEERS!",
         "section_id": "unit_40406eac6796",
         "section_name": "2wink",
-        "sort_order": 148
+        "sort_order": 1390
       },
       {
         "song_id": "song_a57855027d00",
         "title": "SPLASHING WHIRLPOOL!!",
         "section_id": "unit_40406eac6796",
         "section_name": "2wink",
-        "sort_order": 149
+        "sort_order": 1400
       },
       {
         "song_id": "song_f264f502e080",
         "title": "WONDER WONDER TOY LAND",
         "section_id": "unit_40406eac6796",
         "section_name": "2wink",
-        "sort_order": 150
+        "sort_order": 1410
       },
       {
         "song_id": "song_9ab8ad9872c0",
         "title": "2wink Introduction",
         "section_id": "unit_40406eac6796",
         "section_name": "2wink",
-        "sort_order": 151
+        "sort_order": 1420
       },
       {
         "song_id": "song_4461ea59d30e",
         "title": "Tell Your World",
         "section_id": "unit_40406eac6796",
         "section_name": "2wink",
-        "sort_order": 152
+        "sort_order": 1430
       },
       {
         "song_id": "song_3f3d04c758dc",
         "title": "Crazy Roulette",
         "section_id": "unit_913751fd3f85",
         "section_name": "Crazy:B",
-        "sort_order": 153
+        "sort_order": 1440
       },
       {
         "song_id": "song_19199e1649f3",
         "title": "Be The Party Bee!",
         "section_id": "unit_913751fd3f85",
         "section_name": "Crazy:B",
-        "sort_order": 154
+        "sort_order": 1450
       },
       {
         "song_id": "song_dac271d15129",
         "title": "RISKY VENUS",
         "section_id": "unit_913751fd3f85",
         "section_name": "Crazy:B",
-        "sort_order": 155
+        "sort_order": 1460
       },
       {
         "song_id": "song_fec954226aec",
         "title": "PARANOIA STREET",
         "section_id": "unit_913751fd3f85",
         "section_name": "Crazy:B",
-        "sort_order": 156
+        "sort_order": 1470
       },
       {
         "song_id": "song_1a324f5f2103",
         "title": "Noisy:Beep",
         "section_id": "unit_913751fd3f85",
         "section_name": "Crazy:B",
-        "sort_order": 157
+        "sort_order": 1480
       },
       {
         "song_id": "song_9175aa8dc3b3",
         "title": "Crazy Anthem",
         "section_id": "unit_913751fd3f85",
         "section_name": "Crazy:B",
-        "sort_order": 158
+        "sort_order": 1490
       },
       {
         "song_id": "song_2ab2fd55536e",
         "title": "NA NA NA SUMMER NIGHT BeeAT",
         "section_id": "unit_913751fd3f85",
         "section_name": "Crazy:B",
-        "sort_order": 159
+        "sort_order": 1500
       },
       {
         "song_id": "song_256b3b5a4f3a",
         "title": "Foolish Alien",
         "section_id": "unit_913751fd3f85",
         "section_name": "Crazy:B",
-        "sort_order": 160
+        "sort_order": 1510
       },
       {
         "song_id": "song_477b9fdea637",
         "title": "LEMON SQUASH CHEERS!",
         "section_id": "unit_913751fd3f85",
         "section_name": "Crazy:B",
-        "sort_order": 161
+        "sort_order": 1520
       },
       {
         "song_id": "song_7abff74f1301",
         "title": "UTAKATA DANCE FLOOR",
         "section_id": "unit_913751fd3f85",
         "section_name": "Crazy:B",
-        "sort_order": 162
+        "sort_order": 1530
       },
       {
         "song_id": "song_15a228ff62e8",
         "title": "指先のアリアドネ",
         "section_id": "unit_913751fd3f85",
         "section_name": "Crazy:B",
-        "sort_order": 163
+        "sort_order": 1540
       },
       {
         "song_id": "song_2e9a64df8c91",
         "title": "Helter-Spider",
         "section_id": "unit_913751fd3f85",
         "section_name": "Crazy:B",
-        "sort_order": 164
+        "sort_order": 1550
       },
       {
         "song_id": "song_afe826491b4d",
         "title": "Honeycomb Summer",
         "section_id": "unit_913751fd3f85",
         "section_name": "Crazy:B",
-        "sort_order": 165
+        "sort_order": 1560
       },
       {
         "song_id": "song_c504db2c978f",
         "title": "ハニートラップ・マリアージュ",
         "section_id": "unit_913751fd3f85",
         "section_name": "Crazy:B",
-        "sort_order": 166
+        "sort_order": 1570
       },
       {
         "song_id": "song_13139942a6c4",
         "title": "SAKE OF LOVE",
         "section_id": "unit_913751fd3f85",
         "section_name": "Crazy:B",
-        "sort_order": 167
+        "sort_order": 1580
       },
       {
         "song_id": "song_9c6bab397a09",
         "title": "CIVIL WAR",
         "section_id": "unit_913751fd3f85",
         "section_name": "Crazy:B",
-        "sort_order": 168
+        "sort_order": 1590
       },
       {
         "song_id": "song_0add580d23b0",
         "title": "KING",
         "section_id": "unit_913751fd3f85",
         "section_name": "Crazy:B",
-        "sort_order": 169
+        "sort_order": 1600
       },
       {
         "song_id": "song_2c145b3a7f9a",
         "title": "U.S.A",
         "section_id": "unit_913751fd3f85",
         "section_name": "Crazy:B",
-        "sort_order": 170
+        "sort_order": 1610
       },
       {
         "song_id": "song_f9e0c3576d97",
         "title": "Melody in the Dark",
         "section_id": "unit_7e3bd6882771",
         "section_name": "UNDEAD",
-        "sort_order": 171
+        "sort_order": 1620
       },
       {
         "song_id": "song_4400d70c1e72",
         "title": "ハニーミルクはお好みで",
         "section_id": "unit_7e3bd6882771",
         "section_name": "UNDEAD",
-        "sort_order": 172
+        "sort_order": 1630
       },
       {
         "song_id": "song_abbedefea6a0",
         "title": "Gate of the Abyss",
         "section_id": "unit_7e3bd6882771",
         "section_name": "UNDEAD",
-        "sort_order": 173
+        "sort_order": 1640
       },
       {
         "song_id": "song_b2f74ae52ec5",
         "title": "DESTRUCTION ROAD",
         "section_id": "unit_7e3bd6882771",
         "section_name": "UNDEAD",
-        "sort_order": 174
+        "sort_order": 1650
       },
       {
         "song_id": "song_47ad3a26d7cc",
         "title": "Valentine Eve's Nightmare",
         "section_id": "unit_7e3bd6882771",
         "section_name": "UNDEAD",
-        "sort_order": 175
+        "sort_order": 1660
       },
       {
         "song_id": "song_2166b711c17c",
         "title": "IMMORAL WORLD",
         "section_id": "unit_7e3bd6882771",
         "section_name": "UNDEAD",
-        "sort_order": 176
+        "sort_order": 1670
       },
       {
         "song_id": "song_d01e8176e7a3",
         "title": "Savage Love Affair",
         "section_id": "unit_7e3bd6882771",
         "section_name": "UNDEAD",
-        "sort_order": 177
+        "sort_order": 1680
       },
       {
         "song_id": "song_6bfcf4614f85",
         "title": "罪の底",
         "section_id": "unit_7e3bd6882771",
         "section_name": "UNDEAD",
-        "sort_order": 178
+        "sort_order": 1690
       },
       {
         "song_id": "song_7fdcd95702f4",
         "title": "Darkness 4",
         "section_id": "unit_7e3bd6882771",
         "section_name": "UNDEAD",
-        "sort_order": 179
+        "sort_order": 1700
       },
       {
         "song_id": "song_30d7c443cd85",
         "title": "PERFECTLY-IMPERFECT",
         "section_id": "unit_7e3bd6882771",
         "section_name": "UNDEAD",
-        "sort_order": 180
+        "sort_order": 1710
       },
       {
         "song_id": "song_e8e9bff8fdf6",
         "title": "Resurrection of Soul",
         "section_id": "unit_7e3bd6882771",
         "section_name": "UNDEAD",
-        "sort_order": 181
+        "sort_order": 1720
       },
       {
         "song_id": "song_838ca688107e",
         "title": "Wanderlust Sailing",
         "section_id": "unit_7e3bd6882771",
         "section_name": "UNDEAD",
-        "sort_order": 182
+        "sort_order": 1730
       },
       {
         "song_id": "song_50bf6d34ed60",
         "title": "Sustain Memories",
         "section_id": "unit_7e3bd6882771",
         "section_name": "UNDEAD",
-        "sort_order": 183
+        "sort_order": 1740
       },
       {
         "song_id": "song_b357980d55f0",
         "title": "Nightless World",
         "section_id": "unit_7e3bd6882771",
         "section_name": "UNDEAD",
-        "sort_order": 184
+        "sort_order": 1750
       },
       {
         "song_id": "song_ea300e2285b6",
         "title": "SWINGIN' PARONIRIA",
         "section_id": "unit_7e3bd6882771",
         "section_name": "UNDEAD",
-        "sort_order": 185
+        "sort_order": 1760
       },
       {
         "song_id": "song_0ec267fb6f6c",
         "title": "FORBIDDEN RAIN",
         "section_id": "unit_7e3bd6882771",
         "section_name": "UNDEAD",
-        "sort_order": 186
+        "sort_order": 1770
       },
       {
         "song_id": "song_4ba0f95ed024",
         "title": "RAMBLING MOON",
         "section_id": "unit_7e3bd6882771",
         "section_name": "UNDEAD",
-        "sort_order": 187
+        "sort_order": 1780
       },
       {
         "song_id": "song_ecb21c17047a",
         "title": "Break the Prison",
         "section_id": "unit_7e3bd6882771",
         "section_name": "UNDEAD",
-        "sort_order": 188
+        "sort_order": 1790
       },
       {
         "song_id": "song_2c145b3a7f9a",
         "title": "U.S.A",
         "section_id": "unit_7e3bd6882771",
         "section_name": "UNDEAD",
-        "sort_order": 189
+        "sort_order": 1800
       },
       {
         "song_id": "song_2335d22e3444",
         "title": "Joyful×Box*",
         "section_id": "unit_bea4a935a32a",
         "section_name": "Ra*bits",
-        "sort_order": 190
+        "sort_order": 1810
       },
       {
         "song_id": "song_49998ba34a48",
         "title": "野うさぎマーチ♪",
         "section_id": "unit_bea4a935a32a",
         "section_name": "Ra*bits",
-        "sort_order": 191
+        "sort_order": 1820
       },
       {
         "song_id": "song_00f546d5fe68",
         "title": "Love Ra*bits Party!!",
         "section_id": "unit_bea4a935a32a",
         "section_name": "Ra*bits",
-        "sort_order": 192
+        "sort_order": 1830
       },
       {
         "song_id": "song_2afd788654d5",
         "title": "Milky Starry Charm",
         "section_id": "unit_bea4a935a32a",
         "section_name": "Ra*bits",
-        "sort_order": 193
+        "sort_order": 1840
       },
       {
         "song_id": "song_7976107fa598",
         "title": "メルティ♡キッチン",
         "section_id": "unit_bea4a935a32a",
         "section_name": "Ra*bits",
-        "sort_order": 194
+        "sort_order": 1850
       },
       {
         "song_id": "song_aedcc7d11c58",
         "title": "Dream Collection",
         "section_id": "unit_bea4a935a32a",
         "section_name": "Ra*bits",
-        "sort_order": 195
+        "sort_order": 1860
       },
       {
         "song_id": "song_de056efeac67",
         "title": "メイド・イン・トキメキ♪",
         "section_id": "unit_bea4a935a32a",
         "section_name": "Ra*bits",
-        "sort_order": 196
+        "sort_order": 1870
       },
       {
         "song_id": "song_2977f270a6ea",
         "title": "Love it Love it",
         "section_id": "unit_bea4a935a32a",
         "section_name": "Ra*bits",
-        "sort_order": 197
+        "sort_order": 1880
       },
       {
         "song_id": "song_daaf9eaa6b13",
         "title": "JUMPIN' LUCK BEAT",
         "section_id": "unit_bea4a935a32a",
         "section_name": "Ra*bits",
-        "sort_order": 198
+        "sort_order": 1890
       },
       {
         "song_id": "song_07c598bdfbb9",
         "title": "うさぎの森の音楽会",
         "section_id": "unit_bea4a935a32a",
         "section_name": "Ra*bits",
-        "sort_order": 199
+        "sort_order": 1900
       },
       {
         "song_id": "song_fb2742a22074",
         "title": "ヒカリスペクトル",
         "section_id": "unit_bea4a935a32a",
         "section_name": "Ra*bits",
-        "sort_order": 200
+        "sort_order": 1910
       },
       {
         "song_id": "song_892acb24fa11",
         "title": "ポケットに宇宙",
         "section_id": "unit_bea4a935a32a",
         "section_name": "Ra*bits",
-        "sort_order": 201
+        "sort_order": 1920
       },
       {
         "song_id": "song_5c510326eb74",
         "title": "RaRaRa*Station!",
         "section_id": "unit_bea4a935a32a",
         "section_name": "Ra*bits",
-        "sort_order": 202
+        "sort_order": 1930
       },
       {
         "song_id": "song_f929ffce1eb8",
         "title": "パラレルメイズ",
         "section_id": "unit_bea4a935a32a",
         "section_name": "Ra*bits",
-        "sort_order": 203
+        "sort_order": 1940
       },
       {
         "song_id": "song_25d88633ff52",
         "title": "ハレノヒSugar Wave",
         "section_id": "unit_bea4a935a32a",
         "section_name": "Ra*bits",
-        "sort_order": 204
+        "sort_order": 1950
       },
       {
         "song_id": "song_3d5ab217088e",
         "title": "FALLIN' LOVE=IT'S WONDERLAND",
         "section_id": "unit_bea4a935a32a",
         "section_name": "Ra*bits",
-        "sort_order": 205
+        "sort_order": 1960
       },
       {
         "song_id": "song_6f2c70a4b060",
         "title": "The・プリティカルパレード♪",
         "section_id": "unit_bea4a935a32a",
         "section_name": "Ra*bits",
-        "sort_order": 206
+        "sort_order": 1970
       },
       {
         "song_id": "song_fc94ac9ca6c8",
         "title": "ハム太郎とっとこうた",
         "section_id": "unit_bea4a935a32a",
         "section_name": "Ra*bits",
-        "sort_order": 207
+        "sort_order": 1980
       },
       {
         "song_id": "song_669a7d7e6b97",
         "title": "Hoppin' Season♪",
         "section_id": "unit_bea4a935a32a",
         "section_name": "Ra*bits",
-        "sort_order": 208
-      },
-      {
-        "song_id": "song_30d7c443cd85",
-        "title": "PERFECTLY-IMPERFECT",
-        "section_id": "unit_47bf340cb8a7",
-        "section_name": "AKATSUKI",
-        "sort_order": 209
+        "sort_order": 1990
       },
       {
         "song_id": "song_66b431f79ed4",
         "title": "百花繚乱、紅月夜",
         "section_id": "unit_47bf340cb8a7",
         "section_name": "AKATSUKI",
-        "sort_order": 210
+        "sort_order": 2000
       },
       {
         "song_id": "song_95930d4f4eb8",
         "title": "斬 －決意ノ刃－",
         "section_id": "unit_47bf340cb8a7",
         "section_name": "AKATSUKI",
-        "sort_order": 211
+        "sort_order": 2010
       },
       {
         "song_id": "song_67635d566517",
         "title": "祭夜絵巻",
         "section_id": "unit_47bf340cb8a7",
         "section_name": "AKATSUKI",
-        "sort_order": 212
+        "sort_order": 2020
       },
       {
         "song_id": "song_92f5cf11112d",
         "title": "剣戟の舞",
         "section_id": "unit_47bf340cb8a7",
         "section_name": "AKATSUKI",
-        "sort_order": 213
+        "sort_order": 2030
       },
       {
         "song_id": "song_e34465cc20f7",
         "title": "月下無双、紅の舞",
         "section_id": "unit_47bf340cb8a7",
         "section_name": "AKATSUKI",
-        "sort_order": 214
+        "sort_order": 2040
       },
       {
         "song_id": "song_1fbe35f02a39",
         "title": "薄紅色の約束",
         "section_id": "unit_47bf340cb8a7",
         "section_name": "AKATSUKI",
-        "sort_order": 215
+        "sort_order": 2050
       },
       {
         "song_id": "song_b01369ae1ec2",
         "title": "夜空、然りとて鵲は",
         "section_id": "unit_47bf340cb8a7",
         "section_name": "AKATSUKI",
-        "sort_order": 216
+        "sort_order": 2060
       },
       {
         "song_id": "song_69a0fea9af42",
         "title": "金色千夜夢舞台",
         "section_id": "unit_47bf340cb8a7",
         "section_name": "AKATSUKI",
-        "sort_order": 217
+        "sort_order": 2070
       },
       {
         "song_id": "song_1fa4d3dcf03c",
         "title": "絲",
         "section_id": "unit_47bf340cb8a7",
         "section_name": "AKATSUKI",
-        "sort_order": 218
+        "sort_order": 2080
       },
       {
         "song_id": "song_6987b206e206",
         "title": "月光奇譚",
         "section_id": "unit_47bf340cb8a7",
         "section_name": "AKATSUKI",
-        "sort_order": 219
+        "sort_order": 2090
       },
       {
         "song_id": "song_fabacc8f40d1",
         "title": "紅月いろは唄",
         "section_id": "unit_47bf340cb8a7",
         "section_name": "AKATSUKI",
-        "sort_order": 220
+        "sort_order": 2100
       },
       {
         "song_id": "song_fb44ea0a66fb",
         "title": "夏鳥の詩 -サマーバード-",
         "section_id": "unit_47bf340cb8a7",
         "section_name": "AKATSUKI",
-        "sort_order": 221
+        "sort_order": 2110
+      },
+      {
+        "song_id": "song_30d7c443cd85",
+        "title": "PERFECTLY-IMPERFECT",
+        "section_id": "unit_47bf340cb8a7",
+        "section_name": "AKATSUKI",
+        "sort_order": 2120
       },
       {
         "song_id": "song_40ade43d7071",
         "title": "勇侠青春謳",
         "section_id": "unit_47bf340cb8a7",
         "section_name": "AKATSUKI",
-        "sort_order": 222
+        "sort_order": 2130
       },
       {
         "song_id": "song_035a08cffb41",
         "title": "花灯の恋文",
         "section_id": "unit_47bf340cb8a7",
         "section_name": "AKATSUKI",
-        "sort_order": 223
+        "sort_order": 2140
       },
       {
         "song_id": "song_4c2f5b498481",
         "title": "想ひ出缀り",
         "section_id": "unit_47bf340cb8a7",
         "section_name": "AKATSUKI",
-        "sort_order": 224
+        "sort_order": 2150
       },
       {
         "song_id": "song_4626e5181fba",
         "title": "RevolTrad~維新伝心~",
         "section_id": "unit_47bf340cb8a7",
         "section_name": "AKATSUKI",
-        "sort_order": 225
+        "sort_order": 2160
       },
       {
         "song_id": "song_8155b2ed55c5",
         "title": "百花繚乱、紅月夜（2025Ver.）",
         "section_id": "unit_9f0fad45692b",
         "section_name": "四人月",
-        "sort_order": 226
+        "sort_order": 2170
       },
       {
         "song_id": "song_00349c50aeca",
         "title": "天翔KAGETSU",
         "section_id": "unit_9f0fad45692b",
         "section_name": "四人月",
-        "sort_order": 227
+        "sort_order": 2180
       },
       {
         "song_id": "song_5f23b6b056b0",
         "title": "炎纏焔踊千変万火",
         "section_id": "unit_9f0fad45692b",
         "section_name": "四人月",
-        "sort_order": 228
-      },
-      {
-        "song_id": "song_9c6bab397a09",
-        "title": "CIVIL WAR",
-        "section_id": "unit_9f0fad45692b",
-        "section_name": "四人月",
-        "sort_order": 229
+        "sort_order": 2190
       },
       {
         "song_id": "song_ad544be200b0",
         "title": "LOUDEST BUGS",
         "section_id": "unit_9f0fad45692b",
         "section_name": "四人月",
-        "sort_order": 230
+        "sort_order": 2200
+      },
+      {
+        "song_id": "song_9c6bab397a09",
+        "title": "CIVIL WAR",
+        "section_id": "unit_9f0fad45692b",
+        "section_name": "四人月",
+        "sort_order": 2210
       },
       {
         "song_id": "song_8d0dedad18e1",
         "title": "明鏡流水",
         "section_id": "unit_9f0fad45692b",
         "section_name": "四人月",
-        "sort_order": 231
+        "sort_order": 2220
       },
       {
         "song_id": "song_6cd5290543a2",
         "title": "Dear World",
         "section_id": "unit_c4d6d1a93e7b",
         "section_name": "MELLOW DEAR US",
-        "sort_order": 232
+        "sort_order": 2230
       },
       {
         "song_id": "song_c61f0c51d264",
         "title": "BUBBLE GUM DANCE",
         "section_id": "unit_c4d6d1a93e7b",
         "section_name": "MELLOW DEAR US",
-        "sort_order": 233
+        "sort_order": 2240
       },
       {
         "song_id": "song_b2ac6daf5392",
         "title": "Mellow Addiction",
         "section_id": "unit_c4d6d1a93e7b",
         "section_name": "MELLOW DEAR US",
-        "sort_order": 234
+        "sort_order": 2250
       },
       {
         "song_id": "song_99583a0d6ab1",
         "title": "Stranger's sun",
         "section_id": "unit_c4d6d1a93e7b",
         "section_name": "MELLOW DEAR US",
-        "sort_order": 235
+        "sort_order": 2260
       },
       {
         "song_id": "song_4d6708273bd9",
         "title": "Femme fatale",
         "section_id": "unit_c4d6d1a93e7b",
         "section_name": "MELLOW DEAR US",
-        "sort_order": 236
+        "sort_order": 2270
       },
       {
         "song_id": "song_9e01aa371797",
         "title": "I wanna show the gritty glitter",
         "section_id": "unit_c4d6d1a93e7b",
         "section_name": "MELLOW DEAR US",
-        "sort_order": 237
+        "sort_order": 2280
       },
       {
         "song_id": "song_6e6371440637",
         "title": "Aquarium",
         "section_id": "unit_c4d6d1a93e7b",
         "section_name": "MELLOW DEAR US",
-        "sort_order": 238
+        "sort_order": 2290
       },
       {
         "song_id": "song_14285ae10cb9",
         "title": "Fight for Judge",
         "section_id": "unit_f57620665756",
         "section_name": "Knights",
-        "sort_order": 239
+        "sort_order": 2300
       },
       {
         "song_id": "song_c9388f895e6e",
         "title": "Article of Faith",
         "section_id": "unit_f57620665756",
         "section_name": "Knights",
-        "sort_order": 240
+        "sort_order": 2310
       },
       {
         "song_id": "song_beaefe51e02d",
         "title": "Knights the Phantom Thief",
         "section_id": "unit_f57620665756",
         "section_name": "Knights",
-        "sort_order": 241
+        "sort_order": 2320
       },
       {
         "song_id": "song_06bcc921a73c",
         "title": "Promise Swords",
         "section_id": "unit_f57620665756",
         "section_name": "Knights",
-        "sort_order": 242
+        "sort_order": 2330
       },
       {
         "song_id": "song_80457668d34f",
         "title": "Voice of Sword",
         "section_id": "unit_f57620665756",
         "section_name": "Knights",
-        "sort_order": 243
+        "sort_order": 2340
       },
       {
         "song_id": "song_9852698eae61",
         "title": "Coruscate Breeze",
         "section_id": "unit_f57620665756",
         "section_name": "Knights",
-        "sort_order": 244
+        "sort_order": 2350
       },
       {
         "song_id": "song_98d12bd86380",
         "title": "Grateful allegiance",
         "section_id": "unit_f57620665756",
         "section_name": "Knights",
-        "sort_order": 245
+        "sort_order": 2360
       },
       {
         "song_id": "song_d8b431c16440",
         "title": "Silent Oath",
         "section_id": "unit_f57620665756",
         "section_name": "Knights",
-        "sort_order": 246
+        "sort_order": 2370
       },
       {
         "song_id": "song_d4930e520cb6",
         "title": "Unbalanced Triangle",
         "section_id": "unit_f57620665756",
         "section_name": "Knights",
-        "sort_order": 247
+        "sort_order": 2380
       },
       {
         "song_id": "song_72c6ff63ef31",
         "title": "Castle of my Heart",
         "section_id": "unit_f57620665756",
         "section_name": "Knights",
-        "sort_order": 248
+        "sort_order": 2390
       },
       {
         "song_id": "song_3f518169e115",
         "title": "Wonderful Happiness",
         "section_id": "unit_f57620665756",
         "section_name": "Knights",
-        "sort_order": 249
+        "sort_order": 2400
       },
       {
         "song_id": "song_1be0af88f8d0",
         "title": "Luminous Crown",
         "section_id": "unit_f57620665756",
         "section_name": "Knights",
-        "sort_order": 250
+        "sort_order": 2410
       },
       {
         "song_id": "song_9afd2308dcbd",
         "title": "Secret Masquerade",
         "section_id": "unit_f57620665756",
         "section_name": "Knights",
-        "sort_order": 251
+        "sort_order": 2420
       },
       {
         "song_id": "song_b464f12abd93",
         "title": "Heart Collector",
         "section_id": "unit_f57620665756",
         "section_name": "Knights",
-        "sort_order": 252
+        "sort_order": 2430
       },
       {
         "song_id": "song_79ea8303895e",
         "title": "Mystic Fragrance",
         "section_id": "unit_f57620665756",
         "section_name": "Knights",
-        "sort_order": 253
+        "sort_order": 2440
       },
       {
         "song_id": "song_6840675fe65e",
         "title": "Little Romance",
         "section_id": "unit_f57620665756",
         "section_name": "Knights",
-        "sort_order": 254
+        "sort_order": 2450
       },
       {
         "song_id": "song_df29ef582916",
         "title": "Or the Beautiful Golden Drop",
         "section_id": "unit_f57620665756",
         "section_name": "Knights",
-        "sort_order": 255
+        "sort_order": 2460
       },
       {
         "song_id": "song_697a0f5aa0a4",
         "title": "青春Emergency",
         "section_id": "unit_f57620665756",
         "section_name": "Knights",
-        "sort_order": 256
+        "sort_order": 2470
       },
       {
         "song_id": "song_9560289984a0",
         "title": "スターライトパレード",
         "section_id": "unit_f57620665756",
         "section_name": "Knights",
-        "sort_order": 257
+        "sort_order": 2480
       },
       {
         "song_id": "song_48b0a9e87b70",
         "title": "Checkmate Knights",
         "section_id": "unit_f57620665756",
         "section_name": "Knights",
-        "sort_order": 258
+        "sort_order": 2490
       },
       {
         "song_id": "song_0bff69dfafba",
         "title": "Temptation Magic",
         "section_id": "unit_92301942e6fe",
         "section_name": "Switch",
-        "sort_order": 259
+        "sort_order": 2500
       },
       {
         "song_id": "song_237641868232",
         "title": "Knockin' Fantasy",
         "section_id": "unit_92301942e6fe",
         "section_name": "Switch",
-        "sort_order": 260
+        "sort_order": 2510
       },
       {
         "song_id": "song_272137fbf668",
         "title": "イースター・カーニバル",
         "section_id": "unit_92301942e6fe",
         "section_name": "Switch",
-        "sort_order": 261
+        "sort_order": 2520
       },
       {
         "song_id": "song_e9dcbfd5a374",
         "title": "Galaxy Destiny",
         "section_id": "unit_92301942e6fe",
         "section_name": "Switch",
-        "sort_order": 262
+        "sort_order": 2530
       },
       {
         "song_id": "song_3b700f06c44f",
         "title": "I \"Witch” You A Happy Halloween!",
         "section_id": "unit_92301942e6fe",
         "section_name": "Switch",
-        "sort_order": 263
+        "sort_order": 2540
       },
       {
         "song_id": "song_f30f965865e5",
         "title": "エメラルドプラネット",
         "section_id": "unit_92301942e6fe",
         "section_name": "Switch",
-        "sort_order": 264
+        "sort_order": 2550
       },
       {
         "song_id": "song_7de429001b8d",
         "title": "Magic for your \"Switch\"",
         "section_id": "unit_92301942e6fe",
         "section_name": "Switch",
-        "sort_order": 265
+        "sort_order": 2560
       },
       {
         "song_id": "song_8e9e44121746",
         "title": "A little bit UP!!",
         "section_id": "unit_92301942e6fe",
         "section_name": "Switch",
-        "sort_order": 266
+        "sort_order": 2570
       },
       {
         "song_id": "song_39aafe4d2805",
         "title": "Romancing Cruise",
         "section_id": "unit_92301942e6fe",
         "section_name": "Switch",
-        "sort_order": 267
+        "sort_order": 2580
       },
       {
         "song_id": "song_3666293ef4f3",
         "title": "Seven Days \"Prismagic\"",
         "section_id": "unit_92301942e6fe",
         "section_name": "Switch",
-        "sort_order": 268
+        "sort_order": 2590
       },
       {
         "song_id": "song_ce438ead8310",
         "title": "Majestic Magic",
         "section_id": "unit_92301942e6fe",
         "section_name": "Switch",
-        "sort_order": 269
+        "sort_order": 2600
       },
       {
         "song_id": "song_e945e6bc76de",
         "title": "Switching Journey",
         "section_id": "unit_92301942e6fe",
         "section_name": "Switch",
-        "sort_order": 270
+        "sort_order": 2610
       },
       {
         "song_id": "song_24e4f8bd9249",
         "title": "Wish upon a MUSIC!!",
         "section_id": "unit_92301942e6fe",
         "section_name": "Switch",
-        "sort_order": 271
+        "sort_order": 2620
       },
       {
         "song_id": "song_a7f95a1c5ba0",
         "title": "Brilliant Smile",
         "section_id": "unit_92301942e6fe",
         "section_name": "Switch",
-        "sort_order": 272
+        "sort_order": 2630
       },
       {
         "song_id": "song_3584bfe10899",
         "title": "オモイノカケラ",
         "section_id": "unit_92301942e6fe",
         "section_name": "Switch",
-        "sort_order": 273
+        "sort_order": 2640
       },
       {
         "song_id": "song_1f5c5b08bf1f",
         "title": "Chocola-Tic After School",
         "section_id": "unit_92301942e6fe",
         "section_name": "Switch",
-        "sort_order": 274
+        "sort_order": 2650
       },
       {
         "song_id": "song_e9d5ca4928d5",
         "title": "E.V.O.L.U.T.I.O.N.",
         "section_id": "unit_92301942e6fe",
         "section_name": "Switch",
-        "sort_order": 275
+        "sort_order": 2660
       },
       {
         "song_id": "song_4461ea59d30e",
         "title": "Tell Your World",
         "section_id": "unit_92301942e6fe",
         "section_name": "Switch",
-        "sort_order": 276
-      },
-      {
-        "song_id": "song_4626e5181fba",
-        "title": "RevolTrad~維新伝心~",
-        "section_id": "unit_64d6a7f5a1e2",
-        "section_name": "MaM",
-        "sort_order": 277
+        "sort_order": 2670
       },
       {
         "song_id": "song_d9eaea646f46",
         "title": "Blooming World",
         "section_id": "unit_64d6a7f5a1e2",
         "section_name": "MaM",
-        "sort_order": 278
+        "sort_order": 2680
       },
       {
         "song_id": "song_a884a74dba91",
         "title": "Festive!",
         "section_id": "unit_64d6a7f5a1e2",
         "section_name": "MaM",
-        "sort_order": 279
+        "sort_order": 2690
       },
       {
         "song_id": "song_b6667a05496c",
         "title": "君印 Be Ambitious!!",
         "section_id": "unit_64d6a7f5a1e2",
         "section_name": "MaM",
-        "sort_order": 280
+        "sort_order": 2700
       },
       {
         "song_id": "song_008fa383d270",
         "title": "愉快痛快 That's alright!",
         "section_id": "unit_64d6a7f5a1e2",
         "section_name": "MaM",
-        "sort_order": 281
+        "sort_order": 2710
       },
       {
         "song_id": "song_f78d291f729e",
         "title": "ハンズクラフト",
         "section_id": "unit_64d6a7f5a1e2",
         "section_name": "MaM",
-        "sort_order": 282
+        "sort_order": 2720
       },
       {
         "song_id": "song_faacc1bec397",
         "title": "HELLO, NEW YEAR!",
         "section_id": "unit_64d6a7f5a1e2",
         "section_name": "MaM",
-        "sort_order": 283
+        "sort_order": 2730
       },
       {
         "song_id": "song_02c5bfe73320",
         "title": "ハロウィン・ランデブー",
         "section_id": "unit_64d6a7f5a1e2",
         "section_name": "MaM",
-        "sort_order": 284
+        "sort_order": 2740
       },
       {
         "song_id": "song_a859c627edfb",
         "title": "Light on the Orbit",
         "section_id": "unit_64d6a7f5a1e2",
         "section_name": "MaM",
-        "sort_order": 285
+        "sort_order": 2750
       },
       {
         "song_id": "song_478b71c2a636",
         "title": "辻風に吹かれて",
         "section_id": "unit_64d6a7f5a1e2",
         "section_name": "MaM",
-        "sort_order": 286
+        "sort_order": 2760
       },
       {
         "song_id": "song_2a6ff189082e",
         "title": "狂怪ノ怨黙-キョウカイノエンモク-",
         "section_id": "unit_64d6a7f5a1e2",
         "section_name": "MaM",
-        "sort_order": 287
+        "sort_order": 2770
       },
       {
         "song_id": "song_4567790e5789",
         "title": "ラスト・ページ",
         "section_id": "unit_64d6a7f5a1e2",
         "section_name": "MaM",
-        "sort_order": 288
+        "sort_order": 2780
+      },
+      {
+        "song_id": "song_4626e5181fba",
+        "title": "RevolTrad~維新伝心~",
+        "section_id": "unit_64d6a7f5a1e2",
+        "section_name": "MaM",
+        "sort_order": 2790
       },
       {
         "song_id": "song_baeda816cf9d",
         "title": "しょーがいゼッタイそーあい宣言♥",
         "section_id": "unit_0ca970044e13",
         "section_name": "Special for Princess!",
-        "sort_order": 289
+        "sort_order": 2800
       },
       {
         "song_id": "song_ce486340cc45",
         "title": "スキスキハンター♡",
         "section_id": "unit_0ca970044e13",
         "section_name": "Special for Princess!",
-        "sort_order": 290
+        "sort_order": 2810
       },
       {
         "song_id": "song_038d194de57e",
         "title": "Be My Princess♡",
         "section_id": "unit_0ca970044e13",
         "section_name": "Special for Princess!",
-        "sort_order": 291
+        "sort_order": 2820
       },
       {
         "song_id": "song_a70ba6dbc4ed",
         "title": "メランコリーを駆け拔けろ♥",
         "section_id": "unit_0ca970044e13",
         "section_name": "Special for Princess!",
-        "sort_order": 292
+        "sort_order": 2830
       },
       {
         "song_id": "song_82849a254d2c",
         "title": "ベリイ・ベリイ・スイート・ホワイト♡",
         "section_id": "unit_0ca970044e13",
         "section_name": "Special for Princess!",
-        "sort_order": 293
+        "sort_order": 2840
       },
       {
         "song_id": "song_6f2c70a4b060",
         "title": "The・プリティカルパレード♪",
         "section_id": "unit_0ca970044e13",
         "section_name": "Special for Princess!",
-        "sort_order": 294
+        "sort_order": 2850
       },
       {
         "song_id": "song_3b0bd0409abb",
         "title": "Nightmare Syndrome♡",
         "section_id": "unit_0ca970044e13",
         "section_name": "Special for Princess!",
-        "sort_order": 295
+        "sort_order": 2860
       },
       {
         "song_id": "song_932380193757",
         "title": "パンダちっくコミュニケイション♥",
         "section_id": "unit_0ca970044e13",
         "section_name": "Special for Princess!",
-        "sort_order": 296
+        "sort_order": 2870
       },
       {
         "song_id": "song_242aeac927fd",
         "title": "あんさんぶる体操！！",
         "section_id": "unit_4f0f85ab2a17",
         "section_name": "J&A",
-        "sort_order": 297
+        "sort_order": 2880
       },
       {
         "song_id": "song_06c28dae9ea0",
         "title": "Rainbow Stairway",
         "section_id": "unit_4f0f85ab2a17",
         "section_name": "J&A",
-        "sort_order": 298
+        "sort_order": 2890
       },
       {
         "song_id": "song_fec201cc4669",
         "title": "ハナニナレ!",
         "section_id": "unit_4f0f85ab2a17",
         "section_name": "J&A",
-        "sort_order": 299
+        "sort_order": 2900
       },
       {
         "song_id": "song_5aa05a1f5d9b",
         "title": "輝きの中で",
         "section_id": "unit_4f0f85ab2a17",
         "section_name": "J&A",
-        "sort_order": 300
+        "sort_order": 2910
       },
       {
         "song_id": "song_d1bc073453a1",
         "title": "UNFADING",
         "section_id": "unit_4f0f85ab2a17",
         "section_name": "J&A",
-        "sort_order": 301
-      },
-      {
-        "song_id": "song_90a81a004f52",
-        "title": "夜に駆ける",
-        "section_id": "unit_6878d8629930",
-        "section_name": "DoubleFace",
-        "sort_order": 302
-      },
-      {
-        "song_id": "song_892acb24fa11",
-        "title": "ポケットに宇宙",
-        "section_id": "unit_6878d8629930",
-        "section_name": "DoubleFace",
-        "sort_order": 303
+        "sort_order": 2920
       },
       {
         "song_id": "song_eea257b81e72",
         "title": "‘=EYE=",
         "section_id": "unit_6878d8629930",
         "section_name": "DoubleFace",
-        "sort_order": 304
+        "sort_order": 2930
       },
       {
         "song_id": "song_5b658ea8fab0",
         "title": "Stippling",
         "section_id": "unit_6878d8629930",
         "section_name": "DoubleFace",
-        "sort_order": 305
+        "sort_order": 2940
       },
       {
         "song_id": "song_84a47c43faf1",
         "title": "ネビュラ",
         "section_id": "unit_6878d8629930",
         "section_name": "DoubleFace",
-        "sort_order": 306
+        "sort_order": 2950
       },
       {
         "song_id": "song_b7012d43986a",
         "title": "Bye-Bye Buddy",
         "section_id": "unit_6878d8629930",
         "section_name": "DoubleFace",
-        "sort_order": 307
+        "sort_order": 2960
       },
       {
         "song_id": "song_f4989e275f0f",
         "title": "No name yet",
         "section_id": "unit_6878d8629930",
         "section_name": "DoubleFace",
-        "sort_order": 308
+        "sort_order": 2970
+      },
+      {
+        "song_id": "song_892acb24fa11",
+        "title": "ポケットに宇宙",
+        "section_id": "unit_6878d8629930",
+        "section_name": "DoubleFace",
+        "sort_order": 2980
       },
       {
         "song_id": "song_7a7c99453e0e",
         "title": "Secret of Metropolis",
         "section_id": "unit_6878d8629930",
         "section_name": "DoubleFace",
-        "sort_order": 309
+        "sort_order": 2990
       },
       {
         "song_id": "song_70c51343651b",
         "title": "Sleeper Mystery Train",
         "section_id": "unit_6878d8629930",
         "section_name": "DoubleFace",
-        "sort_order": 310
+        "sort_order": 3000
+      },
+      {
+        "song_id": "song_90a81a004f52",
+        "title": "夜に駆ける",
+        "section_id": "unit_6878d8629930",
+        "section_name": "DoubleFace",
+        "sort_order": 3010
       },
       {
         "song_id": "song_b492a7bc5c47",
         "title": "Stars' Ensemble!",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 311
+        "sort_order": 3020
       },
       {
         "song_id": "song_c74b29f43716",
         "title": "BRAND NEW STARS!!",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 312
+        "sort_order": 3030
       },
       {
         "song_id": "song_bf1c16241fdc",
         "title": "ONLY YOUR STARS!",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 313
+        "sort_order": 3040
       },
       {
         "song_id": "song_6012840f055d",
         "title": "Walk with your smile",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 314
+        "sort_order": 3050
       },
       {
         "song_id": "song_f7c5b14f0149",
         "title": "FUSIONIC STARS!!",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 315
+        "sort_order": 3060
       },
       {
         "song_id": "song_16bc2e1c8645",
         "title": "Surprising Thanks!!",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 316
+        "sort_order": 3070
       },
       {
         "song_id": "song_744670562920",
         "title": "One with One",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 317
+        "sort_order": 3080
       },
       {
         "song_id": "song_00c6699f6c60",
         "title": "LIMIT BREAK DREAMERS",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 318
+        "sort_order": 3090
       },
       {
         "song_id": "song_f0efc6e72f19",
         "title": "BRIGHTEST STARS!!",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 319
+        "sort_order": 3100
       },
       {
         "song_id": "song_58940e304f6d",
         "title": "CALL YOUR NAME!!",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 320
+        "sort_order": 3110
       },
       {
         "song_id": "song_b1073c35a569",
         "title": "エンドレスヴィーデ",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 321
+        "sort_order": 3120
       },
       {
         "song_id": "song_3ceb238de5c4",
         "title": "BUKUBU NEW STARS!!",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 322
+        "sort_order": 3130
       },
       {
         "song_id": "song_60796b9be51c",
         "title": "あんさんぶるトレーニング！！",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 323
+        "sort_order": 3140
       },
       {
         "song_id": "song_9fb2706f9689",
         "title": "両片思いの交差点で、君にまた逢いたくて",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 324
+        "sort_order": 3150
       },
       {
         "song_id": "song_28afa7f58845",
         "title": "ペルソナアビス",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 325
+        "sort_order": 3160
       },
       {
         "song_id": "song_6db9b21bce48",
         "title": "デートプランA to Z",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 326
+        "sort_order": 3170
       },
       {
         "song_id": "song_6b4ce321b45f",
         "title": "Midnight Butlers",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 327
+        "sort_order": 3180
       },
       {
         "song_id": "song_63c4e268edc1",
         "title": "Sweet Sweet White Song",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 328
+        "sort_order": 3190
       },
       {
         "song_id": "song_7716a9140b13",
         "title": "Aisle, be with you",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 329
+        "sort_order": 3200
       },
       {
         "song_id": "song_f9bc625be3fb",
         "title": "ムーンライトディスコ",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 330
+        "sort_order": 3210
       },
       {
         "song_id": "song_f5be9d8384d9",
         "title": "Noir Neige",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 331
+        "sort_order": 3220
       },
       {
         "song_id": "song_a57dd1bebd1d",
         "title": "パラダイム·リバーシ！",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 332
+        "sort_order": 3230
       },
       {
         "song_id": "song_86da53da2a86",
         "title": "FIST OF SOUL",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 333
+        "sort_order": 3240
       },
       {
         "song_id": "song_dc65852115f8",
         "title": "Heart aid Cafeteria",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 334
+        "sort_order": 3250
       },
       {
         "song_id": "song_a5a5acafd0fb",
         "title": "Have you been naughty or nice?",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 335
+        "sort_order": 3260
       },
       {
         "song_id": "song_112f785f985a",
         "title": "Ringing evil phone",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 336
+        "sort_order": 3270
       },
       {
         "song_id": "song_a558bf5fa7a2",
         "title": "喪失寓意 -LOST BALLADE-",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 337
+        "sort_order": 3280
       },
       {
         "song_id": "song_37a7f708d6e8",
         "title": "堕天使たちの晩餐会",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 338
+        "sort_order": 3290
       },
       {
         "song_id": "song_27000f86009f",
         "title": "君恋志願",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 339
+        "sort_order": 3300
       },
       {
         "song_id": "song_3febbb3286fb",
         "title": "クマクマレスQ",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 340
+        "sort_order": 3310
       },
       {
         "song_id": "song_2853a084f738",
         "title": "僕のウィーク・ポイント",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 341
+        "sort_order": 3320
       },
       {
         "song_id": "song_a70295e11017",
         "title": "Graceful Punishment",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 342
+        "sort_order": 3330
       },
       {
         "song_id": "song_276941ac297c",
         "title": "Deep into you",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 343
+        "sort_order": 3340
       },
       {
         "song_id": "song_548c9c97de5e",
         "title": "らびゅ&ピース伝説",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 344
+        "sort_order": 3350
       },
       {
         "song_id": "song_bd88c9f0111e",
         "title": "Ai☆$!!",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 345
+        "sort_order": 3360
       },
       {
         "song_id": "song_b5249ce4be85",
         "title": "It's (k)not lov?",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 346
+        "sort_order": 3370
       },
       {
         "song_id": "song_454e06dd3302",
         "title": "それは残像の消失点",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 347
+        "sort_order": 3380
       },
       {
         "song_id": "song_2682c1b0d3af",
         "title": "催花雨の片道切符",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 348
+        "sort_order": 3390
       },
       {
         "song_id": "song_3bf25c5e7f7c",
         "title": "Fight Is Only Fate",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 349
+        "sort_order": 3400
       },
       {
         "song_id": "song_81be29c7965f",
         "title": "プロローグのそのあとへ",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 350
+        "sort_order": 3410
       },
       {
         "song_id": "song_90d69cfc95c0",
         "title": "こはく・晃牙・忍・弓弦",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 351
+        "sort_order": 3420
       },
       {
         "song_id": "song_c1e7082b9e94",
         "title": "真緒・ゆうた・宙・アドニス",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 352
+        "sort_order": 3430
       },
       {
         "song_id": "song_3f631fdbd94b",
         "title": "巽・日和・奏汰・零",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 353
+        "sort_order": 3440
       },
       {
         "song_id": "song_b7a06fdb3ce8",
         "title": "瞬きSign☆",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 354
+        "sort_order": 3450
       },
       {
         "song_id": "song_f78396e4718b",
         "title": "セツナDrops",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 355
+        "sort_order": 3460
       },
       {
         "song_id": "song_5a041eca7d01",
         "title": "LOCK YOUR GAZE",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 356
+        "sort_order": 3470
       },
       {
         "song_id": "song_50a77b9f426f",
         "title": "フュージョン",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 357
+        "sort_order": 3480
       },
       {
         "song_id": "song_4599b61f8a4f",
         "title": "Eccentric Party Night!!",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 358
+        "sort_order": 3490
       },
       {
         "song_id": "song_81d26f33a716",
         "title": "Twilight Pentagram",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 359
+        "sort_order": 3500
       },
       {
         "song_id": "song_0e1bea339f20",
         "title": "Genuine Revelation",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 360
+        "sort_order": 3510
       },
       {
         "song_id": "song_9589de9b07cd",
         "title": "Dawning Angels",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 361
+        "sort_order": 3520
       },
       {
         "song_id": "song_26b9e272603a",
         "title": "圣少年游戯",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 362
+        "sort_order": 3530
       },
       {
         "song_id": "song_ae14c7441a62",
         "title": "We'll be\"Knights\"",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 363
+        "sort_order": 3540
       },
       {
         "song_id": "song_b217dcd5e5bd",
         "title": "Crush of Judgment",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 364
+        "sort_order": 3550
       },
       {
         "song_id": "song_289e4c6ade3b",
         "title": "Death Game Holic",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 365
+        "sort_order": 3560
       },
       {
         "song_id": "song_f702663eed1f",
         "title": "ROCK ROAR",
         "section_id": "group_other",
         "section_name": "Other",
-        "sort_order": 366
+        "sort_order": 3570
       }
     ],
     "labels": [

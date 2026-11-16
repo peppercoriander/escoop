@@ -20,12 +20,27 @@ export function songCellStyle(song) {
   return {background: song.backgroundCss};
 }
 
-export function characterCellStyle(position, charactersById, display) {
+/** Calendar dates use Japan time, independently of the viewer's local timezone. */
+export function tokyoDate(now = new Date()) {
+  return new Date(now.getTime() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10);
+}
+
+export function millisecondsUntilTokyoMidnight(now = new Date()) {
+  const day = 24 * 60 * 60 * 1000;
+  return day - ((now.getTime() + 9 * 60 * 60 * 1000) % day);
+}
+
+export function isSongReleased(releaseDate, today = tokyoDate()) {
+  return Boolean(releaseDate && releaseDate <= today);
+}
+
+export function characterCellStyle(position, charactersById, display, released) {
   const character = charactersById.get(position.characterId);
   return position.kind === 'fixed' && character ? {
-    backgroundColor: character.color,
-    color: display.characterTextColor,
+    backgroundColor: released ? character.color : '#FFFFFF',
+    color: released ? display.characterTextColor : character.color,
     fontFamily: display.characterFontFamily,
+    ...(!released && { textShadow: 'none' }),
   } : {};
 }
 

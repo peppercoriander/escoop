@@ -1,4 +1,4 @@
-# ESCOOP · 歌曲站位检索
+# ESCOOP · 协力站位表
 
 按公司、组合、成员与站位筛选歌曲的静态网页。默认按公司、组合顺序展示全部歌曲，多选条件采用 AND，RESET 清除全部选择。
 
@@ -20,17 +20,21 @@ npm run dev
 ```powershell
 python scripts/prepare_data.py
 python scripts/prepare_data.py --check
-node --test tests/catalog.test.mjs
+python -m unittest discover -s tests -p 'test_*.py'
+node --test tests/*.test.mjs
 npm run build
 node scripts/build-site.mjs
 ```
 
 网页入口是 `index.html`，组件位于 `src/App.tsx`，样式位于 `src/App.module.css`。`npm run build` 先校验数据和 TypeScript，再输出 `dist`，可通过 `npm run preview` 预览。Vite 使用相对基础路径，兼容 GitHub 用户主页和仓库子路径。
 
-`.github/workflows/pages.yml` 已配置数据校验、测试、构建和 GitHub Pages 发布；需在仓库 Settings → Pages 中选择 GitHub Actions。此任务未推送 GitHub。`sites/escoop/dist` 是 Sites 静态发布副本，`sites/escoop/.openai/hosting.json` 保存私有站点身份；该目录不加入原仓库。
+GitHub Pages 目标地址为 `https://peppercoriander.github.io/escoop/`，仓库为 `peppercoriander/escoop`。在仓库 Settings → Pages 中选择 GitHub Actions，提交到 `main` 后由 `.github/workflows/pages.yml` 自动校验、测试、构建并发布；也可在 Actions 中手动运行工作流。修改 CSV 后请先运行上面的数据生成命令，再提交维护源及生成结果。
+
+`sites/escoop/dist` 是独立的 Sites 私有发布副本，`sites/escoop/.openai/hosting.json` 保存该私有站点身份；该目录不加入 GitHub 仓库。
 
 ## 操作方式
 
+- 各组合歌单按 `data/source/song_placements.csv` 的独立序号显示。合作曲可以在多个分区出现；选择公司／组合只显示相应分区，结果计数按唯一歌曲统计。
 - 点击公司图标筛选公司；点击组合图标直接筛选对应歌单，同时显示成员，再次点击取消该组合筛选。
 - 选择成员时自动清除公司和组合条件，只按成员筛选；站位筛选仍独立叠加。切回公司或组合时清除成员条件。
 - 成员与站位支持 AND 多选；具体成员筛选排除所有含通用数字站位的歌曲，仅匹配已录入固定人物。
@@ -46,6 +50,7 @@ node scripts/build-site.mjs
 ## 颜色与数据
 
 - 歌曲和成员颜色分别取组合、人物配置；合作曲保留等分底色。
+- 在 `data/source/song_releases.csv` 填写实装日期（YYYY-MM-DD）。按日本时间，空白／未来日期的固定成员格显示白底成员色文字，实装当天及之后显示成员色底白字。已发布日期跨天自动生效；修改 CSV 后仍需生成数据、构建并发布。
 - Other 默认使用 `#004D99`。7 首特殊歌曲底色由 `data/source/display.json` 的 `song_background_overrides` 按稳定歌曲 ID 维护。
 - 站位信息白底，数字按次数规则着色，不再显示图例。
 - 未录入的组合显示「待录入」，明确没有的显示「无」。人物空格与自由站位保持独立语义。
