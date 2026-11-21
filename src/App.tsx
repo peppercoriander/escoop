@@ -3,6 +3,7 @@ import { encodeAssetPath, characterCellStyle, songCellStyle, isSongReleased } fr
 import { createCatalogState, toggleCatalogState, selectSongRows, visibleMembers, positionOptions } from './lib/catalog.mjs';
 import FloatingReset from './FloatingReset';
 import ResponsiveSongTable from './ResponsiveSongTable';
+import UpdateLog, { latestUpdate } from './UpdateLog';
 import useTokyoDate from './useTokyoDate';
 import type { Group, Selection, SiteData, Unit } from './types';
 import styles from './App.module.css';
@@ -103,8 +104,20 @@ function Catalog({ site }: { site: SiteData }) {
 }
 
 export default function App() {
+  const [showUpdates, setShowUpdates] = useState(() => window.location.hash === '#updates');
   const [site, setSite] = useState<SiteData | null>(null);
   const [error, setError] = useState(false);
+  useEffect(() => {
+    const onHashChange = () => {
+      setShowUpdates(window.location.hash === '#updates');
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    };
+    window.addEventListener('hashchange', onHashChange);
+    return () => window.removeEventListener('hashchange', onHashChange);
+  }, []);
+  useEffect(() => {
+    document.title = showUpdates ? '更新日志 · ESCOOP' : 'ESCOOP · 协力站位表';
+  }, [showUpdates]);
   useEffect(() => {
     const controller = new AbortController();
     fetch(`${import.meta.env.BASE_URL}data/normalized/site_data.json`, { signal: controller.signal })
@@ -114,8 +127,14 @@ export default function App() {
   }, []);
   return <>
     <main>
-      <div className={cn('page-heading')}><div><h1>协力站位表<span className={cn('heading-dot')}>.</span></h1></div></div>
-      {site ? <Catalog site={site} /> : <div id="loading" role="status">{error ? '资料加载失败，请刷新页面重试。' : '正在加载歌曲资料…'}</div>}
+      <div className={cn('page-heading')}>
+        <h1>{showUpdates ? '更新日志' : <>协力站位表<span className={cn('heading-dot')}>.</span></>}</h1>
+        {!showUpdates && <a className={cn('update-link')} href="#updates" aria-label={latestUpdate ? `上次更新：${latestUpdate}，查看更新日志` : '查看更新日志'}>{latestUpdate ? `(上次更新：${latestUpdate})` : '(更新日志)'}</a>}
+      </div>
+      {showUpdates && <UpdateLog />}
+      <div hidden={showUpdates}>
+        {site ? <Catalog site={site} /> : <div id="loading" role="status">{error ? '资料加载失败，请刷新页面重试。' : '正在加载歌曲资料…'}</div>}
+      </div>
     </main>
   </>;
 }

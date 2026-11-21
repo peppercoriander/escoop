@@ -3,6 +3,7 @@
 ```text
 escoop/
 ├─ README.md                  仓库介绍，由用户维护
+├─ update.md                  更新日志，最新条目放最上方
 ├─ preview.bat                双击更新数据并启动本地预览
 ├─ AGENTS.md                  Agent 开发约定
 ├─ docs/                      开发、维护及目录说明

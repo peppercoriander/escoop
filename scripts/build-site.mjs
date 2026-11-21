@@ -14,7 +14,7 @@ const checkout = path.dirname(target);
 for (const directory of ['src', 'data', 'images', 'scripts', 'tests']) {
   await cp(path.join(root, directory), path.join(checkout, directory), { recursive: true, filter: source => !source.includes('__pycache__') });
 }
-for (const file of ['index.html', 'package.json', 'package-lock.json', 'tsconfig.json', 'vite.config.ts', 'README.md']) {
+for (const file of ['index.html', 'package.json', 'package-lock.json', 'tsconfig.json', 'vite.config.ts', 'README.md', 'update.md']) {
   await copyFile(path.join(root, file), path.join(checkout, file));
 }
 await writeFile(path.join(checkout, '.gitignore'), 'node_modules/\n.tools/\n__pycache__/\nsites/\n');
