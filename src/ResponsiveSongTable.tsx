@@ -11,8 +11,13 @@ export default function ResponsiveSongTable({ children, hidden }: { children: Re
     const table = tableRef.current!;
     const fit = (width: number) => {
       if (width > 0) {
-        const minimumWidth = parseFloat(getComputedStyle(table).minWidth);
-        setScale(Math.min(1, width / minimumWidth));
+        const style = getComputedStyle(table);
+        const minimumWidth = parseFloat(style.minWidth);
+        const memberWidth = parseFloat(style.getPropertyValue('--member-column-width'));
+        // Fit the two information columns and positions 1–5. Positions 6–10
+        // retain the same scale and remain accessible through page scrolling.
+        const initialWidth = minimumWidth - 5 * memberWidth;
+        setScale(Math.min(1, width / initialWidth));
       }
     };
     fit(viewport.getBoundingClientRect().width);
