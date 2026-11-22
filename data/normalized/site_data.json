@@ -891,6 +891,11 @@
       "sortOrder": 80
     },
     {
+      "songId": "song_9560289984a0",
+      "sectionId": "unit_48bf1806f959",
+      "sortOrder": 81
+    },
+    {
       "songId": "song_6f9e52b60ba7",
       "sectionId": "unit_48bf1806f959",
       "sortOrder": 90
@@ -949,11 +954,6 @@
       "songId": "song_a53841e5d3c8",
       "sectionId": "unit_48bf1806f959",
       "sortOrder": 200
-    },
-    {
-      "songId": "song_9560289984a0",
-      "sectionId": "unit_48bf1806f959",
-      "sortOrder": 210
     },
     {
       "songId": "song_6de4a0a8ff5a",
@@ -1056,14 +1056,14 @@
       "sortOrder": 410
     },
     {
+      "songId": "song_3b8bdf68dd7c",
+      "sectionId": "unit_470609b26a1d",
+      "sortOrder": 411
+    },
+    {
       "songId": "song_53c93cb31fde",
       "sectionId": "unit_470609b26a1d",
       "sortOrder": 420
-    },
-    {
-      "songId": "song_3b8bdf68dd7c",
-      "sectionId": "unit_470609b26a1d",
-      "sortOrder": 430
     },
     {
       "songId": "song_19b2d683e2e0",
@@ -1161,14 +1161,14 @@
       "sortOrder": 620
     },
     {
+      "songId": "song_fc94ac9ca6c8",
+      "sectionId": "unit_5c279200ab8e",
+      "sortOrder": 621
+    },
+    {
       "songId": "song_03b2065d864e",
       "sectionId": "unit_5c279200ab8e",
       "sortOrder": 630
-    },
-    {
-      "songId": "song_fc94ac9ca6c8",
-      "sectionId": "unit_5c279200ab8e",
-      "sortOrder": 640
     },
     {
       "songId": "song_d4721d279d3c",
@@ -1206,6 +1206,11 @@
       "sortOrder": 710
     },
     {
+      "songId": "song_90a81a004f52",
+      "sectionId": "unit_93d309044f67",
+      "sortOrder": 711
+    },
+    {
       "songId": "song_3ee863c4fc4d",
       "sectionId": "unit_93d309044f67",
       "sortOrder": 720
@@ -1226,6 +1231,11 @@
       "sortOrder": 750
     },
     {
+      "songId": "song_e9d5ca4928d5",
+      "sectionId": "unit_93d309044f67",
+      "sortOrder": 751
+    },
+    {
       "songId": "song_fcb1c599d6e8",
       "sectionId": "unit_93d309044f67",
       "sortOrder": 760
@@ -1244,21 +1254,6 @@
       "songId": "song_e948810eb839",
       "sectionId": "unit_93d309044f67",
       "sortOrder": 790
-    },
-    {
-      "songId": "song_e9d5ca4928d5",
-      "sectionId": "unit_93d309044f67",
-      "sortOrder": 800
-    },
-    {
-      "songId": "song_e459bca503e4",
-      "sectionId": "unit_93d309044f67",
-      "sortOrder": 810
-    },
-    {
-      "songId": "song_90a81a004f52",
-      "sectionId": "unit_93d309044f67",
-      "sortOrder": 820
     },
     {
       "songId": "song_7ca647631ee1",
@@ -1294,6 +1289,11 @@
       "songId": "song_abefd121ea42",
       "sectionId": "unit_416c371272da",
       "sortOrder": 890
+    },
+    {
+      "songId": "song_3b8bdf68dd7c",
+      "sectionId": "unit_416c371272da",
+      "sortOrder": 891
     },
     {
       "songId": "song_f104c3f4ae56",
@@ -1334,11 +1334,6 @@
       "songId": "song_3e7459480923",
       "sectionId": "unit_416c371272da",
       "sortOrder": 970
-    },
-    {
-      "songId": "song_3b8bdf68dd7c",
-      "sectionId": "unit_416c371272da",
-      "sortOrder": 980
     },
     {
       "songId": "song_9fcb89a4ff89",
@@ -1426,6 +1421,11 @@
       "sortOrder": 1150
     },
     {
+      "songId": "song_40ade43d7071",
+      "sectionId": "unit_e57b1ede4a78",
+      "sortOrder": 1151
+    },
+    {
       "songId": "song_f6b6edd46a7d",
       "sectionId": "unit_e57b1ede4a78",
       "sortOrder": 1160
@@ -1448,17 +1448,12 @@
     {
       "songId": "song_99583a0d6ab1",
       "sectionId": "unit_e57b1ede4a78",
-      "sortOrder": 1200
+      "sortOrder": 1191
     },
     {
       "songId": "song_613366d4a24d",
       "sectionId": "unit_e57b1ede4a78",
       "sortOrder": 1210
-    },
-    {
-      "songId": "song_40ade43d7071",
-      "sectionId": "unit_e57b1ede4a78",
-      "sortOrder": 1220
     },
     {
       "songId": "song_1145709f1775",
@@ -1521,6 +1516,11 @@
       "sortOrder": 1340
     },
     {
+      "songId": "song_a57855027d00",
+      "sectionId": "unit_40406eac6796",
+      "sortOrder": 1341
+    },
+    {
       "songId": "song_3096f32aaef0",
       "sectionId": "unit_40406eac6796",
       "sortOrder": 1350
@@ -1541,14 +1541,14 @@
       "sortOrder": 1380
     },
     {
-      "songId": "song_477b9fdea637",
+      "songId": "song_4461ea59d30e",
       "sectionId": "unit_40406eac6796",
-      "sortOrder": 1390
+      "sortOrder": 1381
     },
     {
-      "songId": "song_a57855027d00",
+      "songId": "song_477b9fdea637",
       "sectionId": "unit_40406eac6796",
-      "sortOrder": 1400
+      "sortOrder": 1382
     },
     {
       "songId": "song_f264f502e080",
@@ -1559,11 +1559,6 @@
       "songId": "song_9ab8ad9872c0",
       "sectionId": "unit_40406eac6796",
       "sortOrder": 1420
-    },
-    {
-      "songId": "song_4461ea59d30e",
-      "sectionId": "unit_40406eac6796",
-      "sortOrder": 1430
     },
     {
       "songId": "song_3f3d04c758dc",
@@ -1611,6 +1606,11 @@
       "sortOrder": 1520
     },
     {
+      "songId": "song_2c145b3a7f9a",
+      "sectionId": "unit_913751fd3f85",
+      "sortOrder": 1521
+    },
+    {
       "songId": "song_7abff74f1301",
       "sectionId": "unit_913751fd3f85",
       "sortOrder": 1530
@@ -1644,16 +1644,6 @@
       "songId": "song_9c6bab397a09",
       "sectionId": "unit_913751fd3f85",
       "sortOrder": 1590
-    },
-    {
-      "songId": "song_0add580d23b0",
-      "sectionId": "unit_913751fd3f85",
-      "sortOrder": 1600
-    },
-    {
-      "songId": "song_2c145b3a7f9a",
-      "sectionId": "unit_913751fd3f85",
-      "sortOrder": 1610
     },
     {
       "songId": "song_f9e0c3576d97",
@@ -1726,6 +1716,11 @@
       "sortOrder": 1750
     },
     {
+      "songId": "song_4ba0f95ed024",
+      "sectionId": "unit_7e3bd6882771",
+      "sortOrder": 1751
+    },
+    {
       "songId": "song_ea300e2285b6",
       "sectionId": "unit_7e3bd6882771",
       "sortOrder": 1760
@@ -1736,19 +1731,14 @@
       "sortOrder": 1770
     },
     {
-      "songId": "song_4ba0f95ed024",
+      "songId": "song_2c145b3a7f9a",
       "sectionId": "unit_7e3bd6882771",
-      "sortOrder": 1780
+      "sortOrder": 1771
     },
     {
       "songId": "song_ecb21c17047a",
       "sectionId": "unit_7e3bd6882771",
       "sortOrder": 1790
-    },
-    {
-      "songId": "song_2c145b3a7f9a",
-      "sectionId": "unit_7e3bd6882771",
-      "sortOrder": 1800
     },
     {
       "songId": "song_2335d22e3444",
@@ -1806,9 +1796,19 @@
       "sortOrder": 1910
     },
     {
+      "songId": "song_182912272427",
+      "sectionId": "unit_bea4a935a32a",
+      "sortOrder": 1915
+    },
+    {
       "songId": "song_892acb24fa11",
       "sectionId": "unit_bea4a935a32a",
       "sortOrder": 1920
+    },
+    {
+      "songId": "song_fc94ac9ca6c8",
+      "sectionId": "unit_bea4a935a32a",
+      "sortOrder": 1921
     },
     {
       "songId": "song_5c510326eb74",
@@ -1834,11 +1834,6 @@
       "songId": "song_6f2c70a4b060",
       "sectionId": "unit_bea4a935a32a",
       "sortOrder": 1970
-    },
-    {
-      "songId": "song_fc94ac9ca6c8",
-      "sectionId": "unit_bea4a935a32a",
-      "sortOrder": 1980
     },
     {
       "songId": "song_669a7d7e6b97",
@@ -2151,6 +2146,11 @@
       "sortOrder": 2600
     },
     {
+      "songId": "song_4461ea59d30e",
+      "sectionId": "unit_92301942e6fe",
+      "sortOrder": 2601
+    },
+    {
       "songId": "song_e945e6bc76de",
       "sectionId": "unit_92301942e6fe",
       "sortOrder": 2610
@@ -2179,11 +2179,6 @@
       "songId": "song_e9d5ca4928d5",
       "sectionId": "unit_92301942e6fe",
       "sortOrder": 2660
-    },
-    {
-      "songId": "song_4461ea59d30e",
-      "sectionId": "unit_92301942e6fe",
-      "sortOrder": 2670
     },
     {
       "songId": "song_d9eaea646f46",
@@ -2346,14 +2341,14 @@
       "sortOrder": 2990
     },
     {
+      "songId": "song_90a81a004f52",
+      "sectionId": "unit_6878d8629930",
+      "sortOrder": 2991
+    },
+    {
       "songId": "song_70c51343651b",
       "sectionId": "unit_6878d8629930",
       "sortOrder": 3000
-    },
-    {
-      "songId": "song_90a81a004f52",
-      "sectionId": "unit_6878d8629930",
-      "sortOrder": 3010
     },
     {
       "songId": "song_b492a7bc5c47",
@@ -4456,7 +4451,7 @@
         "label_48bf1806f959"
       ],
       "unitConfig": "MaM, fine",
-      "releaseDate": null,
+      "releaseDate": "2027-03-01",
       "positions": [
         {
           "position": 1,
@@ -8554,7 +8549,7 @@
         "label_5c279200ab8e"
       ],
       "unitConfig": "2wink, RYUSEITAI",
-      "releaseDate": null,
+      "releaseDate": "2027-03-29",
       "positions": [
         {
           "position": 1,
@@ -10376,7 +10371,7 @@
         "label_92301942e6fe"
       ],
       "unitConfig": "ALKALOID, Switch",
-      "releaseDate": null,
+      "releaseDate": "2027-02-01",
       "positions": [
         {
           "position": 1,
@@ -10457,99 +10452,6 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
-    },
-    {
-      "id": "song_e459bca503e4",
-      "title": "フラジール",
-      "unitIds": [
-        "unit_93d309044f67"
-      ],
-      "labelIds": [
-        "label_93d309044f67",
-        "label_ce9c08a711d5"
-      ],
-      "unitConfig": "ALKALOID, Other",
-      "releaseDate": null,
-      "positions": [
-        {
-          "position": 1,
-          "characterId": null,
-          "label": "",
-          "kind": "empty",
-          "unitId": null
-        },
-        {
-          "position": 2,
-          "characterId": null,
-          "label": "",
-          "kind": "empty",
-          "unitId": null
-        },
-        {
-          "position": 3,
-          "characterId": null,
-          "label": "",
-          "kind": "empty",
-          "unitId": null
-        },
-        {
-          "position": 4,
-          "characterId": null,
-          "label": "",
-          "kind": "empty",
-          "unitId": null
-        },
-        {
-          "position": 5,
-          "characterId": null,
-          "label": "",
-          "kind": "empty",
-          "unitId": null
-        },
-        {
-          "position": 6,
-          "characterId": null,
-          "label": "",
-          "kind": "empty",
-          "unitId": null
-        },
-        {
-          "position": 7,
-          "characterId": null,
-          "label": "",
-          "kind": "empty",
-          "unitId": null
-        },
-        {
-          "position": 8,
-          "characterId": null,
-          "label": "",
-          "kind": "empty",
-          "unitId": null
-        },
-        {
-          "position": 9,
-          "characterId": null,
-          "label": "",
-          "kind": "empty",
-          "unitId": null
-        },
-        {
-          "position": 10,
-          "characterId": null,
-          "label": "",
-          "kind": "empty",
-          "unitId": null
-        }
-      ],
-      "combinations": [],
-      "backgroundCss": "#2AB7CA",
-      "colors": [
-        "#2AB7CA"
-      ],
-      "formationKind": "unknown",
-      "layoutStatus": "missing_positions",
       "combinationStatus": "missing"
     },
     {
@@ -13940,7 +13842,7 @@
         "label_e57b1ede4a78"
       ],
       "unitConfig": "MELLOW DEAR US, Valkyrie",
-      "releaseDate": null,
+      "releaseDate": "2026-12-21",
       "positions": [
         {
           "position": 1,
@@ -15695,7 +15597,7 @@
         "label_40406eac6796"
       ],
       "unitConfig": "2wink",
-      "releaseDate": "2026-11-15",
+      "releaseDate": "2026-12-07",
       "positions": [
         {
           "position": 1,
@@ -17470,99 +17372,6 @@
       "combinationStatus": "recorded"
     },
     {
-      "id": "song_0add580d23b0",
-      "title": "KING",
-      "unitIds": [
-        "unit_913751fd3f85"
-      ],
-      "labelIds": [
-        "label_913751fd3f85",
-        "label_ce9c08a711d5"
-      ],
-      "unitConfig": "Crazy:B, Other",
-      "releaseDate": null,
-      "positions": [
-        {
-          "position": 1,
-          "characterId": null,
-          "label": "",
-          "kind": "empty",
-          "unitId": null
-        },
-        {
-          "position": 2,
-          "characterId": null,
-          "label": "",
-          "kind": "empty",
-          "unitId": null
-        },
-        {
-          "position": 3,
-          "characterId": null,
-          "label": "",
-          "kind": "empty",
-          "unitId": null
-        },
-        {
-          "position": 4,
-          "characterId": null,
-          "label": "",
-          "kind": "empty",
-          "unitId": null
-        },
-        {
-          "position": 5,
-          "characterId": null,
-          "label": "",
-          "kind": "empty",
-          "unitId": null
-        },
-        {
-          "position": 6,
-          "characterId": null,
-          "label": "",
-          "kind": "empty",
-          "unitId": null
-        },
-        {
-          "position": 7,
-          "characterId": null,
-          "label": "",
-          "kind": "empty",
-          "unitId": null
-        },
-        {
-          "position": 8,
-          "characterId": null,
-          "label": "",
-          "kind": "empty",
-          "unitId": null
-        },
-        {
-          "position": 9,
-          "characterId": null,
-          "label": "",
-          "kind": "empty",
-          "unitId": null
-        },
-        {
-          "position": 10,
-          "characterId": null,
-          "label": "",
-          "kind": "empty",
-          "unitId": null
-        }
-      ],
-      "combinations": [],
-      "backgroundCss": "#FFD700",
-      "colors": [
-        "#FFD700"
-      ],
-      "formationKind": "unknown",
-      "layoutStatus": "missing_positions",
-      "combinationStatus": "missing"
-    },
-    {
       "id": "song_2c145b3a7f9a",
       "title": "U.S.A",
       "unitIds": [
@@ -19202,7 +19011,7 @@
         "label_7e3bd6882771"
       ],
       "unitConfig": "UNDEAD",
-      "releaseDate": "2026-11-15",
+      "releaseDate": "2027-02-15",
       "positions": [
         {
           "position": 1,
@@ -20496,6 +20305,98 @@
       "combinationStatus": "missing"
     },
     {
+      "id": "song_182912272427",
+      "title": "HAO♡RABI",
+      "unitIds": [
+        "unit_bea4a935a32a"
+      ],
+      "labelIds": [
+        "label_bea4a935a32a"
+      ],
+      "unitConfig": "Ra*bits",
+      "releaseDate": "2027-04-12",
+      "positions": [
+        {
+          "position": 1,
+          "characterId": "char_a101b51f6096",
+          "label": "友也",
+          "kind": "fixed",
+          "unitId": null
+        },
+        {
+          "position": 2,
+          "characterId": "char_4fb0564451ee",
+          "label": "兔",
+          "kind": "fixed",
+          "unitId": null
+        },
+        {
+          "position": 3,
+          "characterId": "char_ecacd35ade7c",
+          "label": "光",
+          "kind": "fixed",
+          "unitId": null
+        },
+        {
+          "position": 4,
+          "characterId": "char_defd9a74d2d7",
+          "label": "创",
+          "kind": "fixed",
+          "unitId": null
+        },
+        {
+          "position": 5,
+          "characterId": null,
+          "label": "",
+          "kind": "empty",
+          "unitId": null
+        },
+        {
+          "position": 6,
+          "characterId": null,
+          "label": "",
+          "kind": "empty",
+          "unitId": null
+        },
+        {
+          "position": 7,
+          "characterId": null,
+          "label": "",
+          "kind": "empty",
+          "unitId": null
+        },
+        {
+          "position": 8,
+          "characterId": null,
+          "label": "",
+          "kind": "empty",
+          "unitId": null
+        },
+        {
+          "position": 9,
+          "characterId": null,
+          "label": "",
+          "kind": "empty",
+          "unitId": null
+        },
+        {
+          "position": 10,
+          "characterId": null,
+          "label": "",
+          "kind": "empty",
+          "unitId": null
+        }
+      ],
+      "combinations": [],
+      "backgroundCss": "#68C0F4",
+      "colors": [
+        "#68C0F4"
+      ],
+      "formationKind": "fixed",
+      "layoutStatus": "complete",
+      "combinationStatus": "missing"
+    },
+    {
       "id": "song_892acb24fa11",
       "title": "ポケットに宇宙",
       "unitIds": [
@@ -21033,7 +20934,7 @@
         "label_bea4a935a32a"
       ],
       "unitConfig": "Special for Princess!, Ra*bits",
-      "releaseDate": "2026-11-22",
+      "releaseDate": "2026-11-23",
       "positions": [
         {
           "position": 1,
@@ -27504,7 +27405,7 @@
         "label_64d6a7f5a1e2"
       ],
       "unitConfig": "MaM",
-      "releaseDate": "2026-11-15",
+      "releaseDate": "2026-03-29",
       "positions": [
         {
           "position": 1,
@@ -28056,7 +27957,7 @@
         "label_6878d8629930"
       ],
       "unitConfig": "DoubleFace",
-      "releaseDate": "2026-11-15",
+      "releaseDate": "2027-01-18",
       "positions": [
         {
           "position": 1,

@@ -10,8 +10,8 @@ test('initial state and reset return every song once', () => {
   const state = createSelection();
   state.combinations.push('12');
   const songs = selectSongs(site, createSelection());
-  assert.equal(songs.length, 333);
-  assert.equal(new Set(songs.map(s => s.id)).size, 333);
+  assert.equal(songs.length, site.songs.length);
+  assert.deepEqual(new Set(songs.map(s => s.id)), new Set(site.songs.map(s => s.id)));
   assert.equal(songs[0].unitIds[0], site.groups[0].unitIds[0]);
 });
 test('unit AND filters find collaborations without duplicate rows', () => {
@@ -122,7 +122,9 @@ test('switching back to a unit removes member filters, and clicking again desele
   const state = toggleSelection(memberState, 'unitIds', unit('fine').id);
   assert.deepEqual(state.characterIds, []);
   assert.equal(selectSongs(site, state).length, 21);
-  assert.equal(selectSongs(site, toggleSelection(state, 'unitIds', unit('fine').id)).length, 333);
+  const resetSongs = selectSongs(site, toggleSelection(state, 'unitIds', unit('fine').id));
+  assert.equal(resetSongs.length, site.songs.length);
+  assert.deepEqual(new Set(resetSongs.map(song => song.id)), new Set(site.songs.map(song => song.id)));
 });
 test('combination filters match exact tokens and all requested values', () => {
   const song = { unitIds: [], positions: [], combinations: [{ value: '123' }] };

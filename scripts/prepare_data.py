@@ -1,7 +1,8 @@
-"""Build disposable site data solely from the corrected tables in data/source.
+"""Build site data from maintenance.xlsx and manually ordered song_placements.csv.
 
 No legacy import, title patch, membership patch, or inferred formation ordering.
-Run normally to generate; --check validates inputs and detects stale outputs.
+The build() function validates the generated CSV interface for reuse and tests.
+The CLI imports the workbook first; --check validates without writing.
 """
 from __future__ import annotations
 
@@ -328,16 +329,11 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--check', action='store_true', help='Validate and check generated outputs without writing')
     args = parser.parse_args()
-    outputs = build()
-    stale = [name for name, content in outputs.items() if not (OUT / name).exists() or (OUT / name).read_bytes() != content]
-    if args.check:
-        require(not stale, 'Generated outputs need rebuilding: ' + ', '.join(stale))
-    else:
-        OUT.mkdir(parents=True, exist_ok=True)
-        for name in stale:
-            (OUT / name).write_bytes(outputs[name])
-    print(json.dumps({'mode':'check' if args.check else 'build', 'changed_files':len(stale),
-                      'summary':json.loads(outputs['validation.json'])}, ensure_ascii=False, indent=2))
+    from import_maintenance import sync
+    try:
+        print(json.dumps(sync(check=args.check), ensure_ascii=False, indent=2))
+    except (ValueError, OSError, KeyError) as error:
+        parser.exit(1, f'Data generation failed: {error}\n')
 
 
 if __name__ == '__main__':

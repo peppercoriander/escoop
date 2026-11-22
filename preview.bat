@@ -28,7 +28,7 @@ if not exist "node_modules\vite\bin\vite.js" (
     goto failed
 )
 
-echo Updating website data from CSV...
+echo Updating website data from maintenance.xlsx and song_placements.csv...
 "%PREVIEW_PYTHON%" -u scripts/prepare_data.py
 set "PREVIEW_EXIT=%ERRORLEVEL%"
 if not "%PREVIEW_EXIT%"=="0" (
@@ -40,7 +40,7 @@ echo.
 echo Starting local preview: http://127.0.0.1:4175
 echo Your browser will open automatically. Keep this window open.
 echo To stop, press Q then Enter, or close this window.
-echo After editing CSV files, close this window and run preview.bat again.
+echo After saving maintenance.xlsx or song_placements.csv, run preview.bat again.
 echo.
 "%PREVIEW_NODE%" node_modules/vite/bin/vite.js --host 127.0.0.1 --port 4175 --strictPort --open
 if errorlevel 1 (

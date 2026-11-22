@@ -20,7 +20,8 @@
 ## 数据维护与接口
 
 - 以 `data/source/README.md` 和 `data/WEBSITE_DATA.md` 为当前数据格式与业务规则依据；实施前阅读相关内容。本文记录架构方向，不用早期设计建议覆盖已经细化的规则。
-- 唯一人工维护源为 `data/source` 中的 CSV 和 `display.json`。`data/normalized`、导出表格和网站 JSON 都是生成产物，不作为第二套维护源。
+- 唯一人工维护源为 `data/source/maintenance.xlsx` 和 `data/source/song_placements.csv`。工作簿包含歌曲与公司、组合、人物、组合成员、标签、次数颜色、显示设置等资料页；其余 CSV、`display.json`、`data/normalized` 和网站 JSON 都是生成产物，不手工维护。
+- 使用 `python scripts/import_maintenance.py` 校验并拆分工作簿，再生成网站数据。`prepare_data.py` CLI 是同一流程的兼容入口，`build(source)` 保留为 CSV 接口校验器；导入失败不得部分覆盖现有数据。`--check` 只检查、不写入。新歌 song_id 留空时生成唯一 ID，并在全部校验成功后回填工作簿；展示顺序表的空 ID 按唯一歌名关联并回填。已有 ID 永不按名称重算，更名保留 ID。回填与生成文件共同提交，失败回滚；--check 不回填。
 - 网页读取 `data/normalized/site_data.json`，无需下载核对用 CSV、原始数据或 Excel。
 - 使用稳定 ID 关联歌曲、人物、Unit、分类与站位，不依赖显示名称或简称作为关联键。
 - 人物所属 Unit、歌曲所属 Unit、歌曲实际站位分开保存。同一人物可以属于多个 Unit。歌曲实体保持一首一条；合作曲通过 `song_placements.csv` 在多个分区分别显示，各分区内按 `sort_order` 排列，计数按歌曲 ID 去重。
@@ -59,7 +60,7 @@
 - 空白表示尚未录入，`无` 表示明确没有；`?` / `？` 等不确定标记按数据生成器规则保留或报告，不能当作普通数字组合，也不能静默改成「无」。
 - 当前数字组合语法表达位置 1–9；涉及第 10 位前先扩展语法，不把 `10` 直接解释为现有组合。
 - 人物格使用人物代表色，以及 `display.json` 指定的统一文字色和字体；当前为白字、Noto Sans JP。页面负责实际加载字体。
-- `songs.csv` 的 `release_date` 列管理歌曲实装日期（已合并原独立日期表），支持 YYYY-MM-DD 或 YYYY/MM/DD，生成时统一为 YYYY-MM-DD，可空白；不猜测缺失日期。网页按 Asia/Tokyo 当前日期判断：日期早于／等于今天使用成员色底白字，空白／未来使用白底成员色文字，仅作用于固定成员格。日期判断在浏览器运行，跨午夜／返回页面刷新；合作曲各展示位置共用日期。
+- 在 `maintenance.xlsx`「歌曲」页维护实装日期，支持 Excel 日期或 YYYY-MM-DD / YYYY/MM/DD 文本，导入后生成 `songs.csv.release_date` 并统一为 YYYY-MM-DD，可空白；不猜测缺失日期。网页按 Asia/Tokyo 当前日期判断：日期早于／等于今天使用成员色底白字，空白／未来使用白底成员色文字，仅作用于固定成员格。日期判断在浏览器运行，跨午夜／返回页面刷新；合作曲各展示位置共用日期。
 - 歌曲格按现有有序标签生成的颜色配置显示；合作曲分色规则以数据接口为准，分界采用 45° 的 `/` 方向硬切。
 
 ## 桌面与手机展示

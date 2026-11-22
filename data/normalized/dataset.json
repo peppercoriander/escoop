@@ -6,11 +6,11 @@
     "data/source/units.csv": "b31c57b0e8284d6684f32854ec89d8de5b5daa4f4ead539b94d8f83377fde081",
     "data/source/characters.csv": "09e2e592c79a67c20508108f2164ae714c97367961d1447f19bd383892672670",
     "data/source/character_units.csv": "d3b32a773e1149c1ca321a9a38cf0a09d3d2f07a3bee76d754322b8f47353762",
-    "data/source/songs.csv": "78b3ef7a9461ee9373d3b43263cd9349283e23324c3eba256d2753fdee372de2",
-    "data/source/song_placements.csv": "7599a8b40e18f855079b0b3edb2c5d16dd08bd01630ad550a7e7b2fb1065fff0",
+    "data/source/songs.csv": "dfe7eac48455755ca2e533f2da1a7ae47a153b834ba61716a88d51c044b1106a",
+    "data/source/song_placements.csv": "87e2264ef6b1022f548d91704b0d06ed7480b0581daac349a5db43fabd94124d",
     "data/source/labels.csv": "d7f4f0de6a2095cc6bbe58bf932fdd55cc8a64eba08906a0029c2f99c33991f4",
-    "data/source/song_labels.csv": "811ee4c02a5372b2cb5e51fd2889e229202cebc0150ea785e5585c1690fdc977",
-    "data/source/positions.csv": "8e3f4b1620ffaca5a71a578fa6f30c0649e2d8bdfb8db69f7c96b1c0ee06a7b3",
+    "data/source/song_labels.csv": "9b88bb13e7fa0109eed227d3959b79f954dab46ca51a00a5691e8eb8978bac47",
+    "data/source/positions.csv": "57f646369af2230bce536cf2c03ab1b05e451c81e787865eb3c76492afa6fb45",
     "data/source/frequency_colors.csv": "bce9b81cb791906dd20cef66944cb2cb3b0f92e54a6cc8c38c028240e19266d5",
     "data/source/display.json": "5adad4eb49a83dbfcc840ed93d492e5dbc43f17c92c08f69eee91b8bf8a05b61"
   },
@@ -33,33 +33,33 @@
       "units": 21,
       "characters": 60,
       "character_units": 69,
-      "songs": 333,
-      "song_placements": 357,
+      "songs": 332,
+      "song_placements": 356,
       "labels": 36,
-      "song_labels": 415,
-      "positions": 3330,
+      "song_labels": 412,
+      "positions": 3320,
       "frequency_colors": 4,
-      "song_combination_sources": 333,
-      "song_units": 301,
+      "song_combination_sources": 332,
+      "song_units": 300,
       "combination_counts": 278,
-      "song_color_bands": 357,
+      "song_color_bands": 356,
       "combination_options": 26,
-      "issues": 227
+      "issues": 224
     },
     "combination_status": {
       "none": 51,
       "recorded": 85,
-      "missing": 197
+      "missing": 196
     },
     "issue_counts": {
       "missing_group_color": 4,
-      "missing_combinations": 197,
-      "missing_positions": 26
+      "missing_combinations": 196,
+      "missing_positions": 24
     },
     "free_position_cells": 48,
     "formation_kinds": {
-      "fixed": 297,
-      "unknown": 26,
+      "fixed": 298,
+      "unknown": 24,
       "mixed": 1,
       "free": 9
     },
@@ -1460,7 +1460,7 @@
       {
         "song_id": "song_2a6ff189082e",
         "title": "狂怪ノ怨黙-キョウカイノエンモク-",
-        "release_date": "",
+        "release_date": "2027-03-01",
         "unit_config": "MaM, fine",
         "formation_kind": "fixed",
         "position_count": 5,
@@ -1922,7 +1922,7 @@
       {
         "song_id": "song_862554f517e7",
         "title": "GET THE WIN",
-        "release_date": "",
+        "release_date": "2027-03-29",
         "unit_config": "2wink, RYUSEITAI",
         "formation_kind": "fixed",
         "position_count": 7,
@@ -2120,24 +2120,13 @@
       {
         "song_id": "song_e9d5ca4928d5",
         "title": "E.V.O.L.U.T.I.O.N.",
-        "release_date": "",
+        "release_date": "2027-02-01",
         "unit_config": "ALKALOID, Switch",
         "formation_kind": "fixed",
         "position_count": 7,
         "layout_status": "complete",
         "combination_status": "missing",
         "background_css": "linear-gradient(135deg, #2AB7CA 0%, #2AB7CA 50%, #A3EA34 50%, #A3EA34 100%)"
-      },
-      {
-        "song_id": "song_e459bca503e4",
-        "title": "フラジール",
-        "release_date": "",
-        "unit_config": "ALKALOID, Other",
-        "formation_kind": "unknown",
-        "position_count": 0,
-        "layout_status": "missing_positions",
-        "combination_status": "missing",
-        "background_css": "#2AB7CA"
       },
       {
         "song_id": "song_90a81a004f52",
@@ -2527,7 +2516,7 @@
       {
         "song_id": "song_99583a0d6ab1",
         "title": "Stranger's sun",
-        "release_date": "",
+        "release_date": "2026-12-21",
         "unit_config": "MELLOW DEAR US, Valkyrie",
         "formation_kind": "fixed",
         "position_count": 6,
@@ -2736,7 +2725,7 @@
       {
         "song_id": "song_a57855027d00",
         "title": "SPLASHING WHIRLPOOL!!",
-        "release_date": "2026-11-15",
+        "release_date": "2026-12-07",
         "unit_config": "2wink",
         "formation_kind": "fixed",
         "position_count": 2,
@@ -2932,17 +2921,6 @@
         "background_css": "#FFD700"
       },
       {
-        "song_id": "song_0add580d23b0",
-        "title": "KING",
-        "release_date": "",
-        "unit_config": "Crazy:B, Other",
-        "formation_kind": "unknown",
-        "position_count": 0,
-        "layout_status": "missing_positions",
-        "combination_status": "missing",
-        "background_css": "#FFD700"
-      },
-      {
         "song_id": "song_2c145b3a7f9a",
         "title": "U.S.A",
         "release_date": "",
@@ -3132,7 +3110,7 @@
       {
         "song_id": "song_4ba0f95ed024",
         "title": "RAMBLING MOON",
-        "release_date": "2026-11-15",
+        "release_date": "2027-02-15",
         "unit_config": "UNDEAD",
         "formation_kind": "fixed",
         "position_count": 4,
@@ -3273,6 +3251,17 @@
         "background_css": "#68C0F4"
       },
       {
+        "song_id": "song_182912272427",
+        "title": "HAO♡RABI",
+        "release_date": "2027-04-12",
+        "unit_config": "Ra*bits",
+        "formation_kind": "fixed",
+        "position_count": 4,
+        "layout_status": "complete",
+        "combination_status": "missing",
+        "background_css": "#68C0F4"
+      },
+      {
         "song_id": "song_892acb24fa11",
         "title": "ポケットに宇宙",
         "release_date": "2026-11-15",
@@ -3330,7 +3319,7 @@
       {
         "song_id": "song_6f2c70a4b060",
         "title": "The・プリティカルパレード♪",
-        "release_date": "2026-11-22",
+        "release_date": "2026-11-23",
         "unit_config": "Special for Princess!, Ra*bits",
         "formation_kind": "fixed",
         "position_count": 8,
@@ -4089,7 +4078,7 @@
       {
         "song_id": "song_4567790e5789",
         "title": "ラスト・ページ",
-        "release_date": "2026-11-15",
+        "release_date": "2026-03-29",
         "unit_config": "MaM",
         "formation_kind": "fixed",
         "position_count": 1,
@@ -4155,7 +4144,7 @@
       {
         "song_id": "song_7a7c99453e0e",
         "title": "Secret of Metropolis",
-        "release_date": "2026-11-15",
+        "release_date": "2027-01-18",
         "unit_config": "DoubleFace",
         "formation_kind": "fixed",
         "position_count": 2,
@@ -4981,6 +4970,13 @@
         "sort_order": 80
       },
       {
+        "song_id": "song_9560289984a0",
+        "title": "スターライトパレード",
+        "section_id": "unit_48bf1806f959",
+        "section_name": "fine",
+        "sort_order": 81
+      },
+      {
         "song_id": "song_6f9e52b60ba7",
         "title": "Holy Angel's Carol",
         "section_id": "unit_48bf1806f959",
@@ -5063,13 +5059,6 @@
         "section_id": "unit_48bf1806f959",
         "section_name": "fine",
         "sort_order": 200
-      },
-      {
-        "song_id": "song_9560289984a0",
-        "title": "スターライトパレード",
-        "section_id": "unit_48bf1806f959",
-        "section_name": "fine",
-        "sort_order": 210
       },
       {
         "song_id": "song_6de4a0a8ff5a",
@@ -5212,18 +5201,18 @@
         "sort_order": 410
       },
       {
+        "song_id": "song_3b8bdf68dd7c",
+        "title": "（RE）PLAY",
+        "section_id": "unit_470609b26a1d",
+        "section_name": "Trickstar",
+        "sort_order": 411
+      },
+      {
         "song_id": "song_53c93cb31fde",
         "title": "DIAMOND SUMMER",
         "section_id": "unit_470609b26a1d",
         "section_name": "Trickstar",
         "sort_order": 420
-      },
-      {
-        "song_id": "song_3b8bdf68dd7c",
-        "title": "（RE）PLAY",
-        "section_id": "unit_470609b26a1d",
-        "section_name": "Trickstar",
-        "sort_order": 430
       },
       {
         "song_id": "song_19b2d683e2e0",
@@ -5359,18 +5348,18 @@
         "sort_order": 620
       },
       {
+        "song_id": "song_fc94ac9ca6c8",
+        "title": "ハム太郎とっとこうた",
+        "section_id": "unit_5c279200ab8e",
+        "section_name": "RYUSEITAI",
+        "sort_order": 621
+      },
+      {
         "song_id": "song_03b2065d864e",
         "title": "五色のShooting☆Star!!!!!",
         "section_id": "unit_5c279200ab8e",
         "section_name": "RYUSEITAI",
         "sort_order": 630
-      },
-      {
-        "song_id": "song_fc94ac9ca6c8",
-        "title": "ハム太郎とっとこうた",
-        "section_id": "unit_5c279200ab8e",
-        "section_name": "RYUSEITAI",
-        "sort_order": 640
       },
       {
         "song_id": "song_d4721d279d3c",
@@ -5422,6 +5411,13 @@
         "sort_order": 710
       },
       {
+        "song_id": "song_90a81a004f52",
+        "title": "夜に駆ける",
+        "section_id": "unit_93d309044f67",
+        "section_name": "ALKALOID",
+        "sort_order": 711
+      },
+      {
         "song_id": "song_3ee863c4fc4d",
         "title": "Black Out See Saw",
         "section_id": "unit_93d309044f67",
@@ -5450,6 +5446,13 @@
         "sort_order": 750
       },
       {
+        "song_id": "song_e9d5ca4928d5",
+        "title": "E.V.O.L.U.T.I.O.N.",
+        "section_id": "unit_93d309044f67",
+        "section_name": "ALKALOID",
+        "sort_order": 751
+      },
+      {
         "song_id": "song_fcb1c599d6e8",
         "title": "Living on the edge",
         "section_id": "unit_93d309044f67",
@@ -5476,27 +5479,6 @@
         "section_id": "unit_93d309044f67",
         "section_name": "ALKALOID",
         "sort_order": 790
-      },
-      {
-        "song_id": "song_e9d5ca4928d5",
-        "title": "E.V.O.L.U.T.I.O.N.",
-        "section_id": "unit_93d309044f67",
-        "section_name": "ALKALOID",
-        "sort_order": 800
-      },
-      {
-        "song_id": "song_e459bca503e4",
-        "title": "フラジール",
-        "section_id": "unit_93d309044f67",
-        "section_name": "ALKALOID",
-        "sort_order": 810
-      },
-      {
-        "song_id": "song_90a81a004f52",
-        "title": "夜に駆ける",
-        "section_id": "unit_93d309044f67",
-        "section_name": "ALKALOID",
-        "sort_order": 820
       },
       {
         "song_id": "song_7ca647631ee1",
@@ -5546,6 +5528,13 @@
         "section_id": "unit_416c371272da",
         "section_name": "Eden",
         "sort_order": 890
+      },
+      {
+        "song_id": "song_3b8bdf68dd7c",
+        "title": "（RE）PLAY",
+        "section_id": "unit_416c371272da",
+        "section_name": "Eden",
+        "sort_order": 891
       },
       {
         "song_id": "song_f104c3f4ae56",
@@ -5602,13 +5591,6 @@
         "section_id": "unit_416c371272da",
         "section_name": "Eden",
         "sort_order": 970
-      },
-      {
-        "song_id": "song_3b8bdf68dd7c",
-        "title": "（RE）PLAY",
-        "section_id": "unit_416c371272da",
-        "section_name": "Eden",
-        "sort_order": 980
       },
       {
         "song_id": "song_9fcb89a4ff89",
@@ -5730,6 +5712,13 @@
         "sort_order": 1150
       },
       {
+        "song_id": "song_40ade43d7071",
+        "title": "勇侠青春謳",
+        "section_id": "unit_e57b1ede4a78",
+        "section_name": "Valkyrie",
+        "sort_order": 1151
+      },
+      {
         "song_id": "song_f6b6edd46a7d",
         "title": "Acanthe",
         "section_id": "unit_e57b1ede4a78",
@@ -5762,7 +5751,7 @@
         "title": "Stranger's sun",
         "section_id": "unit_e57b1ede4a78",
         "section_name": "Valkyrie",
-        "sort_order": 1200
+        "sort_order": 1191
       },
       {
         "song_id": "song_613366d4a24d",
@@ -5770,13 +5759,6 @@
         "section_id": "unit_e57b1ede4a78",
         "section_name": "Valkyrie",
         "sort_order": 1210
-      },
-      {
-        "song_id": "song_40ade43d7071",
-        "title": "勇侠青春謳",
-        "section_id": "unit_e57b1ede4a78",
-        "section_name": "Valkyrie",
-        "sort_order": 1220
       },
       {
         "song_id": "song_1145709f1775",
@@ -5863,6 +5845,13 @@
         "sort_order": 1340
       },
       {
+        "song_id": "song_a57855027d00",
+        "title": "SPLASHING WHIRLPOOL!!",
+        "section_id": "unit_40406eac6796",
+        "section_name": "2wink",
+        "sort_order": 1341
+      },
+      {
         "song_id": "song_3096f32aaef0",
         "title": "Swee2wink Love Letter",
         "section_id": "unit_40406eac6796",
@@ -5891,18 +5880,18 @@
         "sort_order": 1380
       },
       {
+        "song_id": "song_4461ea59d30e",
+        "title": "Tell Your World",
+        "section_id": "unit_40406eac6796",
+        "section_name": "2wink",
+        "sort_order": 1381
+      },
+      {
         "song_id": "song_477b9fdea637",
         "title": "LEMON SQUASH CHEERS!",
         "section_id": "unit_40406eac6796",
         "section_name": "2wink",
-        "sort_order": 1390
-      },
-      {
-        "song_id": "song_a57855027d00",
-        "title": "SPLASHING WHIRLPOOL!!",
-        "section_id": "unit_40406eac6796",
-        "section_name": "2wink",
-        "sort_order": 1400
+        "sort_order": 1382
       },
       {
         "song_id": "song_f264f502e080",
@@ -5917,13 +5906,6 @@
         "section_id": "unit_40406eac6796",
         "section_name": "2wink",
         "sort_order": 1420
-      },
-      {
-        "song_id": "song_4461ea59d30e",
-        "title": "Tell Your World",
-        "section_id": "unit_40406eac6796",
-        "section_name": "2wink",
-        "sort_order": 1430
       },
       {
         "song_id": "song_3f3d04c758dc",
@@ -5989,6 +5971,13 @@
         "sort_order": 1520
       },
       {
+        "song_id": "song_2c145b3a7f9a",
+        "title": "U.S.A",
+        "section_id": "unit_913751fd3f85",
+        "section_name": "Crazy:B",
+        "sort_order": 1521
+      },
+      {
         "song_id": "song_7abff74f1301",
         "title": "UTAKATA DANCE FLOOR",
         "section_id": "unit_913751fd3f85",
@@ -6036,20 +6025,6 @@
         "section_id": "unit_913751fd3f85",
         "section_name": "Crazy:B",
         "sort_order": 1590
-      },
-      {
-        "song_id": "song_0add580d23b0",
-        "title": "KING",
-        "section_id": "unit_913751fd3f85",
-        "section_name": "Crazy:B",
-        "sort_order": 1600
-      },
-      {
-        "song_id": "song_2c145b3a7f9a",
-        "title": "U.S.A",
-        "section_id": "unit_913751fd3f85",
-        "section_name": "Crazy:B",
-        "sort_order": 1610
       },
       {
         "song_id": "song_f9e0c3576d97",
@@ -6150,6 +6125,13 @@
         "sort_order": 1750
       },
       {
+        "song_id": "song_4ba0f95ed024",
+        "title": "RAMBLING MOON",
+        "section_id": "unit_7e3bd6882771",
+        "section_name": "UNDEAD",
+        "sort_order": 1751
+      },
+      {
         "song_id": "song_ea300e2285b6",
         "title": "SWINGIN' PARONIRIA",
         "section_id": "unit_7e3bd6882771",
@@ -6164,11 +6146,11 @@
         "sort_order": 1770
       },
       {
-        "song_id": "song_4ba0f95ed024",
-        "title": "RAMBLING MOON",
+        "song_id": "song_2c145b3a7f9a",
+        "title": "U.S.A",
         "section_id": "unit_7e3bd6882771",
         "section_name": "UNDEAD",
-        "sort_order": 1780
+        "sort_order": 1771
       },
       {
         "song_id": "song_ecb21c17047a",
@@ -6176,13 +6158,6 @@
         "section_id": "unit_7e3bd6882771",
         "section_name": "UNDEAD",
         "sort_order": 1790
-      },
-      {
-        "song_id": "song_2c145b3a7f9a",
-        "title": "U.S.A",
-        "section_id": "unit_7e3bd6882771",
-        "section_name": "UNDEAD",
-        "sort_order": 1800
       },
       {
         "song_id": "song_2335d22e3444",
@@ -6262,11 +6237,25 @@
         "sort_order": 1910
       },
       {
+        "song_id": "song_182912272427",
+        "title": "HAO♡RABI",
+        "section_id": "unit_bea4a935a32a",
+        "section_name": "Ra*bits",
+        "sort_order": 1915
+      },
+      {
         "song_id": "song_892acb24fa11",
         "title": "ポケットに宇宙",
         "section_id": "unit_bea4a935a32a",
         "section_name": "Ra*bits",
         "sort_order": 1920
+      },
+      {
+        "song_id": "song_fc94ac9ca6c8",
+        "title": "ハム太郎とっとこうた",
+        "section_id": "unit_bea4a935a32a",
+        "section_name": "Ra*bits",
+        "sort_order": 1921
       },
       {
         "song_id": "song_5c510326eb74",
@@ -6302,13 +6291,6 @@
         "section_id": "unit_bea4a935a32a",
         "section_name": "Ra*bits",
         "sort_order": 1970
-      },
-      {
-        "song_id": "song_fc94ac9ca6c8",
-        "title": "ハム太郎とっとこうた",
-        "section_id": "unit_bea4a935a32a",
-        "section_name": "Ra*bits",
-        "sort_order": 1980
       },
       {
         "song_id": "song_669a7d7e6b97",
@@ -6745,6 +6727,13 @@
         "sort_order": 2600
       },
       {
+        "song_id": "song_4461ea59d30e",
+        "title": "Tell Your World",
+        "section_id": "unit_92301942e6fe",
+        "section_name": "Switch",
+        "sort_order": 2601
+      },
+      {
         "song_id": "song_e945e6bc76de",
         "title": "Switching Journey",
         "section_id": "unit_92301942e6fe",
@@ -6785,13 +6774,6 @@
         "section_id": "unit_92301942e6fe",
         "section_name": "Switch",
         "sort_order": 2660
-      },
-      {
-        "song_id": "song_4461ea59d30e",
-        "title": "Tell Your World",
-        "section_id": "unit_92301942e6fe",
-        "section_name": "Switch",
-        "sort_order": 2670
       },
       {
         "song_id": "song_d9eaea646f46",
@@ -7018,18 +7000,18 @@
         "sort_order": 2990
       },
       {
+        "song_id": "song_90a81a004f52",
+        "title": "夜に駆ける",
+        "section_id": "unit_6878d8629930",
+        "section_name": "DoubleFace",
+        "sort_order": 2991
+      },
+      {
         "song_id": "song_70c51343651b",
         "title": "Sleeper Mystery Train",
         "section_id": "unit_6878d8629930",
         "section_name": "DoubleFace",
         "sort_order": 3000
-      },
-      {
-        "song_id": "song_90a81a004f52",
-        "title": "夜に駆ける",
-        "section_id": "unit_6878d8629930",
-        "section_name": "DoubleFace",
-        "sort_order": 3010
       },
       {
         "song_id": "song_b492a7bc5c47",
@@ -8135,16 +8117,6 @@
         "tag_order": 2
       },
       {
-        "song_id": "song_e459bca503e4",
-        "label_id": "label_93d309044f67",
-        "tag_order": 1
-      },
-      {
-        "song_id": "song_e459bca503e4",
-        "label_id": "label_ce9c08a711d5",
-        "tag_order": 2
-      },
-      {
         "song_id": "song_90a81a004f52",
         "label_id": "label_93d309044f67",
         "tag_order": 1
@@ -8545,16 +8517,6 @@
         "tag_order": 1
       },
       {
-        "song_id": "song_0add580d23b0",
-        "label_id": "label_913751fd3f85",
-        "tag_order": 1
-      },
-      {
-        "song_id": "song_0add580d23b0",
-        "label_id": "label_ce9c08a711d5",
-        "tag_order": 2
-      },
-      {
         "song_id": "song_2c145b3a7f9a",
         "label_id": "label_913751fd3f85",
         "tag_order": 1
@@ -8711,6 +8673,11 @@
       },
       {
         "song_id": "song_fb2742a22074",
+        "label_id": "label_bea4a935a32a",
+        "tag_order": 1
+      },
+      {
+        "song_id": "song_182912272427",
         "label_id": "label_bea4a935a32a",
         "tag_order": 1
       },
@@ -16867,96 +16834,6 @@
         "unit_id": ""
       },
       {
-        "song_id": "song_e459bca503e4",
-        "position": 1,
-        "character_id": "",
-        "slot_type": "empty",
-        "label_id": "",
-        "display_name": "",
-        "unit_id": ""
-      },
-      {
-        "song_id": "song_e459bca503e4",
-        "position": 2,
-        "character_id": "",
-        "slot_type": "empty",
-        "label_id": "",
-        "display_name": "",
-        "unit_id": ""
-      },
-      {
-        "song_id": "song_e459bca503e4",
-        "position": 3,
-        "character_id": "",
-        "slot_type": "empty",
-        "label_id": "",
-        "display_name": "",
-        "unit_id": ""
-      },
-      {
-        "song_id": "song_e459bca503e4",
-        "position": 4,
-        "character_id": "",
-        "slot_type": "empty",
-        "label_id": "",
-        "display_name": "",
-        "unit_id": ""
-      },
-      {
-        "song_id": "song_e459bca503e4",
-        "position": 5,
-        "character_id": "",
-        "slot_type": "empty",
-        "label_id": "",
-        "display_name": "",
-        "unit_id": ""
-      },
-      {
-        "song_id": "song_e459bca503e4",
-        "position": 6,
-        "character_id": "",
-        "slot_type": "empty",
-        "label_id": "",
-        "display_name": "",
-        "unit_id": ""
-      },
-      {
-        "song_id": "song_e459bca503e4",
-        "position": 7,
-        "character_id": "",
-        "slot_type": "empty",
-        "label_id": "",
-        "display_name": "",
-        "unit_id": ""
-      },
-      {
-        "song_id": "song_e459bca503e4",
-        "position": 8,
-        "character_id": "",
-        "slot_type": "empty",
-        "label_id": "",
-        "display_name": "",
-        "unit_id": ""
-      },
-      {
-        "song_id": "song_e459bca503e4",
-        "position": 9,
-        "character_id": "",
-        "slot_type": "empty",
-        "label_id": "",
-        "display_name": "",
-        "unit_id": ""
-      },
-      {
-        "song_id": "song_e459bca503e4",
-        "position": 10,
-        "character_id": "",
-        "slot_type": "empty",
-        "label_id": "",
-        "display_name": "",
-        "unit_id": ""
-      },
-      {
         "song_id": "song_90a81a004f52",
         "position": 1,
         "character_id": "char_961bc5cb923b",
@@ -23437,96 +23314,6 @@
         "unit_id": ""
       },
       {
-        "song_id": "song_0add580d23b0",
-        "position": 1,
-        "character_id": "",
-        "slot_type": "empty",
-        "label_id": "",
-        "display_name": "",
-        "unit_id": ""
-      },
-      {
-        "song_id": "song_0add580d23b0",
-        "position": 2,
-        "character_id": "",
-        "slot_type": "empty",
-        "label_id": "",
-        "display_name": "",
-        "unit_id": ""
-      },
-      {
-        "song_id": "song_0add580d23b0",
-        "position": 3,
-        "character_id": "",
-        "slot_type": "empty",
-        "label_id": "",
-        "display_name": "",
-        "unit_id": ""
-      },
-      {
-        "song_id": "song_0add580d23b0",
-        "position": 4,
-        "character_id": "",
-        "slot_type": "empty",
-        "label_id": "",
-        "display_name": "",
-        "unit_id": ""
-      },
-      {
-        "song_id": "song_0add580d23b0",
-        "position": 5,
-        "character_id": "",
-        "slot_type": "empty",
-        "label_id": "",
-        "display_name": "",
-        "unit_id": ""
-      },
-      {
-        "song_id": "song_0add580d23b0",
-        "position": 6,
-        "character_id": "",
-        "slot_type": "empty",
-        "label_id": "",
-        "display_name": "",
-        "unit_id": ""
-      },
-      {
-        "song_id": "song_0add580d23b0",
-        "position": 7,
-        "character_id": "",
-        "slot_type": "empty",
-        "label_id": "",
-        "display_name": "",
-        "unit_id": ""
-      },
-      {
-        "song_id": "song_0add580d23b0",
-        "position": 8,
-        "character_id": "",
-        "slot_type": "empty",
-        "label_id": "",
-        "display_name": "",
-        "unit_id": ""
-      },
-      {
-        "song_id": "song_0add580d23b0",
-        "position": 9,
-        "character_id": "",
-        "slot_type": "empty",
-        "label_id": "",
-        "display_name": "",
-        "unit_id": ""
-      },
-      {
-        "song_id": "song_0add580d23b0",
-        "position": 10,
-        "character_id": "",
-        "slot_type": "empty",
-        "label_id": "",
-        "display_name": "",
-        "unit_id": ""
-      },
-      {
         "song_id": "song_2c145b3a7f9a",
         "position": 1,
         "character_id": "char_d1df79d8d969",
@@ -26219,6 +26006,96 @@
       },
       {
         "song_id": "song_fb2742a22074",
+        "position": 10,
+        "character_id": "",
+        "slot_type": "empty",
+        "label_id": "",
+        "display_name": "",
+        "unit_id": ""
+      },
+      {
+        "song_id": "song_182912272427",
+        "position": 1,
+        "character_id": "char_a101b51f6096",
+        "slot_type": "fixed",
+        "label_id": "",
+        "display_name": "友也",
+        "unit_id": ""
+      },
+      {
+        "song_id": "song_182912272427",
+        "position": 2,
+        "character_id": "char_4fb0564451ee",
+        "slot_type": "fixed",
+        "label_id": "",
+        "display_name": "兔",
+        "unit_id": ""
+      },
+      {
+        "song_id": "song_182912272427",
+        "position": 3,
+        "character_id": "char_ecacd35ade7c",
+        "slot_type": "fixed",
+        "label_id": "",
+        "display_name": "光",
+        "unit_id": ""
+      },
+      {
+        "song_id": "song_182912272427",
+        "position": 4,
+        "character_id": "char_defd9a74d2d7",
+        "slot_type": "fixed",
+        "label_id": "",
+        "display_name": "创",
+        "unit_id": ""
+      },
+      {
+        "song_id": "song_182912272427",
+        "position": 5,
+        "character_id": "",
+        "slot_type": "empty",
+        "label_id": "",
+        "display_name": "",
+        "unit_id": ""
+      },
+      {
+        "song_id": "song_182912272427",
+        "position": 6,
+        "character_id": "",
+        "slot_type": "empty",
+        "label_id": "",
+        "display_name": "",
+        "unit_id": ""
+      },
+      {
+        "song_id": "song_182912272427",
+        "position": 7,
+        "character_id": "",
+        "slot_type": "empty",
+        "label_id": "",
+        "display_name": "",
+        "unit_id": ""
+      },
+      {
+        "song_id": "song_182912272427",
+        "position": 8,
+        "character_id": "",
+        "slot_type": "empty",
+        "label_id": "",
+        "display_name": "",
+        "unit_id": ""
+      },
+      {
+        "song_id": "song_182912272427",
+        "position": 9,
+        "character_id": "",
+        "slot_type": "empty",
+        "label_id": "",
+        "display_name": "",
+        "unit_id": ""
+      },
+      {
+        "song_id": "song_182912272427",
         "position": 10,
         "character_id": "",
         "slot_type": "empty",
@@ -40150,11 +40027,6 @@
         "status": "missing"
       },
       {
-        "song_id": "song_e459bca503e4",
-        "raw_text": "",
-        "status": "missing"
-      },
-      {
         "song_id": "song_90a81a004f52",
         "raw_text": "",
         "status": "missing"
@@ -40515,11 +40387,6 @@
         "status": "recorded"
       },
       {
-        "song_id": "song_0add580d23b0",
-        "raw_text": "",
-        "status": "missing"
-      },
-      {
         "song_id": "song_2c145b3a7f9a",
         "raw_text": "",
         "status": "missing"
@@ -40666,6 +40533,11 @@
       },
       {
         "song_id": "song_fb2742a22074",
+        "raw_text": "",
+        "status": "missing"
+      },
+      {
+        "song_id": "song_182912272427",
         "raw_text": "",
         "status": "missing"
       },
@@ -41968,12 +41840,6 @@
         "tag_order": 2
       },
       {
-        "song_id": "song_e459bca503e4",
-        "unit_id": "unit_93d309044f67",
-        "unit_order": 1,
-        "tag_order": 1
-      },
-      {
         "song_id": "song_90a81a004f52",
         "unit_id": "unit_93d309044f67",
         "unit_order": 1,
@@ -42448,12 +42314,6 @@
         "tag_order": 1
       },
       {
-        "song_id": "song_0add580d23b0",
-        "unit_id": "unit_913751fd3f85",
-        "unit_order": 1,
-        "tag_order": 1
-      },
-      {
         "song_id": "song_2c145b3a7f9a",
         "unit_id": "unit_913751fd3f85",
         "unit_order": 1,
@@ -42641,6 +42501,12 @@
       },
       {
         "song_id": "song_fb2742a22074",
+        "unit_id": "unit_bea4a935a32a",
+        "unit_order": 1,
+        "tag_order": 1
+      },
+      {
+        "song_id": "song_182912272427",
         "unit_id": "unit_bea4a935a32a",
         "unit_order": 1,
         "tag_order": 1
@@ -45997,15 +45863,6 @@
         "end_percent": 100.0
       },
       {
-        "song_id": "song_e459bca503e4",
-        "band_order": 1,
-        "unit_id": "unit_93d309044f67",
-        "label_id": "label_93d309044f67",
-        "color": "#2AB7CA",
-        "start_percent": 0.0,
-        "end_percent": 100.0
-      },
-      {
         "song_id": "song_90a81a004f52",
         "band_order": 1,
         "unit_id": "unit_93d309044f67",
@@ -46717,15 +46574,6 @@
         "end_percent": 100.0
       },
       {
-        "song_id": "song_0add580d23b0",
-        "band_order": 1,
-        "unit_id": "unit_913751fd3f85",
-        "label_id": "label_913751fd3f85",
-        "color": "#FFD700",
-        "start_percent": 0.0,
-        "end_percent": 100.0
-      },
-      {
         "song_id": "song_2c145b3a7f9a",
         "band_order": 1,
         "unit_id": "unit_913751fd3f85",
@@ -47006,6 +46854,15 @@
       },
       {
         "song_id": "song_fb2742a22074",
+        "band_order": 1,
+        "unit_id": "unit_bea4a935a32a",
+        "label_id": "label_bea4a935a32a",
+        "color": "#68C0F4",
+        "start_percent": 0.0,
+        "end_percent": 100.0
+      },
+      {
+        "song_id": "song_182912272427",
         "band_order": 1,
         "unit_id": "unit_bea4a935a32a",
         "label_id": "label_bea4a935a32a",
@@ -48875,18 +48732,6 @@
         "detail": "《E.V.O.L.U.T.I.O.N.》数字组合原始序列正在录入。"
       },
       {
-        "kind": "missing_positions",
-        "entity_id": "song_e459bca503e4",
-        "source_file": "data/source/positions.csv",
-        "detail": "《フラジール》站位正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_e459bca503e4",
-        "source_file": "data/source/songs.csv",
-        "detail": "《フラジール》数字组合原始序列正在录入。"
-      },
-      {
         "kind": "missing_combinations",
         "entity_id": "song_90a81a004f52",
         "source_file": "data/source/songs.csv",
@@ -49007,18 +48852,6 @@
         "detail": "《CIVIL WAR》数字组合原始序列正在录入。"
       },
       {
-        "kind": "missing_positions",
-        "entity_id": "song_0add580d23b0",
-        "source_file": "data/source/positions.csv",
-        "detail": "《KING》站位正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_0add580d23b0",
-        "source_file": "data/source/songs.csv",
-        "detail": "《KING》数字组合原始序列正在录入。"
-      },
-      {
         "kind": "missing_combinations",
         "entity_id": "song_2c145b3a7f9a",
         "source_file": "data/source/songs.csv",
@@ -49119,6 +48952,12 @@
         "entity_id": "song_fb2742a22074",
         "source_file": "data/source/songs.csv",
         "detail": "《ヒカリスペクトル》数字组合原始序列正在录入。"
+      },
+      {
+        "kind": "missing_combinations",
+        "entity_id": "song_182912272427",
+        "source_file": "data/source/songs.csv",
+        "detail": "《HAO♡RABI》数字组合原始序列正在录入。"
       },
       {
         "kind": "missing_combinations",

@@ -27,3 +27,6 @@ coverage/
 .DS_Store
 Thumbs.db
 Desktop.ini
+
+# Excel temporary lock files
+~$*.xlsx

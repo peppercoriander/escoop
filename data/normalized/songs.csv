@@ -17,7 +17,7 @@ song_d9c30fc56e55,RED GARDEN,2026-11-15,fine,fixed,4,complete,missing,#FFD7A0
 song_e169128ecb33,Dreaming Ocean,2026-11-15,fine,fixed,4,complete,missing,#FFD7A0
 song_71f611a674e2,Musica Vita! -ムジカ・ヴィータ-,2026-11-15,fine,fixed,4,complete,missing,#FFD7A0
 song_0d1dbd139bb6,Ghostic Treat House,2026-11-15,fine,fixed,4,complete,missing,#FFD7A0
-song_2a6ff189082e,狂怪ノ怨黙-キョウカイノエンモク-,,"MaM, fine",fixed,5,complete,missing,"linear-gradient(135deg, #5A6964 0%, #5A6964 50%, #FFD7A0 50%, #FFD7A0 100%)"
+song_2a6ff189082e,狂怪ノ怨黙-キョウカイノエンモク-,2027-03-01,"MaM, fine",fixed,5,complete,missing,"linear-gradient(135deg, #5A6964 0%, #5A6964 50%, #FFD7A0 50%, #FFD7A0 100%)"
 song_a53841e5d3c8,Tryst of Stars,,fine,unknown,0,missing_positions,missing,#FFD7A0
 song_9560289984a0,スターライトパレード,,"fine, Knights",fixed,9,complete,missing,"linear-gradient(135deg, #FFD7A0 0%, #FFD7A0 50%, #305DAA 50%, #305DAA 100%)"
 song_6de4a0a8ff5a,Rebellion Star,2026-11-15,Trickstar,fixed,4,complete,missing,#FF8B0B
@@ -59,7 +59,7 @@ song_0e7472b277e5,熱血☆流星忍法帖,2026-11-15,RYUSEITAI,fixed,5,complete
 song_c098038e46e1,僕らのステラ,2026-11-15,RYUSEITAI,fixed,5,complete,missing,#24004D
 song_d6dd78d784e3,RELAX PARADISE,2026-11-15,RYUSEITAI,fixed,5,complete,recorded,#24004D
 song_20eefad8da5a,BREAK THE NORM,2026-11-15,RYUSEITAI,fixed,5,complete,missing,#24004D
-song_862554f517e7,GET THE WIN,,"2wink, RYUSEITAI",fixed,7,complete,missing,"linear-gradient(135deg, #FF3B9A 0%, #FF3B9A 50%, #24004D 50%, #24004D 100%)"
+song_862554f517e7,GET THE WIN,2027-03-29,"2wink, RYUSEITAI",fixed,7,complete,missing,"linear-gradient(135deg, #FF3B9A 0%, #FF3B9A 50%, #24004D 50%, #24004D 100%)"
 song_03b2065d864e,五色のShooting☆Star!!!!!,,RYUSEITAI,unknown,0,missing_positions,missing,#24004D
 song_fc94ac9ca6c8,ハム太郎とっとこうた,,"Ra*bits, RYUSEITAI",fixed,9,complete,missing,"linear-gradient(135deg, #68C0F4 0%, #68C0F4 50%, #24004D 50%, #24004D 100%)"
 song_d4721d279d3c,Kiss of Life,2026-11-15,ALKALOID,fixed,4,complete,missing,#2AB7CA
@@ -77,8 +77,7 @@ song_fcb1c599d6e8,Living on the edge,2026-11-15,ALKALOID,fixed,4,complete,missin
 song_537681e7ee02,UNDYING HOLY LOVE,2026-11-15,ALKALOID,fixed,4,complete,missing,#2AB7CA
 song_6bb8e47bb56c,Believe 4 leaves,2026-11-15,ALKALOID,fixed,4,complete,recorded,#2AB7CA
 song_e948810eb839,コトノハカンタービレ,2026-11-15,ALKALOID,fixed,4,complete,recorded,#2AB7CA
-song_e9d5ca4928d5,E.V.O.L.U.T.I.O.N.,,"ALKALOID, Switch",fixed,7,complete,missing,"linear-gradient(135deg, #2AB7CA 0%, #2AB7CA 50%, #A3EA34 50%, #A3EA34 100%)"
-song_e459bca503e4,フラジール,,"ALKALOID, Other",unknown,0,missing_positions,missing,#2AB7CA
+song_e9d5ca4928d5,E.V.O.L.U.T.I.O.N.,2027-02-01,"ALKALOID, Switch",fixed,7,complete,missing,"linear-gradient(135deg, #2AB7CA 0%, #2AB7CA 50%, #A3EA34 50%, #A3EA34 100%)"
 song_90a81a004f52,夜に駆ける,,"ALKALOID, DoubleFace",fixed,6,complete,missing,"linear-gradient(135deg, #2AB7CA 0%, #2AB7CA 50%, #2B4F54 50%, #2B4F54 100%)"
 song_7ca647631ee1,THE GENESIS,2026-11-15,Eden,fixed,4,complete,recorded,#5F5B5D
 song_3f3a17eb992f,Dance in the Apocalyps,2026-11-15,Eden,fixed,4,complete,missing,#5F5B5D
@@ -114,7 +113,7 @@ song_e31ac777b213,幸福論,2026-11-15,Valkyrie,fixed,2,complete,none,#8C2346
 song_f6b6edd46a7d,Acanthe,2026-11-15,Valkyrie,fixed,2,complete,none,#8C2346
 song_c76e05b1d11e,迷宮電子回廊,2026-11-15,Valkyrie,fixed,2,complete,none,#8C2346
 song_a2e217101847,星の鳴動響きし時に,2026-11-15,Valkyrie,fixed,2,complete,none,#8C2346
-song_99583a0d6ab1,Stranger's sun,,"MELLOW DEAR US, Valkyrie",fixed,6,complete,missing,"linear-gradient(135deg, #4D2118 0%, #4D2118 50%, #8C2346 50%, #8C2346 100%)"
+song_99583a0d6ab1,Stranger's sun,2026-12-21,"MELLOW DEAR US, Valkyrie",fixed,6,complete,missing,"linear-gradient(135deg, #4D2118 0%, #4D2118 50%, #8C2346 50%, #8C2346 100%)"
 song_613366d4a24d,砂上ノ楼閤,,Valkyrie,unknown,0,missing_positions,none,#8C2346
 song_40ade43d7071,勇侠青春謳,,"Valkyrie, AKATSUKI",fixed,5,complete,missing,"linear-gradient(135deg, #8C2346 0%, #8C2346 50%, #962828 50%, #962828 100%)"
 song_1145709f1775,シュガー・スパイス方程式,2026-11-15,2wink,fixed,2,complete,none,#FF3B9A
@@ -133,7 +132,7 @@ song_477b9fdea637,LEMON SQUASH CHEERS!,2026-11-15,"Crazy:B, 2wink",fixed,6,compl
 song_3096f32aaef0,Swee2wink Love Letter,2026-11-15,2wink,fixed,2,complete,none,#FF3B9A
 song_716612b97823,Love×me⇄monsteR,2026-11-15,2wink,fixed,2,complete,none,#FF3B9A
 song_505d28c5a231,来来☆2winkイリュージョン,2026-11-15,2wink,fixed,2,complete,none,#FF3B9A
-song_a57855027d00,SPLASHING WHIRLPOOL!!,2026-11-15,2wink,fixed,2,complete,none,#FF3B9A
+song_a57855027d00,SPLASHING WHIRLPOOL!!,2026-12-07,2wink,fixed,2,complete,none,#FF3B9A
 song_f264f502e080,WONDER WONDER TOY LAND,,2wink,unknown,0,missing_positions,none,#FF3B9A
 song_9ab8ad9872c0,2wink Introduction,,2wink,unknown,0,missing_positions,none,#FF3B9A
 song_4461ea59d30e,Tell Your World,,"Switch, 2wink, Other",fixed,5,complete,missing,"linear-gradient(135deg, #A3EA34 0%, #A3EA34 50%, #FF3B9A 50%, #FF3B9A 100%)"
@@ -151,7 +150,6 @@ song_9c6bab397a09,CIVIL WAR,2026-11-15,"四人月, Crazy:B",fixed,8,complete,mis
 song_2e9a64df8c91,Helter-Spider,2026-11-15,Crazy:B,fixed,4,complete,recorded,#FFD700
 song_afe826491b4d,Honeycomb Summer,2026-11-15,Crazy:B,fixed,4,complete,recorded,#FFD700
 song_c504db2c978f,ハニートラップ・マリアージュ,2026-11-15,Crazy:B,fixed,4,complete,recorded,#FFD700
-song_0add580d23b0,KING,,"Crazy:B, Other",unknown,0,missing_positions,missing,#FFD700
 song_2c145b3a7f9a,U.S.A,,"Crazy:B, UNDEAD",fixed,8,complete,missing,"linear-gradient(135deg, #FFD700 0%, #FFD700 50%, #64368F 50%, #64368F 100%)"
 song_f9e0c3576d97,Melody in the Dark,2026-11-15,UNDEAD,fixed,4,complete,missing,#64368F
 song_4400d70c1e72,ハニーミルクはお好みで,2026-11-15,UNDEAD,fixed,4,complete,none,#64368F
@@ -169,7 +167,7 @@ song_50bf6d34ed60,Sustain Memories,2026-11-15,UNDEAD,fixed,4,complete,recorded,#
 song_b357980d55f0,Nightless World,2026-11-15,UNDEAD,fixed,4,complete,recorded,#64368F
 song_ea300e2285b6,SWINGIN' PARONIRIA,2026-11-15,UNDEAD,fixed,4,complete,recorded,#64368F
 song_0ec267fb6f6c,FORBIDDEN RAIN,2026-11-15,UNDEAD,fixed,4,complete,missing,#64368F
-song_4ba0f95ed024,RAMBLING MOON,2026-11-15,UNDEAD,fixed,4,complete,missing,#64368F
+song_4ba0f95ed024,RAMBLING MOON,2027-02-15,UNDEAD,fixed,4,complete,missing,#64368F
 song_ecb21c17047a,Break the Prison,,UNDEAD,unknown,0,missing_positions,missing,#64368F
 song_2335d22e3444,Joyful×Box*,2026-11-15,Ra*bits,fixed,4,complete,missing,#68C0F4
 song_49998ba34a48,野うさぎマーチ♪,2026-11-15,Ra*bits,fixed,4,complete,recorded,#68C0F4
@@ -182,12 +180,13 @@ song_2977f270a6ea,Love it Love it,2026-11-15,Ra*bits,fixed,4,complete,recorded,#
 song_daaf9eaa6b13,JUMPIN' LUCK BEAT,2026-11-15,Ra*bits,fixed,4,complete,recorded,#68C0F4
 song_07c598bdfbb9,うさぎの森の音楽会,2026-11-15,Ra*bits,fixed,4,complete,recorded,#68C0F4
 song_fb2742a22074,ヒカリスペクトル,2026-11-15,Ra*bits,fixed,4,complete,missing,#68C0F4
+song_182912272427,HAO♡RABI,2027-04-12,Ra*bits,fixed,4,complete,missing,#68C0F4
 song_892acb24fa11,ポケットに宇宙,2026-11-15,"Ra*bits, DoubleFace",fixed,6,complete,recorded,"linear-gradient(135deg, #68C0F4 0%, #68C0F4 50%, #2B4F54 50%, #2B4F54 100%)"
 song_5c510326eb74,RaRaRa*Station!,2026-11-15,Ra*bits,fixed,4,complete,recorded,#68C0F4
 song_f929ffce1eb8,パラレルメイズ,2026-11-15,Ra*bits,fixed,4,complete,recorded,#68C0F4
 song_25d88633ff52,ハレノヒSugar Wave,2026-11-15,Ra*bits,fixed,4,complete,missing,#68C0F4
 song_3d5ab217088e,FALLIN' LOVE=IT'S WONDERLAND,2026-11-15,Ra*bits,fixed,4,complete,missing,#68C0F4
-song_6f2c70a4b060,The・プリティカルパレード♪,2026-11-22,"Special for Princess!, Ra*bits",fixed,8,complete,missing,"linear-gradient(135deg, #EFB6D3 0%, #EFB6D3 50%, #68C0F4 50%, #68C0F4 100%)"
+song_6f2c70a4b060,The・プリティカルパレード♪,2026-11-23,"Special for Princess!, Ra*bits",fixed,8,complete,missing,"linear-gradient(135deg, #EFB6D3 0%, #EFB6D3 50%, #68C0F4 50%, #68C0F4 100%)"
 song_669a7d7e6b97,Hoppin' Season♪,,Ra*bits,unknown,0,missing_positions,missing,#68C0F4
 song_66b431f79ed4,百花繚乱、紅月夜,2026-11-15,AKATSUKI,fixed,3,complete,missing,#962828
 song_95930d4f4eb8,斬 －決意ノ刃－,2026-11-15,AKATSUKI,fixed,3,complete,missing,#962828
@@ -256,13 +255,13 @@ song_faacc1bec397,"HELLO, NEW YEAR!",2026-11-15,MaM,mixed,4,complete,missing,#5A
 song_02c5bfe73320,ハロウィン・ランデブー,2026-11-15,MaM,fixed,1,complete,missing,#5A6964
 song_a859c627edfb,Light on the Orbit,2026-11-15,MaM,fixed,1,complete,missing,#5A6964
 song_478b71c2a636,辻風に吹かれて,2026-11-15,MaM,fixed,4,complete,none,#5A6964
-song_4567790e5789,ラスト・ページ,2026-11-15,MaM,fixed,1,complete,missing,#5A6964
+song_4567790e5789,ラスト・ページ,2026-03-29,MaM,fixed,1,complete,missing,#5A6964
 song_eea257b81e72,‘=EYE=,2026-11-15,DoubleFace,fixed,2,complete,missing,#2B4F54
 song_5b658ea8fab0,Stippling,2026-11-15,DoubleFace,fixed,2,complete,missing,#2B4F54
 song_84a47c43faf1,ネビュラ,2026-11-15,DoubleFace,fixed,2,complete,missing,#2B4F54
 song_b7012d43986a,Bye-Bye Buddy,2026-11-15,DoubleFace,fixed,2,complete,missing,#2B4F54
 song_f4989e275f0f,No name yet,2026-11-15,DoubleFace,fixed,2,complete,missing,#2B4F54
-song_7a7c99453e0e,Secret of Metropolis,2026-11-15,DoubleFace,fixed,2,complete,missing,#2B4F54
+song_7a7c99453e0e,Secret of Metropolis,2027-01-18,DoubleFace,fixed,2,complete,missing,#2B4F54
 song_70c51343651b,Sleeper Mystery Train,2026-11-15,DoubleFace,unknown,0,missing_positions,missing,#2B4F54
 song_baeda816cf9d,しょーがいゼッタイそーあい宣言♥,2026-11-15,Special for Princess!,fixed,4,complete,recorded,#EFB6D3
 song_ce486340cc45,スキスキハンター♡,2026-11-15,Special for Princess!,fixed,4,complete,recorded,#EFB6D3

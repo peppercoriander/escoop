@@ -8,7 +8,7 @@ escoop/
 ├─ AGENTS.md                  Agent 开发约定
 ├─ docs/                      开发、维护及目录说明
 ├─ data/
-│  ├─ source/                 人工维护的 CSV 和 display.json
+│  ├─ source/                 maintenance.xlsx、展示顺序 CSV 与自动拆分的接口文件
 │  ├─ normalized/             生成的数据，随源数据一起提交
 │  └─ WEBSITE_DATA.md         数据接口说明
 ├─ images/                    公司和组合图标
@@ -36,6 +36,6 @@ escoop/
 
 Python 的 `__pycache__/`、Vite 缓存、日志及操作系统临时文件也不提交。
 
-`data/normalized/` 虽然可重新生成，但当前发布流程会校验它与源数据是否一致，因此仍需要加入 Git。修改数据时只编辑 `data/source/`，运行 `python scripts/prepare_data.py` 后将源文件与生成结果一起提交。
+`data/normalized/` 虽然可重新生成，但当前发布流程会校验它与源数据是否一致，因此仍需要加入 Git。只编辑 `data/source/maintenance.xlsx` 和 `data/source/song_placements.csv`，运行 `python scripts/import_maintenance.py`（或兼容命令 `python scripts/prepare_data.py`）后将维护源与生成结果一起提交。其余源目录 CSV、display.json 均由工作簿导入生成。
 
 本地预览和发布步骤见 [DEVELOPMENT.md](DEVELOPMENT.md)。

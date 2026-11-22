@@ -7,6 +7,7 @@ song_a1c7157dd497,Miracle Dream Traveler,unit_48bf1806f959,fine,50
 song_7ee7f1a64f76,Never-ending Stage!!!!,unit_48bf1806f959,fine,60
 song_70ab7550fc9f,Angelic Grace,unit_48bf1806f959,fine,70
 song_368a5bc01f86,始まりのファンタジア,unit_48bf1806f959,fine,80
+song_9560289984a0,スターライトパレード,unit_48bf1806f959,fine,81
 song_6f9e52b60ba7,Holy Angel's Carol,unit_48bf1806f959,fine,90
 song_02fde485d3bf,Feathers of Ark,unit_48bf1806f959,fine,100
 song_0ffefa0445c3,Fairy Tale Library,unit_48bf1806f959,fine,110
@@ -19,7 +20,6 @@ song_0d1dbd139bb6,Ghostic Treat House,unit_48bf1806f959,fine,170
 song_2a6ff189082e,狂怪ノ怨黙-キョウカイノエンモク-,unit_48bf1806f959,fine,180
 song_b8cdfe1e1928,Crossing×Heart,unit_48bf1806f959,fine,190
 song_a53841e5d3c8,Tryst of Stars,unit_48bf1806f959,fine,200
-song_9560289984a0,スターライトパレード,unit_48bf1806f959,fine,210
 song_6de4a0a8ff5a,Rebellion Star,unit_470609b26a1d,Trickstar,220
 song_2f96247e8408,CHERRY HAPPY STREAM,unit_470609b26a1d,Trickstar,230
 song_a3dabf50ba07,HEART→BEATER!!!!,unit_470609b26a1d,Trickstar,240
@@ -40,8 +40,8 @@ song_8c814ebdcf1f,Daydream×Reality,unit_470609b26a1d,Trickstar,380
 song_515def0f6b9b,ワチャガナドゥ？,unit_470609b26a1d,Trickstar,390
 song_259edd7b0ba8,Finder Girl,unit_470609b26a1d,Trickstar,400
 song_d4930e520cb6,Unbalanced Triangle,unit_470609b26a1d,Trickstar,410
+song_3b8bdf68dd7c,（RE）PLAY,unit_470609b26a1d,Trickstar,411
 song_53c93cb31fde,DIAMOND SUMMER,unit_470609b26a1d,Trickstar,420
-song_3b8bdf68dd7c,（RE）PLAY,unit_470609b26a1d,Trickstar,430
 song_19b2d683e2e0,梦ノ咲流星隊歌,unit_5c279200ab8e,RYUSEITAI,440
 song_d3e8a27e33fb,天下无敵☆メテオレンジャー!,unit_5c279200ab8e,RYUSEITAI,450
 song_5750e49da659,SUPER NOVA REVOLU5TAR,unit_5c279200ab8e,RYUSEITAI,460
@@ -61,8 +61,8 @@ song_c098038e46e1,僕らのステラ,unit_5c279200ab8e,RYUSEITAI,590
 song_d6dd78d784e3,RELAX PARADISE,unit_5c279200ab8e,RYUSEITAI,600
 song_20eefad8da5a,BREAK THE NORM,unit_5c279200ab8e,RYUSEITAI,610
 song_862554f517e7,GET THE WIN,unit_5c279200ab8e,RYUSEITAI,620
+song_fc94ac9ca6c8,ハム太郎とっとこうた,unit_5c279200ab8e,RYUSEITAI,621
 song_03b2065d864e,五色のShooting☆Star!!!!!,unit_5c279200ab8e,RYUSEITAI,630
-song_fc94ac9ca6c8,ハム太郎とっとこうた,unit_5c279200ab8e,RYUSEITAI,640
 song_d4721d279d3c,Kiss of Life,unit_93d309044f67,ALKALOID,650
 song_de4361f880dc,翼モラトリアム,unit_93d309044f67,ALKALOID,660
 song_1cd5d81835d1,You're Speculation,unit_93d309044f67,ALKALOID,670
@@ -70,17 +70,16 @@ song_3af219315db7,Distorted Heart,unit_93d309044f67,ALKALOID,680
 song_874ff128db88,Hysteric Humanoid,unit_93d309044f67,ALKALOID,690
 song_cbe54d5c11ff,Artistic Partisan,unit_93d309044f67,ALKALOID,700
 song_13139942a6c4,SAKE OF LOVE,unit_93d309044f67,ALKALOID,710
+song_90a81a004f52,夜に駆ける,unit_93d309044f67,ALKALOID,711
 song_3ee863c4fc4d,Black Out See Saw,unit_93d309044f67,ALKALOID,720
 song_e06b225c4b6c,Across the universe,unit_93d309044f67,ALKALOID,730
 song_77382f0cc9da,VERMILION,unit_93d309044f67,ALKALOID,740
 song_c86567845082,SunnyTrip Summer,unit_93d309044f67,ALKALOID,750
+song_e9d5ca4928d5,E.V.O.L.U.T.I.O.N.,unit_93d309044f67,ALKALOID,751
 song_fcb1c599d6e8,Living on the edge,unit_93d309044f67,ALKALOID,760
 song_537681e7ee02,UNDYING HOLY LOVE,unit_93d309044f67,ALKALOID,770
 song_6bb8e47bb56c,Believe 4 leaves,unit_93d309044f67,ALKALOID,780
 song_e948810eb839,コトノハカンタービレ,unit_93d309044f67,ALKALOID,790
-song_e9d5ca4928d5,E.V.O.L.U.T.I.O.N.,unit_93d309044f67,ALKALOID,800
-song_e459bca503e4,フラジール,unit_93d309044f67,ALKALOID,810
-song_90a81a004f52,夜に駆ける,unit_93d309044f67,ALKALOID,820
 song_7ca647631ee1,THE GENESIS,unit_416c371272da,Eden,830
 song_3f3a17eb992f,Dance in the Apocalyps,unit_416c371272da,Eden,840
 song_4b6d8cfa15d2,Awakening Myth,unit_416c371272da,Eden,850
@@ -88,6 +87,7 @@ song_f1f7d5246727,Psyche's Butterfly,unit_416c371272da,Eden,860
 song_1bcd70c7557b,Deep Eclipse,unit_416c371272da,Eden,870
 song_a355097a5822,KEEP OUT,unit_416c371272da,Eden,880
 song_abefd121ea42,Absolute Perfection,unit_416c371272da,Eden,890
+song_3b8bdf68dd7c,（RE）PLAY,unit_416c371272da,Eden,891
 song_f104c3f4ae56,楽園追放 -Faith Conquest-,unit_416c371272da,Eden,900
 song_81eaf3bed022,大いなる愛の前に全ては巡り来る,unit_416c371272da,Eden,910
 song_843746914715,円環のRefraction,unit_416c371272da,Eden,920
@@ -96,7 +96,6 @@ song_c7e8fae8a586,EXCEED,unit_416c371272da,Eden,940
 song_ce438ead8310,Majestic Magic,unit_416c371272da,Eden,950
 song_bfb9c4d54670,キセキ,unit_416c371272da,Eden,960
 song_3e7459480923,The Bible of The “Eden”,unit_416c371272da,Eden,970
-song_3b8bdf68dd7c,（RE）PLAY,unit_416c371272da,Eden,980
 song_9fcb89a4ff89,Ruler's Truth,unit_f90d07ead983,Adam,990
 song_6c4a71538bf8,The Beast of the End,unit_f90d07ead983,Adam,1000
 song_f42428413655,Melting Rouge Soul,unit_f90d07ead983,Adam,1010
@@ -114,13 +113,13 @@ song_cfdc974abd8d,麗しのナイチンゲール,unit_e57b1ede4a78,Valkyrie,1120
 song_7395a111eca0,Le temps des fleurs,unit_e57b1ede4a78,Valkyrie,1130
 song_d721d9ffcd6a,祝福のLibrary,unit_e57b1ede4a78,Valkyrie,1140
 song_e31ac777b213,幸福論,unit_e57b1ede4a78,Valkyrie,1150
+song_40ade43d7071,勇侠青春謳,unit_e57b1ede4a78,Valkyrie,1151
 song_f6b6edd46a7d,Acanthe,unit_e57b1ede4a78,Valkyrie,1160
 song_c76e05b1d11e,迷宮電子回廊,unit_e57b1ede4a78,Valkyrie,1170
 song_a2e217101847,星の鳴動響きし時に,unit_e57b1ede4a78,Valkyrie,1180
 song_cbe54d5c11ff,Artistic Partisan,unit_e57b1ede4a78,Valkyrie,1190
-song_99583a0d6ab1,Stranger's sun,unit_e57b1ede4a78,Valkyrie,1200
+song_99583a0d6ab1,Stranger's sun,unit_e57b1ede4a78,Valkyrie,1191
 song_613366d4a24d,砂上ノ楼閤,unit_e57b1ede4a78,Valkyrie,1210
-song_40ade43d7071,勇侠青春謳,unit_e57b1ede4a78,Valkyrie,1220
 song_1145709f1775,シュガー・スパイス方程式,unit_40406eac6796,2wink,1230
 song_138a5ace638d,歓迎☆トゥ・ウィンク雑伎団,unit_40406eac6796,2wink,1240
 song_f0ad8679ff72,TRICK with TREAT!!（with UNDEAD）,unit_40406eac6796,2wink,1250
@@ -133,15 +132,15 @@ song_31c2b3f08b08,POLYPHONIC WORLD,unit_40406eac6796,2wink,1310
 song_4f32900e4ca1,Turbulent Storm,unit_40406eac6796,2wink,1320
 song_4325f341ffde,トゥウィンクル空中戦,unit_40406eac6796,2wink,1330
 song_e0adbd9f8de6,Twin Wedding Vows,unit_40406eac6796,2wink,1340
+song_a57855027d00,SPLASHING WHIRLPOOL!!,unit_40406eac6796,2wink,1341
 song_3096f32aaef0,Swee2wink Love Letter,unit_40406eac6796,2wink,1350
 song_716612b97823,Love×me⇄monsteR,unit_40406eac6796,2wink,1360
 song_505d28c5a231,来来☆2winkイリュージョン,unit_40406eac6796,2wink,1370
 song_862554f517e7,GET THE WIN,unit_40406eac6796,2wink,1380
-song_477b9fdea637,LEMON SQUASH CHEERS!,unit_40406eac6796,2wink,1390
-song_a57855027d00,SPLASHING WHIRLPOOL!!,unit_40406eac6796,2wink,1400
+song_4461ea59d30e,Tell Your World,unit_40406eac6796,2wink,1381
+song_477b9fdea637,LEMON SQUASH CHEERS!,unit_40406eac6796,2wink,1382
 song_f264f502e080,WONDER WONDER TOY LAND,unit_40406eac6796,2wink,1410
 song_9ab8ad9872c0,2wink Introduction,unit_40406eac6796,2wink,1420
-song_4461ea59d30e,Tell Your World,unit_40406eac6796,2wink,1430
 song_3f3d04c758dc,Crazy Roulette,unit_913751fd3f85,Crazy:B,1440
 song_19199e1649f3,Be The Party Bee!,unit_913751fd3f85,Crazy:B,1450
 song_dac271d15129,RISKY VENUS,unit_913751fd3f85,Crazy:B,1460
@@ -151,6 +150,7 @@ song_9175aa8dc3b3,Crazy Anthem,unit_913751fd3f85,Crazy:B,1490
 song_2ab2fd55536e,NA NA NA SUMMER NIGHT BeeAT,unit_913751fd3f85,Crazy:B,1500
 song_256b3b5a4f3a,Foolish Alien,unit_913751fd3f85,Crazy:B,1510
 song_477b9fdea637,LEMON SQUASH CHEERS!,unit_913751fd3f85,Crazy:B,1520
+song_2c145b3a7f9a,U.S.A,unit_913751fd3f85,Crazy:B,1521
 song_7abff74f1301,UTAKATA DANCE FLOOR,unit_913751fd3f85,Crazy:B,1530
 song_15a228ff62e8,指先のアリアドネ,unit_913751fd3f85,Crazy:B,1540
 song_2e9a64df8c91,Helter-Spider,unit_913751fd3f85,Crazy:B,1550
@@ -158,8 +158,6 @@ song_afe826491b4d,Honeycomb Summer,unit_913751fd3f85,Crazy:B,1560
 song_c504db2c978f,ハニートラップ・マリアージュ,unit_913751fd3f85,Crazy:B,1570
 song_13139942a6c4,SAKE OF LOVE,unit_913751fd3f85,Crazy:B,1580
 song_9c6bab397a09,CIVIL WAR,unit_913751fd3f85,Crazy:B,1590
-song_0add580d23b0,KING,unit_913751fd3f85,Crazy:B,1600
-song_2c145b3a7f9a,U.S.A,unit_913751fd3f85,Crazy:B,1610
 song_f9e0c3576d97,Melody in the Dark,unit_7e3bd6882771,UNDEAD,1620
 song_4400d70c1e72,ハニーミルクはお好みで,unit_7e3bd6882771,UNDEAD,1630
 song_abbedefea6a0,Gate of the Abyss,unit_7e3bd6882771,UNDEAD,1640
@@ -174,11 +172,11 @@ song_e8e9bff8fdf6,Resurrection of Soul,unit_7e3bd6882771,UNDEAD,1720
 song_838ca688107e,Wanderlust Sailing,unit_7e3bd6882771,UNDEAD,1730
 song_50bf6d34ed60,Sustain Memories,unit_7e3bd6882771,UNDEAD,1740
 song_b357980d55f0,Nightless World,unit_7e3bd6882771,UNDEAD,1750
+song_4ba0f95ed024,RAMBLING MOON,unit_7e3bd6882771,UNDEAD,1751
 song_ea300e2285b6,SWINGIN' PARONIRIA,unit_7e3bd6882771,UNDEAD,1760
 song_0ec267fb6f6c,FORBIDDEN RAIN,unit_7e3bd6882771,UNDEAD,1770
-song_4ba0f95ed024,RAMBLING MOON,unit_7e3bd6882771,UNDEAD,1780
+song_2c145b3a7f9a,U.S.A,unit_7e3bd6882771,UNDEAD,1771
 song_ecb21c17047a,Break the Prison,unit_7e3bd6882771,UNDEAD,1790
-song_2c145b3a7f9a,U.S.A,unit_7e3bd6882771,UNDEAD,1800
 song_2335d22e3444,Joyful×Box*,unit_bea4a935a32a,Ra*bits,1810
 song_49998ba34a48,野うさぎマーチ♪,unit_bea4a935a32a,Ra*bits,1820
 song_00f546d5fe68,Love Ra*bits Party!!,unit_bea4a935a32a,Ra*bits,1830
@@ -190,13 +188,14 @@ song_2977f270a6ea,Love it Love it,unit_bea4a935a32a,Ra*bits,1880
 song_daaf9eaa6b13,JUMPIN' LUCK BEAT,unit_bea4a935a32a,Ra*bits,1890
 song_07c598bdfbb9,うさぎの森の音楽会,unit_bea4a935a32a,Ra*bits,1900
 song_fb2742a22074,ヒカリスペクトル,unit_bea4a935a32a,Ra*bits,1910
+song_182912272427,HAO♡RABI,unit_bea4a935a32a,Ra*bits,1915
 song_892acb24fa11,ポケットに宇宙,unit_bea4a935a32a,Ra*bits,1920
+song_fc94ac9ca6c8,ハム太郎とっとこうた,unit_bea4a935a32a,Ra*bits,1921
 song_5c510326eb74,RaRaRa*Station!,unit_bea4a935a32a,Ra*bits,1930
 song_f929ffce1eb8,パラレルメイズ,unit_bea4a935a32a,Ra*bits,1940
 song_25d88633ff52,ハレノヒSugar Wave,unit_bea4a935a32a,Ra*bits,1950
 song_3d5ab217088e,FALLIN' LOVE=IT'S WONDERLAND,unit_bea4a935a32a,Ra*bits,1960
 song_6f2c70a4b060,The・プリティカルパレード♪,unit_bea4a935a32a,Ra*bits,1970
-song_fc94ac9ca6c8,ハム太郎とっとこうた,unit_bea4a935a32a,Ra*bits,1980
 song_669a7d7e6b97,Hoppin' Season♪,unit_bea4a935a32a,Ra*bits,1990
 song_66b431f79ed4,百花繚乱、紅月夜,unit_47bf340cb8a7,AKATSUKI,2000
 song_95930d4f4eb8,斬 －決意ノ刃－,unit_47bf340cb8a7,AKATSUKI,2010
@@ -259,13 +258,13 @@ song_8e9e44121746,A little bit UP!!,unit_92301942e6fe,Switch,2570
 song_39aafe4d2805,Romancing Cruise,unit_92301942e6fe,Switch,2580
 song_3666293ef4f3,"Seven Days ""Prismagic""",unit_92301942e6fe,Switch,2590
 song_ce438ead8310,Majestic Magic,unit_92301942e6fe,Switch,2600
+song_4461ea59d30e,Tell Your World,unit_92301942e6fe,Switch,2601
 song_e945e6bc76de,Switching Journey,unit_92301942e6fe,Switch,2610
 song_24e4f8bd9249,Wish upon a MUSIC!!,unit_92301942e6fe,Switch,2620
 song_a7f95a1c5ba0,Brilliant Smile,unit_92301942e6fe,Switch,2630
 song_3584bfe10899,オモイノカケラ,unit_92301942e6fe,Switch,2640
 song_1f5c5b08bf1f,Chocola-Tic After School,unit_92301942e6fe,Switch,2650
 song_e9d5ca4928d5,E.V.O.L.U.T.I.O.N.,unit_92301942e6fe,Switch,2660
-song_4461ea59d30e,Tell Your World,unit_92301942e6fe,Switch,2670
 song_d9eaea646f46,Blooming World,unit_64d6a7f5a1e2,MaM,2680
 song_a884a74dba91,Festive!,unit_64d6a7f5a1e2,MaM,2690
 song_b6667a05496c,君印 Be Ambitious!!,unit_64d6a7f5a1e2,MaM,2700
@@ -298,8 +297,8 @@ song_b7012d43986a,Bye-Bye Buddy,unit_6878d8629930,DoubleFace,2960
 song_f4989e275f0f,No name yet,unit_6878d8629930,DoubleFace,2970
 song_892acb24fa11,ポケットに宇宙,unit_6878d8629930,DoubleFace,2980
 song_7a7c99453e0e,Secret of Metropolis,unit_6878d8629930,DoubleFace,2990
+song_90a81a004f52,夜に駆ける,unit_6878d8629930,DoubleFace,2991
 song_70c51343651b,Sleeper Mystery Train,unit_6878d8629930,DoubleFace,3000
-song_90a81a004f52,夜に駆ける,unit_6878d8629930,DoubleFace,3010
 song_b492a7bc5c47,Stars' Ensemble!,group_other,Other,3020
 song_c74b29f43716,BRAND NEW STARS!!,group_other,Other,3030
 song_bf1c16241fdc,ONLY YOUR STARS!,group_other,Other,3040
