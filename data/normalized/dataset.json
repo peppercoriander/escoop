@@ -6,7 +6,7 @@
     "data/source/units.csv": "b31c57b0e8284d6684f32854ec89d8de5b5daa4f4ead539b94d8f83377fde081",
     "data/source/characters.csv": "09e2e592c79a67c20508108f2164ae714c97367961d1447f19bd383892672670",
     "data/source/character_units.csv": "d3b32a773e1149c1ca321a9a38cf0a09d3d2f07a3bee76d754322b8f47353762",
-    "data/source/songs.csv": "dfe7eac48455755ca2e533f2da1a7ae47a153b834ba61716a88d51c044b1106a",
+    "data/source/songs.csv": "7dd558c448cf33f83ab73e7f7b2de7317bb048102ee555a6a8a5ccaf19ed3957",
     "data/source/song_placements.csv": "87e2264ef6b1022f548d91704b0d06ed7480b0581daac349a5db43fabd94124d",
     "data/source/labels.csv": "d7f4f0de6a2095cc6bbe58bf932fdd55cc8a64eba08906a0029c2f99c33991f4",
     "data/source/song_labels.csv": "9b88bb13e7fa0109eed227d3959b79f954dab46ca51a00a5691e8eb8978bac47",
@@ -4078,7 +4078,7 @@
       {
         "song_id": "song_4567790e5789",
         "title": "ラスト・ページ",
-        "release_date": "2026-03-29",
+        "release_date": "2027-03-29",
         "unit_config": "MaM",
         "formation_kind": "fixed",
         "position_count": 1,

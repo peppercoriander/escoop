@@ -52,10 +52,10 @@ thead tr:nth-child(2) th{top:30px}
    The viewport stays unscaled so resizing never measures the zoomed table. */
 .table-viewport{width:100%;min-width:0}
 .table-container{--member-column-width:52px;overflow:visible;max-height:none;min-width:1092px;border:1px solid #e1e5eb;background:white}
-.floating-reset{position:fixed;right:24px;bottom:24px;z-index:20;display:flex;align-items:center;gap:7px;min-height:48px;min-width:124px;justify-content:center;border-radius:28px;background:#59697f;color:#fff;border-color:#59697f;box-shadow:0 4px 20px #20385830;touch-action:none;user-select:none;cursor:grab}
+.floating-reset{position:fixed;right:24px;top:24px;z-index:20;display:flex;align-items:center;gap:7px;min-height:48px;min-width:124px;justify-content:center;border-radius:28px;background:#59697f;color:#fff;border-color:#59697f;box-shadow:0 4px 20px #20385830;touch-action:none;user-select:none;cursor:grab}
 .floating-reset span{margin:0;line-height:1}
 .floating-reset[data-dragging=true]{cursor:grabbing;box-shadow:0 8px 28px #20385840}
-@media(max-width:700px){.floating-reset{right:16px;bottom:16px}.section-heading{flex-wrap:wrap}}
+@media(max-width:700px){.floating-reset{right:16px;top:16px}.section-heading{flex-wrap:wrap}}
 
 /* All company rows share one scale; six unit slots never reflow at narrower widths.
    At full size, company buttons are 114.4 x 52 and unit buttons 93.6 x 49.6 (80%). */
