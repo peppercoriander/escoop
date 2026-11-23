@@ -12,30 +12,30 @@
     "frequency_colors": 4,
     "song_combination_sources": 332,
     "song_units": 300,
-    "combination_counts": 333,
+    "combination_counts": 397,
     "song_color_bands": 356,
-    "combination_options": 31,
-    "issues": 211
+    "combination_options": 35,
+    "issues": 185
   },
   "combination_status": {
-    "none": 51,
-    "recorded": 98,
-    "missing": 183
+    "none": 63,
+    "recorded": 112,
+    "missing": 157
   },
   "issue_counts": {
     "missing_group_color": 4,
-    "missing_combinations": 183,
+    "missing_combinations": 157,
     "missing_positions": 24
   },
-  "free_position_cells": 48,
+  "free_position_cells": 52,
   "formation_kinds": {
-    "fixed": 298,
+    "fixed": 297,
     "unknown": 24,
     "mixed": 1,
-    "free": 9
+    "free": 10
   },
   "split_color_songs": 24,
-  "distinct_combinations": 31,
+  "distinct_combinations": 35,
   "characters_with_color_and_unit": 60,
   "multi_unit_characters": 9,
   "verified_logo_files": 26,

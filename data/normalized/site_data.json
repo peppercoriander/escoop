@@ -637,7 +637,7 @@
         1,
         2
       ],
-      "songCount": 66
+      "songCount": 75
     },
     {
       "value": "13",
@@ -645,7 +645,7 @@
         1,
         3
       ],
-      "songCount": 43
+      "songCount": 45
     },
     {
       "value": "14",
@@ -653,7 +653,7 @@
         1,
         4
       ],
-      "songCount": 30
+      "songCount": 36
     },
     {
       "value": "15",
@@ -661,7 +661,7 @@
         1,
         5
       ],
-      "songCount": 10
+      "songCount": 12
     },
     {
       "value": "16",
@@ -669,7 +669,7 @@
         1,
         6
       ],
-      "songCount": 1
+      "songCount": 2
     },
     {
       "value": "23",
@@ -677,7 +677,7 @@
         2,
         3
       ],
-      "songCount": 32
+      "songCount": 36
     },
     {
       "value": "24",
@@ -685,7 +685,7 @@
         2,
         4
       ],
-      "songCount": 44
+      "songCount": 47
     },
     {
       "value": "25",
@@ -693,7 +693,7 @@
         2,
         5
       ],
-      "songCount": 3
+      "songCount": 4
     },
     {
       "value": "26",
@@ -709,7 +709,7 @@
         2,
         7
       ],
-      "songCount": 1
+      "songCount": 3
     },
     {
       "value": "34",
@@ -717,7 +717,7 @@
         3,
         4
       ],
-      "songCount": 46
+      "songCount": 56
     },
     {
       "value": "35",
@@ -725,7 +725,7 @@
         3,
         5
       ],
-      "songCount": 9
+      "songCount": 12
     },
     {
       "value": "36",
@@ -741,7 +741,7 @@
         3,
         7
       ],
-      "songCount": 2
+      "songCount": 3
     },
     {
       "value": "38",
@@ -757,7 +757,7 @@
         4,
         5
       ],
-      "songCount": 11
+      "songCount": 14
     },
     {
       "value": "46",
@@ -765,7 +765,7 @@
         4,
         6
       ],
-      "songCount": 3
+      "songCount": 4
     },
     {
       "value": "47",
@@ -789,7 +789,7 @@
         5,
         6
       ],
-      "songCount": 2
+      "songCount": 4
     },
     {
       "value": "57",
@@ -797,7 +797,15 @@
         5,
         7
       ],
-      "songCount": 1
+      "songCount": 2
+    },
+    {
+      "value": "67",
+      "positions": [
+        6,
+        7
+      ],
+      "songCount": 2
     },
     {
       "value": "68",
@@ -823,7 +831,7 @@
         2,
         4
       ],
-      "songCount": 2
+      "songCount": 3
     },
     {
       "value": "125",
@@ -831,6 +839,15 @@
         1,
         2,
         5
+      ],
+      "songCount": 2
+    },
+    {
+      "value": "127",
+      "positions": [
+        1,
+        2,
+        7
       ],
       "songCount": 1
     },
@@ -850,6 +867,15 @@
         3,
         5
       ],
+      "songCount": 2
+    },
+    {
+      "value": "136",
+      "positions": [
+        1,
+        3,
+        6
+      ],
       "songCount": 1
     },
     {
@@ -858,6 +884,15 @@
         1,
         4,
         5
+      ],
+      "songCount": 2
+    },
+    {
+      "value": "156",
+      "positions": [
+        1,
+        5,
+        6
       ],
       "songCount": 1
     },
@@ -868,7 +903,7 @@
         3,
         5
       ],
-      "songCount": 2
+      "songCount": 3
     },
     {
       "value": "245",
@@ -877,7 +912,7 @@
         4,
         5
       ],
-      "songCount": 1
+      "songCount": 2
     },
     {
       "value": "345",
@@ -886,7 +921,7 @@
         4,
         5
       ],
-      "songCount": 5
+      "songCount": 7
     }
   ],
   "songPlacements": [
@@ -30034,7 +30069,7 @@
         "label_bfe01fae108f"
       ],
       "unitConfig": "Other, 周年曲",
-      "releaseDate": "2026-11-15",
+      "releaseDate": null,
       "positions": [
         {
           "position": 1,
@@ -30208,7 +30243,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_b1073c35a569",
@@ -30299,7 +30334,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_3ceb238de5c4",
@@ -30390,7 +30425,7 @@
       ],
       "formationKind": "unknown",
       "layoutStatus": "missing_positions",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_60796b9be51c",
@@ -30481,7 +30516,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_9fb2706f9689",
@@ -30496,30 +30531,30 @@
       "positions": [
         {
           "position": 1,
-          "characterId": "char_5d86616c963d",
-          "label": "英",
-          "kind": "fixed",
+          "characterId": null,
+          "label": "1",
+          "kind": "free",
           "unitId": null
         },
         {
           "position": 2,
-          "characterId": "char_1e78fe75c8e1",
-          "label": "尼",
-          "kind": "fixed",
+          "characterId": null,
+          "label": "2",
+          "kind": "free",
           "unitId": null
         },
         {
           "position": 3,
-          "characterId": "char_fc0d21ed3eb5",
-          "label": "斑",
-          "kind": "fixed",
+          "characterId": null,
+          "label": "3",
+          "kind": "free",
           "unitId": null
         },
         {
           "position": 4,
-          "characterId": "char_23922c4d7cbe",
-          "label": "夏",
-          "kind": "fixed",
+          "characterId": null,
+          "label": "4",
+          "kind": "free",
           "unitId": null
         },
         {
@@ -30565,14 +30600,25 @@
           "unitId": null
         }
       ],
-      "combinations": [],
+      "combinations": [
+        {
+          "value": "34",
+          "count": 3,
+          "color": "#F3981D"
+        },
+        {
+          "value": "12",
+          "count": 4,
+          "color": "#E70032"
+        }
+      ],
       "backgroundCss": "#004D99",
       "colors": [
         "#004D99"
       ],
-      "formationKind": "fixed",
+      "formationKind": "free",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "recorded"
     },
     {
       "id": "song_28afa7f58845",
@@ -30663,7 +30709,7 @@
       ],
       "formationKind": "unknown",
       "layoutStatus": "missing_positions",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_6db9b21bce48",
@@ -31072,14 +31118,30 @@
           "unitId": null
         }
       ],
-      "combinations": [],
+      "combinations": [
+        {
+          "value": "34",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "12",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "45",
+          "count": 1,
+          "color": "#0068B7"
+        }
+      ],
       "backgroundCss": "#004D99",
       "colors": [
         "#004D99"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "recorded"
     },
     {
       "id": "song_f9bc625be3fb",
@@ -31163,14 +31225,20 @@
           "unitId": null
         }
       ],
-      "combinations": [],
+      "combinations": [
+        {
+          "value": "12",
+          "count": 1,
+          "color": "#0068B7"
+        }
+      ],
       "backgroundCss": "#004D99",
       "colors": [
         "#004D99"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "recorded"
     },
     {
       "id": "song_f5be9d8384d9",
@@ -31254,14 +31322,25 @@
           "unitId": null
         }
       ],
-      "combinations": [],
+      "combinations": [
+        {
+          "value": "12",
+          "count": 3,
+          "color": "#F3981D"
+        },
+        {
+          "value": "35",
+          "count": 1,
+          "color": "#0068B7"
+        }
+      ],
       "backgroundCss": "#004D99",
       "colors": [
         "#004D99"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "recorded"
     },
     {
       "id": "song_a57dd1bebd1d",
@@ -31345,14 +31424,55 @@
           "unitId": null
         }
       ],
-      "combinations": [],
+      "combinations": [
+        {
+          "value": "12",
+          "count": 2,
+          "color": "#65AB31"
+        },
+        {
+          "value": "23",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "145",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "34",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "14",
+          "count": 2,
+          "color": "#65AB31"
+        },
+        {
+          "value": "35",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "345",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "235",
+          "count": 1,
+          "color": "#0068B7"
+        }
+      ],
       "backgroundCss": "#004D99",
       "colors": [
         "#004D99"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "recorded"
     },
     {
       "id": "song_86da53da2a86",
@@ -31436,14 +31556,40 @@
           "unitId": null
         }
       ],
-      "combinations": [],
+      "combinations": [
+        {
+          "value": "13",
+          "count": 3,
+          "color": "#F3981D"
+        },
+        {
+          "value": "245",
+          "count": 3,
+          "color": "#F3981D"
+        },
+        {
+          "value": "35",
+          "count": 3,
+          "color": "#F3981D"
+        },
+        {
+          "value": "12",
+          "count": 4,
+          "color": "#E70032"
+        },
+        {
+          "value": "14",
+          "count": 1,
+          "color": "#0068B7"
+        }
+      ],
       "backgroundCss": "#004D99",
       "colors": [
         "#004D99"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "recorded"
     },
     {
       "id": "song_dc65852115f8",
@@ -31980,14 +32126,35 @@
           "unitId": null
         }
       ],
-      "combinations": [],
+      "combinations": [
+        {
+          "value": "12",
+          "count": 3,
+          "color": "#F3981D"
+        },
+        {
+          "value": "34",
+          "count": 3,
+          "color": "#F3981D"
+        },
+        {
+          "value": "14",
+          "count": 2,
+          "color": "#65AB31"
+        },
+        {
+          "value": "23",
+          "count": 2,
+          "color": "#65AB31"
+        }
+      ],
       "backgroundCss": "#004D99",
       "colors": [
         "#004D99"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "recorded"
     },
     {
       "id": "song_27000f86009f",
@@ -32231,15 +32398,15 @@
       "positions": [
         {
           "position": 1,
-          "characterId": "char_0743f7210d28",
-          "label": "翠",
+          "characterId": "char_2976185cfa31",
+          "label": "桃",
           "kind": "fixed",
           "unitId": null
         },
         {
           "position": 2,
-          "characterId": "char_2976185cfa31",
-          "label": "桃",
+          "characterId": "char_0743f7210d28",
+          "label": "翠",
           "kind": "fixed",
           "unitId": null
         },
@@ -32252,8 +32419,8 @@
         },
         {
           "position": 4,
-          "characterId": "char_dca3e56c3b69",
-          "label": "宙",
+          "characterId": "char_6052f754e2ae",
+          "label": "良",
           "kind": "fixed",
           "unitId": null
         },
@@ -32266,15 +32433,15 @@
         },
         {
           "position": 6,
-          "characterId": "char_6052f754e2ae",
-          "label": "良",
+          "characterId": "char_a101b51f6096",
+          "label": "友也",
           "kind": "fixed",
           "unitId": null
         },
         {
           "position": 7,
-          "characterId": "char_a101b51f6096",
-          "label": "友也",
+          "characterId": "char_dca3e56c3b69",
+          "label": "宙",
           "kind": "fixed",
           "unitId": null
         },
@@ -32300,14 +32467,60 @@
           "unitId": null
         }
       ],
-      "combinations": [],
+      "combinations": [
+        {
+          "value": "57",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "136",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "24",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "156",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "27",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "34",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "12",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "345",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "127",
+          "count": 1,
+          "color": "#0068B7"
+        }
+      ],
       "backgroundCss": "#004D99",
       "colors": [
         "#004D99"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "recorded"
     },
     {
       "id": "song_a70295e11017",
@@ -32391,14 +32604,25 @@
           "unitId": null
         }
       ],
-      "combinations": [],
+      "combinations": [
+        {
+          "value": "34",
+          "count": 2,
+          "color": "#65AB31"
+        },
+        {
+          "value": "124",
+          "count": 1,
+          "color": "#0068B7"
+        }
+      ],
       "backgroundCss": "#004D99",
       "colors": [
         "#004D99"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "recorded"
     },
     {
       "id": "song_276941ac297c",
@@ -32482,14 +32706,30 @@
           "unitId": null
         }
       ],
-      "combinations": [],
+      "combinations": [
+        {
+          "value": "67",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "14",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "16",
+          "count": 1,
+          "color": "#0068B7"
+        }
+      ],
       "backgroundCss": "#004D99",
       "colors": [
         "#004D99"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "recorded"
     },
     {
       "id": "song_548c9c97de5e",
@@ -32573,14 +32813,45 @@
           "unitId": null
         }
       ],
-      "combinations": [],
+      "combinations": [
+        {
+          "value": "46",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "34",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "14",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "56",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "23",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "25",
+          "count": 1,
+          "color": "#0068B7"
+        }
+      ],
       "backgroundCss": "#004D99",
       "colors": [
         "#004D99"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "recorded"
     },
     {
       "id": "song_bd88c9f0111e",
@@ -32664,14 +32935,40 @@
           "unitId": null
         }
       ],
-      "combinations": [],
+      "combinations": [
+        {
+          "value": "125",
+          "count": 2,
+          "color": "#65AB31"
+        },
+        {
+          "value": "34",
+          "count": 2,
+          "color": "#65AB31"
+        },
+        {
+          "value": "14",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "135",
+          "count": 2,
+          "color": "#65AB31"
+        },
+        {
+          "value": "24",
+          "count": 2,
+          "color": "#65AB31"
+        }
+      ],
       "backgroundCss": "#004D99",
       "colors": [
         "#004D99"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "recorded"
     },
     {
       "id": "song_b5249ce4be85",
@@ -32755,14 +33052,35 @@
           "unitId": null
         }
       ],
-      "combinations": [],
+      "combinations": [
+        {
+          "value": "45",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "34",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "15",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "24",
+          "count": 1,
+          "color": "#0068B7"
+        }
+      ],
       "backgroundCss": "#004D99",
       "colors": [
         "#004D99"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "recorded"
     },
     {
       "id": "song_454e06dd3302",
@@ -32944,7 +33262,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_3bf25c5e7f7c",
@@ -33028,14 +33346,65 @@
           "unitId": null
         }
       ],
-      "combinations": [],
+      "combinations": [
+        {
+          "value": "15",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "27",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "34",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "23",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "37",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "12",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "56",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "13",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "67",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "45",
+          "count": 1,
+          "color": "#0068B7"
+        }
+      ],
       "backgroundCss": "#004D99",
       "colors": [
         "#004D99"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "recorded"
     },
     {
       "id": "song_81be29c7965f",
@@ -33223,7 +33592,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_c1e7082b9e94",
@@ -33314,7 +33683,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_3f631fdbd94b",
@@ -33405,7 +33774,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_b7a06fdb3ce8",
@@ -33613,7 +33982,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_5a041eca7d01",
@@ -33704,7 +34073,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_50a77b9f426f",
@@ -33795,7 +34164,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_4599b61f8a4f",

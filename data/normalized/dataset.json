@@ -6,11 +6,11 @@
     "data/source/units.csv": "b31c57b0e8284d6684f32854ec89d8de5b5daa4f4ead539b94d8f83377fde081",
     "data/source/characters.csv": "09e2e592c79a67c20508108f2164ae714c97367961d1447f19bd383892672670",
     "data/source/character_units.csv": "d3b32a773e1149c1ca321a9a38cf0a09d3d2f07a3bee76d754322b8f47353762",
-    "data/source/songs.csv": "14d5dd65fe4de86e4896b280ec525eb68d180f3888ebaee69402f7d929099e75",
+    "data/source/songs.csv": "1fb4ba4fdd7bfc04171432a807afbe815c271eac8f33f66916843d1a9a2ecb29",
     "data/source/song_placements.csv": "87e2264ef6b1022f548d91704b0d06ed7480b0581daac349a5db43fabd94124d",
     "data/source/labels.csv": "d7f4f0de6a2095cc6bbe58bf932fdd55cc8a64eba08906a0029c2f99c33991f4",
     "data/source/song_labels.csv": "9b88bb13e7fa0109eed227d3959b79f954dab46ca51a00a5691e8eb8978bac47",
-    "data/source/positions.csv": "57f646369af2230bce536cf2c03ab1b05e451c81e787865eb3c76492afa6fb45",
+    "data/source/positions.csv": "6eb6cf384c0719c5d68ca8fef1768ba68bb00d8a1133c272ddc5764e38011c67",
     "data/source/frequency_colors.csv": "bce9b81cb791906dd20cef66944cb2cb3b0f92e54a6cc8c38c028240e19266d5",
     "data/source/display.json": "5adad4eb49a83dbfcc840ed93d492e5dbc43f17c92c08f69eee91b8bf8a05b61"
   },
@@ -41,30 +41,30 @@
       "frequency_colors": 4,
       "song_combination_sources": 332,
       "song_units": 300,
-      "combination_counts": 333,
+      "combination_counts": 397,
       "song_color_bands": 356,
-      "combination_options": 31,
-      "issues": 211
+      "combination_options": 35,
+      "issues": 185
     },
     "combination_status": {
-      "none": 51,
-      "recorded": 98,
-      "missing": 183
+      "none": 63,
+      "recorded": 112,
+      "missing": 157
     },
     "issue_counts": {
       "missing_group_color": 4,
-      "missing_combinations": 183,
+      "missing_combinations": 157,
       "missing_positions": 24
     },
-    "free_position_cells": 48,
+    "free_position_cells": 52,
     "formation_kinds": {
-      "fixed": 298,
+      "fixed": 297,
       "unknown": 24,
       "mixed": 1,
-      "free": 9
+      "free": 10
     },
     "split_color_songs": 24,
-    "distinct_combinations": 31,
+    "distinct_combinations": 35,
     "characters_with_color_and_unit": 60,
     "multi_unit_characters": 9,
     "verified_logo_files": 26,
@@ -4342,7 +4342,7 @@
       {
         "song_id": "song_58940e304f6d",
         "title": "CALL YOUR NAME!!",
-        "release_date": "2026-11-15",
+        "release_date": "",
         "unit_config": "Other, 周年曲",
         "formation_kind": "unknown",
         "position_count": 0,
@@ -4358,7 +4358,7 @@
         "formation_kind": "fixed",
         "position_count": 4,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#004D99"
       },
       {
@@ -4369,7 +4369,7 @@
         "formation_kind": "fixed",
         "position_count": 5,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#004D99"
       },
       {
@@ -4380,7 +4380,7 @@
         "formation_kind": "unknown",
         "position_count": 0,
         "layout_status": "missing_positions",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#004D99"
       },
       {
@@ -4391,7 +4391,7 @@
         "formation_kind": "fixed",
         "position_count": 5,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#004D99"
       },
       {
@@ -4399,10 +4399,10 @@
         "title": "両片思いの交差点で、君にまた逢いたくて",
         "release_date": "2026-11-15",
         "unit_config": "Other, 愚人节",
-        "formation_kind": "fixed",
+        "formation_kind": "free",
         "position_count": 4,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "recorded",
         "background_css": "#004D99"
       },
       {
@@ -4413,7 +4413,7 @@
         "formation_kind": "unknown",
         "position_count": 0,
         "layout_status": "missing_positions",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#004D99"
       },
       {
@@ -4457,7 +4457,7 @@
         "formation_kind": "fixed",
         "position_count": 5,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "recorded",
         "background_css": "#004D99"
       },
       {
@@ -4468,7 +4468,7 @@
         "formation_kind": "fixed",
         "position_count": 5,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "recorded",
         "background_css": "#004D99"
       },
       {
@@ -4479,7 +4479,7 @@
         "formation_kind": "fixed",
         "position_count": 5,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "recorded",
         "background_css": "#004D99"
       },
       {
@@ -4490,7 +4490,7 @@
         "formation_kind": "fixed",
         "position_count": 5,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "recorded",
         "background_css": "#004D99"
       },
       {
@@ -4501,7 +4501,7 @@
         "formation_kind": "fixed",
         "position_count": 5,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "recorded",
         "background_css": "#004D99"
       },
       {
@@ -4556,7 +4556,7 @@
         "formation_kind": "fixed",
         "position_count": 4,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "recorded",
         "background_css": "#004D99"
       },
       {
@@ -4589,7 +4589,7 @@
         "formation_kind": "fixed",
         "position_count": 7,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "recorded",
         "background_css": "#004D99"
       },
       {
@@ -4600,7 +4600,7 @@
         "formation_kind": "fixed",
         "position_count": 5,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "recorded",
         "background_css": "#004D99"
       },
       {
@@ -4611,7 +4611,7 @@
         "formation_kind": "fixed",
         "position_count": 7,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "recorded",
         "background_css": "#004D99"
       },
       {
@@ -4622,7 +4622,7 @@
         "formation_kind": "fixed",
         "position_count": 6,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "recorded",
         "background_css": "#004D99"
       },
       {
@@ -4633,7 +4633,7 @@
         "formation_kind": "fixed",
         "position_count": 5,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "recorded",
         "background_css": "#004D99"
       },
       {
@@ -4644,7 +4644,7 @@
         "formation_kind": "fixed",
         "position_count": 5,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "recorded",
         "background_css": "#004D99"
       },
       {
@@ -4666,7 +4666,7 @@
         "formation_kind": "fixed",
         "position_count": 2,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#004D99"
       },
       {
@@ -4677,7 +4677,7 @@
         "formation_kind": "fixed",
         "position_count": 7,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "recorded",
         "background_css": "#004D99"
       },
       {
@@ -4699,7 +4699,7 @@
         "formation_kind": "fixed",
         "position_count": 4,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#004D99"
       },
       {
@@ -4710,7 +4710,7 @@
         "formation_kind": "fixed",
         "position_count": 4,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#004D99"
       },
       {
@@ -4721,7 +4721,7 @@
         "formation_kind": "fixed",
         "position_count": 4,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#004D99"
       },
       {
@@ -4743,7 +4743,7 @@
         "formation_kind": "fixed",
         "position_count": 3,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#004D99"
       },
       {
@@ -4754,7 +4754,7 @@
         "formation_kind": "fixed",
         "position_count": 4,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#004D99"
       },
       {
@@ -4765,7 +4765,7 @@
         "formation_kind": "fixed",
         "position_count": 4,
         "layout_status": "complete",
-        "combination_status": "missing",
+        "combination_status": "none",
         "background_css": "#004D99"
       },
       {
@@ -35376,37 +35376,37 @@
       {
         "song_id": "song_9fb2706f9689",
         "position": 1,
-        "character_id": "char_5d86616c963d",
-        "slot_type": "fixed",
+        "character_id": "",
+        "slot_type": "free",
         "label_id": "",
-        "display_name": "英",
+        "display_name": "1",
         "unit_id": ""
       },
       {
         "song_id": "song_9fb2706f9689",
         "position": 2,
-        "character_id": "char_1e78fe75c8e1",
-        "slot_type": "fixed",
+        "character_id": "",
+        "slot_type": "free",
         "label_id": "",
-        "display_name": "尼",
+        "display_name": "2",
         "unit_id": ""
       },
       {
         "song_id": "song_9fb2706f9689",
         "position": 3,
-        "character_id": "char_fc0d21ed3eb5",
-        "slot_type": "fixed",
+        "character_id": "",
+        "slot_type": "free",
         "label_id": "",
-        "display_name": "斑",
+        "display_name": "3",
         "unit_id": ""
       },
       {
         "song_id": "song_9fb2706f9689",
         "position": 4,
-        "character_id": "char_23922c4d7cbe",
-        "slot_type": "fixed",
+        "character_id": "",
+        "slot_type": "free",
         "label_id": "",
-        "display_name": "夏",
+        "display_name": "4",
         "unit_id": ""
       },
       {
@@ -36906,19 +36906,19 @@
       {
         "song_id": "song_2853a084f738",
         "position": 1,
-        "character_id": "char_0743f7210d28",
+        "character_id": "char_2976185cfa31",
         "slot_type": "fixed",
         "label_id": "",
-        "display_name": "翠",
+        "display_name": "桃",
         "unit_id": ""
       },
       {
         "song_id": "song_2853a084f738",
         "position": 2,
-        "character_id": "char_2976185cfa31",
+        "character_id": "char_0743f7210d28",
         "slot_type": "fixed",
         "label_id": "",
-        "display_name": "桃",
+        "display_name": "翠",
         "unit_id": ""
       },
       {
@@ -36933,10 +36933,10 @@
       {
         "song_id": "song_2853a084f738",
         "position": 4,
-        "character_id": "char_dca3e56c3b69",
+        "character_id": "char_6052f754e2ae",
         "slot_type": "fixed",
         "label_id": "",
-        "display_name": "宙",
+        "display_name": "良",
         "unit_id": ""
       },
       {
@@ -36951,19 +36951,19 @@
       {
         "song_id": "song_2853a084f738",
         "position": 6,
-        "character_id": "char_6052f754e2ae",
+        "character_id": "char_a101b51f6096",
         "slot_type": "fixed",
         "label_id": "",
-        "display_name": "良",
+        "display_name": "友也",
         "unit_id": ""
       },
       {
         "song_id": "song_2853a084f738",
         "position": 7,
-        "character_id": "char_a101b51f6096",
+        "character_id": "char_dca3e56c3b69",
         "slot_type": "fixed",
         "label_id": "",
-        "display_name": "友也",
+        "display_name": "宙",
         "unit_id": ""
       },
       {
@@ -41038,33 +41038,33 @@
       },
       {
         "song_id": "song_242aeac927fd",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_b1073c35a569",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_3ceb238de5c4",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_60796b9be51c",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_9fb2706f9689",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "34，34，34，12，12，12，12",
+        "status": "recorded"
       },
       {
         "song_id": "song_28afa7f58845",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_6db9b21bce48",
@@ -41083,28 +41083,28 @@
       },
       {
         "song_id": "song_7716a9140b13",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "34，12，45，",
+        "status": "recorded"
       },
       {
         "song_id": "song_f9bc625be3fb",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "12，",
+        "status": "recorded"
       },
       {
         "song_id": "song_f5be9d8384d9",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "12，12，12，35，",
+        "status": "recorded"
       },
       {
         "song_id": "song_a57dd1bebd1d",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "12，23，145，34，14，35，345，14，235，12，",
+        "status": "recorded"
       },
       {
         "song_id": "song_86da53da2a86",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "13，13，13，245，245，245，35，35，35，12，12，12，12，14，",
+        "status": "recorded"
       },
       {
         "song_id": "song_dc65852115f8",
@@ -41128,8 +41128,8 @@
       },
       {
         "song_id": "song_37a7f708d6e8",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "12，12，12，34，34，34，14，14，23，23，",
+        "status": "recorded"
       },
       {
         "song_id": "song_27000f86009f",
@@ -41143,33 +41143,33 @@
       },
       {
         "song_id": "song_2853a084f738",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "57，136，24，156，27，34，12，345，127，",
+        "status": "recorded"
       },
       {
         "song_id": "song_a70295e11017",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "34，34，124，",
+        "status": "recorded"
       },
       {
         "song_id": "song_276941ac297c",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "67，14，16，",
+        "status": "recorded"
       },
       {
         "song_id": "song_548c9c97de5e",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "46，34，14，56，23，25，",
+        "status": "recorded"
       },
       {
         "song_id": "song_bd88c9f0111e",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "125，34，34，125，14，135，135，24，24，",
+        "status": "recorded"
       },
       {
         "song_id": "song_b5249ce4be85",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "45，34，15，24，",
+        "status": "recorded"
       },
       {
         "song_id": "song_454e06dd3302",
@@ -41178,13 +41178,13 @@
       },
       {
         "song_id": "song_2682c1b0d3af",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_3bf25c5e7f7c",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "15，27，34，23，37，12，56，13，67，45，",
+        "status": "recorded"
       },
       {
         "song_id": "song_81be29c7965f",
@@ -41193,18 +41193,18 @@
       },
       {
         "song_id": "song_90d69cfc95c0",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_c1e7082b9e94",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_3f631fdbd94b",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_b7a06fdb3ce8",
@@ -41213,18 +41213,18 @@
       },
       {
         "song_id": "song_f78396e4718b",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_5a041eca7d01",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_50a77b9f426f",
-        "raw_text": "",
-        "status": "missing"
+        "raw_text": "无",
+        "status": "none"
       },
       {
         "song_id": "song_4599b61f8a4f",
@@ -45119,6 +45119,20 @@
         "font_color": "#65AB31"
       },
       {
+        "song_id": "song_9fb2706f9689",
+        "combination": "34",
+        "count": 3,
+        "first_seen_order": 1,
+        "font_color": "#F3981D"
+      },
+      {
+        "song_id": "song_9fb2706f9689",
+        "combination": "12",
+        "count": 4,
+        "first_seen_order": 4,
+        "font_color": "#E70032"
+      },
+      {
         "song_id": "song_6b4ce321b45f",
         "combination": "14",
         "count": 1,
@@ -45186,6 +45200,139 @@
         "combination": "13",
         "count": 1,
         "first_seen_order": 10,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_7716a9140b13",
+        "combination": "34",
+        "count": 1,
+        "first_seen_order": 1,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_7716a9140b13",
+        "combination": "12",
+        "count": 1,
+        "first_seen_order": 2,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_7716a9140b13",
+        "combination": "45",
+        "count": 1,
+        "first_seen_order": 3,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_f9bc625be3fb",
+        "combination": "12",
+        "count": 1,
+        "first_seen_order": 1,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_f5be9d8384d9",
+        "combination": "12",
+        "count": 3,
+        "first_seen_order": 1,
+        "font_color": "#F3981D"
+      },
+      {
+        "song_id": "song_f5be9d8384d9",
+        "combination": "35",
+        "count": 1,
+        "first_seen_order": 4,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_a57dd1bebd1d",
+        "combination": "12",
+        "count": 2,
+        "first_seen_order": 1,
+        "font_color": "#65AB31"
+      },
+      {
+        "song_id": "song_a57dd1bebd1d",
+        "combination": "23",
+        "count": 1,
+        "first_seen_order": 2,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_a57dd1bebd1d",
+        "combination": "145",
+        "count": 1,
+        "first_seen_order": 3,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_a57dd1bebd1d",
+        "combination": "34",
+        "count": 1,
+        "first_seen_order": 4,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_a57dd1bebd1d",
+        "combination": "14",
+        "count": 2,
+        "first_seen_order": 5,
+        "font_color": "#65AB31"
+      },
+      {
+        "song_id": "song_a57dd1bebd1d",
+        "combination": "35",
+        "count": 1,
+        "first_seen_order": 6,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_a57dd1bebd1d",
+        "combination": "345",
+        "count": 1,
+        "first_seen_order": 7,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_a57dd1bebd1d",
+        "combination": "235",
+        "count": 1,
+        "first_seen_order": 9,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_86da53da2a86",
+        "combination": "13",
+        "count": 3,
+        "first_seen_order": 1,
+        "font_color": "#F3981D"
+      },
+      {
+        "song_id": "song_86da53da2a86",
+        "combination": "245",
+        "count": 3,
+        "first_seen_order": 4,
+        "font_color": "#F3981D"
+      },
+      {
+        "song_id": "song_86da53da2a86",
+        "combination": "35",
+        "count": 3,
+        "first_seen_order": 7,
+        "font_color": "#F3981D"
+      },
+      {
+        "song_id": "song_86da53da2a86",
+        "combination": "12",
+        "count": 4,
+        "first_seen_order": 10,
+        "font_color": "#E70032"
+      },
+      {
+        "song_id": "song_86da53da2a86",
+        "combination": "14",
+        "count": 1,
+        "first_seen_order": 14,
         "font_color": "#0068B7"
       },
       {
@@ -45308,6 +45455,34 @@
         "font_color": "#65AB31"
       },
       {
+        "song_id": "song_37a7f708d6e8",
+        "combination": "12",
+        "count": 3,
+        "first_seen_order": 1,
+        "font_color": "#F3981D"
+      },
+      {
+        "song_id": "song_37a7f708d6e8",
+        "combination": "34",
+        "count": 3,
+        "first_seen_order": 4,
+        "font_color": "#F3981D"
+      },
+      {
+        "song_id": "song_37a7f708d6e8",
+        "combination": "14",
+        "count": 2,
+        "first_seen_order": 7,
+        "font_color": "#65AB31"
+      },
+      {
+        "song_id": "song_37a7f708d6e8",
+        "combination": "23",
+        "count": 2,
+        "first_seen_order": 9,
+        "font_color": "#65AB31"
+      },
+      {
         "song_id": "song_27000f86009f",
         "combination": "12",
         "count": 4,
@@ -45366,6 +45541,279 @@
       {
         "song_id": "song_3febbb3286fb",
         "combination": "345",
+        "count": 1,
+        "first_seen_order": 10,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_2853a084f738",
+        "combination": "57",
+        "count": 1,
+        "first_seen_order": 1,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_2853a084f738",
+        "combination": "136",
+        "count": 1,
+        "first_seen_order": 2,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_2853a084f738",
+        "combination": "24",
+        "count": 1,
+        "first_seen_order": 3,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_2853a084f738",
+        "combination": "156",
+        "count": 1,
+        "first_seen_order": 4,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_2853a084f738",
+        "combination": "27",
+        "count": 1,
+        "first_seen_order": 5,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_2853a084f738",
+        "combination": "34",
+        "count": 1,
+        "first_seen_order": 6,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_2853a084f738",
+        "combination": "12",
+        "count": 1,
+        "first_seen_order": 7,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_2853a084f738",
+        "combination": "345",
+        "count": 1,
+        "first_seen_order": 8,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_2853a084f738",
+        "combination": "127",
+        "count": 1,
+        "first_seen_order": 9,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_a70295e11017",
+        "combination": "34",
+        "count": 2,
+        "first_seen_order": 1,
+        "font_color": "#65AB31"
+      },
+      {
+        "song_id": "song_a70295e11017",
+        "combination": "124",
+        "count": 1,
+        "first_seen_order": 3,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_276941ac297c",
+        "combination": "67",
+        "count": 1,
+        "first_seen_order": 1,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_276941ac297c",
+        "combination": "14",
+        "count": 1,
+        "first_seen_order": 2,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_276941ac297c",
+        "combination": "16",
+        "count": 1,
+        "first_seen_order": 3,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_548c9c97de5e",
+        "combination": "46",
+        "count": 1,
+        "first_seen_order": 1,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_548c9c97de5e",
+        "combination": "34",
+        "count": 1,
+        "first_seen_order": 2,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_548c9c97de5e",
+        "combination": "14",
+        "count": 1,
+        "first_seen_order": 3,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_548c9c97de5e",
+        "combination": "56",
+        "count": 1,
+        "first_seen_order": 4,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_548c9c97de5e",
+        "combination": "23",
+        "count": 1,
+        "first_seen_order": 5,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_548c9c97de5e",
+        "combination": "25",
+        "count": 1,
+        "first_seen_order": 6,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_bd88c9f0111e",
+        "combination": "125",
+        "count": 2,
+        "first_seen_order": 1,
+        "font_color": "#65AB31"
+      },
+      {
+        "song_id": "song_bd88c9f0111e",
+        "combination": "34",
+        "count": 2,
+        "first_seen_order": 2,
+        "font_color": "#65AB31"
+      },
+      {
+        "song_id": "song_bd88c9f0111e",
+        "combination": "14",
+        "count": 1,
+        "first_seen_order": 5,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_bd88c9f0111e",
+        "combination": "135",
+        "count": 2,
+        "first_seen_order": 6,
+        "font_color": "#65AB31"
+      },
+      {
+        "song_id": "song_bd88c9f0111e",
+        "combination": "24",
+        "count": 2,
+        "first_seen_order": 8,
+        "font_color": "#65AB31"
+      },
+      {
+        "song_id": "song_b5249ce4be85",
+        "combination": "45",
+        "count": 1,
+        "first_seen_order": 1,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_b5249ce4be85",
+        "combination": "34",
+        "count": 1,
+        "first_seen_order": 2,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_b5249ce4be85",
+        "combination": "15",
+        "count": 1,
+        "first_seen_order": 3,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_b5249ce4be85",
+        "combination": "24",
+        "count": 1,
+        "first_seen_order": 4,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_3bf25c5e7f7c",
+        "combination": "15",
+        "count": 1,
+        "first_seen_order": 1,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_3bf25c5e7f7c",
+        "combination": "27",
+        "count": 1,
+        "first_seen_order": 2,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_3bf25c5e7f7c",
+        "combination": "34",
+        "count": 1,
+        "first_seen_order": 3,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_3bf25c5e7f7c",
+        "combination": "23",
+        "count": 1,
+        "first_seen_order": 4,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_3bf25c5e7f7c",
+        "combination": "37",
+        "count": 1,
+        "first_seen_order": 5,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_3bf25c5e7f7c",
+        "combination": "12",
+        "count": 1,
+        "first_seen_order": 6,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_3bf25c5e7f7c",
+        "combination": "56",
+        "count": 1,
+        "first_seen_order": 7,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_3bf25c5e7f7c",
+        "combination": "13",
+        "count": 1,
+        "first_seen_order": 8,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_3bf25c5e7f7c",
+        "combination": "67",
+        "count": 1,
+        "first_seen_order": 9,
+        "font_color": "#0068B7"
+      },
+      {
+        "song_id": "song_3bf25c5e7f7c",
+        "combination": "45",
         "count": 1,
         "first_seen_order": 10,
         "font_color": "#0068B7"
@@ -48637,49 +49085,49 @@
       {
         "value": "12",
         "positions": "[1, 2]",
-        "song_count": 66,
+        "song_count": 75,
         "sort_order": 1
       },
       {
         "value": "13",
         "positions": "[1, 3]",
-        "song_count": 43,
+        "song_count": 45,
         "sort_order": 2
       },
       {
         "value": "14",
         "positions": "[1, 4]",
-        "song_count": 30,
+        "song_count": 36,
         "sort_order": 3
       },
       {
         "value": "15",
         "positions": "[1, 5]",
-        "song_count": 10,
+        "song_count": 12,
         "sort_order": 4
       },
       {
         "value": "16",
         "positions": "[1, 6]",
-        "song_count": 1,
+        "song_count": 2,
         "sort_order": 5
       },
       {
         "value": "23",
         "positions": "[2, 3]",
-        "song_count": 32,
+        "song_count": 36,
         "sort_order": 6
       },
       {
         "value": "24",
         "positions": "[2, 4]",
-        "song_count": 44,
+        "song_count": 47,
         "sort_order": 7
       },
       {
         "value": "25",
         "positions": "[2, 5]",
-        "song_count": 3,
+        "song_count": 4,
         "sort_order": 8
       },
       {
@@ -48691,19 +49139,19 @@
       {
         "value": "27",
         "positions": "[2, 7]",
-        "song_count": 1,
+        "song_count": 3,
         "sort_order": 10
       },
       {
         "value": "34",
         "positions": "[3, 4]",
-        "song_count": 46,
+        "song_count": 56,
         "sort_order": 11
       },
       {
         "value": "35",
         "positions": "[3, 5]",
-        "song_count": 9,
+        "song_count": 12,
         "sort_order": 12
       },
       {
@@ -48715,7 +49163,7 @@
       {
         "value": "37",
         "positions": "[3, 7]",
-        "song_count": 2,
+        "song_count": 3,
         "sort_order": 14
       },
       {
@@ -48727,13 +49175,13 @@
       {
         "value": "45",
         "positions": "[4, 5]",
-        "song_count": 11,
+        "song_count": 14,
         "sort_order": 16
       },
       {
         "value": "46",
         "positions": "[4, 6]",
-        "song_count": 3,
+        "song_count": 4,
         "sort_order": 17
       },
       {
@@ -48751,74 +49199,98 @@
       {
         "value": "56",
         "positions": "[5, 6]",
-        "song_count": 2,
+        "song_count": 4,
         "sort_order": 20
       },
       {
         "value": "57",
         "positions": "[5, 7]",
-        "song_count": 1,
+        "song_count": 2,
         "sort_order": 21
+      },
+      {
+        "value": "67",
+        "positions": "[6, 7]",
+        "song_count": 2,
+        "sort_order": 22
       },
       {
         "value": "68",
         "positions": "[6, 8]",
         "song_count": 1,
-        "sort_order": 22
+        "sort_order": 23
       },
       {
         "value": "123",
         "positions": "[1, 2, 3]",
         "song_count": 5,
-        "sort_order": 23
+        "sort_order": 24
       },
       {
         "value": "124",
         "positions": "[1, 2, 4]",
-        "song_count": 2,
-        "sort_order": 24
+        "song_count": 3,
+        "sort_order": 25
       },
       {
         "value": "125",
         "positions": "[1, 2, 5]",
+        "song_count": 2,
+        "sort_order": 26
+      },
+      {
+        "value": "127",
+        "positions": "[1, 2, 7]",
         "song_count": 1,
-        "sort_order": 25
+        "sort_order": 27
       },
       {
         "value": "134",
         "positions": "[1, 3, 4]",
         "song_count": 1,
-        "sort_order": 26
+        "sort_order": 28
       },
       {
         "value": "135",
         "positions": "[1, 3, 5]",
-        "song_count": 1,
-        "sort_order": 27
-      },
-      {
-        "value": "145",
-        "positions": "[1, 4, 5]",
-        "song_count": 1,
-        "sort_order": 28
-      },
-      {
-        "value": "235",
-        "positions": "[2, 3, 5]",
         "song_count": 2,
         "sort_order": 29
       },
       {
-        "value": "245",
-        "positions": "[2, 4, 5]",
+        "value": "136",
+        "positions": "[1, 3, 6]",
         "song_count": 1,
         "sort_order": 30
       },
       {
+        "value": "145",
+        "positions": "[1, 4, 5]",
+        "song_count": 2,
+        "sort_order": 31
+      },
+      {
+        "value": "156",
+        "positions": "[1, 5, 6]",
+        "song_count": 1,
+        "sort_order": 32
+      },
+      {
+        "value": "235",
+        "positions": "[2, 3, 5]",
+        "song_count": 3,
+        "sort_order": 33
+      },
+      {
+        "value": "245",
+        "positions": "[2, 4, 5]",
+        "song_count": 2,
+        "sort_order": 34
+      },
+      {
         "value": "345",
         "positions": "[3, 4, 5]",
-        "song_count": 5,
-        "sort_order": 31
+        "song_count": 7,
+        "sort_order": 35
       }
     ],
     "issues": [
@@ -49837,172 +50309,16 @@
         "detail": "《CALL YOUR NAME!!》数字组合原始序列正在录入。"
       },
       {
-        "kind": "missing_combinations",
-        "entity_id": "song_242aeac927fd",
-        "source_file": "data/source/songs.csv",
-        "detail": "《あんさんぶる体操！！》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_b1073c35a569",
-        "source_file": "data/source/songs.csv",
-        "detail": "《エンドレスヴィーデ》数字组合原始序列正在录入。"
-      },
-      {
         "kind": "missing_positions",
         "entity_id": "song_3ceb238de5c4",
         "source_file": "data/source/positions.csv",
         "detail": "《BUKUBU NEW STARS!!》站位正在录入。"
       },
       {
-        "kind": "missing_combinations",
-        "entity_id": "song_3ceb238de5c4",
-        "source_file": "data/source/songs.csv",
-        "detail": "《BUKUBU NEW STARS!!》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_60796b9be51c",
-        "source_file": "data/source/songs.csv",
-        "detail": "《あんさんぶるトレーニング！！》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_9fb2706f9689",
-        "source_file": "data/source/songs.csv",
-        "detail": "《両片思いの交差点で、君にまた逢いたくて》数字组合原始序列正在录入。"
-      },
-      {
         "kind": "missing_positions",
         "entity_id": "song_28afa7f58845",
         "source_file": "data/source/positions.csv",
         "detail": "《ペルソナアビス》站位正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_28afa7f58845",
-        "source_file": "data/source/songs.csv",
-        "detail": "《ペルソナアビス》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_7716a9140b13",
-        "source_file": "data/source/songs.csv",
-        "detail": "《Aisle, be with you》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_f9bc625be3fb",
-        "source_file": "data/source/songs.csv",
-        "detail": "《ムーンライトディスコ》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_f5be9d8384d9",
-        "source_file": "data/source/songs.csv",
-        "detail": "《Noir Neige》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_a57dd1bebd1d",
-        "source_file": "data/source/songs.csv",
-        "detail": "《パラダイム·リバーシ！》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_86da53da2a86",
-        "source_file": "data/source/songs.csv",
-        "detail": "《FIST OF SOUL》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_37a7f708d6e8",
-        "source_file": "data/source/songs.csv",
-        "detail": "《堕天使たちの晩餐会》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_2853a084f738",
-        "source_file": "data/source/songs.csv",
-        "detail": "《僕のウィーク・ポイント》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_a70295e11017",
-        "source_file": "data/source/songs.csv",
-        "detail": "《Graceful Punishment》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_276941ac297c",
-        "source_file": "data/source/songs.csv",
-        "detail": "《Deep into you》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_548c9c97de5e",
-        "source_file": "data/source/songs.csv",
-        "detail": "《らびゅ&ピース伝説》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_bd88c9f0111e",
-        "source_file": "data/source/songs.csv",
-        "detail": "《Ai☆$!!》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_b5249ce4be85",
-        "source_file": "data/source/songs.csv",
-        "detail": "《It's (k)not lov?》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_2682c1b0d3af",
-        "source_file": "data/source/songs.csv",
-        "detail": "《催花雨の片道切符》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_3bf25c5e7f7c",
-        "source_file": "data/source/songs.csv",
-        "detail": "《Fight Is Only Fate》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_90d69cfc95c0",
-        "source_file": "data/source/songs.csv",
-        "detail": "《こはく・晃牙・忍・弓弦》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_c1e7082b9e94",
-        "source_file": "data/source/songs.csv",
-        "detail": "《真緒・ゆうた・宙・アドニス》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_3f631fdbd94b",
-        "source_file": "data/source/songs.csv",
-        "detail": "《巽・日和・奏汰・零》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_f78396e4718b",
-        "source_file": "data/source/songs.csv",
-        "detail": "《セツナDrops》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_5a041eca7d01",
-        "source_file": "data/source/songs.csv",
-        "detail": "《LOCK YOUR GAZE》数字组合原始序列正在录入。"
-      },
-      {
-        "kind": "missing_combinations",
-        "entity_id": "song_50a77b9f426f",
-        "source_file": "data/source/songs.csv",
-        "detail": "《フュージョン》数字组合原始序列正在录入。"
       },
       {
         "kind": "missing_combinations",
