@@ -33,7 +33,7 @@ song_0d7d18b25a76,虹色のSeasons,2026-11-15,Trickstar,fixed,4,complete,missing
 song_7c441d2d44d9,CELEBRATE!!,2026-11-15,Trickstar,fixed,4,complete,missing,#FF8B0B
 song_6f2328deb812,Infinite Star,2026-11-15,Trickstar,fixed,4,complete,missing,#FF8B0B
 song_d70996d82446,ONLY YOUR STARS! (TS Ver.),2026-11-15,Trickstar,fixed,4,complete,missing,#FF8B0B
-song_bfb9c4d54670,キセキ,2026-11-15,"Trickstar, Eden",fixed,8,complete,missing,"linear-gradient(135deg, #FF8B0B 0%, #FF8B0B 50%, #5F5B5D 50%, #5F5B5D 100%)"
+song_bfb9c4d54670,キセキ,2026-11-15,"Trickstar, Eden",fixed,8,complete,recorded,"linear-gradient(135deg, #FF8B0B 0%, #FF8B0B 50%, #5F5B5D 50%, #5F5B5D 100%)"
 song_cbbcf5f47999,BIGBANG REFLECTION!!,2026-11-15,Trickstar,fixed,4,complete,missing,#FF8B0B
 song_8c814ebdcf1f,Daydream×Reality,2026-11-15,Trickstar,fixed,4,complete,missing,#FF8B0B
 song_515def0f6b9b,ワチャガナドゥ？,2026-11-15,Trickstar,fixed,4,complete,recorded,#FF8B0B
@@ -68,7 +68,7 @@ song_1cd5d81835d1,You're Speculation,2026-11-15,ALKALOID,fixed,4,complete,record
 song_3af219315db7,Distorted Heart,2026-11-15,ALKALOID,fixed,4,complete,missing,#2AB7CA
 song_874ff128db88,Hysteric Humanoid,2026-11-15,ALKALOID,fixed,4,complete,recorded,#2AB7CA
 song_cbe54d5c11ff,Artistic Partisan,2026-11-15,"ALKALOID, Valkyrie",fixed,6,complete,recorded,"linear-gradient(135deg, #2AB7CA 0%, #2AB7CA 50%, #8C2346 50%, #8C2346 100%)"
-song_13139942a6c4,SAKE OF LOVE,2026-11-15,"ALKALOID, Crazy:B",fixed,8,complete,missing,"linear-gradient(135deg, #2AB7CA 0%, #2AB7CA 50%, #FFD700 50%, #FFD700 100%)"
+song_13139942a6c4,SAKE OF LOVE,2026-11-15,"ALKALOID, Crazy:B",fixed,8,complete,recorded,"linear-gradient(135deg, #2AB7CA 0%, #2AB7CA 50%, #FFD700 50%, #FFD700 100%)"
 song_3ee863c4fc4d,Black Out See Saw,2026-11-15,ALKALOID,fixed,4,complete,recorded,#2AB7CA
 song_e06b225c4b6c,Across the universe,2026-11-15,ALKALOID,fixed,4,complete,recorded,#2AB7CA
 song_77382f0cc9da,VERMILION,2026-11-15,ALKALOID,fixed,4,complete,recorded,#2AB7CA
@@ -80,7 +80,7 @@ song_e948810eb839,コトノハカンタービレ,2026-11-15,ALKALOID,fixed,4,com
 song_e9d5ca4928d5,E.V.O.L.U.T.I.O.N.,2027-02-01,"ALKALOID, Switch",fixed,7,complete,missing,"linear-gradient(135deg, #2AB7CA 0%, #2AB7CA 50%, #A3EA34 50%, #A3EA34 100%)"
 song_90a81a004f52,夜に駆ける,,"ALKALOID, DoubleFace",fixed,6,complete,missing,"linear-gradient(135deg, #2AB7CA 0%, #2AB7CA 50%, #2B4F54 50%, #2B4F54 100%)"
 song_7ca647631ee1,THE GENESIS,2026-11-15,Eden,fixed,4,complete,recorded,#5F5B5D
-song_3f3a17eb992f,Dance in the Apocalyps,2026-11-15,Eden,fixed,4,complete,missing,#5F5B5D
+song_3f3a17eb992f,Dance in the Apocalyps,2026-11-15,Eden,fixed,4,complete,recorded,#5F5B5D
 song_4b6d8cfa15d2,Awakening Myth,2026-11-15,Eden,fixed,4,complete,recorded,#5F5B5D
 song_f1f7d5246727,Psyche's Butterfly,2026-11-15,Eden,fixed,4,complete,recorded,#5F5B5D
 song_1bcd70c7557b,Deep Eclipse,2026-11-15,Eden,fixed,4,complete,recorded,#5F5B5D
@@ -89,8 +89,8 @@ song_ce438ead8310,Majestic Magic,2026-11-15,"Switch, Eden",fixed,7,complete,reco
 song_abefd121ea42,Absolute Perfection,2026-11-15,Eden,fixed,4,complete,recorded,#5F5B5D
 song_f104c3f4ae56,楽園追放 -Faith Conquest-,2026-11-15,Eden,fixed,4,complete,recorded,#5F5B5D
 song_81eaf3bed022,大いなる愛の前に全ては巡り来る,2026-11-15,Eden,fixed,4,complete,recorded,#5F5B5D
-song_843746914715,円環のRefraction,2026-11-15,Eden,fixed,4,complete,missing,#5F5B5D
-song_7a617dcb29a9,EMBRACE,2026-11-15,Eden,fixed,4,complete,missing,#5F5B5D
+song_843746914715,円環のRefraction,2026-11-15,Eden,fixed,4,complete,recorded,#5F5B5D
+song_7a617dcb29a9,EMBRACE,2026-11-15,Eden,fixed,4,complete,recorded,#5F5B5D
 song_c7e8fae8a586,EXCEED,2026-11-15,Eden,fixed,4,complete,recorded,#5F5B5D
 song_9fcb89a4ff89,Ruler's Truth,2026-11-15,Adam,fixed,2,complete,none,#5CAA7F
 song_6c4a71538bf8,The Beast of the End,2026-11-15,Adam,fixed,2,complete,none,#5CAA7F
@@ -128,7 +128,7 @@ song_31c2b3f08b08,POLYPHONIC WORLD,2026-11-15,2wink,fixed,2,complete,none,#FF3B9
 song_4f32900e4ca1,Turbulent Storm,2026-11-15,2wink,fixed,2,complete,none,#FF3B9A
 song_4325f341ffde,トゥウィンクル空中戦,2026-11-15,2wink,fixed,2,complete,none,#FF3B9A
 song_e0adbd9f8de6,Twin Wedding Vows,2026-11-15,2wink,fixed,2,complete,none,#FF3B9A
-song_477b9fdea637,LEMON SQUASH CHEERS!,2026-11-15,"Crazy:B, 2wink",fixed,6,complete,none,"linear-gradient(135deg, #FFD700 0%, #FFD700 50%, #FF3B9A 50%, #FF3B9A 100%)"
+song_477b9fdea637,LEMON SQUASH CHEERS!,2026-11-15,"Crazy:B, 2wink",fixed,6,complete,recorded,"linear-gradient(135deg, #FFD700 0%, #FFD700 50%, #FF3B9A 50%, #FF3B9A 100%)"
 song_3096f32aaef0,Swee2wink Love Letter,2026-11-15,2wink,fixed,2,complete,none,#FF3B9A
 song_716612b97823,Love×me⇄monsteR,2026-11-15,2wink,fixed,2,complete,none,#FF3B9A
 song_505d28c5a231,来来☆2winkイリュージョン,2026-11-15,2wink,fixed,2,complete,none,#FF3B9A
@@ -138,15 +138,15 @@ song_9ab8ad9872c0,2wink Introduction,,2wink,unknown,0,missing_positions,none,#FF
 song_4461ea59d30e,Tell Your World,,"Switch, 2wink, Other",fixed,5,complete,missing,"linear-gradient(135deg, #A3EA34 0%, #A3EA34 50%, #FF3B9A 50%, #FF3B9A 100%)"
 song_3f3d04c758dc,Crazy Roulette,2026-11-15,Crazy:B,fixed,4,complete,recorded,#FFD700
 song_19199e1649f3,Be The Party Bee!,2026-11-15,Crazy:B,fixed,4,complete,recorded,#FFD700
-song_dac271d15129,RISKY VENUS,2026-11-15,Crazy:B,fixed,4,complete,missing,#FFD700
-song_fec954226aec,PARANOIA STREET,2026-11-15,Crazy:B,fixed,4,complete,missing,#FFD700
-song_1a324f5f2103,Noisy:Beep,2026-11-15,Crazy:B,fixed,4,complete,missing,#FFD700
-song_9175aa8dc3b3,Crazy Anthem,2026-11-15,Crazy:B,fixed,4,complete,missing,#FFD700
-song_2ab2fd55536e,NA NA NA SUMMER NIGHT BeeAT,2026-11-15,Crazy:B,fixed,4,complete,missing,#FFD700
-song_256b3b5a4f3a,Foolish Alien,2026-11-15,Crazy:B,fixed,4,complete,missing,#FFD700
+song_dac271d15129,RISKY VENUS,2026-11-15,Crazy:B,fixed,4,complete,recorded,#FFD700
+song_fec954226aec,PARANOIA STREET,2026-11-15,Crazy:B,fixed,4,complete,recorded,#FFD700
+song_1a324f5f2103,Noisy:Beep,2026-11-15,Crazy:B,fixed,4,complete,recorded,#FFD700
+song_9175aa8dc3b3,Crazy Anthem,2026-11-15,Crazy:B,fixed,4,complete,recorded,#FFD700
+song_2ab2fd55536e,NA NA NA SUMMER NIGHT BeeAT,2026-11-15,Crazy:B,fixed,4,complete,none,#FFD700
+song_256b3b5a4f3a,Foolish Alien,2026-11-15,Crazy:B,fixed,4,complete,recorded,#FFD700
 song_7abff74f1301,UTAKATA DANCE FLOOR,2026-11-15,Crazy:B,fixed,4,complete,recorded,#FFD700
-song_15a228ff62e8,指先のアリアドネ,2026-11-15,Crazy:B,fixed,4,complete,missing,#FFD700
-song_9c6bab397a09,CIVIL WAR,2026-11-15,"四人月, Crazy:B",fixed,8,complete,missing,"linear-gradient(135deg, #962828 0%, #962828 50%, #FFD700 50%, #FFD700 100%)"
+song_15a228ff62e8,指先のアリアドネ,2026-11-15,Crazy:B,fixed,4,complete,recorded,#FFD700
+song_9c6bab397a09,CIVIL WAR,2026-11-15,"四人月, Crazy:B",fixed,8,complete,recorded,"linear-gradient(135deg, #962828 0%, #962828 50%, #FFD700 50%, #FFD700 100%)"
 song_2e9a64df8c91,Helter-Spider,2026-11-15,Crazy:B,fixed,4,complete,recorded,#FFD700
 song_afe826491b4d,Honeycomb Summer,2026-11-15,Crazy:B,fixed,4,complete,recorded,#FFD700
 song_c504db2c978f,ハニートラップ・マリアージュ,2026-11-15,Crazy:B,fixed,4,complete,recorded,#FFD700

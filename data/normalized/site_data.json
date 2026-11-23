@@ -637,7 +637,7 @@
         1,
         2
       ],
-      "songCount": 59
+      "songCount": 66
     },
     {
       "value": "13",
@@ -645,7 +645,7 @@
         1,
         3
       ],
-      "songCount": 36
+      "songCount": 43
     },
     {
       "value": "14",
@@ -653,7 +653,7 @@
         1,
         4
       ],
-      "songCount": 22
+      "songCount": 30
     },
     {
       "value": "15",
@@ -661,7 +661,7 @@
         1,
         5
       ],
-      "songCount": 6
+      "songCount": 10
     },
     {
       "value": "16",
@@ -677,7 +677,7 @@
         2,
         3
       ],
-      "songCount": 26
+      "songCount": 32
     },
     {
       "value": "24",
@@ -685,7 +685,7 @@
         2,
         4
       ],
-      "songCount": 39
+      "songCount": 44
     },
     {
       "value": "25",
@@ -701,6 +701,14 @@
         2,
         6
       ],
+      "songCount": 2
+    },
+    {
+      "value": "27",
+      "positions": [
+        2,
+        7
+      ],
       "songCount": 1
     },
     {
@@ -709,7 +717,7 @@
         3,
         4
       ],
-      "songCount": 41
+      "songCount": 46
     },
     {
       "value": "35",
@@ -725,7 +733,7 @@
         3,
         6
       ],
-      "songCount": 1
+      "songCount": 2
     },
     {
       "value": "37",
@@ -733,7 +741,15 @@
         3,
         7
       ],
-      "songCount": 1
+      "songCount": 2
+    },
+    {
+      "value": "38",
+      "positions": [
+        3,
+        8
+      ],
+      "songCount": 2
     },
     {
       "value": "45",
@@ -741,7 +757,7 @@
         4,
         5
       ],
-      "songCount": 10
+      "songCount": 11
     },
     {
       "value": "46",
@@ -749,7 +765,15 @@
         4,
         6
       ],
-      "songCount": 2
+      "songCount": 3
+    },
+    {
+      "value": "47",
+      "positions": [
+        4,
+        7
+      ],
+      "songCount": 1
     },
     {
       "value": "48",
@@ -757,13 +781,29 @@
         4,
         8
       ],
-      "songCount": 1
+      "songCount": 2
     },
     {
       "value": "56",
       "positions": [
         5,
         6
+      ],
+      "songCount": 2
+    },
+    {
+      "value": "57",
+      "positions": [
+        5,
+        7
+      ],
+      "songCount": 1
+    },
+    {
+      "value": "68",
+      "positions": [
+        6,
+        8
       ],
       "songCount": 1
     },
@@ -6082,7 +6122,38 @@
           "unitId": null
         }
       ],
-      "combinations": [],
+      "combinations": [
+        {
+          "value": "15",
+          "count": 3,
+          "color": "#F3981D"
+        },
+        {
+          "value": "68",
+          "count": 2,
+          "color": "#65AB31"
+        },
+        {
+          "value": "57",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "48",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "26",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "37",
+          "count": 1,
+          "color": "#0068B7"
+        }
+      ],
       "backgroundCss": "linear-gradient(135deg, #FF8B0B 0%, #FF8B0B 50%, #5F5B5D 50%, #5F5B5D 100%)",
       "colors": [
         "#FF8B0B",
@@ -6090,7 +6161,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "recorded"
     },
     {
       "id": "song_cbbcf5f47999",
@@ -9527,7 +9598,23 @@
           "unitId": null
         }
       ],
-      "combinations": [],
+      "combinations": [
+        {
+          "value": "15",
+          "count": 3,
+          "color": "#F3981D"
+        },
+        {
+          "value": "47",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "38",
+          "count": 1,
+          "color": "#0068B7"
+        }
+      ],
       "backgroundCss": "linear-gradient(135deg, #2AB7CA 0%, #2AB7CA 50%, #FFD700 50%, #FFD700 100%)",
       "colors": [
         "#2AB7CA",
@@ -9535,7 +9622,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "recorded"
     },
     {
       "id": "song_3ee863c4fc4d",
@@ -10735,14 +10822,35 @@
           "unitId": null
         }
       ],
-      "combinations": [],
+      "combinations": [
+        {
+          "value": "23",
+          "count": 2,
+          "color": "#65AB31"
+        },
+        {
+          "value": "14",
+          "count": 2,
+          "color": "#65AB31"
+        },
+        {
+          "value": "24",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "13",
+          "count": 1,
+          "color": "#0068B7"
+        }
+      ],
       "backgroundCss": "#5F5B5D",
       "colors": [
         "#5F5B5D"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "recorded"
     },
     {
       "id": "song_4b6d8cfa15d2",
@@ -11273,19 +11381,14 @@
           "color": "#0068B7"
         },
         {
-          "value": "23",
-          "count": 1,
-          "color": "#0068B7"
-        },
-        {
           "value": "34",
           "count": 1,
           "color": "#0068B7"
         },
         {
           "value": "123",
-          "count": 1,
-          "color": "#0068B7"
+          "count": 2,
+          "color": "#65AB31"
         }
       ],
       "backgroundCss": "linear-gradient(135deg, #A3EA34 0%, #A3EA34 50%, #5F5B5D 50%, #5F5B5D 100%)",
@@ -11694,14 +11797,45 @@
           "unitId": null
         }
       ],
-      "combinations": [],
+      "combinations": [
+        {
+          "value": "23",
+          "count": 2,
+          "color": "#65AB31"
+        },
+        {
+          "value": "13",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "24",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "14",
+          "count": 4,
+          "color": "#E70032"
+        },
+        {
+          "value": "12",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "34",
+          "count": 1,
+          "color": "#0068B7"
+        }
+      ],
       "backgroundCss": "#5F5B5D",
       "colors": [
         "#5F5B5D"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "recorded"
     },
     {
       "id": "song_7a617dcb29a9",
@@ -11786,14 +11920,30 @@
           "unitId": null
         }
       ],
-      "combinations": [],
+      "combinations": [
+        {
+          "value": "12",
+          "count": 3,
+          "color": "#F3981D"
+        },
+        {
+          "value": "14",
+          "count": 2,
+          "color": "#65AB31"
+        },
+        {
+          "value": "13",
+          "count": 2,
+          "color": "#65AB31"
+        }
+      ],
       "backgroundCss": "#5F5B5D",
       "colors": [
         "#5F5B5D"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "recorded"
     },
     {
       "id": "song_c7e8fae8a586",
@@ -15301,7 +15451,38 @@
           "unitId": null
         }
       ],
-      "combinations": [],
+      "combinations": [
+        {
+          "value": "15",
+          "count": 2,
+          "color": "#65AB31"
+        },
+        {
+          "value": "36",
+          "count": 2,
+          "color": "#65AB31"
+        },
+        {
+          "value": "45",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "56",
+          "count": 2,
+          "color": "#65AB31"
+        },
+        {
+          "value": "23",
+          "count": 2,
+          "color": "#65AB31"
+        },
+        {
+          "value": "14",
+          "count": 2,
+          "color": "#65AB31"
+        }
+      ],
       "backgroundCss": "linear-gradient(135deg, #FFD700 0%, #FFD700 50%, #FF3B9A 50%, #FF3B9A 100%)",
       "colors": [
         "#FFD700",
@@ -15309,7 +15490,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "none"
+      "combinationStatus": "recorded"
     },
     {
       "id": "song_3096f32aaef0",
@@ -16045,23 +16226,28 @@
       "combinations": [
         {
           "value": "14",
-          "count": 1,
-          "color": "#0068B7"
+          "count": 2,
+          "color": "#65AB31"
         },
         {
           "value": "23",
+          "count": 2,
+          "color": "#65AB31"
+        },
+        {
+          "value": "13",
           "count": 1,
           "color": "#0068B7"
         },
         {
           "value": "34",
-          "count": 1,
-          "color": "#0068B7"
+          "count": 2,
+          "color": "#65AB31"
         },
         {
           "value": "12",
-          "count": 1,
-          "color": "#0068B7"
+          "count": 3,
+          "color": "#F3981D"
         }
       ],
       "backgroundCss": "#FFD700",
@@ -16178,8 +16364,8 @@
         },
         {
           "value": "14",
-          "count": 2,
-          "color": "#65AB31"
+          "count": 3,
+          "color": "#F3981D"
         }
       ],
       "backgroundCss": "#FFD700",
@@ -16273,14 +16459,25 @@
           "unitId": null
         }
       ],
-      "combinations": [],
+      "combinations": [
+        {
+          "value": "24",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "13",
+          "count": 1,
+          "color": "#0068B7"
+        }
+      ],
       "backgroundCss": "#FFD700",
       "colors": [
         "#FFD700"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "recorded"
     },
     {
       "id": "song_fec954226aec",
@@ -16365,14 +16562,35 @@
           "unitId": null
         }
       ],
-      "combinations": [],
+      "combinations": [
+        {
+          "value": "34",
+          "count": 3,
+          "color": "#F3981D"
+        },
+        {
+          "value": "12",
+          "count": 3,
+          "color": "#F3981D"
+        },
+        {
+          "value": "14",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "23",
+          "count": 1,
+          "color": "#0068B7"
+        }
+      ],
       "backgroundCss": "#FFD700",
       "colors": [
         "#FFD700"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "recorded"
     },
     {
       "id": "song_1a324f5f2103",
@@ -16457,14 +16675,25 @@
           "unitId": null
         }
       ],
-      "combinations": [],
+      "combinations": [
+        {
+          "value": "34",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "12",
+          "count": 1,
+          "color": "#0068B7"
+        }
+      ],
       "backgroundCss": "#FFD700",
       "colors": [
         "#FFD700"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "recorded"
     },
     {
       "id": "song_9175aa8dc3b3",
@@ -16549,14 +16778,40 @@
           "unitId": null
         }
       ],
-      "combinations": [],
+      "combinations": [
+        {
+          "value": "34",
+          "count": 2,
+          "color": "#65AB31"
+        },
+        {
+          "value": "13",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "14",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "23",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "12",
+          "count": 2,
+          "color": "#65AB31"
+        }
+      ],
       "backgroundCss": "#FFD700",
       "colors": [
         "#FFD700"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "recorded"
     },
     {
       "id": "song_2ab2fd55536e",
@@ -16648,7 +16903,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "none"
     },
     {
       "id": "song_256b3b5a4f3a",
@@ -16733,14 +16988,40 @@
           "unitId": null
         }
       ],
-      "combinations": [],
+      "combinations": [
+        {
+          "value": "13",
+          "count": 3,
+          "color": "#F3981D"
+        },
+        {
+          "value": "24",
+          "count": 3,
+          "color": "#F3981D"
+        },
+        {
+          "value": "23",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "12",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "14",
+          "count": 1,
+          "color": "#0068B7"
+        }
+      ],
       "backgroundCss": "#FFD700",
       "colors": [
         "#FFD700"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "recorded"
     },
     {
       "id": "song_7abff74f1301",
@@ -16928,14 +17209,35 @@
           "unitId": null
         }
       ],
-      "combinations": [],
+      "combinations": [
+        {
+          "value": "12",
+          "count": 3,
+          "color": "#F3981D"
+        },
+        {
+          "value": "34",
+          "count": 3,
+          "color": "#F3981D"
+        },
+        {
+          "value": "23",
+          "count": 2,
+          "color": "#65AB31"
+        },
+        {
+          "value": "14",
+          "count": 2,
+          "color": "#65AB31"
+        }
+      ],
       "backgroundCss": "#FFD700",
       "colors": [
         "#FFD700"
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "recorded"
     },
     {
       "id": "song_9c6bab397a09",
@@ -17022,7 +17324,33 @@
           "unitId": null
         }
       ],
-      "combinations": [],
+      "combinations": [
+        {
+          "value": "15",
+          "count": 3,
+          "color": "#F3981D"
+        },
+        {
+          "value": "24",
+          "count": 2,
+          "color": "#65AB31"
+        },
+        {
+          "value": "46",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "27",
+          "count": 1,
+          "color": "#0068B7"
+        },
+        {
+          "value": "38",
+          "count": 1,
+          "color": "#0068B7"
+        }
+      ],
       "backgroundCss": "linear-gradient(135deg, #962828 0%, #962828 50%, #FFD700 50%, #FFD700 100%)",
       "colors": [
         "#962828",
@@ -17030,7 +17358,7 @@
       ],
       "formationKind": "fixed",
       "layoutStatus": "complete",
-      "combinationStatus": "missing"
+      "combinationStatus": "recorded"
     },
     {
       "id": "song_2e9a64df8c91",

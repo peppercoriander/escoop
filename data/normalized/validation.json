@@ -12,19 +12,19 @@
     "frequency_colors": 4,
     "song_combination_sources": 332,
     "song_units": 300,
-    "combination_counts": 278,
+    "combination_counts": 333,
     "song_color_bands": 356,
-    "combination_options": 26,
-    "issues": 224
+    "combination_options": 31,
+    "issues": 211
   },
   "combination_status": {
     "none": 51,
-    "recorded": 85,
-    "missing": 196
+    "recorded": 98,
+    "missing": 183
   },
   "issue_counts": {
     "missing_group_color": 4,
-    "missing_combinations": 196,
+    "missing_combinations": 183,
     "missing_positions": 24
   },
   "free_position_cells": 48,
@@ -35,7 +35,7 @@
     "free": 9
   },
   "split_color_songs": 24,
-  "distinct_combinations": 26,
+  "distinct_combinations": 31,
   "characters_with_color_and_unit": 60,
   "multi_unit_characters": 9,
   "verified_logo_files": 26,
