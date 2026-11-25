@@ -44,6 +44,10 @@ node scripts/build-site.mjs
 
 GitHub Pages 目标地址为 `https://peppercoriander.github.io/escoop/`，仓库为 `peppercoriander/escoop`。在仓库 Settings → Pages 中选择 GitHub Actions，提交到 `main` 后由 `.github/workflows/pages.yml` 自动校验、测试、构建并发布；也可在 Actions 中手动运行工作流。修改工作簿或展示顺序表后请先运行上面的导入命令，再提交维护源及生成结果。
 
+工作流分为 `build` 和 `deploy`：前者校验、测试、构建并上传 `github-pages` 产物，后者等待前者成功，再确认本次上传的产物 ID 已出现在当前运行的产物列表中后发布。产物保留 7 天；列表暂时不可见时每 5 秒查询一次，最多 12 次，超时明确报错。此检查缓解上传后的可见性延迟，但不能保证 GitHub 内部部署服务同时恢复。
+
+如果出现 `No artifacts named "github-pages"`，先检查同一次运行的上传步骤和底部 Artifacts。上传成功且产物仍在时可以重跑；产物已过期或缺失时选择 **Re-run all jobs**，重新构建上传。修改工作流后应 push 新提交或在最新分支上选择 **Run workflow**；重跑旧记录不会使用刚修改的工作流。`punycode` 的弃用警告本身不是这个错误的原因。
+
 `sites/escoop/dist` 是独立的 Sites 私有发布副本，`sites/escoop/.openai/hosting.json` 保存该私有站点身份；该目录不加入 GitHub 仓库。
 
 ## 操作方式
