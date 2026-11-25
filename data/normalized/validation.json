@@ -4,33 +4,33 @@
     "units": 21,
     "characters": 60,
     "character_units": 69,
-    "songs": 332,
-    "song_placements": 356,
+    "songs": 330,
+    "song_placements": 354,
     "labels": 36,
-    "song_labels": 412,
-    "positions": 3320,
+    "song_labels": 408,
+    "positions": 3300,
     "frequency_colors": 4,
-    "song_combination_sources": 332,
+    "song_combination_sources": 330,
     "song_units": 300,
-    "combination_counts": 397,
-    "song_color_bands": 356,
+    "combination_counts": 426,
+    "song_color_bands": 354,
     "combination_options": 35,
-    "issues": 185
+    "issues": 135
   },
   "combination_status": {
-    "none": 63,
-    "recorded": 112,
-    "missing": 157
+    "none": 100,
+    "recorded": 121,
+    "missing": 109
   },
   "issue_counts": {
     "missing_group_color": 4,
-    "missing_combinations": 157,
-    "missing_positions": 24
+    "missing_combinations": 109,
+    "missing_positions": 22
   },
-  "free_position_cells": 52,
+  "free_position_cells": 54,
   "formation_kinds": {
     "fixed": 297,
-    "unknown": 24,
+    "unknown": 22,
     "mixed": 1,
     "free": 10
   },
