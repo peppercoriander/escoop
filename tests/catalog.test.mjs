@@ -180,9 +180,14 @@ test('selecting members preserves the current menu for additional member choices
   assert.deepEqual(state.selection.unitIds, []);
   assert.equal(visibleMembers(site, state.selection, state.expandedUnitIds).length, 4);
 });
-test('all seven custom Other song colors survive data generation', () => {
-  for (const [title, color] of [['Genuine Revelation', '#FFD7A0'], ['Dawning Angels', '#FFD7A0'], ['圣少年游戯', '#8C2346'], ['We\'ll be"Knights"', '#305DAA'], ['Crush of Judgment', '#305DAA'], ['Death Game Holic', '#64368F'], ['ROCK ROAR', '#64368F']]) {
-    assert.equal(site.songs.find(s => s.title === title).backgroundCss, color);
+test('all configured custom song colors survive data generation', () => {
+  const display = JSON.parse(readFileSync(new URL('../data/source/display.json', import.meta.url)));
+  const overrides = Object.entries(display.song_background_overrides);
+  assert.ok(overrides.length > 0, 'expected configured custom song colors');
+  for (const [songId, color] of overrides) {
+    const song = site.songs.find(s => s.id === songId);
+    assert.ok(song, `custom color references missing song: ${songId}`);
+    assert.equal(song.backgroundCss, color, `custom color mismatch: ${songId}`);
   }
   assert.ok(site.songs.find(s => s.title === 'Crossing×Heart').backgroundCss.startsWith('linear-gradient(135deg,'));
 });
